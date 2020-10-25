@@ -247,8 +247,13 @@ final class EndpointGenerator implements Runnable {
             });
             w.write("ctx = awsmiddleware.SetSigningName(ctx, signingName)");
         });
+
+        // set signing region on context
         w.write("ctx = awsmiddleware.SetSigningRegion(ctx, endpoint.SigningRegion)");
-        w.write("");
+        // set partition id on context
+        w.write("ctx = awsmiddleware.SetPartitionID(ctx, endpoint.PartitionID)");
+
+        w.insertTrailingNewline();
         w.write("return next.HandleSerialize(ctx, in)");
     }
 

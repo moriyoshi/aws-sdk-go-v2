@@ -46,6 +46,7 @@ type (
 	signingRegionKey struct{}
 	regionKey        struct{}
 	operationNameKey struct{}
+	partitionIDKey   struct{}
 )
 
 // GetServiceID retrieves the service id from the context.
@@ -61,6 +62,7 @@ func GetSigningName(ctx context.Context) (v string) {
 }
 
 // GetSigningRegion retrieves the region from the context.
+// TODO: this should return a bool
 func GetSigningRegion(ctx context.Context) (v string) {
 	v, _ = ctx.Value(signingRegionKey{}).(string)
 	return v
@@ -75,6 +77,12 @@ func GetRegion(ctx context.Context) (v string) {
 // GetOperationName retrieves the service operation metadata from the context.
 func GetOperationName(ctx context.Context) (v string) {
 	v, _ = ctx.Value(operationNameKey{}).(string)
+	return v
+}
+
+// GetPartitionID retrieves the endpoint partition id from the context.
+func GetPartitionID(ctx context.Context) string {
+	v, _ := ctx.Value(partitionIDKey{}).(string)
 	return v
 }
 
@@ -101,4 +109,9 @@ func setRegion(ctx context.Context, value string) context.Context {
 // setOperationName sets the service operation on the context.
 func setOperationName(ctx context.Context, value string) context.Context {
 	return context.WithValue(ctx, operationNameKey{}, value)
+}
+
+// SetPartitionID sets the partition id of a resolved region on the context
+func SetPartitionID(ctx context.Context, value string) context.Context {
+	return context.WithValue(ctx, partitionIDKey{}, value)
 }

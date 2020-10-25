@@ -54,7 +54,6 @@ public final class RegisterServiceMetadataMiddleware implements GoIntegration {
                     builder.append("Region: region,\n");
 
                     if (serviceTrait.isPresent()) {
-                        ServiceTrait trait = serviceTrait.get();
                         builder.append("ServiceID: ServiceID,\n");
                     }
 
@@ -81,10 +80,7 @@ public final class RegisterServiceMetadataMiddleware implements GoIntegration {
             OperationShape operation = model.expectShape(operationId, OperationShape.class);
             RuntimeClientPlugin runtimeClientPlugin = RuntimeClientPlugin.builder()
                     .operationPredicate((predicateModel, predicateService, predicateOperation) -> {
-                        if (operation.equals(predicateOperation)) {
-                            return true;
-                        }
-                        return false;
+                        return operation.equals(predicateOperation);
                     })
                     .registerMiddleware(MiddlewareRegistrar.builder()
                             .resolvedFunction(SymbolUtils.createValueSymbolBuilder(
