@@ -26,6 +26,7 @@ import software.amazon.smithy.codegen.core.Symbol;
 import software.amazon.smithy.go.codegen.GoSettings;
 import software.amazon.smithy.go.codegen.GoStackStepMiddlewareGenerator;
 import software.amazon.smithy.go.codegen.GoWriter;
+import software.amazon.smithy.go.codegen.MiddlewareIdentifier;
 import software.amazon.smithy.go.codegen.SmithyGoDependency;
 import software.amazon.smithy.go.codegen.SymbolUtils;
 import software.amazon.smithy.go.codegen.TriConsumer;
@@ -186,7 +187,7 @@ final class EndpointGenerator implements Runnable {
     private void generateMiddleware(GoWriter writer) {
         // Generate middleware definition
         GoStackStepMiddlewareGenerator middleware = GoStackStepMiddlewareGenerator.createSerializeStepMiddleware(
-                MIDDLEWARE_NAME, MIDDLEWARE_NAME);
+                MIDDLEWARE_NAME, MiddlewareIdentifier.string(MIDDLEWARE_NAME));
         middleware.writeMiddleware(writer, this::generateMiddlewareResolverBody,
                 this::generateMiddlewareStructureMembers);
 
@@ -196,9 +197,7 @@ final class EndpointGenerator implements Runnable {
         // Generate Middleware Adder Helper
         writer.openBlock("func $L(stack $P, o Options) error {", "}", ADD_MIDDLEWARE_HELPER_NAME, stackSymbol, () -> {
             writer.addUseImports(SmithyGoDependency.SMITHY_MIDDLEWARE);
-            String closeBlock = String.format("}, \"%s\", middleware.Before)",
-                    ProtocolUtils.OPERATION_SERIALIZER_MIDDLEWARE_ID);
-            writer.openBlock("return stack.Serialize.Insert(&$T{", closeBlock,
+            writer.openBlock("return stack.Serialize.Add(middleware.Before, &$T{", "})",
                     middleware.getMiddlewareSymbol(),
                     () -> {
                         writer.write("Resolver: o.EndpointResolver,");
@@ -209,7 +208,8 @@ final class EndpointGenerator implements Runnable {
         // Generate Middleware Remover Helper
         writer.openBlock("func remove$LMiddleware(stack $P) error {", "}", middleware.getMiddlewareSymbol(),
                 stackSymbol, () -> {
-                    writer.write("return stack.Serialize.Remove((&$T{}).ID())", middleware.getMiddlewareSymbol());
+                    writer.write("_, err := stack.Serialize.Remove((&$T{}).ID())", middleware.getMiddlewareSymbol());
+                    writer.write("return err");
                 });
     }
 

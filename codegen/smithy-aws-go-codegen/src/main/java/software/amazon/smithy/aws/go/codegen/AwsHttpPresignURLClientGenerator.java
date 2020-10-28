@@ -147,8 +147,8 @@ public class AwsHttpPresignURLClientGenerator {
                             .build();
 
                     // Middleware to remove
-                    Symbol requestInvocationIDMiddleware = SymbolUtils.createValueSymbolBuilder(
-                            "RequestInvocationIDMiddleware",
+                    Symbol requestInvocationID = SymbolUtils.createValueSymbolBuilder(
+                            "ClientRequestID",
                             AwsGoDependency.AWS_MIDDLEWARE)
                             .build();
 
@@ -160,10 +160,10 @@ public class AwsHttpPresignURLClientGenerator {
                     // Middleware to add
                     writer.write("stack.Finalize.Clear()");
                     writer.write("stack.Deserialize.Clear()");
-                    writer.write("stack.Build.Remove($T{}.ID())", requestInvocationIDMiddleware);
+                    writer.write("stack.Build.Remove((&$T{}).ID())", requestInvocationID);
 
-                    writer.write("err = stack.Finalize.Add($T(options.Credentials, c.presigner), $T)", presignMiddleware,
-                            smithyAfter);
+                    writer.write("err = stack.Finalize.Add($T, $T(options.Credentials, c.presigner))", smithyAfter,
+                            presignMiddleware);
                     writer.write("if err != nil { return err }");
 
                     convertToPresignMiddlewareHelpers.forEach((symbol) -> {
