@@ -350,71 +350,71 @@ func (m *validateOpValidateResourcePolicy) HandleInitialize(ctx context.Context,
 }
 
 func addOpCancelRotateSecretValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelRotateSecret{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelRotateSecret{})
 }
 
 func addOpCreateSecretValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSecret{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSecret{})
 }
 
 func addOpDeleteResourcePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteResourcePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteResourcePolicy{})
 }
 
 func addOpDeleteSecretValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSecret{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSecret{})
 }
 
 func addOpDescribeSecretValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSecret{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSecret{})
 }
 
 func addOpGetResourcePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetResourcePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetResourcePolicy{})
 }
 
 func addOpGetSecretValueValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSecretValue{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSecretValue{})
 }
 
 func addOpListSecretVersionIdsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListSecretVersionIds{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListSecretVersionIds{})
 }
 
 func addOpPutResourcePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutResourcePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutResourcePolicy{})
 }
 
 func addOpPutSecretValueValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutSecretValue{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutSecretValue{})
 }
 
 func addOpRestoreSecretValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRestoreSecret{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRestoreSecret{})
 }
 
 func addOpRotateSecretValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRotateSecret{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRotateSecret{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateSecretValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateSecret{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateSecret{})
 }
 
 func addOpUpdateSecretVersionStageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateSecretVersionStage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateSecretVersionStage{})
 }
 
 func addOpValidateResourcePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpValidateResourcePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpValidateResourcePolicy{})
 }
 
 func validateOpCancelRotateSecretInput(v *CancelRotateSecretInput) error {

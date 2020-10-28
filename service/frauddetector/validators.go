@@ -711,143 +711,143 @@ func (m *validateOpUpdateVariable) HandleInitialize(ctx context.Context, in midd
 }
 
 func addOpBatchCreateVariableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchCreateVariable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchCreateVariable{})
 }
 
 func addOpBatchGetVariableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetVariable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetVariable{})
 }
 
 func addOpCreateDetectorVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDetectorVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDetectorVersion{})
 }
 
 func addOpCreateModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateModel{})
 }
 
 func addOpCreateModelVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateModelVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateModelVersion{})
 }
 
 func addOpCreateRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRule{})
 }
 
 func addOpCreateVariableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateVariable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateVariable{})
 }
 
 func addOpDeleteDetectorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDetector{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDetector{})
 }
 
 func addOpDeleteDetectorVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDetectorVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDetectorVersion{})
 }
 
 func addOpDeleteEventValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEvent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEvent{})
 }
 
 func addOpDeleteRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRule{})
 }
 
 func addOpDescribeDetectorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDetector{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDetector{})
 }
 
 func addOpGetDetectorVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDetectorVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDetectorVersion{})
 }
 
 func addOpGetEventPredictionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetEventPrediction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetEventPrediction{})
 }
 
 func addOpGetModelVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetModelVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetModelVersion{})
 }
 
 func addOpGetRulesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRules{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRules{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPutDetectorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutDetector{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutDetector{})
 }
 
 func addOpPutEntityTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutEntityType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutEntityType{})
 }
 
 func addOpPutEventTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutEventType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutEventType{})
 }
 
 func addOpPutExternalModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutExternalModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutExternalModel{})
 }
 
 func addOpPutKMSEncryptionKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutKMSEncryptionKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutKMSEncryptionKey{})
 }
 
 func addOpPutLabelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutLabel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutLabel{})
 }
 
 func addOpPutOutcomeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutOutcome{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutOutcome{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateDetectorVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDetectorVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDetectorVersion{})
 }
 
 func addOpUpdateDetectorVersionMetadataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDetectorVersionMetadata{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDetectorVersionMetadata{})
 }
 
 func addOpUpdateDetectorVersionStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDetectorVersionStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDetectorVersionStatus{})
 }
 
 func addOpUpdateModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateModel{})
 }
 
 func addOpUpdateModelVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateModelVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateModelVersion{})
 }
 
 func addOpUpdateModelVersionStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateModelVersionStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateModelVersionStatus{})
 }
 
 func addOpUpdateRuleMetadataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRuleMetadata{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRuleMetadata{})
 }
 
 func addOpUpdateRuleVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRuleVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRuleVersion{})
 }
 
 func addOpUpdateVariableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateVariable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateVariable{})
 }
 
 func validateEntity(v *types.Entity) error {

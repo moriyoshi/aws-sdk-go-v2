@@ -911,183 +911,183 @@ func (m *validateOpStopStreamProcessor) HandleInitialize(ctx context.Context, in
 }
 
 func addOpCompareFacesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCompareFaces{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCompareFaces{})
 }
 
 func addOpCreateCollectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCollection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCollection{})
 }
 
 func addOpCreateProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateProject{})
 }
 
 func addOpCreateProjectVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateProjectVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateProjectVersion{})
 }
 
 func addOpCreateStreamProcessorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateStreamProcessor{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateStreamProcessor{})
 }
 
 func addOpDeleteCollectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCollection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCollection{})
 }
 
 func addOpDeleteFacesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFaces{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFaces{})
 }
 
 func addOpDeleteProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteProject{})
 }
 
 func addOpDeleteProjectVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteProjectVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteProjectVersion{})
 }
 
 func addOpDeleteStreamProcessorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteStreamProcessor{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteStreamProcessor{})
 }
 
 func addOpDescribeCollectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCollection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCollection{})
 }
 
 func addOpDescribeProjectVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeProjectVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeProjectVersions{})
 }
 
 func addOpDescribeStreamProcessorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeStreamProcessor{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeStreamProcessor{})
 }
 
 func addOpDetectCustomLabelsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetectCustomLabels{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetectCustomLabels{})
 }
 
 func addOpDetectFacesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetectFaces{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetectFaces{})
 }
 
 func addOpDetectLabelsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetectLabels{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetectLabels{})
 }
 
 func addOpDetectModerationLabelsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetectModerationLabels{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetectModerationLabels{})
 }
 
 func addOpDetectProtectiveEquipmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetectProtectiveEquipment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetectProtectiveEquipment{})
 }
 
 func addOpDetectTextValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetectText{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetectText{})
 }
 
 func addOpGetCelebrityInfoValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCelebrityInfo{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCelebrityInfo{})
 }
 
 func addOpGetCelebrityRecognitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCelebrityRecognition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCelebrityRecognition{})
 }
 
 func addOpGetContentModerationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetContentModeration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetContentModeration{})
 }
 
 func addOpGetFaceDetectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFaceDetection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFaceDetection{})
 }
 
 func addOpGetFaceSearchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFaceSearch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFaceSearch{})
 }
 
 func addOpGetLabelDetectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLabelDetection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLabelDetection{})
 }
 
 func addOpGetPersonTrackingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPersonTracking{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPersonTracking{})
 }
 
 func addOpGetSegmentDetectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSegmentDetection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSegmentDetection{})
 }
 
 func addOpGetTextDetectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTextDetection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTextDetection{})
 }
 
 func addOpIndexFacesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpIndexFaces{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpIndexFaces{})
 }
 
 func addOpListFacesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListFaces{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListFaces{})
 }
 
 func addOpRecognizeCelebritiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRecognizeCelebrities{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRecognizeCelebrities{})
 }
 
 func addOpSearchFacesByImageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSearchFacesByImage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSearchFacesByImage{})
 }
 
 func addOpSearchFacesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSearchFaces{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSearchFaces{})
 }
 
 func addOpStartCelebrityRecognitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartCelebrityRecognition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartCelebrityRecognition{})
 }
 
 func addOpStartContentModerationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartContentModeration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartContentModeration{})
 }
 
 func addOpStartFaceDetectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartFaceDetection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartFaceDetection{})
 }
 
 func addOpStartFaceSearchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartFaceSearch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartFaceSearch{})
 }
 
 func addOpStartLabelDetectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartLabelDetection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartLabelDetection{})
 }
 
 func addOpStartPersonTrackingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartPersonTracking{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartPersonTracking{})
 }
 
 func addOpStartProjectVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartProjectVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartProjectVersion{})
 }
 
 func addOpStartSegmentDetectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartSegmentDetection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartSegmentDetection{})
 }
 
 func addOpStartStreamProcessorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartStreamProcessor{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartStreamProcessor{})
 }
 
 func addOpStartTextDetectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartTextDetection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartTextDetection{})
 }
 
 func addOpStopProjectVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopProjectVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopProjectVersion{})
 }
 
 func addOpStopStreamProcessorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopStreamProcessor{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopStreamProcessor{})
 }
 
 func validateHumanLoopConfig(v *types.HumanLoopConfig) error {

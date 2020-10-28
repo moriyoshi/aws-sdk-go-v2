@@ -1131,227 +1131,227 @@ func (m *validateOpUpdateVolume) HandleInitialize(ctx context.Context, in middle
 }
 
 func addOpAssignInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssignInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssignInstance{})
 }
 
 func addOpAssignVolumeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssignVolume{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssignVolume{})
 }
 
 func addOpAssociateElasticIpValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateElasticIp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateElasticIp{})
 }
 
 func addOpAttachElasticLoadBalancerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAttachElasticLoadBalancer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAttachElasticLoadBalancer{})
 }
 
 func addOpCloneStackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCloneStack{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCloneStack{})
 }
 
 func addOpCreateAppValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateApp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateApp{})
 }
 
 func addOpCreateDeploymentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDeployment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDeployment{})
 }
 
 func addOpCreateInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateInstance{})
 }
 
 func addOpCreateLayerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLayer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLayer{})
 }
 
 func addOpCreateStackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateStack{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateStack{})
 }
 
 func addOpCreateUserProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateUserProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateUserProfile{})
 }
 
 func addOpDeleteAppValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApp{})
 }
 
 func addOpDeleteInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteInstance{})
 }
 
 func addOpDeleteLayerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLayer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLayer{})
 }
 
 func addOpDeleteStackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteStack{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteStack{})
 }
 
 func addOpDeleteUserProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUserProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUserProfile{})
 }
 
 func addOpDeregisterEcsClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterEcsCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterEcsCluster{})
 }
 
 func addOpDeregisterElasticIpValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterElasticIp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterElasticIp{})
 }
 
 func addOpDeregisterInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterInstance{})
 }
 
 func addOpDeregisterRdsDbInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterRdsDbInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterRdsDbInstance{})
 }
 
 func addOpDeregisterVolumeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterVolume{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterVolume{})
 }
 
 func addOpDescribeLoadBasedAutoScalingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeLoadBasedAutoScaling{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeLoadBasedAutoScaling{})
 }
 
 func addOpDescribeRdsDbInstancesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeRdsDbInstances{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeRdsDbInstances{})
 }
 
 func addOpDescribeStackProvisioningParametersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeStackProvisioningParameters{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeStackProvisioningParameters{})
 }
 
 func addOpDescribeStackSummaryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeStackSummary{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeStackSummary{})
 }
 
 func addOpDescribeTimeBasedAutoScalingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTimeBasedAutoScaling{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTimeBasedAutoScaling{})
 }
 
 func addOpDetachElasticLoadBalancerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetachElasticLoadBalancer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetachElasticLoadBalancer{})
 }
 
 func addOpDisassociateElasticIpValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateElasticIp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateElasticIp{})
 }
 
 func addOpGetHostnameSuggestionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetHostnameSuggestion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetHostnameSuggestion{})
 }
 
 func addOpGrantAccessValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGrantAccess{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGrantAccess{})
 }
 
 func addOpListTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTags{})
 }
 
 func addOpRebootInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRebootInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRebootInstance{})
 }
 
 func addOpRegisterEcsClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterEcsCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterEcsCluster{})
 }
 
 func addOpRegisterElasticIpValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterElasticIp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterElasticIp{})
 }
 
 func addOpRegisterInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterInstance{})
 }
 
 func addOpRegisterRdsDbInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterRdsDbInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterRdsDbInstance{})
 }
 
 func addOpRegisterVolumeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterVolume{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterVolume{})
 }
 
 func addOpSetLoadBasedAutoScalingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetLoadBasedAutoScaling{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetLoadBasedAutoScaling{})
 }
 
 func addOpSetPermissionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetPermission{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetPermission{})
 }
 
 func addOpSetTimeBasedAutoScalingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetTimeBasedAutoScaling{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetTimeBasedAutoScaling{})
 }
 
 func addOpStartInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartInstance{})
 }
 
 func addOpStartStackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartStack{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartStack{})
 }
 
 func addOpStopInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopInstance{})
 }
 
 func addOpStopStackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopStack{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopStack{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUnassignInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUnassignInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUnassignInstance{})
 }
 
 func addOpUnassignVolumeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUnassignVolume{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUnassignVolume{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateAppValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateApp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateApp{})
 }
 
 func addOpUpdateElasticIpValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateElasticIp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateElasticIp{})
 }
 
 func addOpUpdateInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateInstance{})
 }
 
 func addOpUpdateLayerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateLayer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateLayer{})
 }
 
 func addOpUpdateRdsDbInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRdsDbInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRdsDbInstance{})
 }
 
 func addOpUpdateStackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateStack{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateStack{})
 }
 
 func addOpUpdateUserProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateUserProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateUserProfile{})
 }
 
 func addOpUpdateVolumeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateVolume{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateVolume{})
 }
 
 func validateDeploymentCommand(v *types.DeploymentCommand) error {

@@ -211,43 +211,43 @@ func (m *validateOpUpdateGroupQuery) HandleInitialize(ctx context.Context, in mi
 }
 
 func addOpCreateGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateGroup{})
 }
 
 func addOpGetTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTags{})
 }
 
 func addOpGroupResourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGroupResources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGroupResources{})
 }
 
 func addOpListGroupResourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListGroupResources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListGroupResources{})
 }
 
 func addOpListGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListGroups{})
 }
 
 func addOpSearchResourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSearchResources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSearchResources{})
 }
 
 func addOpTagValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTag{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTag{})
 }
 
 func addOpUngroupResourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUngroupResources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUngroupResources{})
 }
 
 func addOpUntagValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntag{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntag{})
 }
 
 func addOpUpdateGroupQueryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGroupQuery{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGroupQuery{})
 }
 
 func validateGroupConfigurationItem(v *types.GroupConfigurationItem) error {

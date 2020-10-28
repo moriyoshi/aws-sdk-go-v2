@@ -2271,455 +2271,455 @@ func (m *validateOpUpdateWorkflow) HandleInitialize(ctx context.Context, in midd
 }
 
 func addOpBatchCreatePartitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchCreatePartition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchCreatePartition{})
 }
 
 func addOpBatchDeleteConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDeleteConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDeleteConnection{})
 }
 
 func addOpBatchDeletePartitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDeletePartition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDeletePartition{})
 }
 
 func addOpBatchDeleteTableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDeleteTable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDeleteTable{})
 }
 
 func addOpBatchDeleteTableVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDeleteTableVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDeleteTableVersion{})
 }
 
 func addOpBatchGetCrawlersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetCrawlers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetCrawlers{})
 }
 
 func addOpBatchGetDevEndpointsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetDevEndpoints{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetDevEndpoints{})
 }
 
 func addOpBatchGetJobsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetJobs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetJobs{})
 }
 
 func addOpBatchGetPartitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetPartition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetPartition{})
 }
 
 func addOpBatchGetTriggersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetTriggers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetTriggers{})
 }
 
 func addOpBatchGetWorkflowsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetWorkflows{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetWorkflows{})
 }
 
 func addOpBatchStopJobRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchStopJobRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchStopJobRun{})
 }
 
 func addOpBatchUpdatePartitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchUpdatePartition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchUpdatePartition{})
 }
 
 func addOpCancelMLTaskRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelMLTaskRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelMLTaskRun{})
 }
 
 func addOpCreateClassifierValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateClassifier{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateClassifier{})
 }
 
 func addOpCreateConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateConnection{})
 }
 
 func addOpCreateCrawlerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCrawler{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCrawler{})
 }
 
 func addOpCreateDatabaseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDatabase{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDatabase{})
 }
 
 func addOpCreateDevEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDevEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDevEndpoint{})
 }
 
 func addOpCreateJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateJob{})
 }
 
 func addOpCreateMLTransformValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateMLTransform{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateMLTransform{})
 }
 
 func addOpCreatePartitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePartition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePartition{})
 }
 
 func addOpCreateScriptValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateScript{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateScript{})
 }
 
 func addOpCreateSecurityConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSecurityConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSecurityConfiguration{})
 }
 
 func addOpCreateTableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTable{})
 }
 
 func addOpCreateTriggerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTrigger{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTrigger{})
 }
 
 func addOpCreateUserDefinedFunctionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateUserDefinedFunction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateUserDefinedFunction{})
 }
 
 func addOpCreateWorkflowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateWorkflow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateWorkflow{})
 }
 
 func addOpDeleteClassifierValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteClassifier{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteClassifier{})
 }
 
 func addOpDeleteColumnStatisticsForPartitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteColumnStatisticsForPartition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteColumnStatisticsForPartition{})
 }
 
 func addOpDeleteColumnStatisticsForTableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteColumnStatisticsForTable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteColumnStatisticsForTable{})
 }
 
 func addOpDeleteConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteConnection{})
 }
 
 func addOpDeleteCrawlerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCrawler{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCrawler{})
 }
 
 func addOpDeleteDatabaseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDatabase{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDatabase{})
 }
 
 func addOpDeleteDevEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDevEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDevEndpoint{})
 }
 
 func addOpDeleteJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteJob{})
 }
 
 func addOpDeleteMLTransformValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMLTransform{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMLTransform{})
 }
 
 func addOpDeletePartitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePartition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePartition{})
 }
 
 func addOpDeleteSecurityConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSecurityConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSecurityConfiguration{})
 }
 
 func addOpDeleteTableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTable{})
 }
 
 func addOpDeleteTableVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTableVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTableVersion{})
 }
 
 func addOpDeleteTriggerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTrigger{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTrigger{})
 }
 
 func addOpDeleteUserDefinedFunctionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUserDefinedFunction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUserDefinedFunction{})
 }
 
 func addOpDeleteWorkflowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteWorkflow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteWorkflow{})
 }
 
 func addOpGetClassifierValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetClassifier{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetClassifier{})
 }
 
 func addOpGetColumnStatisticsForPartitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetColumnStatisticsForPartition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetColumnStatisticsForPartition{})
 }
 
 func addOpGetColumnStatisticsForTableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetColumnStatisticsForTable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetColumnStatisticsForTable{})
 }
 
 func addOpGetConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetConnection{})
 }
 
 func addOpGetCrawlerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCrawler{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCrawler{})
 }
 
 func addOpGetDatabaseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDatabase{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDatabase{})
 }
 
 func addOpGetDevEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDevEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDevEndpoint{})
 }
 
 func addOpGetJobBookmarkValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetJobBookmark{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetJobBookmark{})
 }
 
 func addOpGetJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetJob{})
 }
 
 func addOpGetJobRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetJobRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetJobRun{})
 }
 
 func addOpGetJobRunsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetJobRuns{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetJobRuns{})
 }
 
 func addOpGetMappingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMapping{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMapping{})
 }
 
 func addOpGetMLTaskRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMLTaskRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMLTaskRun{})
 }
 
 func addOpGetMLTaskRunsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMLTaskRuns{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMLTaskRuns{})
 }
 
 func addOpGetMLTransformValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMLTransform{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMLTransform{})
 }
 
 func addOpGetMLTransformsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMLTransforms{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMLTransforms{})
 }
 
 func addOpGetPartitionIndexesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPartitionIndexes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPartitionIndexes{})
 }
 
 func addOpGetPartitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPartition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPartition{})
 }
 
 func addOpGetPartitionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPartitions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPartitions{})
 }
 
 func addOpGetPlanValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPlan{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPlan{})
 }
 
 func addOpGetSecurityConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSecurityConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSecurityConfiguration{})
 }
 
 func addOpGetTableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTable{})
 }
 
 func addOpGetTablesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTables{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTables{})
 }
 
 func addOpGetTableVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTableVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTableVersion{})
 }
 
 func addOpGetTableVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTableVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTableVersions{})
 }
 
 func addOpGetTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTags{})
 }
 
 func addOpGetTriggerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTrigger{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTrigger{})
 }
 
 func addOpGetUserDefinedFunctionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetUserDefinedFunction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetUserDefinedFunction{})
 }
 
 func addOpGetUserDefinedFunctionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetUserDefinedFunctions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetUserDefinedFunctions{})
 }
 
 func addOpGetWorkflowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetWorkflow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetWorkflow{})
 }
 
 func addOpGetWorkflowRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetWorkflowRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetWorkflowRun{})
 }
 
 func addOpGetWorkflowRunPropertiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetWorkflowRunProperties{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetWorkflowRunProperties{})
 }
 
 func addOpGetWorkflowRunsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetWorkflowRuns{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetWorkflowRuns{})
 }
 
 func addOpListMLTransformsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListMLTransforms{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListMLTransforms{})
 }
 
 func addOpPutDataCatalogEncryptionSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutDataCatalogEncryptionSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutDataCatalogEncryptionSettings{})
 }
 
 func addOpPutResourcePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutResourcePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutResourcePolicy{})
 }
 
 func addOpPutWorkflowRunPropertiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutWorkflowRunProperties{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutWorkflowRunProperties{})
 }
 
 func addOpResetJobBookmarkValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResetJobBookmark{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResetJobBookmark{})
 }
 
 func addOpResumeWorkflowRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResumeWorkflowRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResumeWorkflowRun{})
 }
 
 func addOpStartCrawlerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartCrawler{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartCrawler{})
 }
 
 func addOpStartCrawlerScheduleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartCrawlerSchedule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartCrawlerSchedule{})
 }
 
 func addOpStartExportLabelsTaskRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartExportLabelsTaskRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartExportLabelsTaskRun{})
 }
 
 func addOpStartImportLabelsTaskRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartImportLabelsTaskRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartImportLabelsTaskRun{})
 }
 
 func addOpStartJobRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartJobRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartJobRun{})
 }
 
 func addOpStartMLEvaluationTaskRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartMLEvaluationTaskRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartMLEvaluationTaskRun{})
 }
 
 func addOpStartMLLabelingSetGenerationTaskRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartMLLabelingSetGenerationTaskRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartMLLabelingSetGenerationTaskRun{})
 }
 
 func addOpStartTriggerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartTrigger{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartTrigger{})
 }
 
 func addOpStartWorkflowRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartWorkflowRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartWorkflowRun{})
 }
 
 func addOpStopCrawlerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopCrawler{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopCrawler{})
 }
 
 func addOpStopCrawlerScheduleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopCrawlerSchedule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopCrawlerSchedule{})
 }
 
 func addOpStopTriggerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopTrigger{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopTrigger{})
 }
 
 func addOpStopWorkflowRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopWorkflowRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopWorkflowRun{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateClassifierValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateClassifier{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateClassifier{})
 }
 
 func addOpUpdateColumnStatisticsForPartitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateColumnStatisticsForPartition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateColumnStatisticsForPartition{})
 }
 
 func addOpUpdateColumnStatisticsForTableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateColumnStatisticsForTable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateColumnStatisticsForTable{})
 }
 
 func addOpUpdateConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateConnection{})
 }
 
 func addOpUpdateCrawlerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateCrawler{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateCrawler{})
 }
 
 func addOpUpdateCrawlerScheduleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateCrawlerSchedule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateCrawlerSchedule{})
 }
 
 func addOpUpdateDatabaseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDatabase{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDatabase{})
 }
 
 func addOpUpdateDevEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDevEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDevEndpoint{})
 }
 
 func addOpUpdateJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateJob{})
 }
 
 func addOpUpdateMLTransformValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateMLTransform{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateMLTransform{})
 }
 
 func addOpUpdatePartitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePartition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePartition{})
 }
 
 func addOpUpdateTableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTable{})
 }
 
 func addOpUpdateTriggerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTrigger{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTrigger{})
 }
 
 func addOpUpdateUserDefinedFunctionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateUserDefinedFunction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateUserDefinedFunction{})
 }
 
 func addOpUpdateWorkflowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateWorkflow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateWorkflow{})
 }
 
 func validateBatchDeletePartitionValueList(v []*types.PartitionValueList) error {

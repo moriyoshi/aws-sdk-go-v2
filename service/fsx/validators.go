@@ -231,47 +231,47 @@ func (m *validateOpUpdateFileSystem) HandleInitialize(ctx context.Context, in mi
 }
 
 func addOpCancelDataRepositoryTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelDataRepositoryTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelDataRepositoryTask{})
 }
 
 func addOpCreateBackupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateBackup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateBackup{})
 }
 
 func addOpCreateDataRepositoryTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDataRepositoryTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDataRepositoryTask{})
 }
 
 func addOpCreateFileSystemFromBackupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFileSystemFromBackup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFileSystemFromBackup{})
 }
 
 func addOpCreateFileSystemValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFileSystem{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFileSystem{})
 }
 
 func addOpDeleteBackupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBackup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBackup{})
 }
 
 func addOpDeleteFileSystemValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFileSystem{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFileSystem{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateFileSystemValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFileSystem{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFileSystem{})
 }
 
 func validateCompletionReport(v *types.CompletionReport) error {

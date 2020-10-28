@@ -551,111 +551,111 @@ func (m *validateOpUploadLayerPart) HandleInitialize(ctx context.Context, in mid
 }
 
 func addOpBatchCheckLayerAvailabilityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchCheckLayerAvailability{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchCheckLayerAvailability{})
 }
 
 func addOpBatchDeleteImageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDeleteImage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDeleteImage{})
 }
 
 func addOpBatchGetImageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetImage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetImage{})
 }
 
 func addOpCompleteLayerUploadValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCompleteLayerUpload{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCompleteLayerUpload{})
 }
 
 func addOpCreateRepositoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRepository{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRepository{})
 }
 
 func addOpDeleteLifecyclePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLifecyclePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLifecyclePolicy{})
 }
 
 func addOpDeleteRepositoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRepository{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRepository{})
 }
 
 func addOpDeleteRepositoryPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRepositoryPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRepositoryPolicy{})
 }
 
 func addOpDescribeImageScanFindingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeImageScanFindings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeImageScanFindings{})
 }
 
 func addOpDescribeImagesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeImages{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeImages{})
 }
 
 func addOpGetDownloadUrlForLayerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDownloadUrlForLayer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDownloadUrlForLayer{})
 }
 
 func addOpGetLifecyclePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLifecyclePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLifecyclePolicy{})
 }
 
 func addOpGetLifecyclePolicyPreviewValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLifecyclePolicyPreview{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLifecyclePolicyPreview{})
 }
 
 func addOpGetRepositoryPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRepositoryPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRepositoryPolicy{})
 }
 
 func addOpInitiateLayerUploadValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpInitiateLayerUpload{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpInitiateLayerUpload{})
 }
 
 func addOpListImagesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListImages{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListImages{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPutImageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutImage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutImage{})
 }
 
 func addOpPutImageScanningConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutImageScanningConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutImageScanningConfiguration{})
 }
 
 func addOpPutImageTagMutabilityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutImageTagMutability{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutImageTagMutability{})
 }
 
 func addOpPutLifecyclePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutLifecyclePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutLifecyclePolicy{})
 }
 
 func addOpSetRepositoryPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetRepositoryPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetRepositoryPolicy{})
 }
 
 func addOpStartImageScanValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartImageScan{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartImageScan{})
 }
 
 func addOpStartLifecyclePolicyPreviewValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartLifecyclePolicyPreview{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartLifecyclePolicyPreview{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUploadLayerPartValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUploadLayerPart{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUploadLayerPart{})
 }
 
 func validateEncryptionConfiguration(v *types.EncryptionConfiguration) error {

@@ -103,33 +103,61 @@ type ClaimGameServerOutput struct {
 }
 
 func addOperationClaimGameServerMiddlewares(stack *middleware.Stack, options Options) (err error) {
-	err = stack.Serialize.Add(&awsAwsjson11_serializeOpClaimGameServer{}, middleware.After)
+	err = stack.Serialize.Add(middleware.After, &awsAwsjson11_serializeOpClaimGameServer{})
 	if err != nil {
 		return err
 	}
-	err = stack.Deserialize.Add(&awsAwsjson11_deserializeOpClaimGameServer{}, middleware.After)
+	err = stack.Deserialize.Add(middleware.After, &awsAwsjson11_deserializeOpClaimGameServer{})
 	if err != nil {
 		return err
 	}
-	awsmiddleware.AddRequestInvocationIDMiddleware(stack)
-	smithyhttp.AddContentLengthMiddleware(stack)
-	addResolveEndpointMiddleware(stack, options)
-	v4.AddComputePayloadSHA256Middleware(stack)
-	addRetryMiddlewares(stack, options)
-	addHTTPSignerV4Middleware(stack, options)
-	awsmiddleware.AddAttemptClockSkewMiddleware(stack)
-	addClientUserAgent(stack)
-	smithyhttp.AddErrorCloseResponseBodyMiddleware(stack)
-	smithyhttp.AddCloseResponseBodyMiddleware(stack)
-	addOpClaimGameServerValidationMiddleware(stack)
-	stack.Initialize.Add(newServiceMetadataMiddleware_opClaimGameServer(options.Region), middleware.Before)
-	addRequestIDRetrieverMiddleware(stack)
-	addResponseErrorMiddleware(stack)
+	if err := awsmiddleware.AddClientRequestIDMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddComputeContentLengthMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addResolveEndpointMiddleware(stack, options); err != nil {
+		return err
+	}
+	if err := v4.AddComputePayloadSHA256Middleware(stack); err != nil {
+		return err
+	}
+	if err := addRetryMiddlewares(stack, options); err != nil {
+		return err
+	}
+	if err := addHTTPSignerV4Middleware(stack, options); err != nil {
+		return err
+	}
+	if err := awsmiddleware.AddAttemptClockSkewMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addClientUserAgent(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddErrorCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addOpClaimGameServerValidationMiddleware(stack); err != nil {
+		return err
+	}
+	if err := stack.Initialize.Add(middleware.Before, newServiceMetadataMiddleware_opClaimGameServer(options.Region)); err != nil {
+		return err
+	}
+	if err := addRequestIDRetrieverMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addResponseErrorMiddleware(stack); err != nil {
+		return err
+	}
 	return nil
 }
 
-func newServiceMetadataMiddleware_opClaimGameServer(region string) awsmiddleware.RegisterServiceMetadata {
-	return awsmiddleware.RegisterServiceMetadata{
+func newServiceMetadataMiddleware_opClaimGameServer(region string) *awsmiddleware.RegisterServiceMetadata {
+	return &awsmiddleware.RegisterServiceMetadata{
 		Region:        region,
 		ServiceID:     ServiceID,
 		SigningName:   "gamelift",

@@ -771,155 +771,155 @@ func (m *validateOpUpdateTaskSet) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpCreateCapacityProviderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCapacityProvider{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCapacityProvider{})
 }
 
 func addOpCreateClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCluster{})
 }
 
 func addOpCreateServiceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateService{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateService{})
 }
 
 func addOpCreateTaskSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTaskSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTaskSet{})
 }
 
 func addOpDeleteAccountSettingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAccountSetting{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAccountSetting{})
 }
 
 func addOpDeleteAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAttributes{})
 }
 
 func addOpDeleteCapacityProviderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCapacityProvider{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCapacityProvider{})
 }
 
 func addOpDeleteClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCluster{})
 }
 
 func addOpDeleteServiceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteService{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteService{})
 }
 
 func addOpDeleteTaskSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTaskSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTaskSet{})
 }
 
 func addOpDeregisterContainerInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterContainerInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterContainerInstance{})
 }
 
 func addOpDeregisterTaskDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterTaskDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterTaskDefinition{})
 }
 
 func addOpDescribeContainerInstancesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeContainerInstances{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeContainerInstances{})
 }
 
 func addOpDescribeServicesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeServices{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeServices{})
 }
 
 func addOpDescribeTaskDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTaskDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTaskDefinition{})
 }
 
 func addOpDescribeTaskSetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTaskSets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTaskSets{})
 }
 
 func addOpDescribeTasksValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTasks{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTasks{})
 }
 
 func addOpListAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAttributes{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPutAccountSettingDefaultValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutAccountSettingDefault{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutAccountSettingDefault{})
 }
 
 func addOpPutAccountSettingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutAccountSetting{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutAccountSetting{})
 }
 
 func addOpPutAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutAttributes{})
 }
 
 func addOpPutClusterCapacityProvidersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutClusterCapacityProviders{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutClusterCapacityProviders{})
 }
 
 func addOpRegisterContainerInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterContainerInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterContainerInstance{})
 }
 
 func addOpRegisterTaskDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterTaskDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterTaskDefinition{})
 }
 
 func addOpRunTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRunTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRunTask{})
 }
 
 func addOpStartTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartTask{})
 }
 
 func addOpStopTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopTask{})
 }
 
 func addOpSubmitAttachmentStateChangesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSubmitAttachmentStateChanges{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSubmitAttachmentStateChanges{})
 }
 
 func addOpSubmitTaskStateChangeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSubmitTaskStateChange{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSubmitTaskStateChange{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateClusterSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateClusterSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateClusterSettings{})
 }
 
 func addOpUpdateContainerAgentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateContainerAgent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateContainerAgent{})
 }
 
 func addOpUpdateContainerInstancesStateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateContainerInstancesState{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateContainerInstancesState{})
 }
 
 func addOpUpdateServiceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateService{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateService{})
 }
 
 func addOpUpdateServicePrimaryTaskSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateServicePrimaryTaskSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateServicePrimaryTaskSet{})
 }
 
 func addOpUpdateTaskSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTaskSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTaskSet{})
 }
 
 func validateAttachmentStateChange(v *types.AttachmentStateChange) error {

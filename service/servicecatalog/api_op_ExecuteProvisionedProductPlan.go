@@ -64,29 +64,59 @@ type ExecuteProvisionedProductPlanOutput struct {
 }
 
 func addOperationExecuteProvisionedProductPlanMiddlewares(stack *middleware.Stack, options Options) (err error) {
-	err = stack.Serialize.Add(&awsAwsjson11_serializeOpExecuteProvisionedProductPlan{}, middleware.After)
+	err = stack.Serialize.Add(middleware.After, &awsAwsjson11_serializeOpExecuteProvisionedProductPlan{})
 	if err != nil {
 		return err
 	}
-	err = stack.Deserialize.Add(&awsAwsjson11_deserializeOpExecuteProvisionedProductPlan{}, middleware.After)
+	err = stack.Deserialize.Add(middleware.After, &awsAwsjson11_deserializeOpExecuteProvisionedProductPlan{})
 	if err != nil {
 		return err
 	}
-	awsmiddleware.AddRequestInvocationIDMiddleware(stack)
-	smithyhttp.AddContentLengthMiddleware(stack)
-	addResolveEndpointMiddleware(stack, options)
-	v4.AddComputePayloadSHA256Middleware(stack)
-	addRetryMiddlewares(stack, options)
-	addHTTPSignerV4Middleware(stack, options)
-	awsmiddleware.AddAttemptClockSkewMiddleware(stack)
-	addClientUserAgent(stack)
-	smithyhttp.AddErrorCloseResponseBodyMiddleware(stack)
-	smithyhttp.AddCloseResponseBodyMiddleware(stack)
-	addIdempotencyToken_opExecuteProvisionedProductPlanMiddleware(stack, options)
-	addOpExecuteProvisionedProductPlanValidationMiddleware(stack)
-	stack.Initialize.Add(newServiceMetadataMiddleware_opExecuteProvisionedProductPlan(options.Region), middleware.Before)
-	addRequestIDRetrieverMiddleware(stack)
-	addResponseErrorMiddleware(stack)
+	if err := awsmiddleware.AddClientRequestIDMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddComputeContentLengthMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addResolveEndpointMiddleware(stack, options); err != nil {
+		return err
+	}
+	if err := v4.AddComputePayloadSHA256Middleware(stack); err != nil {
+		return err
+	}
+	if err := addRetryMiddlewares(stack, options); err != nil {
+		return err
+	}
+	if err := addHTTPSignerV4Middleware(stack, options); err != nil {
+		return err
+	}
+	if err := awsmiddleware.AddAttemptClockSkewMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addClientUserAgent(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddErrorCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addIdempotencyToken_opExecuteProvisionedProductPlanMiddleware(stack, options); err != nil {
+		return err
+	}
+	if err := addOpExecuteProvisionedProductPlanValidationMiddleware(stack); err != nil {
+		return err
+	}
+	if err := stack.Initialize.Add(middleware.Before, newServiceMetadataMiddleware_opExecuteProvisionedProductPlan(options.Region)); err != nil {
+		return err
+	}
+	if err := addRequestIDRetrieverMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addResponseErrorMiddleware(stack); err != nil {
+		return err
+	}
 	return nil
 }
 
@@ -119,12 +149,12 @@ func (m *idempotencyToken_initializeOpExecuteProvisionedProductPlan) HandleIniti
 	}
 	return next.HandleInitialize(ctx, in)
 }
-func addIdempotencyToken_opExecuteProvisionedProductPlanMiddleware(stack *middleware.Stack, cfg Options) {
-	stack.Initialize.Add(&idempotencyToken_initializeOpExecuteProvisionedProductPlan{tokenProvider: cfg.IdempotencyTokenProvider}, middleware.Before)
+func addIdempotencyToken_opExecuteProvisionedProductPlanMiddleware(stack *middleware.Stack, cfg Options) error {
+	return stack.Initialize.Add(middleware.Before, &idempotencyToken_initializeOpExecuteProvisionedProductPlan{tokenProvider: cfg.IdempotencyTokenProvider})
 }
 
-func newServiceMetadataMiddleware_opExecuteProvisionedProductPlan(region string) awsmiddleware.RegisterServiceMetadata {
-	return awsmiddleware.RegisterServiceMetadata{
+func newServiceMetadataMiddleware_opExecuteProvisionedProductPlan(region string) *awsmiddleware.RegisterServiceMetadata {
+	return &awsmiddleware.RegisterServiceMetadata{
 		Region:        region,
 		ServiceID:     ServiceID,
 		SigningName:   "servicecatalog",

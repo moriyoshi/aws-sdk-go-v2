@@ -70,15 +70,15 @@ func (m *validateOpPostToConnection) HandleInitialize(ctx context.Context, in mi
 }
 
 func addOpDeleteConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteConnection{})
 }
 
 func addOpGetConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetConnection{})
 }
 
 func addOpPostToConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPostToConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPostToConnection{})
 }
 
 func validateOpDeleteConnectionInput(v *DeleteConnectionInput) error {

@@ -411,83 +411,83 @@ func (m *validateOpUpdateRevision) HandleInitialize(ctx context.Context, in midd
 }
 
 func addOpCancelJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelJob{})
 }
 
 func addOpCreateDataSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDataSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDataSet{})
 }
 
 func addOpCreateJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateJob{})
 }
 
 func addOpCreateRevisionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRevision{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRevision{})
 }
 
 func addOpDeleteAssetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAsset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAsset{})
 }
 
 func addOpDeleteDataSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDataSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDataSet{})
 }
 
 func addOpDeleteRevisionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRevision{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRevision{})
 }
 
 func addOpGetAssetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAsset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAsset{})
 }
 
 func addOpGetDataSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDataSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDataSet{})
 }
 
 func addOpGetJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetJob{})
 }
 
 func addOpGetRevisionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRevision{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRevision{})
 }
 
 func addOpListDataSetRevisionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDataSetRevisions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDataSetRevisions{})
 }
 
 func addOpListRevisionAssetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListRevisionAssets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListRevisionAssets{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpStartJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartJob{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateAssetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAsset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAsset{})
 }
 
 func addOpUpdateDataSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDataSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDataSet{})
 }
 
 func addOpUpdateRevisionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRevision{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRevision{})
 }
 
 func validateAssetDestinationEntry(v *types.AssetDestinationEntry) error {

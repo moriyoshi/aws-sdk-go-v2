@@ -311,63 +311,63 @@ func (m *validateOpUpdateSamplingRule) HandleInitialize(ctx context.Context, in 
 }
 
 func addOpBatchGetTracesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetTraces{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetTraces{})
 }
 
 func addOpCreateGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateGroup{})
 }
 
 func addOpCreateSamplingRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSamplingRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSamplingRule{})
 }
 
 func addOpGetSamplingTargetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSamplingTargets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSamplingTargets{})
 }
 
 func addOpGetServiceGraphValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetServiceGraph{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetServiceGraph{})
 }
 
 func addOpGetTimeSeriesServiceStatisticsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTimeSeriesServiceStatistics{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTimeSeriesServiceStatistics{})
 }
 
 func addOpGetTraceGraphValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTraceGraph{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTraceGraph{})
 }
 
 func addOpGetTraceSummariesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTraceSummaries{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTraceSummaries{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPutEncryptionConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutEncryptionConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutEncryptionConfig{})
 }
 
 func addOpPutTelemetryRecordsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutTelemetryRecords{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutTelemetryRecords{})
 }
 
 func addOpPutTraceSegmentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutTraceSegments{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutTraceSegments{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateSamplingRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateSamplingRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateSamplingRule{})
 }
 
 func validateSamplingRule(v *types.SamplingRule) error {

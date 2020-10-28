@@ -191,39 +191,39 @@ func (m *validateOpUntagResource) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpCancelSigningProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelSigningProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelSigningProfile{})
 }
 
 func addOpDescribeSigningJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSigningJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSigningJob{})
 }
 
 func addOpGetSigningPlatformValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSigningPlatform{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSigningPlatform{})
 }
 
 func addOpGetSigningProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSigningProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSigningProfile{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPutSigningProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutSigningProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutSigningProfile{})
 }
 
 func addOpStartSigningJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartSigningJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartSigningJob{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func validateS3Source(v *types.S3Source) error {

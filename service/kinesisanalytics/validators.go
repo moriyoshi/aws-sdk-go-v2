@@ -391,79 +391,79 @@ func (m *validateOpUpdateApplication) HandleInitialize(ctx context.Context, in m
 }
 
 func addOpAddApplicationCloudWatchLoggingOptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddApplicationCloudWatchLoggingOption{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddApplicationCloudWatchLoggingOption{})
 }
 
 func addOpAddApplicationInputValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddApplicationInput{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddApplicationInput{})
 }
 
 func addOpAddApplicationInputProcessingConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddApplicationInputProcessingConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddApplicationInputProcessingConfiguration{})
 }
 
 func addOpAddApplicationOutputValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddApplicationOutput{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddApplicationOutput{})
 }
 
 func addOpAddApplicationReferenceDataSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddApplicationReferenceDataSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddApplicationReferenceDataSource{})
 }
 
 func addOpCreateApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateApplication{})
 }
 
 func addOpDeleteApplicationCloudWatchLoggingOptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApplicationCloudWatchLoggingOption{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApplicationCloudWatchLoggingOption{})
 }
 
 func addOpDeleteApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApplication{})
 }
 
 func addOpDeleteApplicationInputProcessingConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApplicationInputProcessingConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApplicationInputProcessingConfiguration{})
 }
 
 func addOpDeleteApplicationOutputValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApplicationOutput{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApplicationOutput{})
 }
 
 func addOpDeleteApplicationReferenceDataSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApplicationReferenceDataSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApplicationReferenceDataSource{})
 }
 
 func addOpDescribeApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeApplication{})
 }
 
 func addOpDiscoverInputSchemaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDiscoverInputSchema{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDiscoverInputSchema{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpStartApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartApplication{})
 }
 
 func addOpStopApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopApplication{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateApplication{})
 }
 
 func validateApplicationUpdate(v *types.ApplicationUpdate) error {

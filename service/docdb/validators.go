@@ -831,167 +831,167 @@ func (m *validateOpStopDBCluster) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpAddTagsToResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddTagsToResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddTagsToResource{})
 }
 
 func addOpApplyPendingMaintenanceActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpApplyPendingMaintenanceAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpApplyPendingMaintenanceAction{})
 }
 
 func addOpCopyDBClusterParameterGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCopyDBClusterParameterGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCopyDBClusterParameterGroup{})
 }
 
 func addOpCopyDBClusterSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCopyDBClusterSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCopyDBClusterSnapshot{})
 }
 
 func addOpCreateDBClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDBCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDBCluster{})
 }
 
 func addOpCreateDBClusterParameterGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDBClusterParameterGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDBClusterParameterGroup{})
 }
 
 func addOpCreateDBClusterSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDBClusterSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDBClusterSnapshot{})
 }
 
 func addOpCreateDBInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDBInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDBInstance{})
 }
 
 func addOpCreateDBSubnetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDBSubnetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDBSubnetGroup{})
 }
 
 func addOpDeleteDBClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDBCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDBCluster{})
 }
 
 func addOpDeleteDBClusterParameterGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDBClusterParameterGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDBClusterParameterGroup{})
 }
 
 func addOpDeleteDBClusterSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDBClusterSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDBClusterSnapshot{})
 }
 
 func addOpDeleteDBInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDBInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDBInstance{})
 }
 
 func addOpDeleteDBSubnetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDBSubnetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDBSubnetGroup{})
 }
 
 func addOpDescribeCertificatesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCertificates{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCertificates{})
 }
 
 func addOpDescribeDBClusterParameterGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDBClusterParameterGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDBClusterParameterGroups{})
 }
 
 func addOpDescribeDBClusterParametersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDBClusterParameters{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDBClusterParameters{})
 }
 
 func addOpDescribeDBClustersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDBClusters{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDBClusters{})
 }
 
 func addOpDescribeDBClusterSnapshotAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDBClusterSnapshotAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDBClusterSnapshotAttributes{})
 }
 
 func addOpDescribeDBClusterSnapshotsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDBClusterSnapshots{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDBClusterSnapshots{})
 }
 
 func addOpDescribeDBEngineVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDBEngineVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDBEngineVersions{})
 }
 
 func addOpDescribeDBInstancesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDBInstances{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDBInstances{})
 }
 
 func addOpDescribeDBSubnetGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDBSubnetGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDBSubnetGroups{})
 }
 
 func addOpDescribeEngineDefaultClusterParametersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEngineDefaultClusterParameters{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEngineDefaultClusterParameters{})
 }
 
 func addOpDescribeEventCategoriesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEventCategories{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEventCategories{})
 }
 
 func addOpDescribeEventsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEvents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEvents{})
 }
 
 func addOpDescribeOrderableDBInstanceOptionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeOrderableDBInstanceOptions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeOrderableDBInstanceOptions{})
 }
 
 func addOpDescribePendingMaintenanceActionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribePendingMaintenanceActions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribePendingMaintenanceActions{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpModifyDBClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyDBCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyDBCluster{})
 }
 
 func addOpModifyDBClusterParameterGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyDBClusterParameterGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyDBClusterParameterGroup{})
 }
 
 func addOpModifyDBClusterSnapshotAttributeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyDBClusterSnapshotAttribute{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyDBClusterSnapshotAttribute{})
 }
 
 func addOpModifyDBInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyDBInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyDBInstance{})
 }
 
 func addOpModifyDBSubnetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyDBSubnetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyDBSubnetGroup{})
 }
 
 func addOpRebootDBInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRebootDBInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRebootDBInstance{})
 }
 
 func addOpRemoveTagsFromResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveTagsFromResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveTagsFromResource{})
 }
 
 func addOpResetDBClusterParameterGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResetDBClusterParameterGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResetDBClusterParameterGroup{})
 }
 
 func addOpRestoreDBClusterFromSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRestoreDBClusterFromSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRestoreDBClusterFromSnapshot{})
 }
 
 func addOpRestoreDBClusterToPointInTimeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRestoreDBClusterToPointInTime{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRestoreDBClusterToPointInTime{})
 }
 
 func addOpStartDBClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartDBCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartDBCluster{})
 }
 
 func addOpStopDBClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopDBCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopDBCluster{})
 }
 
 func validateFilter(v *types.Filter) error {

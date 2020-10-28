@@ -75,33 +75,61 @@ type CreateTrafficPolicyVersionOutput struct {
 }
 
 func addOperationCreateTrafficPolicyVersionMiddlewares(stack *middleware.Stack, options Options) (err error) {
-	err = stack.Serialize.Add(&awsRestxml_serializeOpCreateTrafficPolicyVersion{}, middleware.After)
+	err = stack.Serialize.Add(middleware.After, &awsRestxml_serializeOpCreateTrafficPolicyVersion{})
 	if err != nil {
 		return err
 	}
-	err = stack.Deserialize.Add(&awsRestxml_deserializeOpCreateTrafficPolicyVersion{}, middleware.After)
+	err = stack.Deserialize.Add(middleware.After, &awsRestxml_deserializeOpCreateTrafficPolicyVersion{})
 	if err != nil {
 		return err
 	}
-	awsmiddleware.AddRequestInvocationIDMiddleware(stack)
-	smithyhttp.AddContentLengthMiddleware(stack)
-	addResolveEndpointMiddleware(stack, options)
-	v4.AddComputePayloadSHA256Middleware(stack)
-	addRetryMiddlewares(stack, options)
-	addHTTPSignerV4Middleware(stack, options)
-	awsmiddleware.AddAttemptClockSkewMiddleware(stack)
-	addClientUserAgent(stack)
-	smithyhttp.AddErrorCloseResponseBodyMiddleware(stack)
-	smithyhttp.AddCloseResponseBodyMiddleware(stack)
-	addOpCreateTrafficPolicyVersionValidationMiddleware(stack)
-	stack.Initialize.Add(newServiceMetadataMiddleware_opCreateTrafficPolicyVersion(options.Region), middleware.Before)
-	addRequestIDRetrieverMiddleware(stack)
-	addResponseErrorMiddleware(stack)
+	if err := awsmiddleware.AddClientRequestIDMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddComputeContentLengthMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addResolveEndpointMiddleware(stack, options); err != nil {
+		return err
+	}
+	if err := v4.AddComputePayloadSHA256Middleware(stack); err != nil {
+		return err
+	}
+	if err := addRetryMiddlewares(stack, options); err != nil {
+		return err
+	}
+	if err := addHTTPSignerV4Middleware(stack, options); err != nil {
+		return err
+	}
+	if err := awsmiddleware.AddAttemptClockSkewMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addClientUserAgent(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddErrorCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addOpCreateTrafficPolicyVersionValidationMiddleware(stack); err != nil {
+		return err
+	}
+	if err := stack.Initialize.Add(middleware.Before, newServiceMetadataMiddleware_opCreateTrafficPolicyVersion(options.Region)); err != nil {
+		return err
+	}
+	if err := addRequestIDRetrieverMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addResponseErrorMiddleware(stack); err != nil {
+		return err
+	}
 	return nil
 }
 
-func newServiceMetadataMiddleware_opCreateTrafficPolicyVersion(region string) awsmiddleware.RegisterServiceMetadata {
-	return awsmiddleware.RegisterServiceMetadata{
+func newServiceMetadataMiddleware_opCreateTrafficPolicyVersion(region string) *awsmiddleware.RegisterServiceMetadata {
+	return &awsmiddleware.RegisterServiceMetadata{
 		Region:        region,
 		ServiceID:     ServiceID,
 		SigningName:   "route53",

@@ -151,31 +151,31 @@ func (m *validateOpTranslateText) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpDeleteTerminologyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTerminology{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTerminology{})
 }
 
 func addOpDescribeTextTranslationJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTextTranslationJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTextTranslationJob{})
 }
 
 func addOpGetTerminologyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTerminology{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTerminology{})
 }
 
 func addOpImportTerminologyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpImportTerminology{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpImportTerminology{})
 }
 
 func addOpStartTextTranslationJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartTextTranslationJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartTextTranslationJob{})
 }
 
 func addOpStopTextTranslationJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopTextTranslationJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopTextTranslationJob{})
 }
 
 func addOpTranslateTextValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTranslateText{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTranslateText{})
 }
 
 func validateEncryptionKey(v *types.EncryptionKey) error {

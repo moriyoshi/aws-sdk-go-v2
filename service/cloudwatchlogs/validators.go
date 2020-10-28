@@ -671,135 +671,135 @@ func (m *validateOpUntagLogGroup) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpAssociateKmsKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateKmsKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateKmsKey{})
 }
 
 func addOpCancelExportTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelExportTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelExportTask{})
 }
 
 func addOpCreateExportTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateExportTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateExportTask{})
 }
 
 func addOpCreateLogGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLogGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLogGroup{})
 }
 
 func addOpCreateLogStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLogStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLogStream{})
 }
 
 func addOpDeleteDestinationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDestination{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDestination{})
 }
 
 func addOpDeleteLogGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLogGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLogGroup{})
 }
 
 func addOpDeleteLogStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLogStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLogStream{})
 }
 
 func addOpDeleteMetricFilterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMetricFilter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMetricFilter{})
 }
 
 func addOpDeleteQueryDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteQueryDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteQueryDefinition{})
 }
 
 func addOpDeleteRetentionPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRetentionPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRetentionPolicy{})
 }
 
 func addOpDeleteSubscriptionFilterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSubscriptionFilter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSubscriptionFilter{})
 }
 
 func addOpDescribeLogStreamsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeLogStreams{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeLogStreams{})
 }
 
 func addOpDescribeSubscriptionFiltersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSubscriptionFilters{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSubscriptionFilters{})
 }
 
 func addOpDisassociateKmsKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateKmsKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateKmsKey{})
 }
 
 func addOpFilterLogEventsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpFilterLogEvents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpFilterLogEvents{})
 }
 
 func addOpGetLogEventsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLogEvents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLogEvents{})
 }
 
 func addOpGetLogGroupFieldsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLogGroupFields{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLogGroupFields{})
 }
 
 func addOpGetLogRecordValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLogRecord{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLogRecord{})
 }
 
 func addOpGetQueryResultsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetQueryResults{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetQueryResults{})
 }
 
 func addOpListTagsLogGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsLogGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsLogGroup{})
 }
 
 func addOpPutDestinationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutDestination{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutDestination{})
 }
 
 func addOpPutDestinationPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutDestinationPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutDestinationPolicy{})
 }
 
 func addOpPutLogEventsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutLogEvents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutLogEvents{})
 }
 
 func addOpPutMetricFilterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutMetricFilter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutMetricFilter{})
 }
 
 func addOpPutQueryDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutQueryDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutQueryDefinition{})
 }
 
 func addOpPutRetentionPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutRetentionPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutRetentionPolicy{})
 }
 
 func addOpPutSubscriptionFilterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutSubscriptionFilter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutSubscriptionFilter{})
 }
 
 func addOpStartQueryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartQuery{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartQuery{})
 }
 
 func addOpStopQueryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopQuery{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopQuery{})
 }
 
 func addOpTagLogGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagLogGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagLogGroup{})
 }
 
 func addOpTestMetricFilterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTestMetricFilter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTestMetricFilter{})
 }
 
 func addOpUntagLogGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagLogGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagLogGroup{})
 }
 
 func validateInputLogEvent(v *types.InputLogEvent) error {

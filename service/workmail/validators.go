@@ -971,195 +971,195 @@ func (m *validateOpUpdateResource) HandleInitialize(ctx context.Context, in midd
 }
 
 func addOpAssociateDelegateToResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateDelegateToResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateDelegateToResource{})
 }
 
 func addOpAssociateMemberToGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateMemberToGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateMemberToGroup{})
 }
 
 func addOpCancelMailboxExportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelMailboxExportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelMailboxExportJob{})
 }
 
 func addOpCreateAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAlias{})
 }
 
 func addOpCreateGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateGroup{})
 }
 
 func addOpCreateOrganizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateOrganization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateOrganization{})
 }
 
 func addOpCreateResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateResource{})
 }
 
 func addOpCreateUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateUser{})
 }
 
 func addOpDeleteAccessControlRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAccessControlRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAccessControlRule{})
 }
 
 func addOpDeleteAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAlias{})
 }
 
 func addOpDeleteGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteGroup{})
 }
 
 func addOpDeleteMailboxPermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMailboxPermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMailboxPermissions{})
 }
 
 func addOpDeleteOrganizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteOrganization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteOrganization{})
 }
 
 func addOpDeleteResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteResource{})
 }
 
 func addOpDeleteRetentionPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRetentionPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRetentionPolicy{})
 }
 
 func addOpDeleteUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUser{})
 }
 
 func addOpDeregisterFromWorkMailValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterFromWorkMail{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterFromWorkMail{})
 }
 
 func addOpDescribeGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeGroup{})
 }
 
 func addOpDescribeMailboxExportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeMailboxExportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeMailboxExportJob{})
 }
 
 func addOpDescribeOrganizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeOrganization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeOrganization{})
 }
 
 func addOpDescribeResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeResource{})
 }
 
 func addOpDescribeUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeUser{})
 }
 
 func addOpDisassociateDelegateFromResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateDelegateFromResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateDelegateFromResource{})
 }
 
 func addOpDisassociateMemberFromGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateMemberFromGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateMemberFromGroup{})
 }
 
 func addOpGetAccessControlEffectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAccessControlEffect{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAccessControlEffect{})
 }
 
 func addOpGetDefaultRetentionPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDefaultRetentionPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDefaultRetentionPolicy{})
 }
 
 func addOpGetMailboxDetailsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMailboxDetails{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMailboxDetails{})
 }
 
 func addOpListAccessControlRulesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAccessControlRules{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAccessControlRules{})
 }
 
 func addOpListAliasesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAliases{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAliases{})
 }
 
 func addOpListGroupMembersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListGroupMembers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListGroupMembers{})
 }
 
 func addOpListGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListGroups{})
 }
 
 func addOpListMailboxExportJobsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListMailboxExportJobs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListMailboxExportJobs{})
 }
 
 func addOpListMailboxPermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListMailboxPermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListMailboxPermissions{})
 }
 
 func addOpListResourceDelegatesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListResourceDelegates{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListResourceDelegates{})
 }
 
 func addOpListResourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListResources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListResources{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListUsersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListUsers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListUsers{})
 }
 
 func addOpPutAccessControlRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutAccessControlRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutAccessControlRule{})
 }
 
 func addOpPutMailboxPermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutMailboxPermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutMailboxPermissions{})
 }
 
 func addOpPutRetentionPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutRetentionPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutRetentionPolicy{})
 }
 
 func addOpRegisterToWorkMailValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterToWorkMail{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterToWorkMail{})
 }
 
 func addOpResetPasswordValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResetPassword{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResetPassword{})
 }
 
 func addOpStartMailboxExportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartMailboxExportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartMailboxExportJob{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateMailboxQuotaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateMailboxQuota{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateMailboxQuota{})
 }
 
 func addOpUpdatePrimaryEmailAddressValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePrimaryEmailAddress{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePrimaryEmailAddress{})
 }
 
 func addOpUpdateResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateResource{})
 }
 
 func validateFolderConfiguration(v *types.FolderConfiguration) error {

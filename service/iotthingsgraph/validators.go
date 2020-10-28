@@ -571,115 +571,115 @@ func (m *validateOpUploadEntityDefinitions) HandleInitialize(ctx context.Context
 }
 
 func addOpAssociateEntityToThingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateEntityToThing{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateEntityToThing{})
 }
 
 func addOpCreateFlowTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFlowTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFlowTemplate{})
 }
 
 func addOpCreateSystemInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSystemInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSystemInstance{})
 }
 
 func addOpCreateSystemTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSystemTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSystemTemplate{})
 }
 
 func addOpDeleteFlowTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFlowTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFlowTemplate{})
 }
 
 func addOpDeleteSystemTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSystemTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSystemTemplate{})
 }
 
 func addOpDeprecateFlowTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeprecateFlowTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeprecateFlowTemplate{})
 }
 
 func addOpDeprecateSystemTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeprecateSystemTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeprecateSystemTemplate{})
 }
 
 func addOpDissociateEntityFromThingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDissociateEntityFromThing{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDissociateEntityFromThing{})
 }
 
 func addOpGetEntitiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetEntities{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetEntities{})
 }
 
 func addOpGetFlowTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFlowTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFlowTemplate{})
 }
 
 func addOpGetFlowTemplateRevisionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFlowTemplateRevisions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFlowTemplateRevisions{})
 }
 
 func addOpGetSystemInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSystemInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSystemInstance{})
 }
 
 func addOpGetSystemTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSystemTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSystemTemplate{})
 }
 
 func addOpGetSystemTemplateRevisionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSystemTemplateRevisions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSystemTemplateRevisions{})
 }
 
 func addOpGetUploadStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetUploadStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetUploadStatus{})
 }
 
 func addOpListFlowExecutionMessagesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListFlowExecutionMessages{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListFlowExecutionMessages{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpSearchEntitiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSearchEntities{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSearchEntities{})
 }
 
 func addOpSearchFlowExecutionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSearchFlowExecutions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSearchFlowExecutions{})
 }
 
 func addOpSearchFlowTemplatesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSearchFlowTemplates{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSearchFlowTemplates{})
 }
 
 func addOpSearchSystemTemplatesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSearchSystemTemplates{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSearchSystemTemplates{})
 }
 
 func addOpSearchThingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSearchThings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSearchThings{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateFlowTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFlowTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFlowTemplate{})
 }
 
 func addOpUpdateSystemTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateSystemTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateSystemTemplate{})
 }
 
 func addOpUploadEntityDefinitionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUploadEntityDefinitions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUploadEntityDefinitions{})
 }
 
 func validateDefinitionDocument(v *types.DefinitionDocument) error {

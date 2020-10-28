@@ -51,11 +51,11 @@ func (m *validateOpDescribeHomeRegionControls) HandleInitialize(ctx context.Cont
 }
 
 func addOpCreateHomeRegionControlValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateHomeRegionControl{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateHomeRegionControl{})
 }
 
 func addOpDescribeHomeRegionControlsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeHomeRegionControls{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeHomeRegionControls{})
 }
 
 func validateTarget(v *types.Target) error {

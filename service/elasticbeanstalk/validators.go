@@ -471,95 +471,95 @@ func (m *validateOpValidateConfigurationSettings) HandleInitialize(ctx context.C
 }
 
 func addOpApplyEnvironmentManagedActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpApplyEnvironmentManagedAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpApplyEnvironmentManagedAction{})
 }
 
 func addOpAssociateEnvironmentOperationsRoleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateEnvironmentOperationsRole{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateEnvironmentOperationsRole{})
 }
 
 func addOpCheckDNSAvailabilityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCheckDNSAvailability{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCheckDNSAvailability{})
 }
 
 func addOpCreateApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateApplication{})
 }
 
 func addOpCreateApplicationVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateApplicationVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateApplicationVersion{})
 }
 
 func addOpCreateConfigurationTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateConfigurationTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateConfigurationTemplate{})
 }
 
 func addOpCreateEnvironmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateEnvironment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateEnvironment{})
 }
 
 func addOpCreatePlatformVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePlatformVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePlatformVersion{})
 }
 
 func addOpDeleteApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApplication{})
 }
 
 func addOpDeleteApplicationVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApplicationVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApplicationVersion{})
 }
 
 func addOpDeleteConfigurationTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteConfigurationTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteConfigurationTemplate{})
 }
 
 func addOpDeleteEnvironmentConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEnvironmentConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEnvironmentConfiguration{})
 }
 
 func addOpDescribeConfigurationSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeConfigurationSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeConfigurationSettings{})
 }
 
 func addOpDisassociateEnvironmentOperationsRoleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateEnvironmentOperationsRole{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateEnvironmentOperationsRole{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpRequestEnvironmentInfoValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRequestEnvironmentInfo{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRequestEnvironmentInfo{})
 }
 
 func addOpRetrieveEnvironmentInfoValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRetrieveEnvironmentInfo{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRetrieveEnvironmentInfo{})
 }
 
 func addOpUpdateApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateApplication{})
 }
 
 func addOpUpdateApplicationResourceLifecycleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateApplicationResourceLifecycle{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateApplicationResourceLifecycle{})
 }
 
 func addOpUpdateApplicationVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateApplicationVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateApplicationVersion{})
 }
 
 func addOpUpdateConfigurationTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateConfigurationTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateConfigurationTemplate{})
 }
 
 func addOpUpdateTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTagsForResource{})
 }
 
 func addOpValidateConfigurationSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpValidateConfigurationSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpValidateConfigurationSettings{})
 }
 
 func validateApplicationResourceLifecycleConfig(v *types.ApplicationResourceLifecycleConfig) error {

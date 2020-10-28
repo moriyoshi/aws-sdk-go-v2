@@ -49,33 +49,61 @@ type GetFieldLevelEncryptionProfileConfigOutput struct {
 }
 
 func addOperationGetFieldLevelEncryptionProfileConfigMiddlewares(stack *middleware.Stack, options Options) (err error) {
-	err = stack.Serialize.Add(&awsRestxml_serializeOpGetFieldLevelEncryptionProfileConfig{}, middleware.After)
+	err = stack.Serialize.Add(middleware.After, &awsRestxml_serializeOpGetFieldLevelEncryptionProfileConfig{})
 	if err != nil {
 		return err
 	}
-	err = stack.Deserialize.Add(&awsRestxml_deserializeOpGetFieldLevelEncryptionProfileConfig{}, middleware.After)
+	err = stack.Deserialize.Add(middleware.After, &awsRestxml_deserializeOpGetFieldLevelEncryptionProfileConfig{})
 	if err != nil {
 		return err
 	}
-	awsmiddleware.AddRequestInvocationIDMiddleware(stack)
-	smithyhttp.AddContentLengthMiddleware(stack)
-	addResolveEndpointMiddleware(stack, options)
-	v4.AddComputePayloadSHA256Middleware(stack)
-	addRetryMiddlewares(stack, options)
-	addHTTPSignerV4Middleware(stack, options)
-	awsmiddleware.AddAttemptClockSkewMiddleware(stack)
-	addClientUserAgent(stack)
-	smithyhttp.AddErrorCloseResponseBodyMiddleware(stack)
-	smithyhttp.AddCloseResponseBodyMiddleware(stack)
-	addOpGetFieldLevelEncryptionProfileConfigValidationMiddleware(stack)
-	stack.Initialize.Add(newServiceMetadataMiddleware_opGetFieldLevelEncryptionProfileConfig(options.Region), middleware.Before)
-	addRequestIDRetrieverMiddleware(stack)
-	addResponseErrorMiddleware(stack)
+	if err := awsmiddleware.AddClientRequestIDMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddComputeContentLengthMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addResolveEndpointMiddleware(stack, options); err != nil {
+		return err
+	}
+	if err := v4.AddComputePayloadSHA256Middleware(stack); err != nil {
+		return err
+	}
+	if err := addRetryMiddlewares(stack, options); err != nil {
+		return err
+	}
+	if err := addHTTPSignerV4Middleware(stack, options); err != nil {
+		return err
+	}
+	if err := awsmiddleware.AddAttemptClockSkewMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addClientUserAgent(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddErrorCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addOpGetFieldLevelEncryptionProfileConfigValidationMiddleware(stack); err != nil {
+		return err
+	}
+	if err := stack.Initialize.Add(middleware.Before, newServiceMetadataMiddleware_opGetFieldLevelEncryptionProfileConfig(options.Region)); err != nil {
+		return err
+	}
+	if err := addRequestIDRetrieverMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addResponseErrorMiddleware(stack); err != nil {
+		return err
+	}
 	return nil
 }
 
-func newServiceMetadataMiddleware_opGetFieldLevelEncryptionProfileConfig(region string) awsmiddleware.RegisterServiceMetadata {
-	return awsmiddleware.RegisterServiceMetadata{
+func newServiceMetadataMiddleware_opGetFieldLevelEncryptionProfileConfig(region string) *awsmiddleware.RegisterServiceMetadata {
+	return &awsmiddleware.RegisterServiceMetadata{
 		Region:        region,
 		ServiceID:     ServiceID,
 		SigningName:   "cloudfront",

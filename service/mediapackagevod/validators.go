@@ -271,55 +271,55 @@ func (m *validateOpUpdatePackagingGroup) HandleInitialize(ctx context.Context, i
 }
 
 func addOpCreateAssetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAsset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAsset{})
 }
 
 func addOpCreatePackagingConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePackagingConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePackagingConfiguration{})
 }
 
 func addOpCreatePackagingGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePackagingGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePackagingGroup{})
 }
 
 func addOpDeleteAssetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAsset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAsset{})
 }
 
 func addOpDeletePackagingConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePackagingConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePackagingConfiguration{})
 }
 
 func addOpDeletePackagingGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePackagingGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePackagingGroup{})
 }
 
 func addOpDescribeAssetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAsset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAsset{})
 }
 
 func addOpDescribePackagingConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribePackagingConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribePackagingConfiguration{})
 }
 
 func addOpDescribePackagingGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribePackagingGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribePackagingGroup{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdatePackagingGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePackagingGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePackagingGroup{})
 }
 
 func validateAuthorization(v *types.Authorization) error {

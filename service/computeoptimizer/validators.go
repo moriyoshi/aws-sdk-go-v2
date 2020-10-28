@@ -90,19 +90,19 @@ func (m *validateOpUpdateEnrollmentStatus) HandleInitialize(ctx context.Context,
 }
 
 func addOpExportAutoScalingGroupRecommendationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpExportAutoScalingGroupRecommendations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpExportAutoScalingGroupRecommendations{})
 }
 
 func addOpExportEC2InstanceRecommendationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpExportEC2InstanceRecommendations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpExportEC2InstanceRecommendations{})
 }
 
 func addOpGetEC2RecommendationProjectedMetricsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetEC2RecommendationProjectedMetrics{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetEC2RecommendationProjectedMetrics{})
 }
 
 func addOpUpdateEnrollmentStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateEnrollmentStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateEnrollmentStatus{})
 }
 
 func validateOpExportAutoScalingGroupRecommendationsInput(v *ExportAutoScalingGroupRecommendationsInput) error {

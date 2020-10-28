@@ -291,59 +291,59 @@ func (m *validateOpUpdateFlow) HandleInitialize(ctx context.Context, in middlewa
 }
 
 func addOpCreateConnectorProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateConnectorProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateConnectorProfile{})
 }
 
 func addOpCreateFlowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFlow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFlow{})
 }
 
 func addOpDeleteConnectorProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteConnectorProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteConnectorProfile{})
 }
 
 func addOpDeleteFlowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFlow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFlow{})
 }
 
 func addOpDescribeConnectorEntityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeConnectorEntity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeConnectorEntity{})
 }
 
 func addOpDescribeFlowExecutionRecordsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeFlowExecutionRecords{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeFlowExecutionRecords{})
 }
 
 func addOpDescribeFlowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeFlow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeFlow{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpStartFlowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartFlow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartFlow{})
 }
 
 func addOpStopFlowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopFlow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopFlow{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateConnectorProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateConnectorProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateConnectorProfile{})
 }
 
 func addOpUpdateFlowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFlow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFlow{})
 }
 
 func validateAmplitudeConnectorProfileCredentials(v *types.AmplitudeConnectorProfileCredentials) error {

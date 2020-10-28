@@ -231,47 +231,47 @@ func (m *validateOpUpdateResource) HandleInitialize(ctx context.Context, in midd
 }
 
 func addOpBatchGrantPermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGrantPermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGrantPermissions{})
 }
 
 func addOpBatchRevokePermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchRevokePermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchRevokePermissions{})
 }
 
 func addOpDeregisterResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterResource{})
 }
 
 func addOpDescribeResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeResource{})
 }
 
 func addOpGetEffectivePermissionsForPathValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetEffectivePermissionsForPath{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetEffectivePermissionsForPath{})
 }
 
 func addOpGrantPermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGrantPermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGrantPermissions{})
 }
 
 func addOpListPermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPermissions{})
 }
 
 func addOpPutDataLakeSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutDataLakeSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutDataLakeSettings{})
 }
 
 func addOpRegisterResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterResource{})
 }
 
 func addOpRevokePermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRevokePermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRevokePermissions{})
 }
 
 func addOpUpdateResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateResource{})
 }
 
 func validateBatchPermissionsRequestEntry(v *types.BatchPermissionsRequestEntry) error {

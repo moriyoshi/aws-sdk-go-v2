@@ -891,179 +891,179 @@ func (m *validateOpUpdateReservation) HandleInitialize(ctx context.Context, in m
 }
 
 func addOpAcceptInputDeviceTransferValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAcceptInputDeviceTransfer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAcceptInputDeviceTransfer{})
 }
 
 func addOpBatchUpdateScheduleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchUpdateSchedule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchUpdateSchedule{})
 }
 
 func addOpCancelInputDeviceTransferValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelInputDeviceTransfer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelInputDeviceTransfer{})
 }
 
 func addOpCreateChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateChannel{})
 }
 
 func addOpCreateInputValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateInput{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateInput{})
 }
 
 func addOpCreateMultiplexValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateMultiplex{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateMultiplex{})
 }
 
 func addOpCreateMultiplexProgramValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateMultiplexProgram{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateMultiplexProgram{})
 }
 
 func addOpCreateTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTags{})
 }
 
 func addOpDeleteChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteChannel{})
 }
 
 func addOpDeleteInputValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteInput{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteInput{})
 }
 
 func addOpDeleteInputSecurityGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteInputSecurityGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteInputSecurityGroup{})
 }
 
 func addOpDeleteMultiplexValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMultiplex{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMultiplex{})
 }
 
 func addOpDeleteMultiplexProgramValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMultiplexProgram{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMultiplexProgram{})
 }
 
 func addOpDeleteReservationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteReservation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteReservation{})
 }
 
 func addOpDeleteScheduleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSchedule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSchedule{})
 }
 
 func addOpDeleteTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTags{})
 }
 
 func addOpDescribeChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeChannel{})
 }
 
 func addOpDescribeInputDeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeInputDevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeInputDevice{})
 }
 
 func addOpDescribeInputDeviceThumbnailValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeInputDeviceThumbnail{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeInputDeviceThumbnail{})
 }
 
 func addOpDescribeInputValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeInput{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeInput{})
 }
 
 func addOpDescribeInputSecurityGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeInputSecurityGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeInputSecurityGroup{})
 }
 
 func addOpDescribeMultiplexValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeMultiplex{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeMultiplex{})
 }
 
 func addOpDescribeMultiplexProgramValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeMultiplexProgram{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeMultiplexProgram{})
 }
 
 func addOpDescribeOfferingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeOffering{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeOffering{})
 }
 
 func addOpDescribeReservationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeReservation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeReservation{})
 }
 
 func addOpDescribeScheduleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSchedule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSchedule{})
 }
 
 func addOpListInputDeviceTransfersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListInputDeviceTransfers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListInputDeviceTransfers{})
 }
 
 func addOpListMultiplexProgramsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListMultiplexPrograms{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListMultiplexPrograms{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPurchaseOfferingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPurchaseOffering{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPurchaseOffering{})
 }
 
 func addOpRejectInputDeviceTransferValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRejectInputDeviceTransfer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRejectInputDeviceTransfer{})
 }
 
 func addOpStartChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartChannel{})
 }
 
 func addOpStartMultiplexValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartMultiplex{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartMultiplex{})
 }
 
 func addOpStopChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopChannel{})
 }
 
 func addOpStopMultiplexValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopMultiplex{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopMultiplex{})
 }
 
 func addOpTransferInputDeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTransferInputDevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTransferInputDevice{})
 }
 
 func addOpUpdateChannelClassValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateChannelClass{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateChannelClass{})
 }
 
 func addOpUpdateChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateChannel{})
 }
 
 func addOpUpdateInputDeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateInputDevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateInputDevice{})
 }
 
 func addOpUpdateInputValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateInput{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateInput{})
 }
 
 func addOpUpdateInputSecurityGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateInputSecurityGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateInputSecurityGroup{})
 }
 
 func addOpUpdateMultiplexValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateMultiplex{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateMultiplex{})
 }
 
 func addOpUpdateMultiplexProgramValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateMultiplexProgram{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateMultiplexProgram{})
 }
 
 func addOpUpdateReservationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateReservation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateReservation{})
 }
 
 func validate__listOfAudioChannelMapping(v []*types.AudioChannelMapping) error {

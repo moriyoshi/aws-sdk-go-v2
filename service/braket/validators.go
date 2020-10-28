@@ -131,27 +131,27 @@ func (m *validateOpSearchQuantumTasks) HandleInitialize(ctx context.Context, in 
 }
 
 func addOpCancelQuantumTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelQuantumTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelQuantumTask{})
 }
 
 func addOpCreateQuantumTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateQuantumTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateQuantumTask{})
 }
 
 func addOpGetDeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDevice{})
 }
 
 func addOpGetQuantumTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetQuantumTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetQuantumTask{})
 }
 
 func addOpSearchDevicesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSearchDevices{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSearchDevices{})
 }
 
 func addOpSearchQuantumTasksValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSearchQuantumTasks{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSearchQuantumTasks{})
 }
 
 func validateSearchDevicesFilter(v *types.SearchDevicesFilter) error {

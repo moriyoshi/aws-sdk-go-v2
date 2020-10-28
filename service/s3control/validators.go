@@ -651,131 +651,131 @@ func (m *validateOpUpdateJobStatus) HandleInitialize(ctx context.Context, in mid
 }
 
 func addOpCreateAccessPointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAccessPoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAccessPoint{})
 }
 
 func addOpCreateBucketValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateBucket{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateBucket{})
 }
 
 func addOpCreateJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateJob{})
 }
 
 func addOpDeleteAccessPointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAccessPoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAccessPoint{})
 }
 
 func addOpDeleteAccessPointPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAccessPointPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAccessPointPolicy{})
 }
 
 func addOpDeleteBucketValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBucket{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBucket{})
 }
 
 func addOpDeleteBucketLifecycleConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBucketLifecycleConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBucketLifecycleConfiguration{})
 }
 
 func addOpDeleteBucketPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBucketPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBucketPolicy{})
 }
 
 func addOpDeleteBucketTaggingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBucketTagging{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBucketTagging{})
 }
 
 func addOpDeleteJobTaggingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteJobTagging{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteJobTagging{})
 }
 
 func addOpDeletePublicAccessBlockValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePublicAccessBlock{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePublicAccessBlock{})
 }
 
 func addOpDescribeJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeJob{})
 }
 
 func addOpGetAccessPointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAccessPoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAccessPoint{})
 }
 
 func addOpGetAccessPointPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAccessPointPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAccessPointPolicy{})
 }
 
 func addOpGetAccessPointPolicyStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAccessPointPolicyStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAccessPointPolicyStatus{})
 }
 
 func addOpGetBucketValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBucket{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBucket{})
 }
 
 func addOpGetBucketLifecycleConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBucketLifecycleConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBucketLifecycleConfiguration{})
 }
 
 func addOpGetBucketPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBucketPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBucketPolicy{})
 }
 
 func addOpGetBucketTaggingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBucketTagging{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBucketTagging{})
 }
 
 func addOpGetJobTaggingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetJobTagging{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetJobTagging{})
 }
 
 func addOpGetPublicAccessBlockValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPublicAccessBlock{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPublicAccessBlock{})
 }
 
 func addOpListAccessPointsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAccessPoints{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAccessPoints{})
 }
 
 func addOpListJobsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListJobs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListJobs{})
 }
 
 func addOpListRegionalBucketsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListRegionalBuckets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListRegionalBuckets{})
 }
 
 func addOpPutAccessPointPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutAccessPointPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutAccessPointPolicy{})
 }
 
 func addOpPutBucketLifecycleConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBucketLifecycleConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBucketLifecycleConfiguration{})
 }
 
 func addOpPutBucketPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBucketPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBucketPolicy{})
 }
 
 func addOpPutBucketTaggingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBucketTagging{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBucketTagging{})
 }
 
 func addOpPutJobTaggingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutJobTagging{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutJobTagging{})
 }
 
 func addOpPutPublicAccessBlockValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutPublicAccessBlock{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutPublicAccessBlock{})
 }
 
 func addOpUpdateJobPriorityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateJobPriority{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateJobPriority{})
 }
 
 func addOpUpdateJobStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateJobStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateJobStatus{})
 }
 
 func validateJobManifest(v *types.JobManifest) error {

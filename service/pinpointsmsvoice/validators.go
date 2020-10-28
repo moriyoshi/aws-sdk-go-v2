@@ -110,23 +110,23 @@ func (m *validateOpUpdateConfigurationSetEventDestination) HandleInitialize(ctx 
 }
 
 func addOpCreateConfigurationSetEventDestinationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateConfigurationSetEventDestination{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateConfigurationSetEventDestination{})
 }
 
 func addOpDeleteConfigurationSetEventDestinationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteConfigurationSetEventDestination{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteConfigurationSetEventDestination{})
 }
 
 func addOpDeleteConfigurationSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteConfigurationSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteConfigurationSet{})
 }
 
 func addOpGetConfigurationSetEventDestinationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetConfigurationSetEventDestinations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetConfigurationSetEventDestinations{})
 }
 
 func addOpUpdateConfigurationSetEventDestinationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateConfigurationSetEventDestination{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateConfigurationSetEventDestination{})
 }
 
 func validateOpCreateConfigurationSetEventDestinationInput(v *CreateConfigurationSetEventDestinationInput) error {

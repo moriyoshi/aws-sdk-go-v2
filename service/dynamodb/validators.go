@@ -711,143 +711,143 @@ func (m *validateOpUpdateTimeToLive) HandleInitialize(ctx context.Context, in mi
 }
 
 func addOpBatchGetItemValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetItem{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetItem{})
 }
 
 func addOpBatchWriteItemValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchWriteItem{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchWriteItem{})
 }
 
 func addOpCreateBackupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateBackup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateBackup{})
 }
 
 func addOpCreateGlobalTableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateGlobalTable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateGlobalTable{})
 }
 
 func addOpCreateTableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTable{})
 }
 
 func addOpDeleteBackupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBackup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBackup{})
 }
 
 func addOpDeleteItemValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteItem{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteItem{})
 }
 
 func addOpDeleteTableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTable{})
 }
 
 func addOpDescribeBackupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeBackup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeBackup{})
 }
 
 func addOpDescribeContinuousBackupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeContinuousBackups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeContinuousBackups{})
 }
 
 func addOpDescribeContributorInsightsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeContributorInsights{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeContributorInsights{})
 }
 
 func addOpDescribeGlobalTableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeGlobalTable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeGlobalTable{})
 }
 
 func addOpDescribeGlobalTableSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeGlobalTableSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeGlobalTableSettings{})
 }
 
 func addOpDescribeTableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTable{})
 }
 
 func addOpDescribeTableReplicaAutoScalingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTableReplicaAutoScaling{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTableReplicaAutoScaling{})
 }
 
 func addOpDescribeTimeToLiveValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTimeToLive{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTimeToLive{})
 }
 
 func addOpGetItemValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetItem{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetItem{})
 }
 
 func addOpListTagsOfResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsOfResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsOfResource{})
 }
 
 func addOpPutItemValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutItem{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutItem{})
 }
 
 func addOpQueryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpQuery{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpQuery{})
 }
 
 func addOpRestoreTableFromBackupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRestoreTableFromBackup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRestoreTableFromBackup{})
 }
 
 func addOpRestoreTableToPointInTimeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRestoreTableToPointInTime{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRestoreTableToPointInTime{})
 }
 
 func addOpScanValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpScan{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpScan{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpTransactGetItemsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTransactGetItems{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTransactGetItems{})
 }
 
 func addOpTransactWriteItemsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTransactWriteItems{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTransactWriteItems{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateContinuousBackupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateContinuousBackups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateContinuousBackups{})
 }
 
 func addOpUpdateContributorInsightsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateContributorInsights{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateContributorInsights{})
 }
 
 func addOpUpdateGlobalTableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGlobalTable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGlobalTable{})
 }
 
 func addOpUpdateGlobalTableSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGlobalTableSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGlobalTableSettings{})
 }
 
 func addOpUpdateItemValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateItem{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateItem{})
 }
 
 func addOpUpdateTableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTable{})
 }
 
 func addOpUpdateTableReplicaAutoScalingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTableReplicaAutoScaling{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTableReplicaAutoScaling{})
 }
 
 func addOpUpdateTimeToLiveValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTimeToLive{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTimeToLive{})
 }
 
 func validateAttributeDefinition(v *types.AttributeDefinition) error {

@@ -362,29 +362,59 @@ type CreateDBClusterOutput struct {
 }
 
 func addOperationCreateDBClusterMiddlewares(stack *middleware.Stack, options Options) (err error) {
-	err = stack.Serialize.Add(&awsAwsquery_serializeOpCreateDBCluster{}, middleware.After)
+	err = stack.Serialize.Add(middleware.After, &awsAwsquery_serializeOpCreateDBCluster{})
 	if err != nil {
 		return err
 	}
-	err = stack.Deserialize.Add(&awsAwsquery_deserializeOpCreateDBCluster{}, middleware.After)
+	err = stack.Deserialize.Add(middleware.After, &awsAwsquery_deserializeOpCreateDBCluster{})
 	if err != nil {
 		return err
 	}
-	awsmiddleware.AddRequestInvocationIDMiddleware(stack)
-	smithyhttp.AddContentLengthMiddleware(stack)
-	addResolveEndpointMiddleware(stack, options)
-	v4.AddComputePayloadSHA256Middleware(stack)
-	addRetryMiddlewares(stack, options)
-	addHTTPSignerV4Middleware(stack, options)
-	awsmiddleware.AddAttemptClockSkewMiddleware(stack)
-	addClientUserAgent(stack)
-	smithyhttp.AddErrorCloseResponseBodyMiddleware(stack)
-	smithyhttp.AddCloseResponseBodyMiddleware(stack)
-	addCreateDBClusterPresignURLMiddleware(stack, options)
-	addOpCreateDBClusterValidationMiddleware(stack)
-	stack.Initialize.Add(newServiceMetadataMiddleware_opCreateDBCluster(options.Region), middleware.Before)
-	addRequestIDRetrieverMiddleware(stack)
-	addResponseErrorMiddleware(stack)
+	if err := awsmiddleware.AddClientRequestIDMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddComputeContentLengthMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addResolveEndpointMiddleware(stack, options); err != nil {
+		return err
+	}
+	if err := v4.AddComputePayloadSHA256Middleware(stack); err != nil {
+		return err
+	}
+	if err := addRetryMiddlewares(stack, options); err != nil {
+		return err
+	}
+	if err := addHTTPSignerV4Middleware(stack, options); err != nil {
+		return err
+	}
+	if err := awsmiddleware.AddAttemptClockSkewMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addClientUserAgent(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddErrorCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addCreateDBClusterPresignURLMiddleware(stack, options); err != nil {
+		return err
+	}
+	if err := addOpCreateDBClusterValidationMiddleware(stack); err != nil {
+		return err
+	}
+	if err := stack.Initialize.Add(middleware.Before, newServiceMetadataMiddleware_opCreateDBCluster(options.Region)); err != nil {
+		return err
+	}
+	if err := addRequestIDRetrieverMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addResponseErrorMiddleware(stack); err != nil {
+		return err
+	}
 	return nil
 }
 
@@ -468,8 +498,8 @@ func (c *createDBClusterHTTPPresignURLClient) PresignCreateDBCluster(ctx context
 func (c *createDBClusterHTTPPresignURLClient) convertToPresignMiddleware(stack *middleware.Stack, options Options) (err error) {
 	stack.Finalize.Clear()
 	stack.Deserialize.Clear()
-	stack.Build.Remove(awsmiddleware.RequestInvocationIDMiddleware{}.ID())
-	err = stack.Finalize.Add(v4.NewPresignHTTPRequestMiddleware(options.Credentials, c.presigner), middleware.After)
+	stack.Build.Remove((&awsmiddleware.ClientRequestID{}).ID())
+	err = stack.Finalize.Add(middleware.After, v4.NewPresignHTTPRequestMiddleware(options.Credentials, c.presigner))
 	if err != nil {
 		return err
 	}
@@ -508,8 +538,8 @@ func (c *presignAutoFillCreateDBClusterClient) PresignURL(ctx context.Context, r
 	return c.client.PresignCreateDBCluster(ctx, input, optFn)
 }
 
-func newServiceMetadataMiddleware_opCreateDBCluster(region string) awsmiddleware.RegisterServiceMetadata {
-	return awsmiddleware.RegisterServiceMetadata{
+func newServiceMetadataMiddleware_opCreateDBCluster(region string) *awsmiddleware.RegisterServiceMetadata {
+	return &awsmiddleware.RegisterServiceMetadata{
 		Region:        region,
 		ServiceID:     ServiceID,
 		SigningName:   "rds",

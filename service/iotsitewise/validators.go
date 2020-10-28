@@ -951,191 +951,191 @@ func (m *validateOpUpdateProject) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpAssociateAssetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateAssets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateAssets{})
 }
 
 func addOpBatchAssociateProjectAssetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchAssociateProjectAssets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchAssociateProjectAssets{})
 }
 
 func addOpBatchDisassociateProjectAssetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDisassociateProjectAssets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDisassociateProjectAssets{})
 }
 
 func addOpBatchPutAssetPropertyValueValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchPutAssetPropertyValue{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchPutAssetPropertyValue{})
 }
 
 func addOpCreateAccessPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAccessPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAccessPolicy{})
 }
 
 func addOpCreateAssetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAsset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAsset{})
 }
 
 func addOpCreateAssetModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAssetModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAssetModel{})
 }
 
 func addOpCreateDashboardValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDashboard{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDashboard{})
 }
 
 func addOpCreateGatewayValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateGateway{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateGateway{})
 }
 
 func addOpCreatePortalValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePortal{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePortal{})
 }
 
 func addOpCreatePresignedPortalUrlValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePresignedPortalUrl{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePresignedPortalUrl{})
 }
 
 func addOpCreateProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateProject{})
 }
 
 func addOpDeleteAccessPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAccessPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAccessPolicy{})
 }
 
 func addOpDeleteAssetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAsset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAsset{})
 }
 
 func addOpDeleteAssetModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAssetModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAssetModel{})
 }
 
 func addOpDeleteDashboardValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDashboard{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDashboard{})
 }
 
 func addOpDeleteGatewayValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteGateway{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteGateway{})
 }
 
 func addOpDeletePortalValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePortal{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePortal{})
 }
 
 func addOpDeleteProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteProject{})
 }
 
 func addOpDescribeAccessPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAccessPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAccessPolicy{})
 }
 
 func addOpDescribeAssetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAsset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAsset{})
 }
 
 func addOpDescribeAssetModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAssetModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAssetModel{})
 }
 
 func addOpDescribeAssetPropertyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAssetProperty{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAssetProperty{})
 }
 
 func addOpDescribeDashboardValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDashboard{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDashboard{})
 }
 
 func addOpDescribeGatewayCapabilityConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeGatewayCapabilityConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeGatewayCapabilityConfiguration{})
 }
 
 func addOpDescribeGatewayValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeGateway{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeGateway{})
 }
 
 func addOpDescribePortalValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribePortal{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribePortal{})
 }
 
 func addOpDescribeProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeProject{})
 }
 
 func addOpDisassociateAssetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateAssets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateAssets{})
 }
 
 func addOpGetAssetPropertyAggregatesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAssetPropertyAggregates{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAssetPropertyAggregates{})
 }
 
 func addOpListAssociatedAssetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAssociatedAssets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAssociatedAssets{})
 }
 
 func addOpListDashboardsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDashboards{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDashboards{})
 }
 
 func addOpListProjectAssetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListProjectAssets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListProjectAssets{})
 }
 
 func addOpListProjectsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListProjects{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListProjects{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPutLoggingOptionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutLoggingOptions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutLoggingOptions{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateAccessPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAccessPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAccessPolicy{})
 }
 
 func addOpUpdateAssetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAsset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAsset{})
 }
 
 func addOpUpdateAssetModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAssetModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAssetModel{})
 }
 
 func addOpUpdateAssetPropertyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAssetProperty{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAssetProperty{})
 }
 
 func addOpUpdateDashboardValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDashboard{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDashboard{})
 }
 
 func addOpUpdateGatewayCapabilityConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGatewayCapabilityConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGatewayCapabilityConfiguration{})
 }
 
 func addOpUpdateGatewayValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGateway{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGateway{})
 }
 
 func addOpUpdatePortalValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePortal{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePortal{})
 }
 
 func addOpUpdateProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateProject{})
 }
 
 func validateAssetModelHierarchies(v []*types.AssetModelHierarchy) error {

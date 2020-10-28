@@ -391,79 +391,79 @@ func (m *validateOpUntagResource) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpCreateContainerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateContainer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateContainer{})
 }
 
 func addOpDeleteContainerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteContainer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteContainer{})
 }
 
 func addOpDeleteContainerPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteContainerPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteContainerPolicy{})
 }
 
 func addOpDeleteCorsPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCorsPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCorsPolicy{})
 }
 
 func addOpDeleteLifecyclePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLifecyclePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLifecyclePolicy{})
 }
 
 func addOpDeleteMetricPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMetricPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMetricPolicy{})
 }
 
 func addOpGetContainerPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetContainerPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetContainerPolicy{})
 }
 
 func addOpGetCorsPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCorsPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCorsPolicy{})
 }
 
 func addOpGetLifecyclePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLifecyclePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLifecyclePolicy{})
 }
 
 func addOpGetMetricPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMetricPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMetricPolicy{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPutContainerPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutContainerPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutContainerPolicy{})
 }
 
 func addOpPutCorsPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutCorsPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutCorsPolicy{})
 }
 
 func addOpPutLifecyclePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutLifecyclePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutLifecyclePolicy{})
 }
 
 func addOpPutMetricPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutMetricPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutMetricPolicy{})
 }
 
 func addOpStartAccessLoggingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartAccessLogging{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartAccessLogging{})
 }
 
 func addOpStopAccessLoggingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopAccessLogging{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopAccessLogging{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func validateCorsPolicy(v []*types.CorsRule) error {

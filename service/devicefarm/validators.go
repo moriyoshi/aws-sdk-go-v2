@@ -1271,255 +1271,255 @@ func (m *validateOpUpdateVPCEConfiguration) HandleInitialize(ctx context.Context
 }
 
 func addOpCreateDevicePoolValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDevicePool{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDevicePool{})
 }
 
 func addOpCreateInstanceProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateInstanceProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateInstanceProfile{})
 }
 
 func addOpCreateNetworkProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateNetworkProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateNetworkProfile{})
 }
 
 func addOpCreateProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateProject{})
 }
 
 func addOpCreateRemoteAccessSessionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRemoteAccessSession{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRemoteAccessSession{})
 }
 
 func addOpCreateTestGridProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTestGridProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTestGridProject{})
 }
 
 func addOpCreateTestGridUrlValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTestGridUrl{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTestGridUrl{})
 }
 
 func addOpCreateUploadValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateUpload{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateUpload{})
 }
 
 func addOpCreateVPCEConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateVPCEConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateVPCEConfiguration{})
 }
 
 func addOpDeleteDevicePoolValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDevicePool{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDevicePool{})
 }
 
 func addOpDeleteInstanceProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteInstanceProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteInstanceProfile{})
 }
 
 func addOpDeleteNetworkProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteNetworkProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteNetworkProfile{})
 }
 
 func addOpDeleteProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteProject{})
 }
 
 func addOpDeleteRemoteAccessSessionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRemoteAccessSession{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRemoteAccessSession{})
 }
 
 func addOpDeleteRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRun{})
 }
 
 func addOpDeleteTestGridProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTestGridProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTestGridProject{})
 }
 
 func addOpDeleteUploadValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUpload{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUpload{})
 }
 
 func addOpDeleteVPCEConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVPCEConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVPCEConfiguration{})
 }
 
 func addOpGetDeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDevice{})
 }
 
 func addOpGetDeviceInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDeviceInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDeviceInstance{})
 }
 
 func addOpGetDevicePoolCompatibilityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDevicePoolCompatibility{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDevicePoolCompatibility{})
 }
 
 func addOpGetDevicePoolValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDevicePool{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDevicePool{})
 }
 
 func addOpGetInstanceProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetInstanceProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetInstanceProfile{})
 }
 
 func addOpGetJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetJob{})
 }
 
 func addOpGetNetworkProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetNetworkProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetNetworkProfile{})
 }
 
 func addOpGetProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetProject{})
 }
 
 func addOpGetRemoteAccessSessionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRemoteAccessSession{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRemoteAccessSession{})
 }
 
 func addOpGetRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRun{})
 }
 
 func addOpGetSuiteValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSuite{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSuite{})
 }
 
 func addOpGetTestGridProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTestGridProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTestGridProject{})
 }
 
 func addOpGetTestValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTest{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTest{})
 }
 
 func addOpGetUploadValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetUpload{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetUpload{})
 }
 
 func addOpGetVPCEConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetVPCEConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetVPCEConfiguration{})
 }
 
 func addOpInstallToRemoteAccessSessionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpInstallToRemoteAccessSession{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpInstallToRemoteAccessSession{})
 }
 
 func addOpListArtifactsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListArtifacts{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListArtifacts{})
 }
 
 func addOpListDevicePoolsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDevicePools{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDevicePools{})
 }
 
 func addOpListJobsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListJobs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListJobs{})
 }
 
 func addOpListNetworkProfilesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListNetworkProfiles{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListNetworkProfiles{})
 }
 
 func addOpListRemoteAccessSessionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListRemoteAccessSessions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListRemoteAccessSessions{})
 }
 
 func addOpListRunsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListRuns{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListRuns{})
 }
 
 func addOpListSamplesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListSamples{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListSamples{})
 }
 
 func addOpListSuitesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListSuites{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListSuites{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListTestGridSessionActionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTestGridSessionActions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTestGridSessionActions{})
 }
 
 func addOpListTestGridSessionArtifactsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTestGridSessionArtifacts{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTestGridSessionArtifacts{})
 }
 
 func addOpListTestGridSessionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTestGridSessions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTestGridSessions{})
 }
 
 func addOpListTestsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTests{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTests{})
 }
 
 func addOpListUniqueProblemsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListUniqueProblems{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListUniqueProblems{})
 }
 
 func addOpListUploadsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListUploads{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListUploads{})
 }
 
 func addOpScheduleRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpScheduleRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpScheduleRun{})
 }
 
 func addOpStopJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopJob{})
 }
 
 func addOpStopRemoteAccessSessionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopRemoteAccessSession{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopRemoteAccessSession{})
 }
 
 func addOpStopRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopRun{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateDeviceInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDeviceInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDeviceInstance{})
 }
 
 func addOpUpdateDevicePoolValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDevicePool{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDevicePool{})
 }
 
 func addOpUpdateInstanceProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateInstanceProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateInstanceProfile{})
 }
 
 func addOpUpdateNetworkProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateNetworkProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateNetworkProfile{})
 }
 
 func addOpUpdateProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateProject{})
 }
 
 func addOpUpdateTestGridProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTestGridProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTestGridProject{})
 }
 
 func addOpUpdateUploadValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateUpload{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateUpload{})
 }
 
 func addOpUpdateVPCEConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateVPCEConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateVPCEConfiguration{})
 }
 
 func validateDeviceSelectionConfiguration(v *types.DeviceSelectionConfiguration) error {

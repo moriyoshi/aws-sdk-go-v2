@@ -371,75 +371,75 @@ func (m *validateOpVoteOnProposal) HandleInitialize(ctx context.Context, in midd
 }
 
 func addOpCreateMemberValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateMember{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateMember{})
 }
 
 func addOpCreateNetworkValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateNetwork{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateNetwork{})
 }
 
 func addOpCreateNodeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateNode{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateNode{})
 }
 
 func addOpCreateProposalValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateProposal{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateProposal{})
 }
 
 func addOpDeleteMemberValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMember{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMember{})
 }
 
 func addOpDeleteNodeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteNode{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteNode{})
 }
 
 func addOpGetMemberValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMember{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMember{})
 }
 
 func addOpGetNetworkValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetNetwork{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetNetwork{})
 }
 
 func addOpGetNodeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetNode{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetNode{})
 }
 
 func addOpGetProposalValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetProposal{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetProposal{})
 }
 
 func addOpListMembersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListMembers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListMembers{})
 }
 
 func addOpListNodesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListNodes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListNodes{})
 }
 
 func addOpListProposalsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListProposals{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListProposals{})
 }
 
 func addOpListProposalVotesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListProposalVotes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListProposalVotes{})
 }
 
 func addOpRejectInvitationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRejectInvitation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRejectInvitation{})
 }
 
 func addOpUpdateMemberValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateMember{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateMember{})
 }
 
 func addOpUpdateNodeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateNode{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateNode{})
 }
 
 func addOpVoteOnProposalValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpVoteOnProposal{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpVoteOnProposal{})
 }
 
 func validateInviteAction(v *types.InviteAction) error {

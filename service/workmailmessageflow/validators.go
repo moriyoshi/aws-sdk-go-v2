@@ -30,7 +30,7 @@ func (m *validateOpGetRawMessageContent) HandleInitialize(ctx context.Context, i
 }
 
 func addOpGetRawMessageContentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRawMessageContent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRawMessageContent{})
 }
 
 func validateOpGetRawMessageContentInput(v *GetRawMessageContentInput) error {

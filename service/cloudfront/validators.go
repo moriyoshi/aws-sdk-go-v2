@@ -1251,251 +1251,251 @@ func (m *validateOpUpdateStreamingDistribution) HandleInitialize(ctx context.Con
 }
 
 func addOpCreateCachePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCachePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCachePolicy{})
 }
 
 func addOpCreateCloudFrontOriginAccessIdentityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCloudFrontOriginAccessIdentity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCloudFrontOriginAccessIdentity{})
 }
 
 func addOpCreateDistributionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDistribution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDistribution{})
 }
 
 func addOpCreateDistributionWithTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDistributionWithTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDistributionWithTags{})
 }
 
 func addOpCreateFieldLevelEncryptionConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFieldLevelEncryptionConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFieldLevelEncryptionConfig{})
 }
 
 func addOpCreateFieldLevelEncryptionProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFieldLevelEncryptionProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFieldLevelEncryptionProfile{})
 }
 
 func addOpCreateInvalidationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateInvalidation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateInvalidation{})
 }
 
 func addOpCreateKeyGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateKeyGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateKeyGroup{})
 }
 
 func addOpCreateMonitoringSubscriptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateMonitoringSubscription{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateMonitoringSubscription{})
 }
 
 func addOpCreateOriginRequestPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateOriginRequestPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateOriginRequestPolicy{})
 }
 
 func addOpCreatePublicKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePublicKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePublicKey{})
 }
 
 func addOpCreateRealtimeLogConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRealtimeLogConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRealtimeLogConfig{})
 }
 
 func addOpCreateStreamingDistributionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateStreamingDistribution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateStreamingDistribution{})
 }
 
 func addOpCreateStreamingDistributionWithTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateStreamingDistributionWithTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateStreamingDistributionWithTags{})
 }
 
 func addOpDeleteCachePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCachePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCachePolicy{})
 }
 
 func addOpDeleteCloudFrontOriginAccessIdentityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCloudFrontOriginAccessIdentity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCloudFrontOriginAccessIdentity{})
 }
 
 func addOpDeleteDistributionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDistribution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDistribution{})
 }
 
 func addOpDeleteFieldLevelEncryptionConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFieldLevelEncryptionConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFieldLevelEncryptionConfig{})
 }
 
 func addOpDeleteFieldLevelEncryptionProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFieldLevelEncryptionProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFieldLevelEncryptionProfile{})
 }
 
 func addOpDeleteKeyGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteKeyGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteKeyGroup{})
 }
 
 func addOpDeleteMonitoringSubscriptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMonitoringSubscription{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMonitoringSubscription{})
 }
 
 func addOpDeleteOriginRequestPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteOriginRequestPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteOriginRequestPolicy{})
 }
 
 func addOpDeletePublicKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePublicKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePublicKey{})
 }
 
 func addOpDeleteStreamingDistributionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteStreamingDistribution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteStreamingDistribution{})
 }
 
 func addOpGetCachePolicyConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCachePolicyConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCachePolicyConfig{})
 }
 
 func addOpGetCachePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCachePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCachePolicy{})
 }
 
 func addOpGetCloudFrontOriginAccessIdentityConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCloudFrontOriginAccessIdentityConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCloudFrontOriginAccessIdentityConfig{})
 }
 
 func addOpGetCloudFrontOriginAccessIdentityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCloudFrontOriginAccessIdentity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCloudFrontOriginAccessIdentity{})
 }
 
 func addOpGetDistributionConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDistributionConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDistributionConfig{})
 }
 
 func addOpGetDistributionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDistribution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDistribution{})
 }
 
 func addOpGetFieldLevelEncryptionConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFieldLevelEncryptionConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFieldLevelEncryptionConfig{})
 }
 
 func addOpGetFieldLevelEncryptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFieldLevelEncryption{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFieldLevelEncryption{})
 }
 
 func addOpGetFieldLevelEncryptionProfileConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFieldLevelEncryptionProfileConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFieldLevelEncryptionProfileConfig{})
 }
 
 func addOpGetFieldLevelEncryptionProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFieldLevelEncryptionProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFieldLevelEncryptionProfile{})
 }
 
 func addOpGetInvalidationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetInvalidation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetInvalidation{})
 }
 
 func addOpGetKeyGroupConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetKeyGroupConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetKeyGroupConfig{})
 }
 
 func addOpGetKeyGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetKeyGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetKeyGroup{})
 }
 
 func addOpGetMonitoringSubscriptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMonitoringSubscription{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMonitoringSubscription{})
 }
 
 func addOpGetOriginRequestPolicyConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetOriginRequestPolicyConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetOriginRequestPolicyConfig{})
 }
 
 func addOpGetOriginRequestPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetOriginRequestPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetOriginRequestPolicy{})
 }
 
 func addOpGetPublicKeyConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPublicKeyConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPublicKeyConfig{})
 }
 
 func addOpGetPublicKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPublicKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPublicKey{})
 }
 
 func addOpGetStreamingDistributionConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetStreamingDistributionConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetStreamingDistributionConfig{})
 }
 
 func addOpGetStreamingDistributionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetStreamingDistribution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetStreamingDistribution{})
 }
 
 func addOpListDistributionsByCachePolicyIdValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDistributionsByCachePolicyId{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDistributionsByCachePolicyId{})
 }
 
 func addOpListDistributionsByKeyGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDistributionsByKeyGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDistributionsByKeyGroup{})
 }
 
 func addOpListDistributionsByOriginRequestPolicyIdValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDistributionsByOriginRequestPolicyId{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDistributionsByOriginRequestPolicyId{})
 }
 
 func addOpListDistributionsByWebACLIdValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDistributionsByWebACLId{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDistributionsByWebACLId{})
 }
 
 func addOpListInvalidationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListInvalidations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListInvalidations{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateCachePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateCachePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateCachePolicy{})
 }
 
 func addOpUpdateCloudFrontOriginAccessIdentityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateCloudFrontOriginAccessIdentity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateCloudFrontOriginAccessIdentity{})
 }
 
 func addOpUpdateDistributionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDistribution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDistribution{})
 }
 
 func addOpUpdateFieldLevelEncryptionConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFieldLevelEncryptionConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFieldLevelEncryptionConfig{})
 }
 
 func addOpUpdateFieldLevelEncryptionProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFieldLevelEncryptionProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFieldLevelEncryptionProfile{})
 }
 
 func addOpUpdateKeyGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateKeyGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateKeyGroup{})
 }
 
 func addOpUpdateOriginRequestPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateOriginRequestPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateOriginRequestPolicy{})
 }
 
 func addOpUpdatePublicKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePublicKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePublicKey{})
 }
 
 func addOpUpdateRealtimeLogConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRealtimeLogConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRealtimeLogConfig{})
 }
 
 func addOpUpdateStreamingDistributionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateStreamingDistribution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateStreamingDistribution{})
 }
 
 func validateAliases(v *types.Aliases) error {

@@ -1371,275 +1371,275 @@ func (m *validateOpUpdateNetworkProfile) HandleInitialize(ctx context.Context, i
 }
 
 func addOpApproveSkillValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpApproveSkill{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpApproveSkill{})
 }
 
 func addOpAssociateContactWithAddressBookValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateContactWithAddressBook{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateContactWithAddressBook{})
 }
 
 func addOpAssociateDeviceWithNetworkProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateDeviceWithNetworkProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateDeviceWithNetworkProfile{})
 }
 
 func addOpAssociateSkillWithSkillGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateSkillWithSkillGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateSkillWithSkillGroup{})
 }
 
 func addOpAssociateSkillWithUsersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateSkillWithUsers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateSkillWithUsers{})
 }
 
 func addOpCreateAddressBookValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAddressBook{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAddressBook{})
 }
 
 func addOpCreateBusinessReportScheduleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateBusinessReportSchedule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateBusinessReportSchedule{})
 }
 
 func addOpCreateConferenceProviderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateConferenceProvider{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateConferenceProvider{})
 }
 
 func addOpCreateContactValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateContact{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateContact{})
 }
 
 func addOpCreateGatewayGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateGatewayGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateGatewayGroup{})
 }
 
 func addOpCreateNetworkProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateNetworkProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateNetworkProfile{})
 }
 
 func addOpCreateProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateProfile{})
 }
 
 func addOpCreateRoomValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRoom{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRoom{})
 }
 
 func addOpCreateSkillGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSkillGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSkillGroup{})
 }
 
 func addOpCreateUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateUser{})
 }
 
 func addOpDeleteAddressBookValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAddressBook{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAddressBook{})
 }
 
 func addOpDeleteBusinessReportScheduleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBusinessReportSchedule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBusinessReportSchedule{})
 }
 
 func addOpDeleteConferenceProviderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteConferenceProvider{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteConferenceProvider{})
 }
 
 func addOpDeleteContactValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteContact{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteContact{})
 }
 
 func addOpDeleteDeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDevice{})
 }
 
 func addOpDeleteDeviceUsageDataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDeviceUsageData{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDeviceUsageData{})
 }
 
 func addOpDeleteGatewayGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteGatewayGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteGatewayGroup{})
 }
 
 func addOpDeleteNetworkProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteNetworkProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteNetworkProfile{})
 }
 
 func addOpDeleteRoomSkillParameterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRoomSkillParameter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRoomSkillParameter{})
 }
 
 func addOpDeleteSkillAuthorizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSkillAuthorization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSkillAuthorization{})
 }
 
 func addOpDeleteUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUser{})
 }
 
 func addOpDisassociateContactFromAddressBookValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateContactFromAddressBook{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateContactFromAddressBook{})
 }
 
 func addOpDisassociateSkillFromSkillGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateSkillFromSkillGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateSkillFromSkillGroup{})
 }
 
 func addOpDisassociateSkillFromUsersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateSkillFromUsers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateSkillFromUsers{})
 }
 
 func addOpForgetSmartHomeAppliancesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpForgetSmartHomeAppliances{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpForgetSmartHomeAppliances{})
 }
 
 func addOpGetAddressBookValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAddressBook{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAddressBook{})
 }
 
 func addOpGetConferenceProviderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetConferenceProvider{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetConferenceProvider{})
 }
 
 func addOpGetContactValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetContact{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetContact{})
 }
 
 func addOpGetGatewayGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetGatewayGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetGatewayGroup{})
 }
 
 func addOpGetGatewayValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetGateway{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetGateway{})
 }
 
 func addOpGetNetworkProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetNetworkProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetNetworkProfile{})
 }
 
 func addOpGetRoomSkillParameterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRoomSkillParameter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRoomSkillParameter{})
 }
 
 func addOpListDeviceEventsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDeviceEvents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDeviceEvents{})
 }
 
 func addOpListSkillsStoreSkillsByCategoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListSkillsStoreSkillsByCategory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListSkillsStoreSkillsByCategory{})
 }
 
 func addOpListSmartHomeAppliancesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListSmartHomeAppliances{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListSmartHomeAppliances{})
 }
 
 func addOpListTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTags{})
 }
 
 func addOpPutConferencePreferenceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutConferencePreference{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutConferencePreference{})
 }
 
 func addOpPutInvitationConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutInvitationConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutInvitationConfiguration{})
 }
 
 func addOpPutRoomSkillParameterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutRoomSkillParameter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutRoomSkillParameter{})
 }
 
 func addOpPutSkillAuthorizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutSkillAuthorization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutSkillAuthorization{})
 }
 
 func addOpRegisterAVSDeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterAVSDevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterAVSDevice{})
 }
 
 func addOpRejectSkillValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRejectSkill{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRejectSkill{})
 }
 
 func addOpResolveRoomValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResolveRoom{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResolveRoom{})
 }
 
 func addOpSearchAddressBooksValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSearchAddressBooks{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSearchAddressBooks{})
 }
 
 func addOpSearchContactsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSearchContacts{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSearchContacts{})
 }
 
 func addOpSearchDevicesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSearchDevices{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSearchDevices{})
 }
 
 func addOpSearchNetworkProfilesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSearchNetworkProfiles{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSearchNetworkProfiles{})
 }
 
 func addOpSearchProfilesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSearchProfiles{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSearchProfiles{})
 }
 
 func addOpSearchRoomsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSearchRooms{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSearchRooms{})
 }
 
 func addOpSearchSkillGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSearchSkillGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSearchSkillGroups{})
 }
 
 func addOpSearchUsersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSearchUsers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSearchUsers{})
 }
 
 func addOpSendAnnouncementValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSendAnnouncement{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSendAnnouncement{})
 }
 
 func addOpStartDeviceSyncValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartDeviceSync{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartDeviceSync{})
 }
 
 func addOpStartSmartHomeApplianceDiscoveryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartSmartHomeApplianceDiscovery{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartSmartHomeApplianceDiscovery{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateAddressBookValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAddressBook{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAddressBook{})
 }
 
 func addOpUpdateBusinessReportScheduleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateBusinessReportSchedule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateBusinessReportSchedule{})
 }
 
 func addOpUpdateConferenceProviderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateConferenceProvider{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateConferenceProvider{})
 }
 
 func addOpUpdateContactValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateContact{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateContact{})
 }
 
 func addOpUpdateGatewayGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGatewayGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGatewayGroup{})
 }
 
 func addOpUpdateGatewayValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGateway{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGateway{})
 }
 
 func addOpUpdateNetworkProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateNetworkProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateNetworkProfile{})
 }
 
 func validateAudio(v *types.Audio) error {

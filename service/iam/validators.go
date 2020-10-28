@@ -2331,467 +2331,467 @@ func (m *validateOpUploadSSHPublicKey) HandleInitialize(ctx context.Context, in 
 }
 
 func addOpAddClientIDToOpenIDConnectProviderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddClientIDToOpenIDConnectProvider{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddClientIDToOpenIDConnectProvider{})
 }
 
 func addOpAddRoleToInstanceProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddRoleToInstanceProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddRoleToInstanceProfile{})
 }
 
 func addOpAddUserToGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddUserToGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddUserToGroup{})
 }
 
 func addOpAttachGroupPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAttachGroupPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAttachGroupPolicy{})
 }
 
 func addOpAttachRolePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAttachRolePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAttachRolePolicy{})
 }
 
 func addOpAttachUserPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAttachUserPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAttachUserPolicy{})
 }
 
 func addOpChangePasswordValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpChangePassword{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpChangePassword{})
 }
 
 func addOpCreateAccountAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAccountAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAccountAlias{})
 }
 
 func addOpCreateGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateGroup{})
 }
 
 func addOpCreateInstanceProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateInstanceProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateInstanceProfile{})
 }
 
 func addOpCreateLoginProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLoginProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLoginProfile{})
 }
 
 func addOpCreateOpenIDConnectProviderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateOpenIDConnectProvider{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateOpenIDConnectProvider{})
 }
 
 func addOpCreatePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePolicy{})
 }
 
 func addOpCreatePolicyVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePolicyVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePolicyVersion{})
 }
 
 func addOpCreateRoleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRole{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRole{})
 }
 
 func addOpCreateSAMLProviderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSAMLProvider{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSAMLProvider{})
 }
 
 func addOpCreateServiceLinkedRoleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateServiceLinkedRole{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateServiceLinkedRole{})
 }
 
 func addOpCreateServiceSpecificCredentialValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateServiceSpecificCredential{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateServiceSpecificCredential{})
 }
 
 func addOpCreateUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateUser{})
 }
 
 func addOpCreateVirtualMFADeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateVirtualMFADevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateVirtualMFADevice{})
 }
 
 func addOpDeactivateMFADeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeactivateMFADevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeactivateMFADevice{})
 }
 
 func addOpDeleteAccessKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAccessKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAccessKey{})
 }
 
 func addOpDeleteAccountAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAccountAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAccountAlias{})
 }
 
 func addOpDeleteGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteGroup{})
 }
 
 func addOpDeleteGroupPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteGroupPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteGroupPolicy{})
 }
 
 func addOpDeleteInstanceProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteInstanceProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteInstanceProfile{})
 }
 
 func addOpDeleteLoginProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLoginProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLoginProfile{})
 }
 
 func addOpDeleteOpenIDConnectProviderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteOpenIDConnectProvider{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteOpenIDConnectProvider{})
 }
 
 func addOpDeletePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePolicy{})
 }
 
 func addOpDeletePolicyVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePolicyVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePolicyVersion{})
 }
 
 func addOpDeleteRoleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRole{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRole{})
 }
 
 func addOpDeleteRolePermissionsBoundaryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRolePermissionsBoundary{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRolePermissionsBoundary{})
 }
 
 func addOpDeleteRolePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRolePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRolePolicy{})
 }
 
 func addOpDeleteSAMLProviderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSAMLProvider{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSAMLProvider{})
 }
 
 func addOpDeleteServerCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteServerCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteServerCertificate{})
 }
 
 func addOpDeleteServiceLinkedRoleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteServiceLinkedRole{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteServiceLinkedRole{})
 }
 
 func addOpDeleteServiceSpecificCredentialValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteServiceSpecificCredential{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteServiceSpecificCredential{})
 }
 
 func addOpDeleteSigningCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSigningCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSigningCertificate{})
 }
 
 func addOpDeleteSSHPublicKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSSHPublicKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSSHPublicKey{})
 }
 
 func addOpDeleteUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUser{})
 }
 
 func addOpDeleteUserPermissionsBoundaryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUserPermissionsBoundary{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUserPermissionsBoundary{})
 }
 
 func addOpDeleteUserPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUserPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUserPolicy{})
 }
 
 func addOpDeleteVirtualMFADeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVirtualMFADevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVirtualMFADevice{})
 }
 
 func addOpDetachGroupPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetachGroupPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetachGroupPolicy{})
 }
 
 func addOpDetachRolePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetachRolePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetachRolePolicy{})
 }
 
 func addOpDetachUserPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetachUserPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetachUserPolicy{})
 }
 
 func addOpEnableMFADeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableMFADevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableMFADevice{})
 }
 
 func addOpGenerateOrganizationsAccessReportValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGenerateOrganizationsAccessReport{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGenerateOrganizationsAccessReport{})
 }
 
 func addOpGenerateServiceLastAccessedDetailsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGenerateServiceLastAccessedDetails{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGenerateServiceLastAccessedDetails{})
 }
 
 func addOpGetAccessKeyLastUsedValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAccessKeyLastUsed{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAccessKeyLastUsed{})
 }
 
 func addOpGetContextKeysForCustomPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetContextKeysForCustomPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetContextKeysForCustomPolicy{})
 }
 
 func addOpGetContextKeysForPrincipalPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetContextKeysForPrincipalPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetContextKeysForPrincipalPolicy{})
 }
 
 func addOpGetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetGroup{})
 }
 
 func addOpGetGroupPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetGroupPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetGroupPolicy{})
 }
 
 func addOpGetInstanceProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetInstanceProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetInstanceProfile{})
 }
 
 func addOpGetLoginProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLoginProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLoginProfile{})
 }
 
 func addOpGetOpenIDConnectProviderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetOpenIDConnectProvider{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetOpenIDConnectProvider{})
 }
 
 func addOpGetOrganizationsAccessReportValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetOrganizationsAccessReport{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetOrganizationsAccessReport{})
 }
 
 func addOpGetPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPolicy{})
 }
 
 func addOpGetPolicyVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPolicyVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPolicyVersion{})
 }
 
 func addOpGetRoleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRole{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRole{})
 }
 
 func addOpGetRolePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRolePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRolePolicy{})
 }
 
 func addOpGetSAMLProviderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSAMLProvider{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSAMLProvider{})
 }
 
 func addOpGetServerCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetServerCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetServerCertificate{})
 }
 
 func addOpGetServiceLastAccessedDetailsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetServiceLastAccessedDetails{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetServiceLastAccessedDetails{})
 }
 
 func addOpGetServiceLastAccessedDetailsWithEntitiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetServiceLastAccessedDetailsWithEntities{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetServiceLastAccessedDetailsWithEntities{})
 }
 
 func addOpGetServiceLinkedRoleDeletionStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetServiceLinkedRoleDeletionStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetServiceLinkedRoleDeletionStatus{})
 }
 
 func addOpGetSSHPublicKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSSHPublicKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSSHPublicKey{})
 }
 
 func addOpGetUserPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetUserPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetUserPolicy{})
 }
 
 func addOpListAttachedGroupPoliciesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAttachedGroupPolicies{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAttachedGroupPolicies{})
 }
 
 func addOpListAttachedRolePoliciesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAttachedRolePolicies{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAttachedRolePolicies{})
 }
 
 func addOpListAttachedUserPoliciesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAttachedUserPolicies{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAttachedUserPolicies{})
 }
 
 func addOpListEntitiesForPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListEntitiesForPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListEntitiesForPolicy{})
 }
 
 func addOpListGroupPoliciesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListGroupPolicies{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListGroupPolicies{})
 }
 
 func addOpListGroupsForUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListGroupsForUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListGroupsForUser{})
 }
 
 func addOpListInstanceProfilesForRoleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListInstanceProfilesForRole{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListInstanceProfilesForRole{})
 }
 
 func addOpListPoliciesGrantingServiceAccessValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPoliciesGrantingServiceAccess{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPoliciesGrantingServiceAccess{})
 }
 
 func addOpListPolicyVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPolicyVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPolicyVersions{})
 }
 
 func addOpListRolePoliciesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListRolePolicies{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListRolePolicies{})
 }
 
 func addOpListRoleTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListRoleTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListRoleTags{})
 }
 
 func addOpListUserPoliciesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListUserPolicies{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListUserPolicies{})
 }
 
 func addOpListUserTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListUserTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListUserTags{})
 }
 
 func addOpPutGroupPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutGroupPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutGroupPolicy{})
 }
 
 func addOpPutRolePermissionsBoundaryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutRolePermissionsBoundary{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutRolePermissionsBoundary{})
 }
 
 func addOpPutRolePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutRolePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutRolePolicy{})
 }
 
 func addOpPutUserPermissionsBoundaryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutUserPermissionsBoundary{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutUserPermissionsBoundary{})
 }
 
 func addOpPutUserPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutUserPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutUserPolicy{})
 }
 
 func addOpRemoveClientIDFromOpenIDConnectProviderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveClientIDFromOpenIDConnectProvider{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveClientIDFromOpenIDConnectProvider{})
 }
 
 func addOpRemoveRoleFromInstanceProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveRoleFromInstanceProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveRoleFromInstanceProfile{})
 }
 
 func addOpRemoveUserFromGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveUserFromGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveUserFromGroup{})
 }
 
 func addOpResetServiceSpecificCredentialValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResetServiceSpecificCredential{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResetServiceSpecificCredential{})
 }
 
 func addOpResyncMFADeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResyncMFADevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResyncMFADevice{})
 }
 
 func addOpSetDefaultPolicyVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetDefaultPolicyVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetDefaultPolicyVersion{})
 }
 
 func addOpSetSecurityTokenServicePreferencesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetSecurityTokenServicePreferences{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetSecurityTokenServicePreferences{})
 }
 
 func addOpSimulateCustomPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSimulateCustomPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSimulateCustomPolicy{})
 }
 
 func addOpSimulatePrincipalPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSimulatePrincipalPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSimulatePrincipalPolicy{})
 }
 
 func addOpTagRoleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagRole{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagRole{})
 }
 
 func addOpTagUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagUser{})
 }
 
 func addOpUntagRoleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagRole{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagRole{})
 }
 
 func addOpUntagUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagUser{})
 }
 
 func addOpUpdateAccessKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAccessKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAccessKey{})
 }
 
 func addOpUpdateAssumeRolePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAssumeRolePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAssumeRolePolicy{})
 }
 
 func addOpUpdateGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGroup{})
 }
 
 func addOpUpdateLoginProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateLoginProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateLoginProfile{})
 }
 
 func addOpUpdateOpenIDConnectProviderThumbprintValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateOpenIDConnectProviderThumbprint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateOpenIDConnectProviderThumbprint{})
 }
 
 func addOpUpdateRoleDescriptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRoleDescription{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRoleDescription{})
 }
 
 func addOpUpdateRoleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRole{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRole{})
 }
 
 func addOpUpdateSAMLProviderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateSAMLProvider{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateSAMLProvider{})
 }
 
 func addOpUpdateServerCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateServerCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateServerCertificate{})
 }
 
 func addOpUpdateServiceSpecificCredentialValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateServiceSpecificCredential{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateServiceSpecificCredential{})
 }
 
 func addOpUpdateSigningCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateSigningCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateSigningCertificate{})
 }
 
 func addOpUpdateSSHPublicKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateSSHPublicKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateSSHPublicKey{})
 }
 
 func addOpUpdateUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateUser{})
 }
 
 func addOpUploadServerCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUploadServerCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUploadServerCertificate{})
 }
 
 func addOpUploadSigningCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUploadSigningCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUploadSigningCertificate{})
 }
 
 func addOpUploadSSHPublicKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUploadSSHPublicKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUploadSSHPublicKey{})
 }
 
 func validateTag(v *types.Tag) error {

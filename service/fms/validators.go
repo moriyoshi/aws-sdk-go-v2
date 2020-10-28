@@ -411,83 +411,83 @@ func (m *validateOpUntagResource) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpAssociateAdminAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateAdminAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateAdminAccount{})
 }
 
 func addOpDeleteAppsListValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAppsList{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAppsList{})
 }
 
 func addOpDeletePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePolicy{})
 }
 
 func addOpDeleteProtocolsListValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteProtocolsList{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteProtocolsList{})
 }
 
 func addOpGetAppsListValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAppsList{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAppsList{})
 }
 
 func addOpGetComplianceDetailValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetComplianceDetail{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetComplianceDetail{})
 }
 
 func addOpGetPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPolicy{})
 }
 
 func addOpGetProtectionStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetProtectionStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetProtectionStatus{})
 }
 
 func addOpGetProtocolsListValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetProtocolsList{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetProtocolsList{})
 }
 
 func addOpGetViolationDetailsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetViolationDetails{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetViolationDetails{})
 }
 
 func addOpListAppsListsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAppsLists{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAppsLists{})
 }
 
 func addOpListComplianceStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListComplianceStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListComplianceStatus{})
 }
 
 func addOpListProtocolsListsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListProtocolsLists{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListProtocolsLists{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPutAppsListValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutAppsList{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutAppsList{})
 }
 
 func addOpPutNotificationChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutNotificationChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutNotificationChannel{})
 }
 
 func addOpPutPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutPolicy{})
 }
 
 func addOpPutProtocolsListValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutProtocolsList{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutProtocolsList{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func validateApp(v *types.App) error {

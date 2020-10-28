@@ -170,35 +170,35 @@ func (m *validateOpListTables) HandleInitialize(ctx context.Context, in middlewa
 }
 
 func addOpCancelStatementValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelStatement{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelStatement{})
 }
 
 func addOpDescribeStatementValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeStatement{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeStatement{})
 }
 
 func addOpDescribeTableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTable{})
 }
 
 func addOpExecuteStatementValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpExecuteStatement{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpExecuteStatement{})
 }
 
 func addOpGetStatementResultValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetStatementResult{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetStatementResult{})
 }
 
 func addOpListDatabasesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDatabases{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDatabases{})
 }
 
 func addOpListSchemasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListSchemas{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListSchemas{})
 }
 
 func addOpListTablesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTables{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTables{})
 }
 
 func validateOpCancelStatementInput(v *CancelStatementInput) error {

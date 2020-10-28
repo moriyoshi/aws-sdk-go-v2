@@ -391,79 +391,79 @@ func (m *validateOpUntagQueue) HandleInitialize(ctx context.Context, in middlewa
 }
 
 func addOpAddPermissionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddPermission{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddPermission{})
 }
 
 func addOpChangeMessageVisibilityBatchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpChangeMessageVisibilityBatch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpChangeMessageVisibilityBatch{})
 }
 
 func addOpChangeMessageVisibilityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpChangeMessageVisibility{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpChangeMessageVisibility{})
 }
 
 func addOpCreateQueueValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateQueue{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateQueue{})
 }
 
 func addOpDeleteMessageBatchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMessageBatch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMessageBatch{})
 }
 
 func addOpDeleteMessageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMessage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMessage{})
 }
 
 func addOpDeleteQueueValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteQueue{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteQueue{})
 }
 
 func addOpGetQueueAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetQueueAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetQueueAttributes{})
 }
 
 func addOpGetQueueUrlValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetQueueUrl{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetQueueUrl{})
 }
 
 func addOpListDeadLetterSourceQueuesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDeadLetterSourceQueues{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDeadLetterSourceQueues{})
 }
 
 func addOpListQueueTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListQueueTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListQueueTags{})
 }
 
 func addOpPurgeQueueValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPurgeQueue{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPurgeQueue{})
 }
 
 func addOpReceiveMessageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpReceiveMessage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpReceiveMessage{})
 }
 
 func addOpRemovePermissionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemovePermission{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemovePermission{})
 }
 
 func addOpSendMessageBatchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSendMessageBatch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSendMessageBatch{})
 }
 
 func addOpSendMessageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSendMessage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSendMessage{})
 }
 
 func addOpSetQueueAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetQueueAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetQueueAttributes{})
 }
 
 func addOpTagQueueValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagQueue{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagQueue{})
 }
 
 func addOpUntagQueueValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagQueue{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagQueue{})
 }
 
 func validateChangeMessageVisibilityBatchRequestEntry(v *types.ChangeMessageVisibilityBatchRequestEntry) error {

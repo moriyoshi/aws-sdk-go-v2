@@ -291,59 +291,59 @@ func (m *validateOpUpdateStream) HandleInitialize(ctx context.Context, in middle
 }
 
 func addOpCreateSignalingChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSignalingChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSignalingChannel{})
 }
 
 func addOpCreateStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateStream{})
 }
 
 func addOpDeleteSignalingChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSignalingChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSignalingChannel{})
 }
 
 func addOpDeleteStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteStream{})
 }
 
 func addOpGetDataEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDataEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDataEndpoint{})
 }
 
 func addOpGetSignalingChannelEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSignalingChannelEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSignalingChannelEndpoint{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpTagStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagStream{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUntagStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagStream{})
 }
 
 func addOpUpdateDataRetentionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDataRetention{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDataRetention{})
 }
 
 func addOpUpdateSignalingChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateSignalingChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateSignalingChannel{})
 }
 
 func addOpUpdateStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateStream{})
 }
 
 func validateTag(v *types.Tag) error {

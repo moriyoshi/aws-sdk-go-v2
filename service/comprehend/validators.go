@@ -931,187 +931,187 @@ func (m *validateOpUpdateEndpoint) HandleInitialize(ctx context.Context, in midd
 }
 
 func addOpBatchDetectDominantLanguageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDetectDominantLanguage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDetectDominantLanguage{})
 }
 
 func addOpBatchDetectEntitiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDetectEntities{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDetectEntities{})
 }
 
 func addOpBatchDetectKeyPhrasesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDetectKeyPhrases{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDetectKeyPhrases{})
 }
 
 func addOpBatchDetectSentimentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDetectSentiment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDetectSentiment{})
 }
 
 func addOpBatchDetectSyntaxValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDetectSyntax{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDetectSyntax{})
 }
 
 func addOpClassifyDocumentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpClassifyDocument{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpClassifyDocument{})
 }
 
 func addOpCreateDocumentClassifierValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDocumentClassifier{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDocumentClassifier{})
 }
 
 func addOpCreateEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateEndpoint{})
 }
 
 func addOpCreateEntityRecognizerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateEntityRecognizer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateEntityRecognizer{})
 }
 
 func addOpDeleteDocumentClassifierValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDocumentClassifier{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDocumentClassifier{})
 }
 
 func addOpDeleteEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEndpoint{})
 }
 
 func addOpDeleteEntityRecognizerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEntityRecognizer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEntityRecognizer{})
 }
 
 func addOpDescribeDocumentClassificationJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDocumentClassificationJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDocumentClassificationJob{})
 }
 
 func addOpDescribeDocumentClassifierValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDocumentClassifier{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDocumentClassifier{})
 }
 
 func addOpDescribeDominantLanguageDetectionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDominantLanguageDetectionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDominantLanguageDetectionJob{})
 }
 
 func addOpDescribeEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEndpoint{})
 }
 
 func addOpDescribeEntitiesDetectionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEntitiesDetectionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEntitiesDetectionJob{})
 }
 
 func addOpDescribeEntityRecognizerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEntityRecognizer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEntityRecognizer{})
 }
 
 func addOpDescribeKeyPhrasesDetectionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeKeyPhrasesDetectionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeKeyPhrasesDetectionJob{})
 }
 
 func addOpDescribePiiEntitiesDetectionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribePiiEntitiesDetectionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribePiiEntitiesDetectionJob{})
 }
 
 func addOpDescribeSentimentDetectionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSentimentDetectionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSentimentDetectionJob{})
 }
 
 func addOpDescribeTopicsDetectionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTopicsDetectionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTopicsDetectionJob{})
 }
 
 func addOpDetectDominantLanguageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetectDominantLanguage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetectDominantLanguage{})
 }
 
 func addOpDetectEntitiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetectEntities{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetectEntities{})
 }
 
 func addOpDetectKeyPhrasesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetectKeyPhrases{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetectKeyPhrases{})
 }
 
 func addOpDetectPiiEntitiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetectPiiEntities{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetectPiiEntities{})
 }
 
 func addOpDetectSentimentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetectSentiment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetectSentiment{})
 }
 
 func addOpDetectSyntaxValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetectSyntax{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetectSyntax{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpStartDocumentClassificationJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartDocumentClassificationJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartDocumentClassificationJob{})
 }
 
 func addOpStartDominantLanguageDetectionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartDominantLanguageDetectionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartDominantLanguageDetectionJob{})
 }
 
 func addOpStartEntitiesDetectionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartEntitiesDetectionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartEntitiesDetectionJob{})
 }
 
 func addOpStartKeyPhrasesDetectionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartKeyPhrasesDetectionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartKeyPhrasesDetectionJob{})
 }
 
 func addOpStartPiiEntitiesDetectionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartPiiEntitiesDetectionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartPiiEntitiesDetectionJob{})
 }
 
 func addOpStartSentimentDetectionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartSentimentDetectionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartSentimentDetectionJob{})
 }
 
 func addOpStartTopicsDetectionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartTopicsDetectionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartTopicsDetectionJob{})
 }
 
 func addOpStopDominantLanguageDetectionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopDominantLanguageDetectionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopDominantLanguageDetectionJob{})
 }
 
 func addOpStopEntitiesDetectionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopEntitiesDetectionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopEntitiesDetectionJob{})
 }
 
 func addOpStopKeyPhrasesDetectionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopKeyPhrasesDetectionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopKeyPhrasesDetectionJob{})
 }
 
 func addOpStopPiiEntitiesDetectionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopPiiEntitiesDetectionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopPiiEntitiesDetectionJob{})
 }
 
 func addOpStopSentimentDetectionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopSentimentDetectionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopSentimentDetectionJob{})
 }
 
 func addOpStopTrainingDocumentClassifierValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopTrainingDocumentClassifier{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopTrainingDocumentClassifier{})
 }
 
 func addOpStopTrainingEntityRecognizerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopTrainingEntityRecognizer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopTrainingEntityRecognizer{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateEndpoint{})
 }
 
 func validateAugmentedManifestsListItem(v *types.AugmentedManifestsListItem) error {

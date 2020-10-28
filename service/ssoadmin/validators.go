@@ -530,107 +530,107 @@ func (m *validateOpUpdatePermissionSet) HandleInitialize(ctx context.Context, in
 }
 
 func addOpAttachManagedPolicyToPermissionSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAttachManagedPolicyToPermissionSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAttachManagedPolicyToPermissionSet{})
 }
 
 func addOpCreateAccountAssignmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAccountAssignment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAccountAssignment{})
 }
 
 func addOpCreatePermissionSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePermissionSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePermissionSet{})
 }
 
 func addOpDeleteAccountAssignmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAccountAssignment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAccountAssignment{})
 }
 
 func addOpDeleteInlinePolicyFromPermissionSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteInlinePolicyFromPermissionSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteInlinePolicyFromPermissionSet{})
 }
 
 func addOpDeletePermissionSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePermissionSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePermissionSet{})
 }
 
 func addOpDescribeAccountAssignmentCreationStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAccountAssignmentCreationStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAccountAssignmentCreationStatus{})
 }
 
 func addOpDescribeAccountAssignmentDeletionStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAccountAssignmentDeletionStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAccountAssignmentDeletionStatus{})
 }
 
 func addOpDescribePermissionSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribePermissionSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribePermissionSet{})
 }
 
 func addOpDescribePermissionSetProvisioningStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribePermissionSetProvisioningStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribePermissionSetProvisioningStatus{})
 }
 
 func addOpDetachManagedPolicyFromPermissionSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetachManagedPolicyFromPermissionSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetachManagedPolicyFromPermissionSet{})
 }
 
 func addOpGetInlinePolicyForPermissionSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetInlinePolicyForPermissionSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetInlinePolicyForPermissionSet{})
 }
 
 func addOpListAccountAssignmentCreationStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAccountAssignmentCreationStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAccountAssignmentCreationStatus{})
 }
 
 func addOpListAccountAssignmentDeletionStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAccountAssignmentDeletionStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAccountAssignmentDeletionStatus{})
 }
 
 func addOpListAccountAssignmentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAccountAssignments{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAccountAssignments{})
 }
 
 func addOpListAccountsForProvisionedPermissionSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAccountsForProvisionedPermissionSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAccountsForProvisionedPermissionSet{})
 }
 
 func addOpListManagedPoliciesInPermissionSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListManagedPoliciesInPermissionSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListManagedPoliciesInPermissionSet{})
 }
 
 func addOpListPermissionSetProvisioningStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPermissionSetProvisioningStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPermissionSetProvisioningStatus{})
 }
 
 func addOpListPermissionSetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPermissionSets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPermissionSets{})
 }
 
 func addOpListPermissionSetsProvisionedToAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPermissionSetsProvisionedToAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPermissionSetsProvisionedToAccount{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpProvisionPermissionSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpProvisionPermissionSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpProvisionPermissionSet{})
 }
 
 func addOpPutInlinePolicyToPermissionSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutInlinePolicyToPermissionSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutInlinePolicyToPermissionSet{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdatePermissionSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePermissionSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePermissionSet{})
 }
 
 func validateOpAttachManagedPolicyToPermissionSetInput(v *AttachManagedPolicyToPermissionSetInput) error {

@@ -110,23 +110,23 @@ func (m *validateOpUpdateThingShadow) HandleInitialize(ctx context.Context, in m
 }
 
 func addOpDeleteThingShadowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteThingShadow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteThingShadow{})
 }
 
 func addOpGetThingShadowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetThingShadow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetThingShadow{})
 }
 
 func addOpListNamedShadowsForThingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListNamedShadowsForThing{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListNamedShadowsForThing{})
 }
 
 func addOpPublishValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPublish{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPublish{})
 }
 
 func addOpUpdateThingShadowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateThingShadow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateThingShadow{})
 }
 
 func validateOpDeleteThingShadowInput(v *DeleteThingShadowInput) error {

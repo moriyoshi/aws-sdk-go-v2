@@ -1251,251 +1251,251 @@ func (m *validateOpUpgradePublishedSchema) HandleInitialize(ctx context.Context,
 }
 
 func addOpAddFacetToObjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddFacetToObject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddFacetToObject{})
 }
 
 func addOpApplySchemaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpApplySchema{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpApplySchema{})
 }
 
 func addOpAttachObjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAttachObject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAttachObject{})
 }
 
 func addOpAttachPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAttachPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAttachPolicy{})
 }
 
 func addOpAttachToIndexValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAttachToIndex{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAttachToIndex{})
 }
 
 func addOpAttachTypedLinkValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAttachTypedLink{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAttachTypedLink{})
 }
 
 func addOpBatchReadValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchRead{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchRead{})
 }
 
 func addOpBatchWriteValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchWrite{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchWrite{})
 }
 
 func addOpCreateDirectoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDirectory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDirectory{})
 }
 
 func addOpCreateFacetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFacet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFacet{})
 }
 
 func addOpCreateIndexValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateIndex{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateIndex{})
 }
 
 func addOpCreateObjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateObject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateObject{})
 }
 
 func addOpCreateSchemaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSchema{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSchema{})
 }
 
 func addOpCreateTypedLinkFacetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTypedLinkFacet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTypedLinkFacet{})
 }
 
 func addOpDeleteDirectoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDirectory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDirectory{})
 }
 
 func addOpDeleteFacetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFacet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFacet{})
 }
 
 func addOpDeleteObjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteObject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteObject{})
 }
 
 func addOpDeleteSchemaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSchema{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSchema{})
 }
 
 func addOpDeleteTypedLinkFacetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTypedLinkFacet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTypedLinkFacet{})
 }
 
 func addOpDetachFromIndexValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetachFromIndex{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetachFromIndex{})
 }
 
 func addOpDetachObjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetachObject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetachObject{})
 }
 
 func addOpDetachPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetachPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetachPolicy{})
 }
 
 func addOpDetachTypedLinkValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetachTypedLink{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetachTypedLink{})
 }
 
 func addOpDisableDirectoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableDirectory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableDirectory{})
 }
 
 func addOpEnableDirectoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableDirectory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableDirectory{})
 }
 
 func addOpGetAppliedSchemaVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAppliedSchemaVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAppliedSchemaVersion{})
 }
 
 func addOpGetDirectoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDirectory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDirectory{})
 }
 
 func addOpGetFacetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFacet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFacet{})
 }
 
 func addOpGetLinkAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLinkAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLinkAttributes{})
 }
 
 func addOpGetObjectAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetObjectAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetObjectAttributes{})
 }
 
 func addOpGetObjectInformationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetObjectInformation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetObjectInformation{})
 }
 
 func addOpGetSchemaAsJsonValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSchemaAsJson{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSchemaAsJson{})
 }
 
 func addOpGetTypedLinkFacetInformationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTypedLinkFacetInformation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTypedLinkFacetInformation{})
 }
 
 func addOpListAppliedSchemaArnsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAppliedSchemaArns{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAppliedSchemaArns{})
 }
 
 func addOpListAttachedIndicesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAttachedIndices{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAttachedIndices{})
 }
 
 func addOpListFacetAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListFacetAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListFacetAttributes{})
 }
 
 func addOpListFacetNamesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListFacetNames{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListFacetNames{})
 }
 
 func addOpListIncomingTypedLinksValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListIncomingTypedLinks{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListIncomingTypedLinks{})
 }
 
 func addOpListIndexValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListIndex{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListIndex{})
 }
 
 func addOpListObjectAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListObjectAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListObjectAttributes{})
 }
 
 func addOpListObjectChildrenValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListObjectChildren{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListObjectChildren{})
 }
 
 func addOpListObjectParentPathsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListObjectParentPaths{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListObjectParentPaths{})
 }
 
 func addOpListObjectParentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListObjectParents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListObjectParents{})
 }
 
 func addOpListObjectPoliciesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListObjectPolicies{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListObjectPolicies{})
 }
 
 func addOpListOutgoingTypedLinksValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListOutgoingTypedLinks{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListOutgoingTypedLinks{})
 }
 
 func addOpListPolicyAttachmentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPolicyAttachments{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPolicyAttachments{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListTypedLinkFacetAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTypedLinkFacetAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTypedLinkFacetAttributes{})
 }
 
 func addOpListTypedLinkFacetNamesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTypedLinkFacetNames{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTypedLinkFacetNames{})
 }
 
 func addOpLookupPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpLookupPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpLookupPolicy{})
 }
 
 func addOpPublishSchemaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPublishSchema{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPublishSchema{})
 }
 
 func addOpPutSchemaFromJsonValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutSchemaFromJson{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutSchemaFromJson{})
 }
 
 func addOpRemoveFacetFromObjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveFacetFromObject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveFacetFromObject{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateFacetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFacet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFacet{})
 }
 
 func addOpUpdateLinkAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateLinkAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateLinkAttributes{})
 }
 
 func addOpUpdateObjectAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateObjectAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateObjectAttributes{})
 }
 
 func addOpUpdateSchemaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateSchema{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateSchema{})
 }
 
 func addOpUpdateTypedLinkFacetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTypedLinkFacet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTypedLinkFacet{})
 }
 
 func addOpUpgradeAppliedSchemaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpgradeAppliedSchema{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpgradeAppliedSchema{})
 }
 
 func addOpUpgradePublishedSchemaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpgradePublishedSchema{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpgradePublishedSchema{})
 }
 
 func validateAttributeKey(v *types.AttributeKey) error {

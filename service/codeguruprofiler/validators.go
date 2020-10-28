@@ -251,51 +251,51 @@ func (m *validateOpUpdateProfilingGroup) HandleInitialize(ctx context.Context, i
 }
 
 func addOpConfigureAgentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpConfigureAgent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpConfigureAgent{})
 }
 
 func addOpCreateProfilingGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateProfilingGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateProfilingGroup{})
 }
 
 func addOpDeleteProfilingGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteProfilingGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteProfilingGroup{})
 }
 
 func addOpDescribeProfilingGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeProfilingGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeProfilingGroup{})
 }
 
 func addOpGetPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPolicy{})
 }
 
 func addOpGetProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetProfile{})
 }
 
 func addOpListProfileTimesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListProfileTimes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListProfileTimes{})
 }
 
 func addOpPostAgentProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPostAgentProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPostAgentProfile{})
 }
 
 func addOpPutPermissionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutPermission{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutPermission{})
 }
 
 func addOpRemovePermissionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemovePermission{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemovePermission{})
 }
 
 func addOpRetrieveTimeSeriesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRetrieveTimeSeries{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRetrieveTimeSeries{})
 }
 
 func addOpUpdateProfilingGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateProfilingGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateProfilingGroup{})
 }
 
 func validateAgentOrchestrationConfig(v *types.AgentOrchestrationConfig) error {

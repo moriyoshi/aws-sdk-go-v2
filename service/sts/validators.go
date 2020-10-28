@@ -131,27 +131,27 @@ func (m *validateOpGetFederationToken) HandleInitialize(ctx context.Context, in 
 }
 
 func addOpAssumeRoleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssumeRole{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssumeRole{})
 }
 
 func addOpAssumeRoleWithSAMLValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssumeRoleWithSAML{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssumeRoleWithSAML{})
 }
 
 func addOpAssumeRoleWithWebIdentityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssumeRoleWithWebIdentity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssumeRoleWithWebIdentity{})
 }
 
 func addOpDecodeAuthorizationMessageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDecodeAuthorizationMessage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDecodeAuthorizationMessage{})
 }
 
 func addOpGetAccessKeyInfoValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAccessKeyInfo{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAccessKeyInfo{})
 }
 
 func addOpGetFederationTokenValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFederationToken{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFederationToken{})
 }
 
 func validateTag(v *types.Tag) error {

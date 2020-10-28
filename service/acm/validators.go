@@ -251,51 +251,51 @@ func (m *validateOpUpdateCertificateOptions) HandleInitialize(ctx context.Contex
 }
 
 func addOpAddTagsToCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddTagsToCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddTagsToCertificate{})
 }
 
 func addOpDeleteCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCertificate{})
 }
 
 func addOpDescribeCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCertificate{})
 }
 
 func addOpExportCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpExportCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpExportCertificate{})
 }
 
 func addOpGetCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCertificate{})
 }
 
 func addOpImportCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpImportCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpImportCertificate{})
 }
 
 func addOpListTagsForCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForCertificate{})
 }
 
 func addOpRemoveTagsFromCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveTagsFromCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveTagsFromCertificate{})
 }
 
 func addOpRenewCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRenewCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRenewCertificate{})
 }
 
 func addOpRequestCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRequestCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRequestCertificate{})
 }
 
 func addOpResendValidationEmailValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResendValidationEmail{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResendValidationEmail{})
 }
 
 func addOpUpdateCertificateOptionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateCertificateOptions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateCertificateOptions{})
 }
 
 func validateDomainValidationOption(v *types.DomainValidationOption) error {

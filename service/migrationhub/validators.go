@@ -291,59 +291,59 @@ func (m *validateOpPutResourceAttributes) HandleInitialize(ctx context.Context, 
 }
 
 func addOpAssociateCreatedArtifactValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateCreatedArtifact{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateCreatedArtifact{})
 }
 
 func addOpAssociateDiscoveredResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateDiscoveredResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateDiscoveredResource{})
 }
 
 func addOpCreateProgressUpdateStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateProgressUpdateStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateProgressUpdateStream{})
 }
 
 func addOpDeleteProgressUpdateStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteProgressUpdateStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteProgressUpdateStream{})
 }
 
 func addOpDescribeApplicationStateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeApplicationState{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeApplicationState{})
 }
 
 func addOpDescribeMigrationTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeMigrationTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeMigrationTask{})
 }
 
 func addOpDisassociateCreatedArtifactValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateCreatedArtifact{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateCreatedArtifact{})
 }
 
 func addOpDisassociateDiscoveredResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateDiscoveredResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateDiscoveredResource{})
 }
 
 func addOpImportMigrationTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpImportMigrationTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpImportMigrationTask{})
 }
 
 func addOpListCreatedArtifactsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListCreatedArtifacts{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListCreatedArtifacts{})
 }
 
 func addOpListDiscoveredResourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDiscoveredResources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDiscoveredResources{})
 }
 
 func addOpNotifyApplicationStateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpNotifyApplicationState{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpNotifyApplicationState{})
 }
 
 func addOpNotifyMigrationTaskStateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpNotifyMigrationTaskState{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpNotifyMigrationTaskState{})
 }
 
 func addOpPutResourceAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutResourceAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutResourceAttributes{})
 }
 
 func validateCreatedArtifact(v *types.CreatedArtifact) error {

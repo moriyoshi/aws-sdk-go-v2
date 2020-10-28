@@ -851,171 +851,171 @@ func (m *validateOpUpdateAutoScalingGroup) HandleInitialize(ctx context.Context,
 }
 
 func addOpAttachInstancesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAttachInstances{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAttachInstances{})
 }
 
 func addOpAttachLoadBalancersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAttachLoadBalancers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAttachLoadBalancers{})
 }
 
 func addOpAttachLoadBalancerTargetGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAttachLoadBalancerTargetGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAttachLoadBalancerTargetGroups{})
 }
 
 func addOpBatchDeleteScheduledActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDeleteScheduledAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDeleteScheduledAction{})
 }
 
 func addOpBatchPutScheduledUpdateGroupActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchPutScheduledUpdateGroupAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchPutScheduledUpdateGroupAction{})
 }
 
 func addOpCancelInstanceRefreshValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelInstanceRefresh{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelInstanceRefresh{})
 }
 
 func addOpCompleteLifecycleActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCompleteLifecycleAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCompleteLifecycleAction{})
 }
 
 func addOpCreateAutoScalingGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAutoScalingGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAutoScalingGroup{})
 }
 
 func addOpCreateLaunchConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLaunchConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLaunchConfiguration{})
 }
 
 func addOpCreateOrUpdateTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateOrUpdateTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateOrUpdateTags{})
 }
 
 func addOpDeleteAutoScalingGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAutoScalingGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAutoScalingGroup{})
 }
 
 func addOpDeleteLaunchConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLaunchConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLaunchConfiguration{})
 }
 
 func addOpDeleteLifecycleHookValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLifecycleHook{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLifecycleHook{})
 }
 
 func addOpDeleteNotificationConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteNotificationConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteNotificationConfiguration{})
 }
 
 func addOpDeletePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePolicy{})
 }
 
 func addOpDeleteScheduledActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteScheduledAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteScheduledAction{})
 }
 
 func addOpDeleteTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTags{})
 }
 
 func addOpDescribeInstanceRefreshesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeInstanceRefreshes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeInstanceRefreshes{})
 }
 
 func addOpDescribeLifecycleHooksValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeLifecycleHooks{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeLifecycleHooks{})
 }
 
 func addOpDescribeLoadBalancersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeLoadBalancers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeLoadBalancers{})
 }
 
 func addOpDescribeLoadBalancerTargetGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeLoadBalancerTargetGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeLoadBalancerTargetGroups{})
 }
 
 func addOpDetachInstancesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetachInstances{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetachInstances{})
 }
 
 func addOpDetachLoadBalancersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetachLoadBalancers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetachLoadBalancers{})
 }
 
 func addOpDetachLoadBalancerTargetGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetachLoadBalancerTargetGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetachLoadBalancerTargetGroups{})
 }
 
 func addOpDisableMetricsCollectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableMetricsCollection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableMetricsCollection{})
 }
 
 func addOpEnableMetricsCollectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableMetricsCollection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableMetricsCollection{})
 }
 
 func addOpEnterStandbyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnterStandby{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnterStandby{})
 }
 
 func addOpExecutePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpExecutePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpExecutePolicy{})
 }
 
 func addOpExitStandbyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpExitStandby{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpExitStandby{})
 }
 
 func addOpPutLifecycleHookValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutLifecycleHook{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutLifecycleHook{})
 }
 
 func addOpPutNotificationConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutNotificationConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutNotificationConfiguration{})
 }
 
 func addOpPutScalingPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutScalingPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutScalingPolicy{})
 }
 
 func addOpPutScheduledUpdateGroupActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutScheduledUpdateGroupAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutScheduledUpdateGroupAction{})
 }
 
 func addOpRecordLifecycleActionHeartbeatValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRecordLifecycleActionHeartbeat{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRecordLifecycleActionHeartbeat{})
 }
 
 func addOpResumeProcessesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResumeProcesses{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResumeProcesses{})
 }
 
 func addOpSetDesiredCapacityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetDesiredCapacity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetDesiredCapacity{})
 }
 
 func addOpSetInstanceHealthValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetInstanceHealth{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetInstanceHealth{})
 }
 
 func addOpSetInstanceProtectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetInstanceProtection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetInstanceProtection{})
 }
 
 func addOpStartInstanceRefreshValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartInstanceRefresh{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartInstanceRefresh{})
 }
 
 func addOpSuspendProcessesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSuspendProcesses{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSuspendProcesses{})
 }
 
 func addOpTerminateInstanceInAutoScalingGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTerminateInstanceInAutoScalingGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTerminateInstanceInAutoScalingGroup{})
 }
 
 func addOpUpdateAutoScalingGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAutoScalingGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAutoScalingGroup{})
 }
 
 func validateBlockDeviceMapping(v *types.BlockDeviceMapping) error {

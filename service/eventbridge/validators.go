@@ -551,111 +551,111 @@ func (m *validateOpUntagResource) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpActivateEventSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpActivateEventSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpActivateEventSource{})
 }
 
 func addOpCreateEventBusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateEventBus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateEventBus{})
 }
 
 func addOpCreatePartnerEventSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePartnerEventSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePartnerEventSource{})
 }
 
 func addOpDeactivateEventSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeactivateEventSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeactivateEventSource{})
 }
 
 func addOpDeleteEventBusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEventBus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEventBus{})
 }
 
 func addOpDeletePartnerEventSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePartnerEventSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePartnerEventSource{})
 }
 
 func addOpDeleteRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRule{})
 }
 
 func addOpDescribeEventSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEventSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEventSource{})
 }
 
 func addOpDescribePartnerEventSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribePartnerEventSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribePartnerEventSource{})
 }
 
 func addOpDescribeRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeRule{})
 }
 
 func addOpDisableRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableRule{})
 }
 
 func addOpEnableRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableRule{})
 }
 
 func addOpListPartnerEventSourceAccountsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPartnerEventSourceAccounts{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPartnerEventSourceAccounts{})
 }
 
 func addOpListPartnerEventSourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPartnerEventSources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPartnerEventSources{})
 }
 
 func addOpListRuleNamesByTargetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListRuleNamesByTarget{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListRuleNamesByTarget{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListTargetsByRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTargetsByRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTargetsByRule{})
 }
 
 func addOpPutEventsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutEvents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutEvents{})
 }
 
 func addOpPutPartnerEventsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutPartnerEvents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutPartnerEvents{})
 }
 
 func addOpPutPermissionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutPermission{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutPermission{})
 }
 
 func addOpPutRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutRule{})
 }
 
 func addOpPutTargetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutTargets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutTargets{})
 }
 
 func addOpRemovePermissionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemovePermission{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemovePermission{})
 }
 
 func addOpRemoveTargetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveTargets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveTargets{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpTestEventPatternValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTestEventPattern{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTestEventPattern{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func validateAwsVpcConfiguration(v *types.AwsVpcConfiguration) error {

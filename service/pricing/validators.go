@@ -51,11 +51,11 @@ func (m *validateOpGetProducts) HandleInitialize(ctx context.Context, in middlew
 }
 
 func addOpGetAttributeValuesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAttributeValues{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAttributeValues{})
 }
 
 func addOpGetProductsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetProducts{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetProducts{})
 }
 
 func validateFilter(v *types.Filter) error {

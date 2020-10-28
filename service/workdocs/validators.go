@@ -771,155 +771,155 @@ func (m *validateOpUpdateUser) HandleInitialize(ctx context.Context, in middlewa
 }
 
 func addOpAbortDocumentVersionUploadValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAbortDocumentVersionUpload{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAbortDocumentVersionUpload{})
 }
 
 func addOpActivateUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpActivateUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpActivateUser{})
 }
 
 func addOpAddResourcePermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddResourcePermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddResourcePermissions{})
 }
 
 func addOpCreateCommentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateComment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateComment{})
 }
 
 func addOpCreateCustomMetadataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCustomMetadata{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCustomMetadata{})
 }
 
 func addOpCreateFolderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFolder{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFolder{})
 }
 
 func addOpCreateLabelsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLabels{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLabels{})
 }
 
 func addOpCreateNotificationSubscriptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateNotificationSubscription{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateNotificationSubscription{})
 }
 
 func addOpCreateUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateUser{})
 }
 
 func addOpDeactivateUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeactivateUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeactivateUser{})
 }
 
 func addOpDeleteCommentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteComment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteComment{})
 }
 
 func addOpDeleteCustomMetadataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCustomMetadata{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCustomMetadata{})
 }
 
 func addOpDeleteDocumentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDocument{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDocument{})
 }
 
 func addOpDeleteFolderContentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFolderContents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFolderContents{})
 }
 
 func addOpDeleteFolderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFolder{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFolder{})
 }
 
 func addOpDeleteLabelsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLabels{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLabels{})
 }
 
 func addOpDeleteNotificationSubscriptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteNotificationSubscription{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteNotificationSubscription{})
 }
 
 func addOpDeleteUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUser{})
 }
 
 func addOpDescribeCommentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeComments{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeComments{})
 }
 
 func addOpDescribeDocumentVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDocumentVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDocumentVersions{})
 }
 
 func addOpDescribeFolderContentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeFolderContents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeFolderContents{})
 }
 
 func addOpDescribeGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeGroups{})
 }
 
 func addOpDescribeNotificationSubscriptionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeNotificationSubscriptions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeNotificationSubscriptions{})
 }
 
 func addOpDescribeResourcePermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeResourcePermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeResourcePermissions{})
 }
 
 func addOpDescribeRootFoldersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeRootFolders{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeRootFolders{})
 }
 
 func addOpGetCurrentUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCurrentUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCurrentUser{})
 }
 
 func addOpGetDocumentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDocument{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDocument{})
 }
 
 func addOpGetDocumentPathValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDocumentPath{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDocumentPath{})
 }
 
 func addOpGetDocumentVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDocumentVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDocumentVersion{})
 }
 
 func addOpGetFolderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFolder{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFolder{})
 }
 
 func addOpGetFolderPathValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFolderPath{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFolderPath{})
 }
 
 func addOpInitiateDocumentVersionUploadValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpInitiateDocumentVersionUpload{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpInitiateDocumentVersionUpload{})
 }
 
 func addOpRemoveAllResourcePermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveAllResourcePermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveAllResourcePermissions{})
 }
 
 func addOpRemoveResourcePermissionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveResourcePermission{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveResourcePermission{})
 }
 
 func addOpUpdateDocumentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDocument{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDocument{})
 }
 
 func addOpUpdateDocumentVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDocumentVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDocumentVersion{})
 }
 
 func addOpUpdateFolderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFolder{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFolder{})
 }
 
 func addOpUpdateUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateUser{})
 }
 
 func validateSharePrincipal(v *types.SharePrincipal) error {

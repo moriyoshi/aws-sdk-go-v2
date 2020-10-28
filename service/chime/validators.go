@@ -2211,443 +2211,443 @@ func (m *validateOpUpdateVoiceConnector) HandleInitialize(ctx context.Context, i
 }
 
 func addOpAssociatePhoneNumbersWithVoiceConnectorGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociatePhoneNumbersWithVoiceConnectorGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociatePhoneNumbersWithVoiceConnectorGroup{})
 }
 
 func addOpAssociatePhoneNumbersWithVoiceConnectorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociatePhoneNumbersWithVoiceConnector{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociatePhoneNumbersWithVoiceConnector{})
 }
 
 func addOpAssociatePhoneNumberWithUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociatePhoneNumberWithUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociatePhoneNumberWithUser{})
 }
 
 func addOpAssociateSigninDelegateGroupsWithAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateSigninDelegateGroupsWithAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateSigninDelegateGroupsWithAccount{})
 }
 
 func addOpBatchCreateAttendeeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchCreateAttendee{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchCreateAttendee{})
 }
 
 func addOpBatchCreateRoomMembershipValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchCreateRoomMembership{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchCreateRoomMembership{})
 }
 
 func addOpBatchDeletePhoneNumberValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDeletePhoneNumber{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDeletePhoneNumber{})
 }
 
 func addOpBatchSuspendUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchSuspendUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchSuspendUser{})
 }
 
 func addOpBatchUnsuspendUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchUnsuspendUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchUnsuspendUser{})
 }
 
 func addOpBatchUpdatePhoneNumberValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchUpdatePhoneNumber{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchUpdatePhoneNumber{})
 }
 
 func addOpBatchUpdateUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchUpdateUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchUpdateUser{})
 }
 
 func addOpCreateAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAccount{})
 }
 
 func addOpCreateAttendeeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAttendee{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAttendee{})
 }
 
 func addOpCreateBotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateBot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateBot{})
 }
 
 func addOpCreateMeetingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateMeeting{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateMeeting{})
 }
 
 func addOpCreateMeetingWithAttendeesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateMeetingWithAttendees{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateMeetingWithAttendees{})
 }
 
 func addOpCreatePhoneNumberOrderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePhoneNumberOrder{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePhoneNumberOrder{})
 }
 
 func addOpCreateProxySessionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateProxySession{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateProxySession{})
 }
 
 func addOpCreateRoomValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRoom{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRoom{})
 }
 
 func addOpCreateRoomMembershipValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRoomMembership{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRoomMembership{})
 }
 
 func addOpCreateUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateUser{})
 }
 
 func addOpCreateVoiceConnectorGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateVoiceConnectorGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateVoiceConnectorGroup{})
 }
 
 func addOpCreateVoiceConnectorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateVoiceConnector{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateVoiceConnector{})
 }
 
 func addOpDeleteAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAccount{})
 }
 
 func addOpDeleteAttendeeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAttendee{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAttendee{})
 }
 
 func addOpDeleteEventsConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEventsConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEventsConfiguration{})
 }
 
 func addOpDeleteMeetingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMeeting{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMeeting{})
 }
 
 func addOpDeletePhoneNumberValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePhoneNumber{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePhoneNumber{})
 }
 
 func addOpDeleteProxySessionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteProxySession{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteProxySession{})
 }
 
 func addOpDeleteRoomValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRoom{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRoom{})
 }
 
 func addOpDeleteRoomMembershipValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRoomMembership{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRoomMembership{})
 }
 
 func addOpDeleteVoiceConnectorEmergencyCallingConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVoiceConnectorEmergencyCallingConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVoiceConnectorEmergencyCallingConfiguration{})
 }
 
 func addOpDeleteVoiceConnectorGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVoiceConnectorGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVoiceConnectorGroup{})
 }
 
 func addOpDeleteVoiceConnectorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVoiceConnector{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVoiceConnector{})
 }
 
 func addOpDeleteVoiceConnectorOriginationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVoiceConnectorOrigination{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVoiceConnectorOrigination{})
 }
 
 func addOpDeleteVoiceConnectorProxyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVoiceConnectorProxy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVoiceConnectorProxy{})
 }
 
 func addOpDeleteVoiceConnectorStreamingConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVoiceConnectorStreamingConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVoiceConnectorStreamingConfiguration{})
 }
 
 func addOpDeleteVoiceConnectorTerminationCredentialsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVoiceConnectorTerminationCredentials{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVoiceConnectorTerminationCredentials{})
 }
 
 func addOpDeleteVoiceConnectorTerminationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVoiceConnectorTermination{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVoiceConnectorTermination{})
 }
 
 func addOpDisassociatePhoneNumberFromUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociatePhoneNumberFromUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociatePhoneNumberFromUser{})
 }
 
 func addOpDisassociatePhoneNumbersFromVoiceConnectorGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociatePhoneNumbersFromVoiceConnectorGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociatePhoneNumbersFromVoiceConnectorGroup{})
 }
 
 func addOpDisassociatePhoneNumbersFromVoiceConnectorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociatePhoneNumbersFromVoiceConnector{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociatePhoneNumbersFromVoiceConnector{})
 }
 
 func addOpDisassociateSigninDelegateGroupsFromAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateSigninDelegateGroupsFromAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateSigninDelegateGroupsFromAccount{})
 }
 
 func addOpGetAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAccount{})
 }
 
 func addOpGetAccountSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAccountSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAccountSettings{})
 }
 
 func addOpGetAttendeeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAttendee{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAttendee{})
 }
 
 func addOpGetBotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBot{})
 }
 
 func addOpGetEventsConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetEventsConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetEventsConfiguration{})
 }
 
 func addOpGetMeetingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMeeting{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMeeting{})
 }
 
 func addOpGetPhoneNumberValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPhoneNumber{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPhoneNumber{})
 }
 
 func addOpGetPhoneNumberOrderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPhoneNumberOrder{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPhoneNumberOrder{})
 }
 
 func addOpGetProxySessionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetProxySession{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetProxySession{})
 }
 
 func addOpGetRetentionSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRetentionSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRetentionSettings{})
 }
 
 func addOpGetRoomValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRoom{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRoom{})
 }
 
 func addOpGetUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetUser{})
 }
 
 func addOpGetUserSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetUserSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetUserSettings{})
 }
 
 func addOpGetVoiceConnectorEmergencyCallingConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetVoiceConnectorEmergencyCallingConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetVoiceConnectorEmergencyCallingConfiguration{})
 }
 
 func addOpGetVoiceConnectorGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetVoiceConnectorGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetVoiceConnectorGroup{})
 }
 
 func addOpGetVoiceConnectorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetVoiceConnector{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetVoiceConnector{})
 }
 
 func addOpGetVoiceConnectorLoggingConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetVoiceConnectorLoggingConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetVoiceConnectorLoggingConfiguration{})
 }
 
 func addOpGetVoiceConnectorOriginationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetVoiceConnectorOrigination{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetVoiceConnectorOrigination{})
 }
 
 func addOpGetVoiceConnectorProxyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetVoiceConnectorProxy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetVoiceConnectorProxy{})
 }
 
 func addOpGetVoiceConnectorStreamingConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetVoiceConnectorStreamingConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetVoiceConnectorStreamingConfiguration{})
 }
 
 func addOpGetVoiceConnectorTerminationHealthValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetVoiceConnectorTerminationHealth{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetVoiceConnectorTerminationHealth{})
 }
 
 func addOpGetVoiceConnectorTerminationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetVoiceConnectorTermination{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetVoiceConnectorTermination{})
 }
 
 func addOpInviteUsersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpInviteUsers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpInviteUsers{})
 }
 
 func addOpListAttendeesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAttendees{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAttendees{})
 }
 
 func addOpListAttendeeTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAttendeeTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAttendeeTags{})
 }
 
 func addOpListBotsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListBots{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListBots{})
 }
 
 func addOpListMeetingTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListMeetingTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListMeetingTags{})
 }
 
 func addOpListProxySessionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListProxySessions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListProxySessions{})
 }
 
 func addOpListRoomMembershipsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListRoomMemberships{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListRoomMemberships{})
 }
 
 func addOpListRoomsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListRooms{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListRooms{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListUsersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListUsers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListUsers{})
 }
 
 func addOpListVoiceConnectorTerminationCredentialsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListVoiceConnectorTerminationCredentials{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListVoiceConnectorTerminationCredentials{})
 }
 
 func addOpLogoutUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpLogoutUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpLogoutUser{})
 }
 
 func addOpPutEventsConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutEventsConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutEventsConfiguration{})
 }
 
 func addOpPutRetentionSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutRetentionSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutRetentionSettings{})
 }
 
 func addOpPutVoiceConnectorEmergencyCallingConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutVoiceConnectorEmergencyCallingConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutVoiceConnectorEmergencyCallingConfiguration{})
 }
 
 func addOpPutVoiceConnectorLoggingConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutVoiceConnectorLoggingConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutVoiceConnectorLoggingConfiguration{})
 }
 
 func addOpPutVoiceConnectorOriginationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutVoiceConnectorOrigination{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutVoiceConnectorOrigination{})
 }
 
 func addOpPutVoiceConnectorProxyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutVoiceConnectorProxy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutVoiceConnectorProxy{})
 }
 
 func addOpPutVoiceConnectorStreamingConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutVoiceConnectorStreamingConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutVoiceConnectorStreamingConfiguration{})
 }
 
 func addOpPutVoiceConnectorTerminationCredentialsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutVoiceConnectorTerminationCredentials{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutVoiceConnectorTerminationCredentials{})
 }
 
 func addOpPutVoiceConnectorTerminationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutVoiceConnectorTermination{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutVoiceConnectorTermination{})
 }
 
 func addOpRedactConversationMessageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRedactConversationMessage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRedactConversationMessage{})
 }
 
 func addOpRedactRoomMessageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRedactRoomMessage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRedactRoomMessage{})
 }
 
 func addOpRegenerateSecurityTokenValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegenerateSecurityToken{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegenerateSecurityToken{})
 }
 
 func addOpResetPersonalPINValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResetPersonalPIN{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResetPersonalPIN{})
 }
 
 func addOpRestorePhoneNumberValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRestorePhoneNumber{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRestorePhoneNumber{})
 }
 
 func addOpTagAttendeeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagAttendee{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagAttendee{})
 }
 
 func addOpTagMeetingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagMeeting{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagMeeting{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagAttendeeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagAttendee{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagAttendee{})
 }
 
 func addOpUntagMeetingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagMeeting{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagMeeting{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAccount{})
 }
 
 func addOpUpdateAccountSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAccountSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAccountSettings{})
 }
 
 func addOpUpdateBotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateBot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateBot{})
 }
 
 func addOpUpdateGlobalSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGlobalSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGlobalSettings{})
 }
 
 func addOpUpdatePhoneNumberValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePhoneNumber{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePhoneNumber{})
 }
 
 func addOpUpdatePhoneNumberSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePhoneNumberSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePhoneNumberSettings{})
 }
 
 func addOpUpdateProxySessionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateProxySession{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateProxySession{})
 }
 
 func addOpUpdateRoomValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRoom{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRoom{})
 }
 
 func addOpUpdateRoomMembershipValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRoomMembership{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRoomMembership{})
 }
 
 func addOpUpdateUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateUser{})
 }
 
 func addOpUpdateUserSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateUserSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateUserSettings{})
 }
 
 func addOpUpdateVoiceConnectorGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateVoiceConnectorGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateVoiceConnectorGroup{})
 }
 
 func addOpUpdateVoiceConnectorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateVoiceConnector{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateVoiceConnector{})
 }
 
 func validateAttendeeTagList(v []*types.Tag) error {

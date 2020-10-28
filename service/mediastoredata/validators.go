@@ -90,19 +90,19 @@ func (m *validateOpPutObject) HandleInitialize(ctx context.Context, in middlewar
 }
 
 func addOpDeleteObjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteObject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteObject{})
 }
 
 func addOpDescribeObjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeObject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeObject{})
 }
 
 func addOpGetObjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetObject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetObject{})
 }
 
 func addOpPutObjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutObject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutObject{})
 }
 
 func validateOpDeleteObjectInput(v *DeleteObjectInput) error {

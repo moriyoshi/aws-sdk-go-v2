@@ -250,51 +250,51 @@ func (m *validateOpUpdateDeviceState) HandleInitialize(ctx context.Context, in m
 }
 
 func addOpClaimDevicesByClaimCodeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpClaimDevicesByClaimCode{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpClaimDevicesByClaimCode{})
 }
 
 func addOpDescribeDeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDevice{})
 }
 
 func addOpFinalizeDeviceClaimValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpFinalizeDeviceClaim{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpFinalizeDeviceClaim{})
 }
 
 func addOpGetDeviceMethodsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDeviceMethods{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDeviceMethods{})
 }
 
 func addOpInitiateDeviceClaimValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpInitiateDeviceClaim{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpInitiateDeviceClaim{})
 }
 
 func addOpInvokeDeviceMethodValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpInvokeDeviceMethod{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpInvokeDeviceMethod{})
 }
 
 func addOpListDeviceEventsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDeviceEvents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDeviceEvents{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUnclaimDeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUnclaimDevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUnclaimDevice{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateDeviceStateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDeviceState{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDeviceState{})
 }
 
 func validateOpClaimDevicesByClaimCodeInput(v *ClaimDevicesByClaimCodeInput) error {

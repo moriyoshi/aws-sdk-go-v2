@@ -551,111 +551,111 @@ func (m *validateOpUpdateResolverRule) HandleInitialize(ctx context.Context, in 
 }
 
 func addOpAssociateResolverEndpointIpAddressValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateResolverEndpointIpAddress{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateResolverEndpointIpAddress{})
 }
 
 func addOpAssociateResolverQueryLogConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateResolverQueryLogConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateResolverQueryLogConfig{})
 }
 
 func addOpAssociateResolverRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateResolverRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateResolverRule{})
 }
 
 func addOpCreateResolverEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateResolverEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateResolverEndpoint{})
 }
 
 func addOpCreateResolverQueryLogConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateResolverQueryLogConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateResolverQueryLogConfig{})
 }
 
 func addOpCreateResolverRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateResolverRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateResolverRule{})
 }
 
 func addOpDeleteResolverEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteResolverEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteResolverEndpoint{})
 }
 
 func addOpDeleteResolverQueryLogConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteResolverQueryLogConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteResolverQueryLogConfig{})
 }
 
 func addOpDeleteResolverRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteResolverRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteResolverRule{})
 }
 
 func addOpDisassociateResolverEndpointIpAddressValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateResolverEndpointIpAddress{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateResolverEndpointIpAddress{})
 }
 
 func addOpDisassociateResolverQueryLogConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateResolverQueryLogConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateResolverQueryLogConfig{})
 }
 
 func addOpDisassociateResolverRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateResolverRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateResolverRule{})
 }
 
 func addOpGetResolverEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetResolverEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetResolverEndpoint{})
 }
 
 func addOpGetResolverQueryLogConfigAssociationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetResolverQueryLogConfigAssociation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetResolverQueryLogConfigAssociation{})
 }
 
 func addOpGetResolverQueryLogConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetResolverQueryLogConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetResolverQueryLogConfig{})
 }
 
 func addOpGetResolverQueryLogConfigPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetResolverQueryLogConfigPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetResolverQueryLogConfigPolicy{})
 }
 
 func addOpGetResolverRuleAssociationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetResolverRuleAssociation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetResolverRuleAssociation{})
 }
 
 func addOpGetResolverRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetResolverRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetResolverRule{})
 }
 
 func addOpGetResolverRulePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetResolverRulePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetResolverRulePolicy{})
 }
 
 func addOpListResolverEndpointIpAddressesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListResolverEndpointIpAddresses{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListResolverEndpointIpAddresses{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPutResolverQueryLogConfigPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutResolverQueryLogConfigPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutResolverQueryLogConfigPolicy{})
 }
 
 func addOpPutResolverRulePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutResolverRulePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutResolverRulePolicy{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateResolverEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateResolverEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateResolverEndpoint{})
 }
 
 func addOpUpdateResolverRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateResolverRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateResolverRule{})
 }
 
 func validateIpAddressesRequest(v []*types.IpAddressRequest) error {

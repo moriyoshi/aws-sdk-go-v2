@@ -331,67 +331,67 @@ func (m *validateOpUpdateUserProfile) HandleInitialize(ctx context.Context, in m
 }
 
 func addOpAssociateTeamMemberValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateTeamMember{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateTeamMember{})
 }
 
 func addOpCreateProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateProject{})
 }
 
 func addOpCreateUserProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateUserProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateUserProfile{})
 }
 
 func addOpDeleteProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteProject{})
 }
 
 func addOpDeleteUserProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUserProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUserProfile{})
 }
 
 func addOpDescribeProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeProject{})
 }
 
 func addOpDescribeUserProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeUserProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeUserProfile{})
 }
 
 func addOpDisassociateTeamMemberValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateTeamMember{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateTeamMember{})
 }
 
 func addOpListResourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListResources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListResources{})
 }
 
 func addOpListTagsForProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForProject{})
 }
 
 func addOpListTeamMembersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTeamMembers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTeamMembers{})
 }
 
 func addOpTagProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagProject{})
 }
 
 func addOpUntagProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagProject{})
 }
 
 func addOpUpdateProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateProject{})
 }
 
 func addOpUpdateTeamMemberValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTeamMember{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTeamMember{})
 }
 
 func addOpUpdateUserProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateUserProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateUserProfile{})
 }
 
 func validateCode(v *types.Code) error {

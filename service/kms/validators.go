@@ -831,167 +831,167 @@ func (m *validateOpVerify) HandleInitialize(ctx context.Context, in middleware.I
 }
 
 func addOpCancelKeyDeletionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelKeyDeletion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelKeyDeletion{})
 }
 
 func addOpConnectCustomKeyStoreValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpConnectCustomKeyStore{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpConnectCustomKeyStore{})
 }
 
 func addOpCreateAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAlias{})
 }
 
 func addOpCreateCustomKeyStoreValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCustomKeyStore{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCustomKeyStore{})
 }
 
 func addOpCreateGrantValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateGrant{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateGrant{})
 }
 
 func addOpCreateKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateKey{})
 }
 
 func addOpDecryptValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDecrypt{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDecrypt{})
 }
 
 func addOpDeleteAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAlias{})
 }
 
 func addOpDeleteCustomKeyStoreValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCustomKeyStore{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCustomKeyStore{})
 }
 
 func addOpDeleteImportedKeyMaterialValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteImportedKeyMaterial{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteImportedKeyMaterial{})
 }
 
 func addOpDescribeKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeKey{})
 }
 
 func addOpDisableKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableKey{})
 }
 
 func addOpDisableKeyRotationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableKeyRotation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableKeyRotation{})
 }
 
 func addOpDisconnectCustomKeyStoreValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisconnectCustomKeyStore{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisconnectCustomKeyStore{})
 }
 
 func addOpEnableKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableKey{})
 }
 
 func addOpEnableKeyRotationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableKeyRotation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableKeyRotation{})
 }
 
 func addOpEncryptValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEncrypt{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEncrypt{})
 }
 
 func addOpGenerateDataKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGenerateDataKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGenerateDataKey{})
 }
 
 func addOpGenerateDataKeyPairValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGenerateDataKeyPair{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGenerateDataKeyPair{})
 }
 
 func addOpGenerateDataKeyPairWithoutPlaintextValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGenerateDataKeyPairWithoutPlaintext{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGenerateDataKeyPairWithoutPlaintext{})
 }
 
 func addOpGenerateDataKeyWithoutPlaintextValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGenerateDataKeyWithoutPlaintext{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGenerateDataKeyWithoutPlaintext{})
 }
 
 func addOpGetKeyPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetKeyPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetKeyPolicy{})
 }
 
 func addOpGetKeyRotationStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetKeyRotationStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetKeyRotationStatus{})
 }
 
 func addOpGetParametersForImportValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetParametersForImport{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetParametersForImport{})
 }
 
 func addOpGetPublicKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPublicKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPublicKey{})
 }
 
 func addOpImportKeyMaterialValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpImportKeyMaterial{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpImportKeyMaterial{})
 }
 
 func addOpListGrantsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListGrants{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListGrants{})
 }
 
 func addOpListKeyPoliciesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListKeyPolicies{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListKeyPolicies{})
 }
 
 func addOpListResourceTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListResourceTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListResourceTags{})
 }
 
 func addOpListRetirableGrantsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListRetirableGrants{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListRetirableGrants{})
 }
 
 func addOpPutKeyPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutKeyPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutKeyPolicy{})
 }
 
 func addOpReEncryptValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpReEncrypt{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpReEncrypt{})
 }
 
 func addOpRevokeGrantValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRevokeGrant{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRevokeGrant{})
 }
 
 func addOpScheduleKeyDeletionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpScheduleKeyDeletion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpScheduleKeyDeletion{})
 }
 
 func addOpSignValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSign{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSign{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAlias{})
 }
 
 func addOpUpdateCustomKeyStoreValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateCustomKeyStore{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateCustomKeyStore{})
 }
 
 func addOpUpdateKeyDescriptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateKeyDescription{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateKeyDescription{})
 }
 
 func addOpVerifyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpVerify{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpVerify{})
 }
 
 func validateTag(v *types.Tag) error {

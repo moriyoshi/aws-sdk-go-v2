@@ -2191,439 +2191,439 @@ func (m *validateOpUpdateVoiceTemplate) HandleInitialize(ctx context.Context, in
 }
 
 func addOpCreateAppValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateApp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateApp{})
 }
 
 func addOpCreateCampaignValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCampaign{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCampaign{})
 }
 
 func addOpCreateEmailTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateEmailTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateEmailTemplate{})
 }
 
 func addOpCreateExportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateExportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateExportJob{})
 }
 
 func addOpCreateImportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateImportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateImportJob{})
 }
 
 func addOpCreateJourneyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateJourney{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateJourney{})
 }
 
 func addOpCreatePushTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePushTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePushTemplate{})
 }
 
 func addOpCreateRecommenderConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRecommenderConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRecommenderConfiguration{})
 }
 
 func addOpCreateSegmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSegment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSegment{})
 }
 
 func addOpCreateSmsTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSmsTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSmsTemplate{})
 }
 
 func addOpCreateVoiceTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateVoiceTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateVoiceTemplate{})
 }
 
 func addOpDeleteAdmChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAdmChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAdmChannel{})
 }
 
 func addOpDeleteApnsChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApnsChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApnsChannel{})
 }
 
 func addOpDeleteApnsSandboxChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApnsSandboxChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApnsSandboxChannel{})
 }
 
 func addOpDeleteApnsVoipChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApnsVoipChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApnsVoipChannel{})
 }
 
 func addOpDeleteApnsVoipSandboxChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApnsVoipSandboxChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApnsVoipSandboxChannel{})
 }
 
 func addOpDeleteAppValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApp{})
 }
 
 func addOpDeleteBaiduChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBaiduChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBaiduChannel{})
 }
 
 func addOpDeleteCampaignValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCampaign{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCampaign{})
 }
 
 func addOpDeleteEmailChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEmailChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEmailChannel{})
 }
 
 func addOpDeleteEmailTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEmailTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEmailTemplate{})
 }
 
 func addOpDeleteEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEndpoint{})
 }
 
 func addOpDeleteEventStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEventStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEventStream{})
 }
 
 func addOpDeleteGcmChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteGcmChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteGcmChannel{})
 }
 
 func addOpDeleteJourneyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteJourney{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteJourney{})
 }
 
 func addOpDeletePushTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePushTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePushTemplate{})
 }
 
 func addOpDeleteRecommenderConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRecommenderConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRecommenderConfiguration{})
 }
 
 func addOpDeleteSegmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSegment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSegment{})
 }
 
 func addOpDeleteSmsChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSmsChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSmsChannel{})
 }
 
 func addOpDeleteSmsTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSmsTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSmsTemplate{})
 }
 
 func addOpDeleteUserEndpointsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUserEndpoints{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUserEndpoints{})
 }
 
 func addOpDeleteVoiceChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVoiceChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVoiceChannel{})
 }
 
 func addOpDeleteVoiceTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVoiceTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVoiceTemplate{})
 }
 
 func addOpGetAdmChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAdmChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAdmChannel{})
 }
 
 func addOpGetApnsChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetApnsChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetApnsChannel{})
 }
 
 func addOpGetApnsSandboxChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetApnsSandboxChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetApnsSandboxChannel{})
 }
 
 func addOpGetApnsVoipChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetApnsVoipChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetApnsVoipChannel{})
 }
 
 func addOpGetApnsVoipSandboxChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetApnsVoipSandboxChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetApnsVoipSandboxChannel{})
 }
 
 func addOpGetAppValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetApp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetApp{})
 }
 
 func addOpGetApplicationDateRangeKpiValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetApplicationDateRangeKpi{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetApplicationDateRangeKpi{})
 }
 
 func addOpGetApplicationSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetApplicationSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetApplicationSettings{})
 }
 
 func addOpGetBaiduChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBaiduChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBaiduChannel{})
 }
 
 func addOpGetCampaignActivitiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCampaignActivities{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCampaignActivities{})
 }
 
 func addOpGetCampaignDateRangeKpiValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCampaignDateRangeKpi{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCampaignDateRangeKpi{})
 }
 
 func addOpGetCampaignValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCampaign{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCampaign{})
 }
 
 func addOpGetCampaignsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCampaigns{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCampaigns{})
 }
 
 func addOpGetCampaignVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCampaignVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCampaignVersion{})
 }
 
 func addOpGetCampaignVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCampaignVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCampaignVersions{})
 }
 
 func addOpGetChannelsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetChannels{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetChannels{})
 }
 
 func addOpGetEmailChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetEmailChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetEmailChannel{})
 }
 
 func addOpGetEmailTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetEmailTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetEmailTemplate{})
 }
 
 func addOpGetEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetEndpoint{})
 }
 
 func addOpGetEventStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetEventStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetEventStream{})
 }
 
 func addOpGetExportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetExportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetExportJob{})
 }
 
 func addOpGetExportJobsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetExportJobs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetExportJobs{})
 }
 
 func addOpGetGcmChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetGcmChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetGcmChannel{})
 }
 
 func addOpGetImportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetImportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetImportJob{})
 }
 
 func addOpGetImportJobsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetImportJobs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetImportJobs{})
 }
 
 func addOpGetJourneyDateRangeKpiValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetJourneyDateRangeKpi{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetJourneyDateRangeKpi{})
 }
 
 func addOpGetJourneyExecutionActivityMetricsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetJourneyExecutionActivityMetrics{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetJourneyExecutionActivityMetrics{})
 }
 
 func addOpGetJourneyExecutionMetricsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetJourneyExecutionMetrics{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetJourneyExecutionMetrics{})
 }
 
 func addOpGetJourneyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetJourney{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetJourney{})
 }
 
 func addOpGetPushTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPushTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPushTemplate{})
 }
 
 func addOpGetRecommenderConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRecommenderConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRecommenderConfiguration{})
 }
 
 func addOpGetSegmentExportJobsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSegmentExportJobs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSegmentExportJobs{})
 }
 
 func addOpGetSegmentImportJobsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSegmentImportJobs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSegmentImportJobs{})
 }
 
 func addOpGetSegmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSegment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSegment{})
 }
 
 func addOpGetSegmentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSegments{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSegments{})
 }
 
 func addOpGetSegmentVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSegmentVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSegmentVersion{})
 }
 
 func addOpGetSegmentVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSegmentVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSegmentVersions{})
 }
 
 func addOpGetSmsChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSmsChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSmsChannel{})
 }
 
 func addOpGetSmsTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSmsTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSmsTemplate{})
 }
 
 func addOpGetUserEndpointsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetUserEndpoints{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetUserEndpoints{})
 }
 
 func addOpGetVoiceChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetVoiceChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetVoiceChannel{})
 }
 
 func addOpGetVoiceTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetVoiceTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetVoiceTemplate{})
 }
 
 func addOpListJourneysValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListJourneys{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListJourneys{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListTemplateVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTemplateVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTemplateVersions{})
 }
 
 func addOpPhoneNumberValidateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPhoneNumberValidate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPhoneNumberValidate{})
 }
 
 func addOpPutEventsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutEvents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutEvents{})
 }
 
 func addOpPutEventStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutEventStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutEventStream{})
 }
 
 func addOpRemoveAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveAttributes{})
 }
 
 func addOpSendMessagesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSendMessages{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSendMessages{})
 }
 
 func addOpSendUsersMessagesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSendUsersMessages{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSendUsersMessages{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateAdmChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAdmChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAdmChannel{})
 }
 
 func addOpUpdateApnsChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateApnsChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateApnsChannel{})
 }
 
 func addOpUpdateApnsSandboxChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateApnsSandboxChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateApnsSandboxChannel{})
 }
 
 func addOpUpdateApnsVoipChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateApnsVoipChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateApnsVoipChannel{})
 }
 
 func addOpUpdateApnsVoipSandboxChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateApnsVoipSandboxChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateApnsVoipSandboxChannel{})
 }
 
 func addOpUpdateApplicationSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateApplicationSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateApplicationSettings{})
 }
 
 func addOpUpdateBaiduChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateBaiduChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateBaiduChannel{})
 }
 
 func addOpUpdateCampaignValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateCampaign{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateCampaign{})
 }
 
 func addOpUpdateEmailChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateEmailChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateEmailChannel{})
 }
 
 func addOpUpdateEmailTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateEmailTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateEmailTemplate{})
 }
 
 func addOpUpdateEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateEndpoint{})
 }
 
 func addOpUpdateEndpointsBatchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateEndpointsBatch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateEndpointsBatch{})
 }
 
 func addOpUpdateGcmChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGcmChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGcmChannel{})
 }
 
 func addOpUpdateJourneyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateJourney{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateJourney{})
 }
 
 func addOpUpdateJourneyStateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateJourneyState{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateJourneyState{})
 }
 
 func addOpUpdatePushTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePushTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePushTemplate{})
 }
 
 func addOpUpdateRecommenderConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRecommenderConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRecommenderConfiguration{})
 }
 
 func addOpUpdateSegmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateSegment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateSegment{})
 }
 
 func addOpUpdateSmsChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateSmsChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateSmsChannel{})
 }
 
 func addOpUpdateSmsTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateSmsTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateSmsTemplate{})
 }
 
 func addOpUpdateTemplateActiveVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTemplateActiveVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTemplateActiveVersion{})
 }
 
 func addOpUpdateVoiceChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateVoiceChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateVoiceChannel{})
 }
 
 func addOpUpdateVoiceTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateVoiceTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateVoiceTemplate{})
 }
 
 func validateActivity(v *types.Activity) error {

@@ -30,7 +30,7 @@ func (m *validateOpInvokeEndpoint) HandleInitialize(ctx context.Context, in midd
 }
 
 func addOpInvokeEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpInvokeEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpInvokeEndpoint{})
 }
 
 func validateOpInvokeEndpointInput(v *InvokeEndpointInput) error {

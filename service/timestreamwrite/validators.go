@@ -251,51 +251,51 @@ func (m *validateOpWriteRecords) HandleInitialize(ctx context.Context, in middle
 }
 
 func addOpCreateDatabaseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDatabase{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDatabase{})
 }
 
 func addOpCreateTableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTable{})
 }
 
 func addOpDeleteDatabaseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDatabase{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDatabase{})
 }
 
 func addOpDeleteTableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTable{})
 }
 
 func addOpDescribeDatabaseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDatabase{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDatabase{})
 }
 
 func addOpDescribeTableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTable{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateDatabaseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDatabase{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDatabase{})
 }
 
 func addOpUpdateTableValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTable{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTable{})
 }
 
 func addOpWriteRecordsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpWriteRecords{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpWriteRecords{})
 }
 
 func validateDimension(v *types.Dimension) error {

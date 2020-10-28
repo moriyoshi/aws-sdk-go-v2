@@ -431,87 +431,87 @@ func (m *validateOpUpdateVocabulary) HandleInitialize(ctx context.Context, in mi
 }
 
 func addOpCreateLanguageModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLanguageModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLanguageModel{})
 }
 
 func addOpCreateMedicalVocabularyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateMedicalVocabulary{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateMedicalVocabulary{})
 }
 
 func addOpCreateVocabularyFilterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateVocabularyFilter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateVocabularyFilter{})
 }
 
 func addOpCreateVocabularyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateVocabulary{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateVocabulary{})
 }
 
 func addOpDeleteLanguageModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLanguageModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLanguageModel{})
 }
 
 func addOpDeleteMedicalTranscriptionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMedicalTranscriptionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMedicalTranscriptionJob{})
 }
 
 func addOpDeleteMedicalVocabularyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMedicalVocabulary{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMedicalVocabulary{})
 }
 
 func addOpDeleteTranscriptionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTranscriptionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTranscriptionJob{})
 }
 
 func addOpDeleteVocabularyFilterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVocabularyFilter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVocabularyFilter{})
 }
 
 func addOpDeleteVocabularyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVocabulary{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVocabulary{})
 }
 
 func addOpDescribeLanguageModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeLanguageModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeLanguageModel{})
 }
 
 func addOpGetMedicalTranscriptionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMedicalTranscriptionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMedicalTranscriptionJob{})
 }
 
 func addOpGetMedicalVocabularyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMedicalVocabulary{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMedicalVocabulary{})
 }
 
 func addOpGetTranscriptionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTranscriptionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTranscriptionJob{})
 }
 
 func addOpGetVocabularyFilterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetVocabularyFilter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetVocabularyFilter{})
 }
 
 func addOpGetVocabularyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetVocabulary{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetVocabulary{})
 }
 
 func addOpStartMedicalTranscriptionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartMedicalTranscriptionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartMedicalTranscriptionJob{})
 }
 
 func addOpStartTranscriptionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartTranscriptionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartTranscriptionJob{})
 }
 
 func addOpUpdateMedicalVocabularyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateMedicalVocabulary{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateMedicalVocabulary{})
 }
 
 func addOpUpdateVocabularyFilterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateVocabularyFilter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateVocabularyFilter{})
 }
 
 func addOpUpdateVocabularyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateVocabulary{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateVocabulary{})
 }
 
 func validateContentRedaction(v *types.ContentRedaction) error {

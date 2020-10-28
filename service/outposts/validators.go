@@ -110,23 +110,23 @@ func (m *validateOpGetOutpostInstanceTypes) HandleInitialize(ctx context.Context
 }
 
 func addOpCreateOutpostValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateOutpost{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateOutpost{})
 }
 
 func addOpDeleteOutpostValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteOutpost{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteOutpost{})
 }
 
 func addOpDeleteSiteValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSite{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSite{})
 }
 
 func addOpGetOutpostValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetOutpost{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetOutpost{})
 }
 
 func addOpGetOutpostInstanceTypesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetOutpostInstanceTypes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetOutpostInstanceTypes{})
 }
 
 func validateOpCreateOutpostInput(v *CreateOutpostInput) error {

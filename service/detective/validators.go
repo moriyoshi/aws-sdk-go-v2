@@ -191,39 +191,39 @@ func (m *validateOpStartMonitoringMember) HandleInitialize(ctx context.Context, 
 }
 
 func addOpAcceptInvitationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAcceptInvitation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAcceptInvitation{})
 }
 
 func addOpCreateMembersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateMembers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateMembers{})
 }
 
 func addOpDeleteGraphValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteGraph{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteGraph{})
 }
 
 func addOpDeleteMembersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMembers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMembers{})
 }
 
 func addOpDisassociateMembershipValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateMembership{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateMembership{})
 }
 
 func addOpGetMembersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMembers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMembers{})
 }
 
 func addOpListMembersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListMembers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListMembers{})
 }
 
 func addOpRejectInvitationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRejectInvitation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRejectInvitation{})
 }
 
 func addOpStartMonitoringMemberValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartMonitoringMember{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartMonitoringMember{})
 }
 
 func validateAccount(v *types.Account) error {

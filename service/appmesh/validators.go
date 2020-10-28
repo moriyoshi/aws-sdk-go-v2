@@ -751,151 +751,151 @@ func (m *validateOpUpdateVirtualService) HandleInitialize(ctx context.Context, i
 }
 
 func addOpCreateGatewayRouteValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateGatewayRoute{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateGatewayRoute{})
 }
 
 func addOpCreateMeshValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateMesh{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateMesh{})
 }
 
 func addOpCreateRouteValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRoute{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRoute{})
 }
 
 func addOpCreateVirtualGatewayValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateVirtualGateway{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateVirtualGateway{})
 }
 
 func addOpCreateVirtualNodeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateVirtualNode{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateVirtualNode{})
 }
 
 func addOpCreateVirtualRouterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateVirtualRouter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateVirtualRouter{})
 }
 
 func addOpCreateVirtualServiceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateVirtualService{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateVirtualService{})
 }
 
 func addOpDeleteGatewayRouteValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteGatewayRoute{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteGatewayRoute{})
 }
 
 func addOpDeleteMeshValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMesh{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMesh{})
 }
 
 func addOpDeleteRouteValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRoute{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRoute{})
 }
 
 func addOpDeleteVirtualGatewayValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVirtualGateway{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVirtualGateway{})
 }
 
 func addOpDeleteVirtualNodeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVirtualNode{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVirtualNode{})
 }
 
 func addOpDeleteVirtualRouterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVirtualRouter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVirtualRouter{})
 }
 
 func addOpDeleteVirtualServiceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVirtualService{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVirtualService{})
 }
 
 func addOpDescribeGatewayRouteValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeGatewayRoute{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeGatewayRoute{})
 }
 
 func addOpDescribeMeshValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeMesh{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeMesh{})
 }
 
 func addOpDescribeRouteValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeRoute{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeRoute{})
 }
 
 func addOpDescribeVirtualGatewayValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeVirtualGateway{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeVirtualGateway{})
 }
 
 func addOpDescribeVirtualNodeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeVirtualNode{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeVirtualNode{})
 }
 
 func addOpDescribeVirtualRouterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeVirtualRouter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeVirtualRouter{})
 }
 
 func addOpDescribeVirtualServiceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeVirtualService{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeVirtualService{})
 }
 
 func addOpListGatewayRoutesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListGatewayRoutes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListGatewayRoutes{})
 }
 
 func addOpListRoutesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListRoutes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListRoutes{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListVirtualGatewaysValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListVirtualGateways{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListVirtualGateways{})
 }
 
 func addOpListVirtualNodesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListVirtualNodes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListVirtualNodes{})
 }
 
 func addOpListVirtualRoutersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListVirtualRouters{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListVirtualRouters{})
 }
 
 func addOpListVirtualServicesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListVirtualServices{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListVirtualServices{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateGatewayRouteValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGatewayRoute{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGatewayRoute{})
 }
 
 func addOpUpdateMeshValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateMesh{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateMesh{})
 }
 
 func addOpUpdateRouteValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRoute{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRoute{})
 }
 
 func addOpUpdateVirtualGatewayValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateVirtualGateway{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateVirtualGateway{})
 }
 
 func addOpUpdateVirtualNodeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateVirtualNode{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateVirtualNode{})
 }
 
 func addOpUpdateVirtualRouterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateVirtualRouter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateVirtualRouter{})
 }
 
 func addOpUpdateVirtualServiceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateVirtualService{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateVirtualService{})
 }
 
 func validateBackendDefaults(v *types.BackendDefaults) error {

@@ -1011,203 +1011,203 @@ func (m *validateOpTestFailover) HandleInitialize(ctx context.Context, in middle
 }
 
 func addOpAddTagsToResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddTagsToResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddTagsToResource{})
 }
 
 func addOpAuthorizeCacheSecurityGroupIngressValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAuthorizeCacheSecurityGroupIngress{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAuthorizeCacheSecurityGroupIngress{})
 }
 
 func addOpBatchApplyUpdateActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchApplyUpdateAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchApplyUpdateAction{})
 }
 
 func addOpBatchStopUpdateActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchStopUpdateAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchStopUpdateAction{})
 }
 
 func addOpCompleteMigrationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCompleteMigration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCompleteMigration{})
 }
 
 func addOpCopySnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCopySnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCopySnapshot{})
 }
 
 func addOpCreateCacheClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCacheCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCacheCluster{})
 }
 
 func addOpCreateCacheParameterGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCacheParameterGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCacheParameterGroup{})
 }
 
 func addOpCreateCacheSecurityGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCacheSecurityGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCacheSecurityGroup{})
 }
 
 func addOpCreateCacheSubnetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCacheSubnetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCacheSubnetGroup{})
 }
 
 func addOpCreateGlobalReplicationGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateGlobalReplicationGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateGlobalReplicationGroup{})
 }
 
 func addOpCreateReplicationGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateReplicationGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateReplicationGroup{})
 }
 
 func addOpCreateSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSnapshot{})
 }
 
 func addOpCreateUserGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateUserGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateUserGroup{})
 }
 
 func addOpCreateUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateUser{})
 }
 
 func addOpDecreaseNodeGroupsInGlobalReplicationGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDecreaseNodeGroupsInGlobalReplicationGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDecreaseNodeGroupsInGlobalReplicationGroup{})
 }
 
 func addOpDecreaseReplicaCountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDecreaseReplicaCount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDecreaseReplicaCount{})
 }
 
 func addOpDeleteCacheClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCacheCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCacheCluster{})
 }
 
 func addOpDeleteCacheParameterGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCacheParameterGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCacheParameterGroup{})
 }
 
 func addOpDeleteCacheSecurityGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCacheSecurityGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCacheSecurityGroup{})
 }
 
 func addOpDeleteCacheSubnetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCacheSubnetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCacheSubnetGroup{})
 }
 
 func addOpDeleteGlobalReplicationGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteGlobalReplicationGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteGlobalReplicationGroup{})
 }
 
 func addOpDeleteReplicationGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteReplicationGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteReplicationGroup{})
 }
 
 func addOpDeleteSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSnapshot{})
 }
 
 func addOpDeleteUserGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUserGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUserGroup{})
 }
 
 func addOpDeleteUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUser{})
 }
 
 func addOpDescribeCacheParametersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCacheParameters{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCacheParameters{})
 }
 
 func addOpDescribeEngineDefaultParametersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEngineDefaultParameters{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEngineDefaultParameters{})
 }
 
 func addOpDescribeUsersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeUsers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeUsers{})
 }
 
 func addOpDisassociateGlobalReplicationGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateGlobalReplicationGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateGlobalReplicationGroup{})
 }
 
 func addOpFailoverGlobalReplicationGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpFailoverGlobalReplicationGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpFailoverGlobalReplicationGroup{})
 }
 
 func addOpIncreaseNodeGroupsInGlobalReplicationGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpIncreaseNodeGroupsInGlobalReplicationGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpIncreaseNodeGroupsInGlobalReplicationGroup{})
 }
 
 func addOpIncreaseReplicaCountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpIncreaseReplicaCount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpIncreaseReplicaCount{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpModifyCacheClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyCacheCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyCacheCluster{})
 }
 
 func addOpModifyCacheParameterGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyCacheParameterGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyCacheParameterGroup{})
 }
 
 func addOpModifyCacheSubnetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyCacheSubnetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyCacheSubnetGroup{})
 }
 
 func addOpModifyGlobalReplicationGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyGlobalReplicationGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyGlobalReplicationGroup{})
 }
 
 func addOpModifyReplicationGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyReplicationGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyReplicationGroup{})
 }
 
 func addOpModifyReplicationGroupShardConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyReplicationGroupShardConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyReplicationGroupShardConfiguration{})
 }
 
 func addOpModifyUserGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyUserGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyUserGroup{})
 }
 
 func addOpModifyUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyUser{})
 }
 
 func addOpPurchaseReservedCacheNodesOfferingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPurchaseReservedCacheNodesOffering{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPurchaseReservedCacheNodesOffering{})
 }
 
 func addOpRebalanceSlotsInGlobalReplicationGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRebalanceSlotsInGlobalReplicationGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRebalanceSlotsInGlobalReplicationGroup{})
 }
 
 func addOpRebootCacheClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRebootCacheCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRebootCacheCluster{})
 }
 
 func addOpRemoveTagsFromResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveTagsFromResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveTagsFromResource{})
 }
 
 func addOpResetCacheParameterGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResetCacheParameterGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResetCacheParameterGroup{})
 }
 
 func addOpRevokeCacheSecurityGroupIngressValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRevokeCacheSecurityGroupIngress{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRevokeCacheSecurityGroupIngress{})
 }
 
 func addOpStartMigrationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartMigration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartMigration{})
 }
 
 func addOpTestFailoverValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTestFailover{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTestFailover{})
 }
 
 func validateConfigureShard(v *types.ConfigureShard) error {

@@ -71,15 +71,15 @@ func (m *validateOpListFragments) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpGetClipValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetClip{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetClip{})
 }
 
 func addOpGetMediaForFragmentListValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMediaForFragmentList{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMediaForFragmentList{})
 }
 
 func addOpListFragmentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListFragments{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListFragments{})
 }
 
 func validateClipFragmentSelector(v *types.ClipFragmentSelector) error {

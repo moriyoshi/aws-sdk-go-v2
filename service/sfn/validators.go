@@ -410,83 +410,83 @@ func (m *validateOpUpdateStateMachine) HandleInitialize(ctx context.Context, in 
 }
 
 func addOpCreateActivityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateActivity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateActivity{})
 }
 
 func addOpCreateStateMachineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateStateMachine{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateStateMachine{})
 }
 
 func addOpDeleteActivityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteActivity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteActivity{})
 }
 
 func addOpDeleteStateMachineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteStateMachine{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteStateMachine{})
 }
 
 func addOpDescribeActivityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeActivity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeActivity{})
 }
 
 func addOpDescribeExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeExecution{})
 }
 
 func addOpDescribeStateMachineForExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeStateMachineForExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeStateMachineForExecution{})
 }
 
 func addOpDescribeStateMachineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeStateMachine{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeStateMachine{})
 }
 
 func addOpGetActivityTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetActivityTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetActivityTask{})
 }
 
 func addOpGetExecutionHistoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetExecutionHistory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetExecutionHistory{})
 }
 
 func addOpListExecutionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListExecutions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListExecutions{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpSendTaskFailureValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSendTaskFailure{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSendTaskFailure{})
 }
 
 func addOpSendTaskHeartbeatValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSendTaskHeartbeat{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSendTaskHeartbeat{})
 }
 
 func addOpSendTaskSuccessValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSendTaskSuccess{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSendTaskSuccess{})
 }
 
 func addOpStartExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartExecution{})
 }
 
 func addOpStopExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopExecution{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateStateMachineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateStateMachine{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateStateMachine{})
 }
 
 func validateOpCreateActivityInput(v *CreateActivityInput) error {

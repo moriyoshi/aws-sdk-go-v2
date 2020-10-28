@@ -30,7 +30,7 @@ func (m *validateOpQueryForecast) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpQueryForecastValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpQueryForecast{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpQueryForecast{})
 }
 
 func validateOpQueryForecastInput(v *QueryForecastInput) error {

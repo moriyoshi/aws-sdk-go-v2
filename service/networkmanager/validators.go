@@ -530,107 +530,107 @@ func (m *validateOpUpdateSite) HandleInitialize(ctx context.Context, in middlewa
 }
 
 func addOpAssociateCustomerGatewayValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateCustomerGateway{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateCustomerGateway{})
 }
 
 func addOpAssociateLinkValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateLink{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateLink{})
 }
 
 func addOpCreateDeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDevice{})
 }
 
 func addOpCreateLinkValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLink{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLink{})
 }
 
 func addOpCreateSiteValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSite{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSite{})
 }
 
 func addOpDeleteDeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDevice{})
 }
 
 func addOpDeleteGlobalNetworkValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteGlobalNetwork{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteGlobalNetwork{})
 }
 
 func addOpDeleteLinkValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLink{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLink{})
 }
 
 func addOpDeleteSiteValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSite{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSite{})
 }
 
 func addOpDeregisterTransitGatewayValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterTransitGateway{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterTransitGateway{})
 }
 
 func addOpDisassociateCustomerGatewayValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateCustomerGateway{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateCustomerGateway{})
 }
 
 func addOpDisassociateLinkValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateLink{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateLink{})
 }
 
 func addOpGetCustomerGatewayAssociationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCustomerGatewayAssociations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCustomerGatewayAssociations{})
 }
 
 func addOpGetDevicesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDevices{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDevices{})
 }
 
 func addOpGetLinkAssociationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLinkAssociations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLinkAssociations{})
 }
 
 func addOpGetLinksValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLinks{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLinks{})
 }
 
 func addOpGetSitesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSites{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSites{})
 }
 
 func addOpGetTransitGatewayRegistrationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTransitGatewayRegistrations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTransitGatewayRegistrations{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpRegisterTransitGatewayValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterTransitGateway{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterTransitGateway{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateDeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDevice{})
 }
 
 func addOpUpdateGlobalNetworkValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGlobalNetwork{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGlobalNetwork{})
 }
 
 func addOpUpdateLinkValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateLink{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateLink{})
 }
 
 func addOpUpdateSiteValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateSite{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateSite{})
 }
 
 func validateOpAssociateCustomerGatewayInput(v *AssociateCustomerGatewayInput) error {

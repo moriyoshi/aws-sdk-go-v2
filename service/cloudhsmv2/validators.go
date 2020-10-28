@@ -231,47 +231,47 @@ func (m *validateOpUntagResource) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpCopyBackupToRegionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCopyBackupToRegion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCopyBackupToRegion{})
 }
 
 func addOpCreateClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCluster{})
 }
 
 func addOpCreateHsmValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateHsm{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateHsm{})
 }
 
 func addOpDeleteBackupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBackup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBackup{})
 }
 
 func addOpDeleteClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCluster{})
 }
 
 func addOpDeleteHsmValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteHsm{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteHsm{})
 }
 
 func addOpInitializeClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpInitializeCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpInitializeCluster{})
 }
 
 func addOpListTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTags{})
 }
 
 func addOpRestoreBackupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRestoreBackup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRestoreBackup{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func validateTag(v *types.Tag) error {

@@ -651,131 +651,131 @@ func (m *validateOpUpdateCampaign) HandleInitialize(ctx context.Context, in midd
 }
 
 func addOpCreateBatchInferenceJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateBatchInferenceJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateBatchInferenceJob{})
 }
 
 func addOpCreateCampaignValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCampaign{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCampaign{})
 }
 
 func addOpCreateDatasetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDatasetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDatasetGroup{})
 }
 
 func addOpCreateDatasetImportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDatasetImportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDatasetImportJob{})
 }
 
 func addOpCreateDatasetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDataset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDataset{})
 }
 
 func addOpCreateEventTrackerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateEventTracker{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateEventTracker{})
 }
 
 func addOpCreateFilterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFilter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFilter{})
 }
 
 func addOpCreateSchemaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSchema{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSchema{})
 }
 
 func addOpCreateSolutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSolution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSolution{})
 }
 
 func addOpCreateSolutionVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSolutionVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSolutionVersion{})
 }
 
 func addOpDeleteCampaignValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCampaign{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCampaign{})
 }
 
 func addOpDeleteDatasetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDatasetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDatasetGroup{})
 }
 
 func addOpDeleteDatasetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDataset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDataset{})
 }
 
 func addOpDeleteEventTrackerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEventTracker{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEventTracker{})
 }
 
 func addOpDeleteFilterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFilter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFilter{})
 }
 
 func addOpDeleteSchemaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSchema{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSchema{})
 }
 
 func addOpDeleteSolutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSolution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSolution{})
 }
 
 func addOpDescribeAlgorithmValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAlgorithm{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAlgorithm{})
 }
 
 func addOpDescribeBatchInferenceJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeBatchInferenceJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeBatchInferenceJob{})
 }
 
 func addOpDescribeCampaignValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCampaign{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCampaign{})
 }
 
 func addOpDescribeDatasetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDatasetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDatasetGroup{})
 }
 
 func addOpDescribeDatasetImportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDatasetImportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDatasetImportJob{})
 }
 
 func addOpDescribeDatasetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDataset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDataset{})
 }
 
 func addOpDescribeEventTrackerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEventTracker{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEventTracker{})
 }
 
 func addOpDescribeFeatureTransformationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeFeatureTransformation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeFeatureTransformation{})
 }
 
 func addOpDescribeFilterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeFilter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeFilter{})
 }
 
 func addOpDescribeRecipeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeRecipe{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeRecipe{})
 }
 
 func addOpDescribeSchemaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSchema{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSchema{})
 }
 
 func addOpDescribeSolutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSolution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSolution{})
 }
 
 func addOpDescribeSolutionVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSolutionVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSolutionVersion{})
 }
 
 func addOpGetSolutionMetricsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSolutionMetrics{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSolutionMetrics{})
 }
 
 func addOpUpdateCampaignValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateCampaign{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateCampaign{})
 }
 
 func validateBatchInferenceJobInput(v *types.BatchInferenceJobInput) error {

@@ -90,19 +90,19 @@ func (m *validateOpLogout) HandleInitialize(ctx context.Context, in middleware.I
 }
 
 func addOpGetRoleCredentialsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRoleCredentials{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRoleCredentials{})
 }
 
 func addOpListAccountRolesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAccountRoles{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAccountRoles{})
 }
 
 func addOpListAccountsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAccounts{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAccounts{})
 }
 
 func addOpLogoutValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpLogout{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpLogout{})
 }
 
 func validateOpGetRoleCredentialsInput(v *GetRoleCredentialsInput) error {

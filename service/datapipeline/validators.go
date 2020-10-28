@@ -371,75 +371,75 @@ func (m *validateOpValidatePipelineDefinition) HandleInitialize(ctx context.Cont
 }
 
 func addOpActivatePipelineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpActivatePipeline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpActivatePipeline{})
 }
 
 func addOpAddTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddTags{})
 }
 
 func addOpCreatePipelineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePipeline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePipeline{})
 }
 
 func addOpDeactivatePipelineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeactivatePipeline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeactivatePipeline{})
 }
 
 func addOpDeletePipelineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePipeline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePipeline{})
 }
 
 func addOpDescribeObjectsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeObjects{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeObjects{})
 }
 
 func addOpDescribePipelinesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribePipelines{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribePipelines{})
 }
 
 func addOpEvaluateExpressionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEvaluateExpression{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEvaluateExpression{})
 }
 
 func addOpGetPipelineDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPipelineDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPipelineDefinition{})
 }
 
 func addOpPollForTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPollForTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPollForTask{})
 }
 
 func addOpPutPipelineDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutPipelineDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutPipelineDefinition{})
 }
 
 func addOpQueryObjectsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpQueryObjects{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpQueryObjects{})
 }
 
 func addOpRemoveTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveTags{})
 }
 
 func addOpReportTaskProgressValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpReportTaskProgress{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpReportTaskProgress{})
 }
 
 func addOpReportTaskRunnerHeartbeatValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpReportTaskRunnerHeartbeat{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpReportTaskRunnerHeartbeat{})
 }
 
 func addOpSetStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetStatus{})
 }
 
 func addOpSetTaskStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetTaskStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetTaskStatus{})
 }
 
 func addOpValidatePipelineDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpValidatePipelineDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpValidatePipelineDefinition{})
 }
 
 func validateField(v *types.Field) error {

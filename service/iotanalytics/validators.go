@@ -591,119 +591,119 @@ func (m *validateOpUpdatePipeline) HandleInitialize(ctx context.Context, in midd
 }
 
 func addOpBatchPutMessageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchPutMessage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchPutMessage{})
 }
 
 func addOpCancelPipelineReprocessingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelPipelineReprocessing{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelPipelineReprocessing{})
 }
 
 func addOpCreateChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateChannel{})
 }
 
 func addOpCreateDatasetContentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDatasetContent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDatasetContent{})
 }
 
 func addOpCreateDatasetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDataset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDataset{})
 }
 
 func addOpCreateDatastoreValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDatastore{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDatastore{})
 }
 
 func addOpCreatePipelineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePipeline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePipeline{})
 }
 
 func addOpDeleteChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteChannel{})
 }
 
 func addOpDeleteDatasetContentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDatasetContent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDatasetContent{})
 }
 
 func addOpDeleteDatasetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDataset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDataset{})
 }
 
 func addOpDeleteDatastoreValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDatastore{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDatastore{})
 }
 
 func addOpDeletePipelineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePipeline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePipeline{})
 }
 
 func addOpDescribeChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeChannel{})
 }
 
 func addOpDescribeDatasetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDataset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDataset{})
 }
 
 func addOpDescribeDatastoreValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDatastore{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDatastore{})
 }
 
 func addOpDescribePipelineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribePipeline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribePipeline{})
 }
 
 func addOpGetDatasetContentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDatasetContent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDatasetContent{})
 }
 
 func addOpListDatasetContentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDatasetContents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDatasetContents{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPutLoggingOptionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutLoggingOptions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutLoggingOptions{})
 }
 
 func addOpRunPipelineActivityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRunPipelineActivity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRunPipelineActivity{})
 }
 
 func addOpSampleChannelDataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSampleChannelData{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSampleChannelData{})
 }
 
 func addOpStartPipelineReprocessingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartPipelineReprocessing{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartPipelineReprocessing{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateChannel{})
 }
 
 func addOpUpdateDatasetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDataset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDataset{})
 }
 
 func addOpUpdateDatastoreValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDatastore{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDatastore{})
 }
 
 func addOpUpdatePipelineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePipeline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePipeline{})
 }
 
 func validateAddAttributesActivity(v *types.AddAttributesActivity) error {

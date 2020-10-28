@@ -51,11 +51,11 @@ func (m *validateOpPutReportDefinition) HandleInitialize(ctx context.Context, in
 }
 
 func addOpModifyReportDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyReportDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyReportDefinition{})
 }
 
 func addOpPutReportDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutReportDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutReportDefinition{})
 }
 
 func validateReportDefinition(v *types.ReportDefinition) error {

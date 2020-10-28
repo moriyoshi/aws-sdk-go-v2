@@ -130,27 +130,27 @@ func (m *validateOpSynthesizeSpeech) HandleInitialize(ctx context.Context, in mi
 }
 
 func addOpDeleteLexiconValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLexicon{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLexicon{})
 }
 
 func addOpGetLexiconValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLexicon{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLexicon{})
 }
 
 func addOpGetSpeechSynthesisTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSpeechSynthesisTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSpeechSynthesisTask{})
 }
 
 func addOpPutLexiconValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutLexicon{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutLexicon{})
 }
 
 func addOpStartSpeechSynthesisTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartSpeechSynthesisTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartSpeechSynthesisTask{})
 }
 
 func addOpSynthesizeSpeechValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSynthesizeSpeech{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSynthesizeSpeech{})
 }
 
 func validateOpDeleteLexiconInput(v *DeleteLexiconInput) error {

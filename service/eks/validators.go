@@ -410,83 +410,83 @@ func (m *validateOpUpdateNodegroupVersion) HandleInitialize(ctx context.Context,
 }
 
 func addOpCreateClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCluster{})
 }
 
 func addOpCreateFargateProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFargateProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFargateProfile{})
 }
 
 func addOpCreateNodegroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateNodegroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateNodegroup{})
 }
 
 func addOpDeleteClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCluster{})
 }
 
 func addOpDeleteFargateProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFargateProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFargateProfile{})
 }
 
 func addOpDeleteNodegroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteNodegroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteNodegroup{})
 }
 
 func addOpDescribeClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCluster{})
 }
 
 func addOpDescribeFargateProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeFargateProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeFargateProfile{})
 }
 
 func addOpDescribeNodegroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeNodegroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeNodegroup{})
 }
 
 func addOpDescribeUpdateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeUpdate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeUpdate{})
 }
 
 func addOpListFargateProfilesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListFargateProfiles{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListFargateProfiles{})
 }
 
 func addOpListNodegroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListNodegroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListNodegroups{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListUpdatesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListUpdates{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListUpdates{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateClusterConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateClusterConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateClusterConfig{})
 }
 
 func addOpUpdateClusterVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateClusterVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateClusterVersion{})
 }
 
 func addOpUpdateNodegroupConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateNodegroupConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateNodegroupConfig{})
 }
 
 func addOpUpdateNodegroupVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateNodegroupVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateNodegroupVersion{})
 }
 
 func validateOpCreateClusterInput(v *CreateClusterInput) error {

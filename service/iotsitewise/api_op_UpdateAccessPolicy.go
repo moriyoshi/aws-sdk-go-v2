@@ -66,30 +66,62 @@ type UpdateAccessPolicyOutput struct {
 }
 
 func addOperationUpdateAccessPolicyMiddlewares(stack *middleware.Stack, options Options) (err error) {
-	err = stack.Serialize.Add(&awsRestjson1_serializeOpUpdateAccessPolicy{}, middleware.After)
+	err = stack.Serialize.Add(middleware.After, &awsRestjson1_serializeOpUpdateAccessPolicy{})
 	if err != nil {
 		return err
 	}
-	err = stack.Deserialize.Add(&awsRestjson1_deserializeOpUpdateAccessPolicy{}, middleware.After)
+	err = stack.Deserialize.Add(middleware.After, &awsRestjson1_deserializeOpUpdateAccessPolicy{})
 	if err != nil {
 		return err
 	}
-	awsmiddleware.AddRequestInvocationIDMiddleware(stack)
-	smithyhttp.AddContentLengthMiddleware(stack)
-	addResolveEndpointMiddleware(stack, options)
-	v4.AddComputePayloadSHA256Middleware(stack)
-	addRetryMiddlewares(stack, options)
-	addHTTPSignerV4Middleware(stack, options)
-	awsmiddleware.AddAttemptClockSkewMiddleware(stack)
-	addClientUserAgent(stack)
-	smithyhttp.AddErrorCloseResponseBodyMiddleware(stack)
-	smithyhttp.AddCloseResponseBodyMiddleware(stack)
-	addEndpointPrefix_opUpdateAccessPolicyMiddleware(stack)
-	addIdempotencyToken_opUpdateAccessPolicyMiddleware(stack, options)
-	addOpUpdateAccessPolicyValidationMiddleware(stack)
-	stack.Initialize.Add(newServiceMetadataMiddleware_opUpdateAccessPolicy(options.Region), middleware.Before)
-	addRequestIDRetrieverMiddleware(stack)
-	addResponseErrorMiddleware(stack)
+	if err := awsmiddleware.AddClientRequestIDMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddComputeContentLengthMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addResolveEndpointMiddleware(stack, options); err != nil {
+		return err
+	}
+	if err := v4.AddComputePayloadSHA256Middleware(stack); err != nil {
+		return err
+	}
+	if err := addRetryMiddlewares(stack, options); err != nil {
+		return err
+	}
+	if err := addHTTPSignerV4Middleware(stack, options); err != nil {
+		return err
+	}
+	if err := awsmiddleware.AddAttemptClockSkewMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addClientUserAgent(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddErrorCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addEndpointPrefix_opUpdateAccessPolicyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addIdempotencyToken_opUpdateAccessPolicyMiddleware(stack, options); err != nil {
+		return err
+	}
+	if err := addOpUpdateAccessPolicyValidationMiddleware(stack); err != nil {
+		return err
+	}
+	if err := stack.Initialize.Add(middleware.Before, newServiceMetadataMiddleware_opUpdateAccessPolicy(options.Region)); err != nil {
+		return err
+	}
+	if err := addRequestIDRetrieverMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addResponseErrorMiddleware(stack); err != nil {
+		return err
+	}
 	return nil
 }
 
@@ -117,7 +149,7 @@ func (m *endpointPrefix_opUpdateAccessPolicyMiddleware) HandleSerialize(ctx cont
 	return next.HandleSerialize(ctx, in)
 }
 func addEndpointPrefix_opUpdateAccessPolicyMiddleware(stack *middleware.Stack) error {
-	return stack.Serialize.Insert(&endpointPrefix_opUpdateAccessPolicyMiddleware{}, `OperationSerializer`, middleware.Before)
+	return stack.Serialize.Insert("OperationSerializer", middleware.Before, &endpointPrefix_opUpdateAccessPolicyMiddleware{})
 }
 
 type idempotencyToken_initializeOpUpdateAccessPolicy struct {
@@ -149,12 +181,12 @@ func (m *idempotencyToken_initializeOpUpdateAccessPolicy) HandleInitialize(ctx c
 	}
 	return next.HandleInitialize(ctx, in)
 }
-func addIdempotencyToken_opUpdateAccessPolicyMiddleware(stack *middleware.Stack, cfg Options) {
-	stack.Initialize.Add(&idempotencyToken_initializeOpUpdateAccessPolicy{tokenProvider: cfg.IdempotencyTokenProvider}, middleware.Before)
+func addIdempotencyToken_opUpdateAccessPolicyMiddleware(stack *middleware.Stack, cfg Options) error {
+	return stack.Initialize.Add(middleware.Before, &idempotencyToken_initializeOpUpdateAccessPolicy{tokenProvider: cfg.IdempotencyTokenProvider})
 }
 
-func newServiceMetadataMiddleware_opUpdateAccessPolicy(region string) awsmiddleware.RegisterServiceMetadata {
-	return awsmiddleware.RegisterServiceMetadata{
+func newServiceMetadataMiddleware_opUpdateAccessPolicy(region string) *awsmiddleware.RegisterServiceMetadata {
+	return &awsmiddleware.RegisterServiceMetadata{
 		Region:        region,
 		ServiceID:     ServiceID,
 		SigningName:   "iotsitewise",

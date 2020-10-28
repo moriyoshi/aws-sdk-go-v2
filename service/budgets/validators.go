@@ -451,91 +451,91 @@ func (m *validateOpUpdateSubscriber) HandleInitialize(ctx context.Context, in mi
 }
 
 func addOpCreateBudgetActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateBudgetAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateBudgetAction{})
 }
 
 func addOpCreateBudgetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateBudget{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateBudget{})
 }
 
 func addOpCreateNotificationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateNotification{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateNotification{})
 }
 
 func addOpCreateSubscriberValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSubscriber{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSubscriber{})
 }
 
 func addOpDeleteBudgetActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBudgetAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBudgetAction{})
 }
 
 func addOpDeleteBudgetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBudget{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBudget{})
 }
 
 func addOpDeleteNotificationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteNotification{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteNotification{})
 }
 
 func addOpDeleteSubscriberValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSubscriber{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSubscriber{})
 }
 
 func addOpDescribeBudgetActionHistoriesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeBudgetActionHistories{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeBudgetActionHistories{})
 }
 
 func addOpDescribeBudgetActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeBudgetAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeBudgetAction{})
 }
 
 func addOpDescribeBudgetActionsForAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeBudgetActionsForAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeBudgetActionsForAccount{})
 }
 
 func addOpDescribeBudgetActionsForBudgetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeBudgetActionsForBudget{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeBudgetActionsForBudget{})
 }
 
 func addOpDescribeBudgetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeBudget{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeBudget{})
 }
 
 func addOpDescribeBudgetPerformanceHistoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeBudgetPerformanceHistory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeBudgetPerformanceHistory{})
 }
 
 func addOpDescribeBudgetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeBudgets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeBudgets{})
 }
 
 func addOpDescribeNotificationsForBudgetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeNotificationsForBudget{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeNotificationsForBudget{})
 }
 
 func addOpDescribeSubscribersForNotificationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSubscribersForNotification{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSubscribersForNotification{})
 }
 
 func addOpExecuteBudgetActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpExecuteBudgetAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpExecuteBudgetAction{})
 }
 
 func addOpUpdateBudgetActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateBudgetAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateBudgetAction{})
 }
 
 func addOpUpdateBudgetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateBudget{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateBudget{})
 }
 
 func addOpUpdateNotificationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateNotification{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateNotification{})
 }
 
 func addOpUpdateSubscriberValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateSubscriber{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateSubscriber{})
 }
 
 func validateActionThreshold(v *types.ActionThreshold) error {

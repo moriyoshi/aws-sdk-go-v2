@@ -70,15 +70,15 @@ func (m *validateOpGetShardIterator) HandleInitialize(ctx context.Context, in mi
 }
 
 func addOpDescribeStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeStream{})
 }
 
 func addOpGetRecordsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRecords{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRecords{})
 }
 
 func addOpGetShardIteratorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetShardIterator{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetShardIterator{})
 }
 
 func validateOpDescribeStreamInput(v *DescribeStreamInput) error {

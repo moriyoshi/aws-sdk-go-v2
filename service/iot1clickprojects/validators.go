@@ -310,63 +310,63 @@ func (m *validateOpUpdateProject) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpAssociateDeviceWithPlacementValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateDeviceWithPlacement{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateDeviceWithPlacement{})
 }
 
 func addOpCreatePlacementValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePlacement{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePlacement{})
 }
 
 func addOpCreateProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateProject{})
 }
 
 func addOpDeletePlacementValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePlacement{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePlacement{})
 }
 
 func addOpDeleteProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteProject{})
 }
 
 func addOpDescribePlacementValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribePlacement{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribePlacement{})
 }
 
 func addOpDescribeProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeProject{})
 }
 
 func addOpDisassociateDeviceFromPlacementValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateDeviceFromPlacement{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateDeviceFromPlacement{})
 }
 
 func addOpGetDevicesInPlacementValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDevicesInPlacement{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDevicesInPlacement{})
 }
 
 func addOpListPlacementsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPlacements{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPlacements{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdatePlacementValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePlacement{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePlacement{})
 }
 
 func addOpUpdateProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateProject{})
 }
 
 func validateOpAssociateDeviceWithPlacementInput(v *AssociateDeviceWithPlacementInput) error {

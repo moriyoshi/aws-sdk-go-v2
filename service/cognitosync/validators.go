@@ -331,67 +331,67 @@ func (m *validateOpUpdateRecords) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpBulkPublishValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBulkPublish{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBulkPublish{})
 }
 
 func addOpDeleteDatasetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDataset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDataset{})
 }
 
 func addOpDescribeDatasetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDataset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDataset{})
 }
 
 func addOpDescribeIdentityPoolUsageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeIdentityPoolUsage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeIdentityPoolUsage{})
 }
 
 func addOpDescribeIdentityUsageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeIdentityUsage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeIdentityUsage{})
 }
 
 func addOpGetBulkPublishDetailsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBulkPublishDetails{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBulkPublishDetails{})
 }
 
 func addOpGetCognitoEventsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCognitoEvents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCognitoEvents{})
 }
 
 func addOpGetIdentityPoolConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetIdentityPoolConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetIdentityPoolConfiguration{})
 }
 
 func addOpListDatasetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDatasets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDatasets{})
 }
 
 func addOpListRecordsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListRecords{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListRecords{})
 }
 
 func addOpRegisterDeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterDevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterDevice{})
 }
 
 func addOpSetCognitoEventsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetCognitoEvents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetCognitoEvents{})
 }
 
 func addOpSetIdentityPoolConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetIdentityPoolConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetIdentityPoolConfiguration{})
 }
 
 func addOpSubscribeToDatasetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSubscribeToDataset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSubscribeToDataset{})
 }
 
 func addOpUnsubscribeFromDatasetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUnsubscribeFromDataset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUnsubscribeFromDataset{})
 }
 
 func addOpUpdateRecordsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRecords{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRecords{})
 }
 
 func validateRecordPatch(v *types.RecordPatch) error {

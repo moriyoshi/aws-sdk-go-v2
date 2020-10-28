@@ -231,47 +231,47 @@ func (m *validateOpUpdateEnvironmentMembership) HandleInitialize(ctx context.Con
 }
 
 func addOpCreateEnvironmentEC2ValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateEnvironmentEC2{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateEnvironmentEC2{})
 }
 
 func addOpCreateEnvironmentMembershipValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateEnvironmentMembership{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateEnvironmentMembership{})
 }
 
 func addOpDeleteEnvironmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEnvironment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEnvironment{})
 }
 
 func addOpDeleteEnvironmentMembershipValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEnvironmentMembership{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEnvironmentMembership{})
 }
 
 func addOpDescribeEnvironmentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEnvironments{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEnvironments{})
 }
 
 func addOpDescribeEnvironmentStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEnvironmentStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEnvironmentStatus{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateEnvironmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateEnvironment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateEnvironment{})
 }
 
 func addOpUpdateEnvironmentMembershipValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateEnvironmentMembership{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateEnvironmentMembership{})
 }
 
 func validateTag(v *types.Tag) error {

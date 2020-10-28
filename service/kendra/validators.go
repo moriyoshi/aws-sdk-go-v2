@@ -471,95 +471,95 @@ func (m *validateOpUpdateIndex) HandleInitialize(ctx context.Context, in middlew
 }
 
 func addOpBatchDeleteDocumentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDeleteDocument{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDeleteDocument{})
 }
 
 func addOpBatchPutDocumentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchPutDocument{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchPutDocument{})
 }
 
 func addOpCreateDataSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDataSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDataSource{})
 }
 
 func addOpCreateFaqValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFaq{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFaq{})
 }
 
 func addOpCreateIndexValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateIndex{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateIndex{})
 }
 
 func addOpDeleteDataSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDataSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDataSource{})
 }
 
 func addOpDeleteFaqValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFaq{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFaq{})
 }
 
 func addOpDeleteIndexValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteIndex{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteIndex{})
 }
 
 func addOpDescribeDataSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDataSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDataSource{})
 }
 
 func addOpDescribeFaqValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeFaq{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeFaq{})
 }
 
 func addOpDescribeIndexValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeIndex{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeIndex{})
 }
 
 func addOpListDataSourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDataSources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDataSources{})
 }
 
 func addOpListDataSourceSyncJobsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDataSourceSyncJobs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDataSourceSyncJobs{})
 }
 
 func addOpListFaqsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListFaqs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListFaqs{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpQueryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpQuery{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpQuery{})
 }
 
 func addOpStartDataSourceSyncJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartDataSourceSyncJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartDataSourceSyncJob{})
 }
 
 func addOpStopDataSourceSyncJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopDataSourceSyncJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopDataSourceSyncJob{})
 }
 
 func addOpSubmitFeedbackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSubmitFeedback{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSubmitFeedback{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateDataSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDataSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDataSource{})
 }
 
 func addOpUpdateIndexValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateIndex{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateIndex{})
 }
 
 func validateAclConfiguration(v *types.AclConfiguration) error {

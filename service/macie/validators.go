@@ -111,23 +111,23 @@ func (m *validateOpUpdateS3Resources) HandleInitialize(ctx context.Context, in m
 }
 
 func addOpAssociateMemberAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateMemberAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateMemberAccount{})
 }
 
 func addOpAssociateS3ResourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateS3Resources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateS3Resources{})
 }
 
 func addOpDisassociateMemberAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateMemberAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateMemberAccount{})
 }
 
 func addOpDisassociateS3ResourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateS3Resources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateS3Resources{})
 }
 
 func addOpUpdateS3ResourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateS3Resources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateS3Resources{})
 }
 
 func validateClassificationType(v *types.ClassificationType) error {

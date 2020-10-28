@@ -50,11 +50,11 @@ func (m *validateOpGetRecommendations) HandleInitialize(ctx context.Context, in 
 }
 
 func addOpGetPersonalizedRankingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPersonalizedRanking{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPersonalizedRanking{})
 }
 
 func addOpGetRecommendationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRecommendations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRecommendations{})
 }
 
 func validateOpGetPersonalizedRankingInput(v *GetPersonalizedRankingInput) error {

@@ -451,91 +451,91 @@ func (m *validateOpUpdateCertificateAuthority) HandleInitialize(ctx context.Cont
 }
 
 func addOpCreateCertificateAuthorityAuditReportValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCertificateAuthorityAuditReport{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCertificateAuthorityAuditReport{})
 }
 
 func addOpCreateCertificateAuthorityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCertificateAuthority{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCertificateAuthority{})
 }
 
 func addOpCreatePermissionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePermission{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePermission{})
 }
 
 func addOpDeleteCertificateAuthorityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCertificateAuthority{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCertificateAuthority{})
 }
 
 func addOpDeletePermissionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePermission{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePermission{})
 }
 
 func addOpDeletePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePolicy{})
 }
 
 func addOpDescribeCertificateAuthorityAuditReportValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCertificateAuthorityAuditReport{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCertificateAuthorityAuditReport{})
 }
 
 func addOpDescribeCertificateAuthorityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCertificateAuthority{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCertificateAuthority{})
 }
 
 func addOpGetCertificateAuthorityCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCertificateAuthorityCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCertificateAuthorityCertificate{})
 }
 
 func addOpGetCertificateAuthorityCsrValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCertificateAuthorityCsr{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCertificateAuthorityCsr{})
 }
 
 func addOpGetCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCertificate{})
 }
 
 func addOpGetPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPolicy{})
 }
 
 func addOpImportCertificateAuthorityCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpImportCertificateAuthorityCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpImportCertificateAuthorityCertificate{})
 }
 
 func addOpIssueCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpIssueCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpIssueCertificate{})
 }
 
 func addOpListPermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPermissions{})
 }
 
 func addOpListTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTags{})
 }
 
 func addOpPutPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutPolicy{})
 }
 
 func addOpRestoreCertificateAuthorityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRestoreCertificateAuthority{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRestoreCertificateAuthority{})
 }
 
 func addOpRevokeCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRevokeCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRevokeCertificate{})
 }
 
 func addOpTagCertificateAuthorityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagCertificateAuthority{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagCertificateAuthority{})
 }
 
 func addOpUntagCertificateAuthorityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagCertificateAuthority{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagCertificateAuthority{})
 }
 
 func addOpUpdateCertificateAuthorityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateCertificateAuthority{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateCertificateAuthority{})
 }
 
 func validateCertificateAuthorityConfiguration(v *types.CertificateAuthorityConfiguration) error {

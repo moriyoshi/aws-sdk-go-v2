@@ -411,83 +411,83 @@ func (m *validateOpUpdateQueue) HandleInitialize(ctx context.Context, in middlew
 }
 
 func addOpAssociateCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateCertificate{})
 }
 
 func addOpCancelJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelJob{})
 }
 
 func addOpCreateJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateJob{})
 }
 
 func addOpCreateJobTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateJobTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateJobTemplate{})
 }
 
 func addOpCreatePresetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePreset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePreset{})
 }
 
 func addOpCreateQueueValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateQueue{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateQueue{})
 }
 
 func addOpDeleteJobTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteJobTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteJobTemplate{})
 }
 
 func addOpDeletePresetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePreset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePreset{})
 }
 
 func addOpDeleteQueueValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteQueue{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteQueue{})
 }
 
 func addOpDisassociateCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateCertificate{})
 }
 
 func addOpGetJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetJob{})
 }
 
 func addOpGetJobTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetJobTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetJobTemplate{})
 }
 
 func addOpGetPresetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPreset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPreset{})
 }
 
 func addOpGetQueueValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetQueue{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetQueue{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateJobTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateJobTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateJobTemplate{})
 }
 
 func addOpUpdatePresetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePreset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePreset{})
 }
 
 func addOpUpdateQueueValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateQueue{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateQueue{})
 }
 
 func validateAccelerationSettings(v *types.AccelerationSettings) error {

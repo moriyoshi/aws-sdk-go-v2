@@ -30,7 +30,7 @@ func (m *validateOpGetEntitlements) HandleInitialize(ctx context.Context, in mid
 }
 
 func addOpGetEntitlementsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetEntitlements{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetEntitlements{})
 }
 
 func validateOpGetEntitlementsInput(v *GetEntitlementsInput) error {

@@ -91,19 +91,19 @@ func (m *validateOpListUsers) HandleInitialize(ctx context.Context, in middlewar
 }
 
 func addOpDescribeGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeGroup{})
 }
 
 func addOpDescribeUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeUser{})
 }
 
 func addOpListGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListGroups{})
 }
 
 func addOpListUsersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListUsers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListUsers{})
 }
 
 func validateFilter(v *types.Filter) error {

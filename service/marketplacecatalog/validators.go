@@ -131,27 +131,27 @@ func (m *validateOpStartChangeSet) HandleInitialize(ctx context.Context, in midd
 }
 
 func addOpCancelChangeSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelChangeSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelChangeSet{})
 }
 
 func addOpDescribeChangeSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeChangeSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeChangeSet{})
 }
 
 func addOpDescribeEntityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEntity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEntity{})
 }
 
 func addOpListChangeSetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListChangeSets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListChangeSets{})
 }
 
 func addOpListEntitiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListEntities{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListEntities{})
 }
 
 func addOpStartChangeSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartChangeSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartChangeSet{})
 }
 
 func validateChange(v *types.Change) error {

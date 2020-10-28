@@ -51,11 +51,11 @@ func (m *validateOpInvokeScreenAutomation) HandleInitialize(ctx context.Context,
 }
 
 func addOpGetScreenDataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetScreenData{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetScreenData{})
 }
 
 func addOpInvokeScreenAutomationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpInvokeScreenAutomation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpInvokeScreenAutomation{})
 }
 
 func validateVariableValue(v *types.VariableValue) error {

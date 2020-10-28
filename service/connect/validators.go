@@ -951,191 +951,191 @@ func (m *validateOpUpdateUserSecurityProfiles) HandleInitialize(ctx context.Cont
 }
 
 func addOpAssociateRoutingProfileQueuesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateRoutingProfileQueues{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateRoutingProfileQueues{})
 }
 
 func addOpCreateContactFlowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateContactFlow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateContactFlow{})
 }
 
 func addOpCreateRoutingProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRoutingProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRoutingProfile{})
 }
 
 func addOpCreateUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateUser{})
 }
 
 func addOpDeleteUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUser{})
 }
 
 func addOpDescribeContactFlowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeContactFlow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeContactFlow{})
 }
 
 func addOpDescribeRoutingProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeRoutingProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeRoutingProfile{})
 }
 
 func addOpDescribeUserHierarchyGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeUserHierarchyGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeUserHierarchyGroup{})
 }
 
 func addOpDescribeUserHierarchyStructureValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeUserHierarchyStructure{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeUserHierarchyStructure{})
 }
 
 func addOpDescribeUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeUser{})
 }
 
 func addOpDisassociateRoutingProfileQueuesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateRoutingProfileQueues{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateRoutingProfileQueues{})
 }
 
 func addOpGetContactAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetContactAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetContactAttributes{})
 }
 
 func addOpGetCurrentMetricDataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCurrentMetricData{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCurrentMetricData{})
 }
 
 func addOpGetFederationTokenValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFederationToken{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFederationToken{})
 }
 
 func addOpGetMetricDataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMetricData{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMetricData{})
 }
 
 func addOpListContactFlowsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListContactFlows{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListContactFlows{})
 }
 
 func addOpListHoursOfOperationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListHoursOfOperations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListHoursOfOperations{})
 }
 
 func addOpListPhoneNumbersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPhoneNumbers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPhoneNumbers{})
 }
 
 func addOpListPromptsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPrompts{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPrompts{})
 }
 
 func addOpListQueuesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListQueues{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListQueues{})
 }
 
 func addOpListRoutingProfileQueuesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListRoutingProfileQueues{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListRoutingProfileQueues{})
 }
 
 func addOpListRoutingProfilesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListRoutingProfiles{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListRoutingProfiles{})
 }
 
 func addOpListSecurityProfilesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListSecurityProfiles{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListSecurityProfiles{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListUserHierarchyGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListUserHierarchyGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListUserHierarchyGroups{})
 }
 
 func addOpListUsersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListUsers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListUsers{})
 }
 
 func addOpResumeContactRecordingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResumeContactRecording{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResumeContactRecording{})
 }
 
 func addOpStartChatContactValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartChatContact{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartChatContact{})
 }
 
 func addOpStartContactRecordingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartContactRecording{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartContactRecording{})
 }
 
 func addOpStartOutboundVoiceContactValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartOutboundVoiceContact{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartOutboundVoiceContact{})
 }
 
 func addOpStopContactValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopContact{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopContact{})
 }
 
 func addOpStopContactRecordingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopContactRecording{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopContactRecording{})
 }
 
 func addOpSuspendContactRecordingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSuspendContactRecording{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSuspendContactRecording{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateContactAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateContactAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateContactAttributes{})
 }
 
 func addOpUpdateContactFlowContentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateContactFlowContent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateContactFlowContent{})
 }
 
 func addOpUpdateContactFlowNameValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateContactFlowName{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateContactFlowName{})
 }
 
 func addOpUpdateRoutingProfileConcurrencyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRoutingProfileConcurrency{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRoutingProfileConcurrency{})
 }
 
 func addOpUpdateRoutingProfileDefaultOutboundQueueValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRoutingProfileDefaultOutboundQueue{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRoutingProfileDefaultOutboundQueue{})
 }
 
 func addOpUpdateRoutingProfileNameValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRoutingProfileName{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRoutingProfileName{})
 }
 
 func addOpUpdateRoutingProfileQueuesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRoutingProfileQueues{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRoutingProfileQueues{})
 }
 
 func addOpUpdateUserHierarchyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateUserHierarchy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateUserHierarchy{})
 }
 
 func addOpUpdateUserIdentityInfoValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateUserIdentityInfo{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateUserIdentityInfo{})
 }
 
 func addOpUpdateUserPhoneConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateUserPhoneConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateUserPhoneConfig{})
 }
 
 func addOpUpdateUserRoutingProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateUserRoutingProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateUserRoutingProfile{})
 }
 
 func addOpUpdateUserSecurityProfilesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateUserSecurityProfiles{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateUserSecurityProfiles{})
 }
 
 func validateChatMessage(v *types.ChatMessage) error {

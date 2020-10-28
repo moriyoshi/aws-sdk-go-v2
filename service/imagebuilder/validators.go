@@ -731,147 +731,147 @@ func (m *validateOpUpdateInfrastructureConfiguration) HandleInitialize(ctx conte
 }
 
 func addOpCancelImageCreationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelImageCreation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelImageCreation{})
 }
 
 func addOpCreateComponentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateComponent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateComponent{})
 }
 
 func addOpCreateDistributionConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDistributionConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDistributionConfiguration{})
 }
 
 func addOpCreateImageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateImage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateImage{})
 }
 
 func addOpCreateImagePipelineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateImagePipeline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateImagePipeline{})
 }
 
 func addOpCreateImageRecipeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateImageRecipe{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateImageRecipe{})
 }
 
 func addOpCreateInfrastructureConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateInfrastructureConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateInfrastructureConfiguration{})
 }
 
 func addOpDeleteComponentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteComponent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteComponent{})
 }
 
 func addOpDeleteDistributionConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDistributionConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDistributionConfiguration{})
 }
 
 func addOpDeleteImageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteImage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteImage{})
 }
 
 func addOpDeleteImagePipelineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteImagePipeline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteImagePipeline{})
 }
 
 func addOpDeleteImageRecipeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteImageRecipe{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteImageRecipe{})
 }
 
 func addOpDeleteInfrastructureConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteInfrastructureConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteInfrastructureConfiguration{})
 }
 
 func addOpGetComponentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetComponent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetComponent{})
 }
 
 func addOpGetComponentPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetComponentPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetComponentPolicy{})
 }
 
 func addOpGetDistributionConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDistributionConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDistributionConfiguration{})
 }
 
 func addOpGetImageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetImage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetImage{})
 }
 
 func addOpGetImagePipelineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetImagePipeline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetImagePipeline{})
 }
 
 func addOpGetImagePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetImagePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetImagePolicy{})
 }
 
 func addOpGetImageRecipeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetImageRecipe{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetImageRecipe{})
 }
 
 func addOpGetImageRecipePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetImageRecipePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetImageRecipePolicy{})
 }
 
 func addOpGetInfrastructureConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetInfrastructureConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetInfrastructureConfiguration{})
 }
 
 func addOpImportComponentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpImportComponent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpImportComponent{})
 }
 
 func addOpListComponentBuildVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListComponentBuildVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListComponentBuildVersions{})
 }
 
 func addOpListImageBuildVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListImageBuildVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListImageBuildVersions{})
 }
 
 func addOpListImagePipelineImagesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListImagePipelineImages{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListImagePipelineImages{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPutComponentPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutComponentPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutComponentPolicy{})
 }
 
 func addOpPutImagePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutImagePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutImagePolicy{})
 }
 
 func addOpPutImageRecipePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutImageRecipePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutImageRecipePolicy{})
 }
 
 func addOpStartImagePipelineExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartImagePipelineExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartImagePipelineExecution{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateDistributionConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDistributionConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDistributionConfiguration{})
 }
 
 func addOpUpdateImagePipelineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateImagePipeline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateImagePipeline{})
 }
 
 func addOpUpdateInfrastructureConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateInfrastructureConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateInfrastructureConfiguration{})
 }
 
 func validateComponentConfiguration(v *types.ComponentConfiguration) error {

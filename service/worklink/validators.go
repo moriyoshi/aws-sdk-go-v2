@@ -650,131 +650,131 @@ func (m *validateOpUpdateIdentityProviderConfiguration) HandleInitialize(ctx con
 }
 
 func addOpAssociateDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateDomain{})
 }
 
 func addOpAssociateWebsiteAuthorizationProviderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateWebsiteAuthorizationProvider{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateWebsiteAuthorizationProvider{})
 }
 
 func addOpAssociateWebsiteCertificateAuthorityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateWebsiteCertificateAuthority{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateWebsiteCertificateAuthority{})
 }
 
 func addOpCreateFleetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFleet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFleet{})
 }
 
 func addOpDeleteFleetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFleet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFleet{})
 }
 
 func addOpDescribeAuditStreamConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAuditStreamConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAuditStreamConfiguration{})
 }
 
 func addOpDescribeCompanyNetworkConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCompanyNetworkConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCompanyNetworkConfiguration{})
 }
 
 func addOpDescribeDeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDevice{})
 }
 
 func addOpDescribeDevicePolicyConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDevicePolicyConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDevicePolicyConfiguration{})
 }
 
 func addOpDescribeDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDomain{})
 }
 
 func addOpDescribeFleetMetadataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeFleetMetadata{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeFleetMetadata{})
 }
 
 func addOpDescribeIdentityProviderConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeIdentityProviderConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeIdentityProviderConfiguration{})
 }
 
 func addOpDescribeWebsiteCertificateAuthorityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeWebsiteCertificateAuthority{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeWebsiteCertificateAuthority{})
 }
 
 func addOpDisassociateDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateDomain{})
 }
 
 func addOpDisassociateWebsiteAuthorizationProviderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateWebsiteAuthorizationProvider{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateWebsiteAuthorizationProvider{})
 }
 
 func addOpDisassociateWebsiteCertificateAuthorityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateWebsiteCertificateAuthority{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateWebsiteCertificateAuthority{})
 }
 
 func addOpListDevicesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDevices{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDevices{})
 }
 
 func addOpListDomainsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDomains{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDomains{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListWebsiteAuthorizationProvidersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListWebsiteAuthorizationProviders{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListWebsiteAuthorizationProviders{})
 }
 
 func addOpListWebsiteCertificateAuthoritiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListWebsiteCertificateAuthorities{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListWebsiteCertificateAuthorities{})
 }
 
 func addOpRestoreDomainAccessValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRestoreDomainAccess{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRestoreDomainAccess{})
 }
 
 func addOpRevokeDomainAccessValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRevokeDomainAccess{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRevokeDomainAccess{})
 }
 
 func addOpSignOutUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSignOutUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSignOutUser{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateAuditStreamConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAuditStreamConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAuditStreamConfiguration{})
 }
 
 func addOpUpdateCompanyNetworkConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateCompanyNetworkConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateCompanyNetworkConfiguration{})
 }
 
 func addOpUpdateDevicePolicyConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDevicePolicyConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDevicePolicyConfiguration{})
 }
 
 func addOpUpdateDomainMetadataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDomainMetadata{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDomainMetadata{})
 }
 
 func addOpUpdateFleetMetadataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFleetMetadata{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFleetMetadata{})
 }
 
 func addOpUpdateIdentityProviderConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateIdentityProviderConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateIdentityProviderConfiguration{})
 }
 
 func validateOpAssociateDomainInput(v *AssociateDomainInput) error {

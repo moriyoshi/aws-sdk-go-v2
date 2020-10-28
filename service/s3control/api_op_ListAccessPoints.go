@@ -97,31 +97,65 @@ type ListAccessPointsOutput struct {
 }
 
 func addOperationListAccessPointsMiddlewares(stack *middleware.Stack, options Options) (err error) {
-	err = stack.Serialize.Add(&awsRestxml_serializeOpListAccessPoints{}, middleware.After)
+	err = stack.Serialize.Add(middleware.After, &awsRestxml_serializeOpListAccessPoints{})
 	if err != nil {
 		return err
 	}
-	err = stack.Deserialize.Add(&awsRestxml_deserializeOpListAccessPoints{}, middleware.After)
+	err = stack.Deserialize.Add(middleware.After, &awsRestxml_deserializeOpListAccessPoints{})
 	if err != nil {
 		return err
 	}
-	awsmiddleware.AddRequestInvocationIDMiddleware(stack)
-	smithyhttp.AddContentLengthMiddleware(stack)
-	addResolveEndpointMiddleware(stack, options)
-	v4.AddComputePayloadSHA256Middleware(stack)
-	addRetryMiddlewares(stack, options)
-	addHTTPSignerV4Middleware(stack, options)
-	awsmiddleware.AddAttemptClockSkewMiddleware(stack)
-	addClientUserAgent(stack)
-	smithyhttp.AddErrorCloseResponseBodyMiddleware(stack)
-	smithyhttp.AddCloseResponseBodyMiddleware(stack)
-	addEndpointPrefix_opListAccessPointsMiddleware(stack)
-	addOpListAccessPointsValidationMiddleware(stack)
-	stack.Initialize.Add(newServiceMetadataMiddleware_opListAccessPoints(options.Region), middleware.Before)
-	addMetadataRetrieverMiddleware(stack)
-	addUpdateEndpointMiddleware(stack, options)
-	addResponseErrorMiddleware(stack)
-	v4.AddContentSHA256HeaderMiddleware(stack)
+	if err := awsmiddleware.AddClientRequestIDMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddComputeContentLengthMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addResolveEndpointMiddleware(stack, options); err != nil {
+		return err
+	}
+	if err := v4.AddComputePayloadSHA256Middleware(stack); err != nil {
+		return err
+	}
+	if err := addRetryMiddlewares(stack, options); err != nil {
+		return err
+	}
+	if err := addHTTPSignerV4Middleware(stack, options); err != nil {
+		return err
+	}
+	if err := awsmiddleware.AddAttemptClockSkewMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addClientUserAgent(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddErrorCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addEndpointPrefix_opListAccessPointsMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addOpListAccessPointsValidationMiddleware(stack); err != nil {
+		return err
+	}
+	if err := stack.Initialize.Add(middleware.Before, newServiceMetadataMiddleware_opListAccessPoints(options.Region)); err != nil {
+		return err
+	}
+	if err := addMetadataRetrieverMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addUpdateEndpointMiddleware(stack, options); err != nil {
+		return err
+	}
+	if err := addResponseErrorMiddleware(stack); err != nil {
+		return err
+	}
+	if err := v4.AddContentSHA256HeaderMiddleware(stack); err != nil {
+		return err
+	}
 	return nil
 }
 
@@ -163,11 +197,11 @@ func (m *endpointPrefix_opListAccessPointsMiddleware) HandleSerialize(ctx contex
 	return next.HandleSerialize(ctx, in)
 }
 func addEndpointPrefix_opListAccessPointsMiddleware(stack *middleware.Stack) error {
-	return stack.Serialize.Insert(&endpointPrefix_opListAccessPointsMiddleware{}, `OperationSerializer`, middleware.Before)
+	return stack.Serialize.Insert("OperationSerializer", middleware.Before, &endpointPrefix_opListAccessPointsMiddleware{})
 }
 
-func newServiceMetadataMiddleware_opListAccessPoints(region string) awsmiddleware.RegisterServiceMetadata {
-	return awsmiddleware.RegisterServiceMetadata{
+func newServiceMetadataMiddleware_opListAccessPoints(region string) *awsmiddleware.RegisterServiceMetadata {
+	return &awsmiddleware.RegisterServiceMetadata{
 		Region:        region,
 		ServiceID:     ServiceID,
 		SigningName:   "s3",

@@ -771,155 +771,155 @@ func (m *validateOpUpdateStack) HandleInitialize(ctx context.Context, in middlew
 }
 
 func addOpAssociateFleetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateFleet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateFleet{})
 }
 
 func addOpBatchAssociateUserStackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchAssociateUserStack{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchAssociateUserStack{})
 }
 
 func addOpBatchDisassociateUserStackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDisassociateUserStack{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDisassociateUserStack{})
 }
 
 func addOpCopyImageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCopyImage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCopyImage{})
 }
 
 func addOpCreateDirectoryConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDirectoryConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDirectoryConfig{})
 }
 
 func addOpCreateFleetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFleet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFleet{})
 }
 
 func addOpCreateImageBuilderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateImageBuilder{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateImageBuilder{})
 }
 
 func addOpCreateImageBuilderStreamingURLValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateImageBuilderStreamingURL{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateImageBuilderStreamingURL{})
 }
 
 func addOpCreateStackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateStack{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateStack{})
 }
 
 func addOpCreateStreamingURLValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateStreamingURL{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateStreamingURL{})
 }
 
 func addOpCreateUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateUser{})
 }
 
 func addOpDeleteDirectoryConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDirectoryConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDirectoryConfig{})
 }
 
 func addOpDeleteFleetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFleet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFleet{})
 }
 
 func addOpDeleteImageBuilderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteImageBuilder{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteImageBuilder{})
 }
 
 func addOpDeleteImageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteImage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteImage{})
 }
 
 func addOpDeleteImagePermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteImagePermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteImagePermissions{})
 }
 
 func addOpDeleteStackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteStack{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteStack{})
 }
 
 func addOpDeleteUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUser{})
 }
 
 func addOpDescribeImagePermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeImagePermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeImagePermissions{})
 }
 
 func addOpDescribeSessionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSessions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSessions{})
 }
 
 func addOpDescribeUsersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeUsers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeUsers{})
 }
 
 func addOpDisableUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableUser{})
 }
 
 func addOpDisassociateFleetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateFleet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateFleet{})
 }
 
 func addOpEnableUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableUser{})
 }
 
 func addOpExpireSessionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpExpireSession{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpExpireSession{})
 }
 
 func addOpListAssociatedFleetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAssociatedFleets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAssociatedFleets{})
 }
 
 func addOpListAssociatedStacksValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAssociatedStacks{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAssociatedStacks{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpStartFleetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartFleet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartFleet{})
 }
 
 func addOpStartImageBuilderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartImageBuilder{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartImageBuilder{})
 }
 
 func addOpStopFleetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopFleet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopFleet{})
 }
 
 func addOpStopImageBuilderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopImageBuilder{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopImageBuilder{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateDirectoryConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDirectoryConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDirectoryConfig{})
 }
 
 func addOpUpdateFleetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFleet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFleet{})
 }
 
 func addOpUpdateImagePermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateImagePermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateImagePermissions{})
 }
 
 func addOpUpdateStackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateStack{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateStack{})
 }
 
 func validateAccessEndpoint(v *types.AccessEndpoint) error {

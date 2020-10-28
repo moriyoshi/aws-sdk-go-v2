@@ -1491,299 +1491,299 @@ func (m *validateOpUpdateRepositoryName) HandleInitialize(ctx context.Context, i
 }
 
 func addOpAssociateApprovalRuleTemplateWithRepositoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateApprovalRuleTemplateWithRepository{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateApprovalRuleTemplateWithRepository{})
 }
 
 func addOpBatchAssociateApprovalRuleTemplateWithRepositoriesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchAssociateApprovalRuleTemplateWithRepositories{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchAssociateApprovalRuleTemplateWithRepositories{})
 }
 
 func addOpBatchDescribeMergeConflictsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDescribeMergeConflicts{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDescribeMergeConflicts{})
 }
 
 func addOpBatchDisassociateApprovalRuleTemplateFromRepositoriesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDisassociateApprovalRuleTemplateFromRepositories{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDisassociateApprovalRuleTemplateFromRepositories{})
 }
 
 func addOpBatchGetCommitsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetCommits{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetCommits{})
 }
 
 func addOpBatchGetRepositoriesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetRepositories{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetRepositories{})
 }
 
 func addOpCreateApprovalRuleTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateApprovalRuleTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateApprovalRuleTemplate{})
 }
 
 func addOpCreateBranchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateBranch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateBranch{})
 }
 
 func addOpCreateCommitValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCommit{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCommit{})
 }
 
 func addOpCreatePullRequestApprovalRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePullRequestApprovalRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePullRequestApprovalRule{})
 }
 
 func addOpCreatePullRequestValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePullRequest{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePullRequest{})
 }
 
 func addOpCreateRepositoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRepository{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRepository{})
 }
 
 func addOpCreateUnreferencedMergeCommitValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateUnreferencedMergeCommit{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateUnreferencedMergeCommit{})
 }
 
 func addOpDeleteApprovalRuleTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApprovalRuleTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApprovalRuleTemplate{})
 }
 
 func addOpDeleteBranchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBranch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBranch{})
 }
 
 func addOpDeleteCommentContentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCommentContent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCommentContent{})
 }
 
 func addOpDeleteFileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFile{})
 }
 
 func addOpDeletePullRequestApprovalRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePullRequestApprovalRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePullRequestApprovalRule{})
 }
 
 func addOpDeleteRepositoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRepository{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRepository{})
 }
 
 func addOpDescribeMergeConflictsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeMergeConflicts{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeMergeConflicts{})
 }
 
 func addOpDescribePullRequestEventsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribePullRequestEvents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribePullRequestEvents{})
 }
 
 func addOpDisassociateApprovalRuleTemplateFromRepositoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateApprovalRuleTemplateFromRepository{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateApprovalRuleTemplateFromRepository{})
 }
 
 func addOpEvaluatePullRequestApprovalRulesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEvaluatePullRequestApprovalRules{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEvaluatePullRequestApprovalRules{})
 }
 
 func addOpGetApprovalRuleTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetApprovalRuleTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetApprovalRuleTemplate{})
 }
 
 func addOpGetBlobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBlob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBlob{})
 }
 
 func addOpGetCommentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetComment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetComment{})
 }
 
 func addOpGetCommentReactionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCommentReactions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCommentReactions{})
 }
 
 func addOpGetCommentsForComparedCommitValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCommentsForComparedCommit{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCommentsForComparedCommit{})
 }
 
 func addOpGetCommentsForPullRequestValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCommentsForPullRequest{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCommentsForPullRequest{})
 }
 
 func addOpGetCommitValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCommit{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCommit{})
 }
 
 func addOpGetDifferencesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDifferences{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDifferences{})
 }
 
 func addOpGetFileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFile{})
 }
 
 func addOpGetFolderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFolder{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFolder{})
 }
 
 func addOpGetMergeCommitValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMergeCommit{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMergeCommit{})
 }
 
 func addOpGetMergeConflictsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMergeConflicts{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMergeConflicts{})
 }
 
 func addOpGetMergeOptionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMergeOptions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMergeOptions{})
 }
 
 func addOpGetPullRequestApprovalStatesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPullRequestApprovalStates{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPullRequestApprovalStates{})
 }
 
 func addOpGetPullRequestValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPullRequest{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPullRequest{})
 }
 
 func addOpGetPullRequestOverrideStateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPullRequestOverrideState{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPullRequestOverrideState{})
 }
 
 func addOpGetRepositoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRepository{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRepository{})
 }
 
 func addOpGetRepositoryTriggersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRepositoryTriggers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRepositoryTriggers{})
 }
 
 func addOpListAssociatedApprovalRuleTemplatesForRepositoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAssociatedApprovalRuleTemplatesForRepository{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAssociatedApprovalRuleTemplatesForRepository{})
 }
 
 func addOpListBranchesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListBranches{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListBranches{})
 }
 
 func addOpListPullRequestsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPullRequests{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPullRequests{})
 }
 
 func addOpListRepositoriesForApprovalRuleTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListRepositoriesForApprovalRuleTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListRepositoriesForApprovalRuleTemplate{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpMergeBranchesByFastForwardValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpMergeBranchesByFastForward{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpMergeBranchesByFastForward{})
 }
 
 func addOpMergeBranchesBySquashValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpMergeBranchesBySquash{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpMergeBranchesBySquash{})
 }
 
 func addOpMergeBranchesByThreeWayValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpMergeBranchesByThreeWay{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpMergeBranchesByThreeWay{})
 }
 
 func addOpMergePullRequestByFastForwardValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpMergePullRequestByFastForward{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpMergePullRequestByFastForward{})
 }
 
 func addOpMergePullRequestBySquashValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpMergePullRequestBySquash{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpMergePullRequestBySquash{})
 }
 
 func addOpMergePullRequestByThreeWayValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpMergePullRequestByThreeWay{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpMergePullRequestByThreeWay{})
 }
 
 func addOpOverridePullRequestApprovalRulesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpOverridePullRequestApprovalRules{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpOverridePullRequestApprovalRules{})
 }
 
 func addOpPostCommentForComparedCommitValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPostCommentForComparedCommit{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPostCommentForComparedCommit{})
 }
 
 func addOpPostCommentForPullRequestValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPostCommentForPullRequest{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPostCommentForPullRequest{})
 }
 
 func addOpPostCommentReplyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPostCommentReply{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPostCommentReply{})
 }
 
 func addOpPutCommentReactionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutCommentReaction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutCommentReaction{})
 }
 
 func addOpPutFileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutFile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutFile{})
 }
 
 func addOpPutRepositoryTriggersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutRepositoryTriggers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutRepositoryTriggers{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpTestRepositoryTriggersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTestRepositoryTriggers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTestRepositoryTriggers{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateApprovalRuleTemplateContentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateApprovalRuleTemplateContent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateApprovalRuleTemplateContent{})
 }
 
 func addOpUpdateApprovalRuleTemplateDescriptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateApprovalRuleTemplateDescription{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateApprovalRuleTemplateDescription{})
 }
 
 func addOpUpdateApprovalRuleTemplateNameValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateApprovalRuleTemplateName{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateApprovalRuleTemplateName{})
 }
 
 func addOpUpdateCommentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateComment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateComment{})
 }
 
 func addOpUpdateDefaultBranchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDefaultBranch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDefaultBranch{})
 }
 
 func addOpUpdatePullRequestApprovalRuleContentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePullRequestApprovalRuleContent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePullRequestApprovalRuleContent{})
 }
 
 func addOpUpdatePullRequestApprovalStateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePullRequestApprovalState{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePullRequestApprovalState{})
 }
 
 func addOpUpdatePullRequestDescriptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePullRequestDescription{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePullRequestDescription{})
 }
 
 func addOpUpdatePullRequestStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePullRequestStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePullRequestStatus{})
 }
 
 func addOpUpdatePullRequestTitleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePullRequestTitle{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePullRequestTitle{})
 }
 
 func addOpUpdateRepositoryDescriptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRepositoryDescription{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRepositoryDescription{})
 }
 
 func addOpUpdateRepositoryNameValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRepositoryName{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRepositoryName{})
 }
 
 func validateConflictResolution(v *types.ConflictResolution) error {

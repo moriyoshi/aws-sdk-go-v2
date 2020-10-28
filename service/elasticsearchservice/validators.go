@@ -571,115 +571,115 @@ func (m *validateOpUpgradeElasticsearchDomain) HandleInitialize(ctx context.Cont
 }
 
 func addOpAcceptInboundCrossClusterSearchConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAcceptInboundCrossClusterSearchConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAcceptInboundCrossClusterSearchConnection{})
 }
 
 func addOpAddTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddTags{})
 }
 
 func addOpAssociatePackageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociatePackage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociatePackage{})
 }
 
 func addOpCancelElasticsearchServiceSoftwareUpdateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelElasticsearchServiceSoftwareUpdate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelElasticsearchServiceSoftwareUpdate{})
 }
 
 func addOpCreateElasticsearchDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateElasticsearchDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateElasticsearchDomain{})
 }
 
 func addOpCreateOutboundCrossClusterSearchConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateOutboundCrossClusterSearchConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateOutboundCrossClusterSearchConnection{})
 }
 
 func addOpCreatePackageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePackage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePackage{})
 }
 
 func addOpDeleteElasticsearchDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteElasticsearchDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteElasticsearchDomain{})
 }
 
 func addOpDeleteInboundCrossClusterSearchConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteInboundCrossClusterSearchConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteInboundCrossClusterSearchConnection{})
 }
 
 func addOpDeleteOutboundCrossClusterSearchConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteOutboundCrossClusterSearchConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteOutboundCrossClusterSearchConnection{})
 }
 
 func addOpDeletePackageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePackage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePackage{})
 }
 
 func addOpDescribeElasticsearchDomainConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeElasticsearchDomainConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeElasticsearchDomainConfig{})
 }
 
 func addOpDescribeElasticsearchDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeElasticsearchDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeElasticsearchDomain{})
 }
 
 func addOpDescribeElasticsearchDomainsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeElasticsearchDomains{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeElasticsearchDomains{})
 }
 
 func addOpDescribeElasticsearchInstanceTypeLimitsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeElasticsearchInstanceTypeLimits{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeElasticsearchInstanceTypeLimits{})
 }
 
 func addOpDissociatePackageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDissociatePackage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDissociatePackage{})
 }
 
 func addOpGetUpgradeHistoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetUpgradeHistory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetUpgradeHistory{})
 }
 
 func addOpGetUpgradeStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetUpgradeStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetUpgradeStatus{})
 }
 
 func addOpListDomainsForPackageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDomainsForPackage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDomainsForPackage{})
 }
 
 func addOpListElasticsearchInstanceTypesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListElasticsearchInstanceTypes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListElasticsearchInstanceTypes{})
 }
 
 func addOpListPackagesForDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPackagesForDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPackagesForDomain{})
 }
 
 func addOpListTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTags{})
 }
 
 func addOpPurchaseReservedElasticsearchInstanceOfferingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPurchaseReservedElasticsearchInstanceOffering{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPurchaseReservedElasticsearchInstanceOffering{})
 }
 
 func addOpRejectInboundCrossClusterSearchConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRejectInboundCrossClusterSearchConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRejectInboundCrossClusterSearchConnection{})
 }
 
 func addOpRemoveTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveTags{})
 }
 
 func addOpStartElasticsearchServiceSoftwareUpdateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartElasticsearchServiceSoftwareUpdate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartElasticsearchServiceSoftwareUpdate{})
 }
 
 func addOpUpdateElasticsearchDomainConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateElasticsearchDomainConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateElasticsearchDomainConfig{})
 }
 
 func addOpUpgradeElasticsearchDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpgradeElasticsearchDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpgradeElasticsearchDomain{})
 }
 
 func validateDomainInformation(v *types.DomainInformation) error {

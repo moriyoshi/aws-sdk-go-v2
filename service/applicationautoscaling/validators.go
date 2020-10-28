@@ -211,43 +211,43 @@ func (m *validateOpRegisterScalableTarget) HandleInitialize(ctx context.Context,
 }
 
 func addOpDeleteScalingPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteScalingPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteScalingPolicy{})
 }
 
 func addOpDeleteScheduledActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteScheduledAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteScheduledAction{})
 }
 
 func addOpDeregisterScalableTargetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterScalableTarget{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterScalableTarget{})
 }
 
 func addOpDescribeScalableTargetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeScalableTargets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeScalableTargets{})
 }
 
 func addOpDescribeScalingActivitiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeScalingActivities{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeScalingActivities{})
 }
 
 func addOpDescribeScalingPoliciesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeScalingPolicies{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeScalingPolicies{})
 }
 
 func addOpDescribeScheduledActionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeScheduledActions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeScheduledActions{})
 }
 
 func addOpPutScalingPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutScalingPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutScalingPolicy{})
 }
 
 func addOpPutScheduledActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutScheduledAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutScheduledAction{})
 }
 
 func addOpRegisterScalableTargetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterScalableTarget{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterScalableTarget{})
 }
 
 func validateCustomizedMetricSpecification(v *types.CustomizedMetricSpecification) error {

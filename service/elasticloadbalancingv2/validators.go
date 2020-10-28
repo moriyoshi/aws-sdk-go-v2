@@ -571,115 +571,115 @@ func (m *validateOpSetSubnets) HandleInitialize(ctx context.Context, in middlewa
 }
 
 func addOpAddListenerCertificatesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddListenerCertificates{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddListenerCertificates{})
 }
 
 func addOpAddTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddTags{})
 }
 
 func addOpCreateListenerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateListener{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateListener{})
 }
 
 func addOpCreateLoadBalancerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLoadBalancer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLoadBalancer{})
 }
 
 func addOpCreateRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRule{})
 }
 
 func addOpCreateTargetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTargetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTargetGroup{})
 }
 
 func addOpDeleteListenerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteListener{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteListener{})
 }
 
 func addOpDeleteLoadBalancerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLoadBalancer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLoadBalancer{})
 }
 
 func addOpDeleteRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRule{})
 }
 
 func addOpDeleteTargetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTargetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTargetGroup{})
 }
 
 func addOpDeregisterTargetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterTargets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterTargets{})
 }
 
 func addOpDescribeListenerCertificatesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeListenerCertificates{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeListenerCertificates{})
 }
 
 func addOpDescribeLoadBalancerAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeLoadBalancerAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeLoadBalancerAttributes{})
 }
 
 func addOpDescribeTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTags{})
 }
 
 func addOpDescribeTargetGroupAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTargetGroupAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTargetGroupAttributes{})
 }
 
 func addOpDescribeTargetHealthValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTargetHealth{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTargetHealth{})
 }
 
 func addOpModifyListenerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyListener{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyListener{})
 }
 
 func addOpModifyLoadBalancerAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyLoadBalancerAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyLoadBalancerAttributes{})
 }
 
 func addOpModifyRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyRule{})
 }
 
 func addOpModifyTargetGroupAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyTargetGroupAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyTargetGroupAttributes{})
 }
 
 func addOpModifyTargetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyTargetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyTargetGroup{})
 }
 
 func addOpRegisterTargetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterTargets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterTargets{})
 }
 
 func addOpRemoveListenerCertificatesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveListenerCertificates{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveListenerCertificates{})
 }
 
 func addOpRemoveTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveTags{})
 }
 
 func addOpSetIpAddressTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetIpAddressType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetIpAddressType{})
 }
 
 func addOpSetRulePrioritiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetRulePriorities{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetRulePriorities{})
 }
 
 func addOpSetSecurityGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetSecurityGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetSecurityGroups{})
 }
 
 func addOpSetSubnetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetSubnets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetSubnets{})
 }
 
 func validateAction(v *types.Action) error {

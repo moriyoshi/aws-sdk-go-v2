@@ -46,30 +46,62 @@ type DeleteProjectOutput struct {
 }
 
 func addOperationDeleteProjectMiddlewares(stack *middleware.Stack, options Options) (err error) {
-	err = stack.Serialize.Add(&awsRestjson1_serializeOpDeleteProject{}, middleware.After)
+	err = stack.Serialize.Add(middleware.After, &awsRestjson1_serializeOpDeleteProject{})
 	if err != nil {
 		return err
 	}
-	err = stack.Deserialize.Add(&awsRestjson1_deserializeOpDeleteProject{}, middleware.After)
+	err = stack.Deserialize.Add(middleware.After, &awsRestjson1_deserializeOpDeleteProject{})
 	if err != nil {
 		return err
 	}
-	awsmiddleware.AddRequestInvocationIDMiddleware(stack)
-	smithyhttp.AddContentLengthMiddleware(stack)
-	addResolveEndpointMiddleware(stack, options)
-	v4.AddComputePayloadSHA256Middleware(stack)
-	addRetryMiddlewares(stack, options)
-	addHTTPSignerV4Middleware(stack, options)
-	awsmiddleware.AddAttemptClockSkewMiddleware(stack)
-	addClientUserAgent(stack)
-	smithyhttp.AddErrorCloseResponseBodyMiddleware(stack)
-	smithyhttp.AddCloseResponseBodyMiddleware(stack)
-	addEndpointPrefix_opDeleteProjectMiddleware(stack)
-	addIdempotencyToken_opDeleteProjectMiddleware(stack, options)
-	addOpDeleteProjectValidationMiddleware(stack)
-	stack.Initialize.Add(newServiceMetadataMiddleware_opDeleteProject(options.Region), middleware.Before)
-	addRequestIDRetrieverMiddleware(stack)
-	addResponseErrorMiddleware(stack)
+	if err := awsmiddleware.AddClientRequestIDMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddComputeContentLengthMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addResolveEndpointMiddleware(stack, options); err != nil {
+		return err
+	}
+	if err := v4.AddComputePayloadSHA256Middleware(stack); err != nil {
+		return err
+	}
+	if err := addRetryMiddlewares(stack, options); err != nil {
+		return err
+	}
+	if err := addHTTPSignerV4Middleware(stack, options); err != nil {
+		return err
+	}
+	if err := awsmiddleware.AddAttemptClockSkewMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addClientUserAgent(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddErrorCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addEndpointPrefix_opDeleteProjectMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addIdempotencyToken_opDeleteProjectMiddleware(stack, options); err != nil {
+		return err
+	}
+	if err := addOpDeleteProjectValidationMiddleware(stack); err != nil {
+		return err
+	}
+	if err := stack.Initialize.Add(middleware.Before, newServiceMetadataMiddleware_opDeleteProject(options.Region)); err != nil {
+		return err
+	}
+	if err := addRequestIDRetrieverMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addResponseErrorMiddleware(stack); err != nil {
+		return err
+	}
 	return nil
 }
 
@@ -97,7 +129,7 @@ func (m *endpointPrefix_opDeleteProjectMiddleware) HandleSerialize(ctx context.C
 	return next.HandleSerialize(ctx, in)
 }
 func addEndpointPrefix_opDeleteProjectMiddleware(stack *middleware.Stack) error {
-	return stack.Serialize.Insert(&endpointPrefix_opDeleteProjectMiddleware{}, `OperationSerializer`, middleware.Before)
+	return stack.Serialize.Insert("OperationSerializer", middleware.Before, &endpointPrefix_opDeleteProjectMiddleware{})
 }
 
 type idempotencyToken_initializeOpDeleteProject struct {
@@ -129,12 +161,12 @@ func (m *idempotencyToken_initializeOpDeleteProject) HandleInitialize(ctx contex
 	}
 	return next.HandleInitialize(ctx, in)
 }
-func addIdempotencyToken_opDeleteProjectMiddleware(stack *middleware.Stack, cfg Options) {
-	stack.Initialize.Add(&idempotencyToken_initializeOpDeleteProject{tokenProvider: cfg.IdempotencyTokenProvider}, middleware.Before)
+func addIdempotencyToken_opDeleteProjectMiddleware(stack *middleware.Stack, cfg Options) error {
+	return stack.Initialize.Add(middleware.Before, &idempotencyToken_initializeOpDeleteProject{tokenProvider: cfg.IdempotencyTokenProvider})
 }
 
-func newServiceMetadataMiddleware_opDeleteProject(region string) awsmiddleware.RegisterServiceMetadata {
-	return awsmiddleware.RegisterServiceMetadata{
+func newServiceMetadataMiddleware_opDeleteProject(region string) *awsmiddleware.RegisterServiceMetadata {
+	return &awsmiddleware.RegisterServiceMetadata{
 		Region:        region,
 		ServiceID:     ServiceID,
 		SigningName:   "iotsitewise",

@@ -111,23 +111,23 @@ func (m *validateOpPutSession) HandleInitialize(ctx context.Context, in middlewa
 }
 
 func addOpDeleteSessionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSession{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSession{})
 }
 
 func addOpGetSessionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSession{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSession{})
 }
 
 func addOpPostContentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPostContent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPostContent{})
 }
 
 func addOpPostTextValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPostText{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPostText{})
 }
 
 func addOpPutSessionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutSession{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutSession{})
 }
 
 func validateDialogAction(v *types.DialogAction) error {

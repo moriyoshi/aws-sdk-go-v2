@@ -1391,279 +1391,279 @@ func (m *validateOpRotateEncryptionKey) HandleInitialize(ctx context.Context, in
 }
 
 func addOpAcceptReservedNodeExchangeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAcceptReservedNodeExchange{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAcceptReservedNodeExchange{})
 }
 
 func addOpAuthorizeClusterSecurityGroupIngressValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAuthorizeClusterSecurityGroupIngress{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAuthorizeClusterSecurityGroupIngress{})
 }
 
 func addOpAuthorizeSnapshotAccessValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAuthorizeSnapshotAccess{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAuthorizeSnapshotAccess{})
 }
 
 func addOpBatchDeleteClusterSnapshotsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDeleteClusterSnapshots{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDeleteClusterSnapshots{})
 }
 
 func addOpBatchModifyClusterSnapshotsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchModifyClusterSnapshots{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchModifyClusterSnapshots{})
 }
 
 func addOpCancelResizeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelResize{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelResize{})
 }
 
 func addOpCopyClusterSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCopyClusterSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCopyClusterSnapshot{})
 }
 
 func addOpCreateClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCluster{})
 }
 
 func addOpCreateClusterParameterGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateClusterParameterGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateClusterParameterGroup{})
 }
 
 func addOpCreateClusterSecurityGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateClusterSecurityGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateClusterSecurityGroup{})
 }
 
 func addOpCreateClusterSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateClusterSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateClusterSnapshot{})
 }
 
 func addOpCreateClusterSubnetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateClusterSubnetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateClusterSubnetGroup{})
 }
 
 func addOpCreateEventSubscriptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateEventSubscription{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateEventSubscription{})
 }
 
 func addOpCreateHsmClientCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateHsmClientCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateHsmClientCertificate{})
 }
 
 func addOpCreateHsmConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateHsmConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateHsmConfiguration{})
 }
 
 func addOpCreateScheduledActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateScheduledAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateScheduledAction{})
 }
 
 func addOpCreateSnapshotCopyGrantValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSnapshotCopyGrant{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSnapshotCopyGrant{})
 }
 
 func addOpCreateTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTags{})
 }
 
 func addOpCreateUsageLimitValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateUsageLimit{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateUsageLimit{})
 }
 
 func addOpDeleteClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCluster{})
 }
 
 func addOpDeleteClusterParameterGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteClusterParameterGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteClusterParameterGroup{})
 }
 
 func addOpDeleteClusterSecurityGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteClusterSecurityGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteClusterSecurityGroup{})
 }
 
 func addOpDeleteClusterSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteClusterSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteClusterSnapshot{})
 }
 
 func addOpDeleteClusterSubnetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteClusterSubnetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteClusterSubnetGroup{})
 }
 
 func addOpDeleteEventSubscriptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEventSubscription{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEventSubscription{})
 }
 
 func addOpDeleteHsmClientCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteHsmClientCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteHsmClientCertificate{})
 }
 
 func addOpDeleteHsmConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteHsmConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteHsmConfiguration{})
 }
 
 func addOpDeleteScheduledActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteScheduledAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteScheduledAction{})
 }
 
 func addOpDeleteSnapshotCopyGrantValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSnapshotCopyGrant{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSnapshotCopyGrant{})
 }
 
 func addOpDeleteSnapshotScheduleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSnapshotSchedule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSnapshotSchedule{})
 }
 
 func addOpDeleteTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTags{})
 }
 
 func addOpDeleteUsageLimitValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUsageLimit{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUsageLimit{})
 }
 
 func addOpDescribeClusterParametersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeClusterParameters{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeClusterParameters{})
 }
 
 func addOpDescribeClusterSnapshotsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeClusterSnapshots{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeClusterSnapshots{})
 }
 
 func addOpDescribeDefaultClusterParametersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDefaultClusterParameters{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDefaultClusterParameters{})
 }
 
 func addOpDescribeLoggingStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeLoggingStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeLoggingStatus{})
 }
 
 func addOpDescribeNodeConfigurationOptionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeNodeConfigurationOptions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeNodeConfigurationOptions{})
 }
 
 func addOpDescribeResizeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeResize{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeResize{})
 }
 
 func addOpDescribeScheduledActionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeScheduledActions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeScheduledActions{})
 }
 
 func addOpDisableLoggingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableLogging{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableLogging{})
 }
 
 func addOpDisableSnapshotCopyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableSnapshotCopy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableSnapshotCopy{})
 }
 
 func addOpEnableLoggingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableLogging{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableLogging{})
 }
 
 func addOpEnableSnapshotCopyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableSnapshotCopy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableSnapshotCopy{})
 }
 
 func addOpGetClusterCredentialsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetClusterCredentials{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetClusterCredentials{})
 }
 
 func addOpGetReservedNodeExchangeOfferingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetReservedNodeExchangeOfferings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetReservedNodeExchangeOfferings{})
 }
 
 func addOpModifyClusterDbRevisionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyClusterDbRevision{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyClusterDbRevision{})
 }
 
 func addOpModifyClusterIamRolesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyClusterIamRoles{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyClusterIamRoles{})
 }
 
 func addOpModifyClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyCluster{})
 }
 
 func addOpModifyClusterMaintenanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyClusterMaintenance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyClusterMaintenance{})
 }
 
 func addOpModifyClusterParameterGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyClusterParameterGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyClusterParameterGroup{})
 }
 
 func addOpModifyClusterSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyClusterSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyClusterSnapshot{})
 }
 
 func addOpModifyClusterSnapshotScheduleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyClusterSnapshotSchedule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyClusterSnapshotSchedule{})
 }
 
 func addOpModifyClusterSubnetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyClusterSubnetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyClusterSubnetGroup{})
 }
 
 func addOpModifyEventSubscriptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyEventSubscription{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyEventSubscription{})
 }
 
 func addOpModifyScheduledActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyScheduledAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyScheduledAction{})
 }
 
 func addOpModifySnapshotCopyRetentionPeriodValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifySnapshotCopyRetentionPeriod{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifySnapshotCopyRetentionPeriod{})
 }
 
 func addOpModifySnapshotScheduleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifySnapshotSchedule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifySnapshotSchedule{})
 }
 
 func addOpModifyUsageLimitValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyUsageLimit{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyUsageLimit{})
 }
 
 func addOpPauseClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPauseCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPauseCluster{})
 }
 
 func addOpPurchaseReservedNodeOfferingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPurchaseReservedNodeOffering{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPurchaseReservedNodeOffering{})
 }
 
 func addOpRebootClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRebootCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRebootCluster{})
 }
 
 func addOpResetClusterParameterGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResetClusterParameterGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResetClusterParameterGroup{})
 }
 
 func addOpResizeClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResizeCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResizeCluster{})
 }
 
 func addOpRestoreFromClusterSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRestoreFromClusterSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRestoreFromClusterSnapshot{})
 }
 
 func addOpRestoreTableFromClusterSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRestoreTableFromClusterSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRestoreTableFromClusterSnapshot{})
 }
 
 func addOpResumeClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResumeCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResumeCluster{})
 }
 
 func addOpRevokeClusterSecurityGroupIngressValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRevokeClusterSecurityGroupIngress{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRevokeClusterSecurityGroupIngress{})
 }
 
 func addOpRevokeSnapshotAccessValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRevokeSnapshotAccess{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRevokeSnapshotAccess{})
 }
 
 func addOpRotateEncryptionKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRotateEncryptionKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRotateEncryptionKey{})
 }
 
 func validateDeleteClusterSnapshotMessage(v *types.DeleteClusterSnapshotMessage) error {

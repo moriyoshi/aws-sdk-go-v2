@@ -50,11 +50,11 @@ func (m *validateOpSendAlexaOfferToMaster) HandleInitialize(ctx context.Context,
 }
 
 func addOpGetIceServerConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetIceServerConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetIceServerConfig{})
 }
 
 func addOpSendAlexaOfferToMasterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSendAlexaOfferToMaster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSendAlexaOfferToMaster{})
 }
 
 func validateOpGetIceServerConfigInput(v *GetIceServerConfigInput) error {

@@ -491,99 +491,99 @@ func (m *validateOpUpdateWorkGroup) HandleInitialize(ctx context.Context, in mid
 }
 
 func addOpBatchGetNamedQueryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetNamedQuery{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetNamedQuery{})
 }
 
 func addOpBatchGetQueryExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetQueryExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetQueryExecution{})
 }
 
 func addOpCreateDataCatalogValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDataCatalog{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDataCatalog{})
 }
 
 func addOpCreateNamedQueryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateNamedQuery{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateNamedQuery{})
 }
 
 func addOpCreateWorkGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateWorkGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateWorkGroup{})
 }
 
 func addOpDeleteDataCatalogValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDataCatalog{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDataCatalog{})
 }
 
 func addOpDeleteNamedQueryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteNamedQuery{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteNamedQuery{})
 }
 
 func addOpDeleteWorkGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteWorkGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteWorkGroup{})
 }
 
 func addOpGetDatabaseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDatabase{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDatabase{})
 }
 
 func addOpGetDataCatalogValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDataCatalog{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDataCatalog{})
 }
 
 func addOpGetNamedQueryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetNamedQuery{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetNamedQuery{})
 }
 
 func addOpGetQueryExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetQueryExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetQueryExecution{})
 }
 
 func addOpGetQueryResultsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetQueryResults{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetQueryResults{})
 }
 
 func addOpGetTableMetadataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTableMetadata{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTableMetadata{})
 }
 
 func addOpGetWorkGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetWorkGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetWorkGroup{})
 }
 
 func addOpListDatabasesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDatabases{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDatabases{})
 }
 
 func addOpListTableMetadataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTableMetadata{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTableMetadata{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpStartQueryExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartQueryExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartQueryExecution{})
 }
 
 func addOpStopQueryExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopQueryExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopQueryExecution{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateDataCatalogValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDataCatalog{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDataCatalog{})
 }
 
 func addOpUpdateWorkGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateWorkGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateWorkGroup{})
 }
 
 func validateEncryptionConfiguration(v *types.EncryptionConfiguration) error {

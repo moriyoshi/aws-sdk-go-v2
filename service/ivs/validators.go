@@ -370,75 +370,75 @@ func (m *validateOpUpdateChannel) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpBatchGetChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetChannel{})
 }
 
 func addOpBatchGetStreamKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetStreamKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetStreamKey{})
 }
 
 func addOpCreateStreamKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateStreamKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateStreamKey{})
 }
 
 func addOpDeleteChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteChannel{})
 }
 
 func addOpDeletePlaybackKeyPairValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePlaybackKeyPair{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePlaybackKeyPair{})
 }
 
 func addOpDeleteStreamKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteStreamKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteStreamKey{})
 }
 
 func addOpGetChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetChannel{})
 }
 
 func addOpGetPlaybackKeyPairValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPlaybackKeyPair{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPlaybackKeyPair{})
 }
 
 func addOpGetStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetStream{})
 }
 
 func addOpGetStreamKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetStreamKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetStreamKey{})
 }
 
 func addOpImportPlaybackKeyPairValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpImportPlaybackKeyPair{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpImportPlaybackKeyPair{})
 }
 
 func addOpListStreamKeysValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListStreamKeys{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListStreamKeys{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPutMetadataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutMetadata{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutMetadata{})
 }
 
 func addOpStopStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopStream{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateChannel{})
 }
 
 func validateOpBatchGetChannelInput(v *BatchGetChannelInput) error {

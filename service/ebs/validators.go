@@ -130,27 +130,27 @@ func (m *validateOpStartSnapshot) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpCompleteSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCompleteSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCompleteSnapshot{})
 }
 
 func addOpGetSnapshotBlockValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSnapshotBlock{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSnapshotBlock{})
 }
 
 func addOpListChangedBlocksValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListChangedBlocks{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListChangedBlocks{})
 }
 
 func addOpListSnapshotBlocksValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListSnapshotBlocks{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListSnapshotBlocks{})
 }
 
 func addOpPutSnapshotBlockValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutSnapshotBlock{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutSnapshotBlock{})
 }
 
 func addOpStartSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartSnapshot{})
 }
 
 func validateOpCompleteSnapshotInput(v *CompleteSnapshotInput) error {

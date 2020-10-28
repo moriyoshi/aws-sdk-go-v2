@@ -131,27 +131,27 @@ func (m *validateOpUntagResource) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpCloseTunnelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCloseTunnel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCloseTunnel{})
 }
 
 func addOpDescribeTunnelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTunnel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTunnel{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpOpenTunnelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpOpenTunnel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpOpenTunnel{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func validateDestinationConfig(v *types.DestinationConfig) error {

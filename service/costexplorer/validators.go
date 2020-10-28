@@ -531,107 +531,107 @@ func (m *validateOpUpdateCostCategoryDefinition) HandleInitialize(ctx context.Co
 }
 
 func addOpCreateAnomalyMonitorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAnomalyMonitor{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAnomalyMonitor{})
 }
 
 func addOpCreateAnomalySubscriptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAnomalySubscription{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAnomalySubscription{})
 }
 
 func addOpCreateCostCategoryDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCostCategoryDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCostCategoryDefinition{})
 }
 
 func addOpDeleteAnomalyMonitorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAnomalyMonitor{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAnomalyMonitor{})
 }
 
 func addOpDeleteAnomalySubscriptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAnomalySubscription{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAnomalySubscription{})
 }
 
 func addOpDeleteCostCategoryDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCostCategoryDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCostCategoryDefinition{})
 }
 
 func addOpDescribeCostCategoryDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCostCategoryDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCostCategoryDefinition{})
 }
 
 func addOpGetAnomaliesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAnomalies{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAnomalies{})
 }
 
 func addOpGetCostAndUsageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCostAndUsage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCostAndUsage{})
 }
 
 func addOpGetCostAndUsageWithResourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCostAndUsageWithResources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCostAndUsageWithResources{})
 }
 
 func addOpGetCostForecastValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCostForecast{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCostForecast{})
 }
 
 func addOpGetDimensionValuesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDimensionValues{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDimensionValues{})
 }
 
 func addOpGetReservationCoverageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetReservationCoverage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetReservationCoverage{})
 }
 
 func addOpGetReservationPurchaseRecommendationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetReservationPurchaseRecommendation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetReservationPurchaseRecommendation{})
 }
 
 func addOpGetReservationUtilizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetReservationUtilization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetReservationUtilization{})
 }
 
 func addOpGetRightsizingRecommendationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRightsizingRecommendation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRightsizingRecommendation{})
 }
 
 func addOpGetSavingsPlansCoverageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSavingsPlansCoverage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSavingsPlansCoverage{})
 }
 
 func addOpGetSavingsPlansPurchaseRecommendationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSavingsPlansPurchaseRecommendation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSavingsPlansPurchaseRecommendation{})
 }
 
 func addOpGetSavingsPlansUtilizationDetailsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSavingsPlansUtilizationDetails{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSavingsPlansUtilizationDetails{})
 }
 
 func addOpGetSavingsPlansUtilizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSavingsPlansUtilization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSavingsPlansUtilization{})
 }
 
 func addOpGetTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTags{})
 }
 
 func addOpGetUsageForecastValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetUsageForecast{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetUsageForecast{})
 }
 
 func addOpProvideAnomalyFeedbackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpProvideAnomalyFeedback{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpProvideAnomalyFeedback{})
 }
 
 func addOpUpdateAnomalyMonitorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAnomalyMonitor{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAnomalyMonitor{})
 }
 
 func addOpUpdateAnomalySubscriptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAnomalySubscription{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAnomalySubscription{})
 }
 
 func addOpUpdateCostCategoryDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateCostCategoryDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateCostCategoryDefinition{})
 }
 
 func validateAnomalyDateInterval(v *types.AnomalyDateInterval) error {

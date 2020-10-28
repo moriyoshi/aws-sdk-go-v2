@@ -991,199 +991,199 @@ func (m *validateOpTestConnection) HandleInitialize(ctx context.Context, in midd
 }
 
 func addOpAddTagsToResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddTagsToResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddTagsToResource{})
 }
 
 func addOpApplyPendingMaintenanceActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpApplyPendingMaintenanceAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpApplyPendingMaintenanceAction{})
 }
 
 func addOpCancelReplicationTaskAssessmentRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelReplicationTaskAssessmentRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelReplicationTaskAssessmentRun{})
 }
 
 func addOpCreateEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateEndpoint{})
 }
 
 func addOpCreateEventSubscriptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateEventSubscription{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateEventSubscription{})
 }
 
 func addOpCreateReplicationInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateReplicationInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateReplicationInstance{})
 }
 
 func addOpCreateReplicationSubnetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateReplicationSubnetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateReplicationSubnetGroup{})
 }
 
 func addOpCreateReplicationTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateReplicationTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateReplicationTask{})
 }
 
 func addOpDeleteCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCertificate{})
 }
 
 func addOpDeleteConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteConnection{})
 }
 
 func addOpDeleteEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEndpoint{})
 }
 
 func addOpDeleteEventSubscriptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEventSubscription{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEventSubscription{})
 }
 
 func addOpDeleteReplicationInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteReplicationInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteReplicationInstance{})
 }
 
 func addOpDeleteReplicationSubnetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteReplicationSubnetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteReplicationSubnetGroup{})
 }
 
 func addOpDeleteReplicationTaskAssessmentRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteReplicationTaskAssessmentRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteReplicationTaskAssessmentRun{})
 }
 
 func addOpDeleteReplicationTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteReplicationTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteReplicationTask{})
 }
 
 func addOpDescribeCertificatesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCertificates{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCertificates{})
 }
 
 func addOpDescribeConnectionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeConnections{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeConnections{})
 }
 
 func addOpDescribeEndpointsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEndpoints{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEndpoints{})
 }
 
 func addOpDescribeEndpointTypesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEndpointTypes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEndpointTypes{})
 }
 
 func addOpDescribeEventCategoriesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEventCategories{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEventCategories{})
 }
 
 func addOpDescribeEventsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEvents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEvents{})
 }
 
 func addOpDescribeEventSubscriptionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEventSubscriptions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEventSubscriptions{})
 }
 
 func addOpDescribePendingMaintenanceActionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribePendingMaintenanceActions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribePendingMaintenanceActions{})
 }
 
 func addOpDescribeRefreshSchemasStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeRefreshSchemasStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeRefreshSchemasStatus{})
 }
 
 func addOpDescribeReplicationInstancesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeReplicationInstances{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeReplicationInstances{})
 }
 
 func addOpDescribeReplicationInstanceTaskLogsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeReplicationInstanceTaskLogs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeReplicationInstanceTaskLogs{})
 }
 
 func addOpDescribeReplicationSubnetGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeReplicationSubnetGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeReplicationSubnetGroups{})
 }
 
 func addOpDescribeReplicationTaskAssessmentRunsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeReplicationTaskAssessmentRuns{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeReplicationTaskAssessmentRuns{})
 }
 
 func addOpDescribeReplicationTaskIndividualAssessmentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeReplicationTaskIndividualAssessments{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeReplicationTaskIndividualAssessments{})
 }
 
 func addOpDescribeReplicationTasksValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeReplicationTasks{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeReplicationTasks{})
 }
 
 func addOpDescribeSchemasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSchemas{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSchemas{})
 }
 
 func addOpDescribeTableStatisticsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTableStatistics{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTableStatistics{})
 }
 
 func addOpImportCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpImportCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpImportCertificate{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpModifyEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyEndpoint{})
 }
 
 func addOpModifyEventSubscriptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyEventSubscription{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyEventSubscription{})
 }
 
 func addOpModifyReplicationInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyReplicationInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyReplicationInstance{})
 }
 
 func addOpModifyReplicationSubnetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyReplicationSubnetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyReplicationSubnetGroup{})
 }
 
 func addOpModifyReplicationTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyReplicationTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyReplicationTask{})
 }
 
 func addOpRebootReplicationInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRebootReplicationInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRebootReplicationInstance{})
 }
 
 func addOpRefreshSchemasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRefreshSchemas{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRefreshSchemas{})
 }
 
 func addOpReloadTablesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpReloadTables{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpReloadTables{})
 }
 
 func addOpRemoveTagsFromResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveTagsFromResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveTagsFromResource{})
 }
 
 func addOpStartReplicationTaskAssessmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartReplicationTaskAssessment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartReplicationTaskAssessment{})
 }
 
 func addOpStartReplicationTaskAssessmentRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartReplicationTaskAssessmentRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartReplicationTaskAssessmentRun{})
 }
 
 func addOpStartReplicationTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartReplicationTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartReplicationTask{})
 }
 
 func addOpStopReplicationTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopReplicationTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopReplicationTask{})
 }
 
 func addOpTestConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTestConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTestConnection{})
 }
 
 func validateDynamoDbSettings(v *types.DynamoDbSettings) error {

@@ -210,43 +210,43 @@ func (m *validateOpRefreshTrustedAdvisorCheck) HandleInitialize(ctx context.Cont
 }
 
 func addOpAddAttachmentsToSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddAttachmentsToSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddAttachmentsToSet{})
 }
 
 func addOpAddCommunicationToCaseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddCommunicationToCase{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddCommunicationToCase{})
 }
 
 func addOpCreateCaseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCase{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCase{})
 }
 
 func addOpDescribeAttachmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAttachment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAttachment{})
 }
 
 func addOpDescribeCommunicationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCommunications{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCommunications{})
 }
 
 func addOpDescribeTrustedAdvisorCheckRefreshStatusesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTrustedAdvisorCheckRefreshStatuses{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTrustedAdvisorCheckRefreshStatuses{})
 }
 
 func addOpDescribeTrustedAdvisorCheckResultValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTrustedAdvisorCheckResult{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTrustedAdvisorCheckResult{})
 }
 
 func addOpDescribeTrustedAdvisorChecksValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTrustedAdvisorChecks{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTrustedAdvisorChecks{})
 }
 
 func addOpDescribeTrustedAdvisorCheckSummariesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTrustedAdvisorCheckSummaries{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTrustedAdvisorCheckSummaries{})
 }
 
 func addOpRefreshTrustedAdvisorCheckValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRefreshTrustedAdvisorCheck{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRefreshTrustedAdvisorCheck{})
 }
 
 func validateOpAddAttachmentsToSetInput(v *AddAttachmentsToSetInput) error {

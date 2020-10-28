@@ -50,11 +50,11 @@ func (m *validateOpDeleteEndpoint) HandleInitialize(ctx context.Context, in midd
 }
 
 func addOpCreateEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateEndpoint{})
 }
 
 func addOpDeleteEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEndpoint{})
 }
 
 func validateOpCreateEndpointInput(v *CreateEndpointInput) error {

@@ -130,27 +130,27 @@ func (m *validateOpRollbackTransaction) HandleInitialize(ctx context.Context, in
 }
 
 func addOpBatchExecuteStatementValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchExecuteStatement{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchExecuteStatement{})
 }
 
 func addOpBeginTransactionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBeginTransaction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBeginTransaction{})
 }
 
 func addOpCommitTransactionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCommitTransaction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCommitTransaction{})
 }
 
 func addOpExecuteSqlValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpExecuteSql{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpExecuteSql{})
 }
 
 func addOpExecuteStatementValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpExecuteStatement{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpExecuteStatement{})
 }
 
 func addOpRollbackTransactionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRollbackTransaction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRollbackTransaction{})
 }
 
 func validateOpBatchExecuteStatementInput(v *BatchExecuteStatementInput) error {

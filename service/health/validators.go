@@ -131,27 +131,27 @@ func (m *validateOpDescribeEventDetails) HandleInitialize(ctx context.Context, i
 }
 
 func addOpDescribeAffectedAccountsForOrganizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAffectedAccountsForOrganization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAffectedAccountsForOrganization{})
 }
 
 func addOpDescribeAffectedEntitiesForOrganizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAffectedEntitiesForOrganization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAffectedEntitiesForOrganization{})
 }
 
 func addOpDescribeAffectedEntitiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAffectedEntities{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAffectedEntities{})
 }
 
 func addOpDescribeEventAggregatesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEventAggregates{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEventAggregates{})
 }
 
 func addOpDescribeEventDetailsForOrganizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEventDetailsForOrganization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEventDetailsForOrganization{})
 }
 
 func addOpDescribeEventDetailsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEventDetails{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEventDetails{})
 }
 
 func validateEntityFilter(v *types.EntityFilter) error {

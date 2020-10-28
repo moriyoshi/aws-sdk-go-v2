@@ -30,7 +30,7 @@ func (m *validateOpSendSSHPublicKey) HandleInitialize(ctx context.Context, in mi
 }
 
 func addOpSendSSHPublicKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSendSSHPublicKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSendSSHPublicKey{})
 }
 
 func validateOpSendSSHPublicKeyInput(v *SendSSHPublicKeyInput) error {

@@ -331,67 +331,67 @@ func (m *validateOpUpdateSubnetGroup) HandleInitialize(ctx context.Context, in m
 }
 
 func addOpCreateClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCluster{})
 }
 
 func addOpCreateParameterGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateParameterGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateParameterGroup{})
 }
 
 func addOpCreateSubnetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSubnetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSubnetGroup{})
 }
 
 func addOpDecreaseReplicationFactorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDecreaseReplicationFactor{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDecreaseReplicationFactor{})
 }
 
 func addOpDeleteClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCluster{})
 }
 
 func addOpDeleteParameterGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteParameterGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteParameterGroup{})
 }
 
 func addOpDeleteSubnetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSubnetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSubnetGroup{})
 }
 
 func addOpDescribeParametersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeParameters{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeParameters{})
 }
 
 func addOpIncreaseReplicationFactorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpIncreaseReplicationFactor{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpIncreaseReplicationFactor{})
 }
 
 func addOpListTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTags{})
 }
 
 func addOpRebootNodeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRebootNode{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRebootNode{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateCluster{})
 }
 
 func addOpUpdateParameterGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateParameterGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateParameterGroup{})
 }
 
 func addOpUpdateSubnetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateSubnetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateSubnetGroup{})
 }
 
 func validateSSESpecification(v *types.SSESpecification) error {

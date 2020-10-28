@@ -491,99 +491,99 @@ func (m *validateOpUpdateServiceAccessPolicies) HandleInitialize(ctx context.Con
 }
 
 func addOpBuildSuggestersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBuildSuggesters{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBuildSuggesters{})
 }
 
 func addOpCreateDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDomain{})
 }
 
 func addOpDefineAnalysisSchemeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDefineAnalysisScheme{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDefineAnalysisScheme{})
 }
 
 func addOpDefineExpressionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDefineExpression{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDefineExpression{})
 }
 
 func addOpDefineIndexFieldValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDefineIndexField{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDefineIndexField{})
 }
 
 func addOpDefineSuggesterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDefineSuggester{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDefineSuggester{})
 }
 
 func addOpDeleteAnalysisSchemeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAnalysisScheme{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAnalysisScheme{})
 }
 
 func addOpDeleteDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDomain{})
 }
 
 func addOpDeleteExpressionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteExpression{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteExpression{})
 }
 
 func addOpDeleteIndexFieldValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteIndexField{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteIndexField{})
 }
 
 func addOpDeleteSuggesterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSuggester{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSuggester{})
 }
 
 func addOpDescribeAnalysisSchemesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAnalysisSchemes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAnalysisSchemes{})
 }
 
 func addOpDescribeAvailabilityOptionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAvailabilityOptions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAvailabilityOptions{})
 }
 
 func addOpDescribeDomainEndpointOptionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDomainEndpointOptions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDomainEndpointOptions{})
 }
 
 func addOpDescribeExpressionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeExpressions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeExpressions{})
 }
 
 func addOpDescribeIndexFieldsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeIndexFields{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeIndexFields{})
 }
 
 func addOpDescribeScalingParametersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeScalingParameters{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeScalingParameters{})
 }
 
 func addOpDescribeServiceAccessPoliciesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeServiceAccessPolicies{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeServiceAccessPolicies{})
 }
 
 func addOpDescribeSuggestersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSuggesters{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSuggesters{})
 }
 
 func addOpIndexDocumentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpIndexDocuments{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpIndexDocuments{})
 }
 
 func addOpUpdateAvailabilityOptionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAvailabilityOptions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAvailabilityOptions{})
 }
 
 func addOpUpdateDomainEndpointOptionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDomainEndpointOptions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDomainEndpointOptions{})
 }
 
 func addOpUpdateScalingParametersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateScalingParameters{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateScalingParameters{})
 }
 
 func addOpUpdateServiceAccessPoliciesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateServiceAccessPolicies{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateServiceAccessPolicies{})
 }
 
 func validateAnalysisScheme(v *types.AnalysisScheme) error {

@@ -90,19 +90,19 @@ func (m *validateOpHttpRequestWithLabels) HandleInitialize(ctx context.Context, 
 }
 
 func addOpConstantQueryStringValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpConstantQueryString{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpConstantQueryString{})
 }
 
 func addOpHttpRequestWithGreedyLabelInPathValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpHttpRequestWithGreedyLabelInPath{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpHttpRequestWithGreedyLabelInPath{})
 }
 
 func addOpHttpRequestWithLabelsAndTimestampFormatValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpHttpRequestWithLabelsAndTimestampFormat{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpHttpRequestWithLabelsAndTimestampFormat{})
 }
 
 func addOpHttpRequestWithLabelsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpHttpRequestWithLabels{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpHttpRequestWithLabels{})
 }
 
 func validateOpConstantQueryStringInput(v *ConstantQueryStringInput) error {

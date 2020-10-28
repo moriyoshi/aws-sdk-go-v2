@@ -291,59 +291,59 @@ func (m *validateOpUpdateServiceSettings) HandleInitialize(ctx context.Context, 
 }
 
 func addOpCreateLicenseConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLicenseConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLicenseConfiguration{})
 }
 
 func addOpDeleteLicenseConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLicenseConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLicenseConfiguration{})
 }
 
 func addOpGetLicenseConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLicenseConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLicenseConfiguration{})
 }
 
 func addOpListAssociationsForLicenseConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAssociationsForLicenseConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAssociationsForLicenseConfiguration{})
 }
 
 func addOpListFailuresForLicenseConfigurationOperationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListFailuresForLicenseConfigurationOperations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListFailuresForLicenseConfigurationOperations{})
 }
 
 func addOpListLicenseSpecificationsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListLicenseSpecificationsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListLicenseSpecificationsForResource{})
 }
 
 func addOpListResourceInventoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListResourceInventory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListResourceInventory{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListUsageForLicenseConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListUsageForLicenseConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListUsageForLicenseConfiguration{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateLicenseConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateLicenseConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateLicenseConfiguration{})
 }
 
 func addOpUpdateLicenseSpecificationsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateLicenseSpecificationsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateLicenseSpecificationsForResource{})
 }
 
 func addOpUpdateServiceSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateServiceSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateServiceSettings{})
 }
 
 func validateInventoryFilter(v *types.InventoryFilter) error {

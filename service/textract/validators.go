@@ -131,27 +131,27 @@ func (m *validateOpStartDocumentTextDetection) HandleInitialize(ctx context.Cont
 }
 
 func addOpAnalyzeDocumentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAnalyzeDocument{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAnalyzeDocument{})
 }
 
 func addOpDetectDocumentTextValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetectDocumentText{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetectDocumentText{})
 }
 
 func addOpGetDocumentAnalysisValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDocumentAnalysis{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDocumentAnalysis{})
 }
 
 func addOpGetDocumentTextDetectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDocumentTextDetection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDocumentTextDetection{})
 }
 
 func addOpStartDocumentAnalysisValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartDocumentAnalysis{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartDocumentAnalysis{})
 }
 
 func addOpStartDocumentTextDetectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartDocumentTextDetection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartDocumentTextDetection{})
 }
 
 func validateHumanLoopConfig(v *types.HumanLoopConfig) error {

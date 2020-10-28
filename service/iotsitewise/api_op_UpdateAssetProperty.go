@@ -74,30 +74,62 @@ type UpdateAssetPropertyOutput struct {
 }
 
 func addOperationUpdateAssetPropertyMiddlewares(stack *middleware.Stack, options Options) (err error) {
-	err = stack.Serialize.Add(&awsRestjson1_serializeOpUpdateAssetProperty{}, middleware.After)
+	err = stack.Serialize.Add(middleware.After, &awsRestjson1_serializeOpUpdateAssetProperty{})
 	if err != nil {
 		return err
 	}
-	err = stack.Deserialize.Add(&awsRestjson1_deserializeOpUpdateAssetProperty{}, middleware.After)
+	err = stack.Deserialize.Add(middleware.After, &awsRestjson1_deserializeOpUpdateAssetProperty{})
 	if err != nil {
 		return err
 	}
-	awsmiddleware.AddRequestInvocationIDMiddleware(stack)
-	smithyhttp.AddContentLengthMiddleware(stack)
-	addResolveEndpointMiddleware(stack, options)
-	v4.AddComputePayloadSHA256Middleware(stack)
-	addRetryMiddlewares(stack, options)
-	addHTTPSignerV4Middleware(stack, options)
-	awsmiddleware.AddAttemptClockSkewMiddleware(stack)
-	addClientUserAgent(stack)
-	smithyhttp.AddErrorCloseResponseBodyMiddleware(stack)
-	smithyhttp.AddCloseResponseBodyMiddleware(stack)
-	addEndpointPrefix_opUpdateAssetPropertyMiddleware(stack)
-	addIdempotencyToken_opUpdateAssetPropertyMiddleware(stack, options)
-	addOpUpdateAssetPropertyValidationMiddleware(stack)
-	stack.Initialize.Add(newServiceMetadataMiddleware_opUpdateAssetProperty(options.Region), middleware.Before)
-	addRequestIDRetrieverMiddleware(stack)
-	addResponseErrorMiddleware(stack)
+	if err := awsmiddleware.AddClientRequestIDMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddComputeContentLengthMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addResolveEndpointMiddleware(stack, options); err != nil {
+		return err
+	}
+	if err := v4.AddComputePayloadSHA256Middleware(stack); err != nil {
+		return err
+	}
+	if err := addRetryMiddlewares(stack, options); err != nil {
+		return err
+	}
+	if err := addHTTPSignerV4Middleware(stack, options); err != nil {
+		return err
+	}
+	if err := awsmiddleware.AddAttemptClockSkewMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addClientUserAgent(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddErrorCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addEndpointPrefix_opUpdateAssetPropertyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addIdempotencyToken_opUpdateAssetPropertyMiddleware(stack, options); err != nil {
+		return err
+	}
+	if err := addOpUpdateAssetPropertyValidationMiddleware(stack); err != nil {
+		return err
+	}
+	if err := stack.Initialize.Add(middleware.Before, newServiceMetadataMiddleware_opUpdateAssetProperty(options.Region)); err != nil {
+		return err
+	}
+	if err := addRequestIDRetrieverMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addResponseErrorMiddleware(stack); err != nil {
+		return err
+	}
 	return nil
 }
 
@@ -125,7 +157,7 @@ func (m *endpointPrefix_opUpdateAssetPropertyMiddleware) HandleSerialize(ctx con
 	return next.HandleSerialize(ctx, in)
 }
 func addEndpointPrefix_opUpdateAssetPropertyMiddleware(stack *middleware.Stack) error {
-	return stack.Serialize.Insert(&endpointPrefix_opUpdateAssetPropertyMiddleware{}, `OperationSerializer`, middleware.Before)
+	return stack.Serialize.Insert("OperationSerializer", middleware.Before, &endpointPrefix_opUpdateAssetPropertyMiddleware{})
 }
 
 type idempotencyToken_initializeOpUpdateAssetProperty struct {
@@ -157,12 +189,12 @@ func (m *idempotencyToken_initializeOpUpdateAssetProperty) HandleInitialize(ctx 
 	}
 	return next.HandleInitialize(ctx, in)
 }
-func addIdempotencyToken_opUpdateAssetPropertyMiddleware(stack *middleware.Stack, cfg Options) {
-	stack.Initialize.Add(&idempotencyToken_initializeOpUpdateAssetProperty{tokenProvider: cfg.IdempotencyTokenProvider}, middleware.Before)
+func addIdempotencyToken_opUpdateAssetPropertyMiddleware(stack *middleware.Stack, cfg Options) error {
+	return stack.Initialize.Add(middleware.Before, &idempotencyToken_initializeOpUpdateAssetProperty{tokenProvider: cfg.IdempotencyTokenProvider})
 }
 
-func newServiceMetadataMiddleware_opUpdateAssetProperty(region string) awsmiddleware.RegisterServiceMetadata {
-	return awsmiddleware.RegisterServiceMetadata{
+func newServiceMetadataMiddleware_opUpdateAssetProperty(region string) *awsmiddleware.RegisterServiceMetadata {
+	return &awsmiddleware.RegisterServiceMetadata{
 		Region:        region,
 		ServiceID:     ServiceID,
 		SigningName:   "iotsitewise",

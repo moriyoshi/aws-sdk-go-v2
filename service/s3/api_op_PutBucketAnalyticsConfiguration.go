@@ -119,36 +119,70 @@ type PutBucketAnalyticsConfigurationOutput struct {
 }
 
 func addOperationPutBucketAnalyticsConfigurationMiddlewares(stack *middleware.Stack, options Options) (err error) {
-	err = stack.Serialize.Add(&awsRestxml_serializeOpPutBucketAnalyticsConfiguration{}, middleware.After)
+	err = stack.Serialize.Add(middleware.After, &awsRestxml_serializeOpPutBucketAnalyticsConfiguration{})
 	if err != nil {
 		return err
 	}
-	err = stack.Deserialize.Add(&awsRestxml_deserializeOpPutBucketAnalyticsConfiguration{}, middleware.After)
+	err = stack.Deserialize.Add(middleware.After, &awsRestxml_deserializeOpPutBucketAnalyticsConfiguration{})
 	if err != nil {
 		return err
 	}
-	awsmiddleware.AddRequestInvocationIDMiddleware(stack)
-	smithyhttp.AddContentLengthMiddleware(stack)
-	addResolveEndpointMiddleware(stack, options)
-	v4.AddComputePayloadSHA256Middleware(stack)
-	addRetryMiddlewares(stack, options)
-	addHTTPSignerV4Middleware(stack, options)
-	awsmiddleware.AddAttemptClockSkewMiddleware(stack)
-	addClientUserAgent(stack)
-	smithyhttp.AddErrorCloseResponseBodyMiddleware(stack)
-	smithyhttp.AddCloseResponseBodyMiddleware(stack)
-	addOpPutBucketAnalyticsConfigurationValidationMiddleware(stack)
-	stack.Initialize.Add(newServiceMetadataMiddleware_opPutBucketAnalyticsConfiguration(options.Region), middleware.Before)
-	addMetadataRetrieverMiddleware(stack)
-	addUpdateEndpointMiddleware(stack, options)
-	addResponseErrorMiddleware(stack)
-	v4.AddContentSHA256HeaderMiddleware(stack)
-	disableAcceptEncodingGzip(stack)
+	if err := awsmiddleware.AddClientRequestIDMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddComputeContentLengthMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addResolveEndpointMiddleware(stack, options); err != nil {
+		return err
+	}
+	if err := v4.AddComputePayloadSHA256Middleware(stack); err != nil {
+		return err
+	}
+	if err := addRetryMiddlewares(stack, options); err != nil {
+		return err
+	}
+	if err := addHTTPSignerV4Middleware(stack, options); err != nil {
+		return err
+	}
+	if err := awsmiddleware.AddAttemptClockSkewMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addClientUserAgent(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddErrorCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addOpPutBucketAnalyticsConfigurationValidationMiddleware(stack); err != nil {
+		return err
+	}
+	if err := stack.Initialize.Add(middleware.Before, newServiceMetadataMiddleware_opPutBucketAnalyticsConfiguration(options.Region)); err != nil {
+		return err
+	}
+	if err := addMetadataRetrieverMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addUpdateEndpointMiddleware(stack, options); err != nil {
+		return err
+	}
+	if err := addResponseErrorMiddleware(stack); err != nil {
+		return err
+	}
+	if err := v4.AddContentSHA256HeaderMiddleware(stack); err != nil {
+		return err
+	}
+	if err := disableAcceptEncodingGzip(stack); err != nil {
+		return err
+	}
 	return nil
 }
 
-func newServiceMetadataMiddleware_opPutBucketAnalyticsConfiguration(region string) awsmiddleware.RegisterServiceMetadata {
-	return awsmiddleware.RegisterServiceMetadata{
+func newServiceMetadataMiddleware_opPutBucketAnalyticsConfiguration(region string) *awsmiddleware.RegisterServiceMetadata {
+	return &awsmiddleware.RegisterServiceMetadata{
 		Region:        region,
 		ServiceID:     ServiceID,
 		SigningName:   "s3",

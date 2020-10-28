@@ -110,23 +110,23 @@ func (m *validateOpSendMessage) HandleInitialize(ctx context.Context, in middlew
 }
 
 func addOpCreateParticipantConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateParticipantConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateParticipantConnection{})
 }
 
 func addOpDisconnectParticipantValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisconnectParticipant{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisconnectParticipant{})
 }
 
 func addOpGetTranscriptValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTranscript{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTranscript{})
 }
 
 func addOpSendEventValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSendEvent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSendEvent{})
 }
 
 func addOpSendMessageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSendMessage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSendMessage{})
 }
 
 func validateOpCreateParticipantConnectionInput(v *CreateParticipantConnectionInput) error {

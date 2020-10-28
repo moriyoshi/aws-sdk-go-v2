@@ -550,111 +550,111 @@ func (m *validateOpUpdateSchema) HandleInitialize(ctx context.Context, in middle
 }
 
 func addOpCreateDiscovererValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDiscoverer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDiscoverer{})
 }
 
 func addOpCreateRegistryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRegistry{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRegistry{})
 }
 
 func addOpCreateSchemaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSchema{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSchema{})
 }
 
 func addOpDeleteDiscovererValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDiscoverer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDiscoverer{})
 }
 
 func addOpDeleteRegistryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRegistry{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRegistry{})
 }
 
 func addOpDeleteSchemaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSchema{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSchema{})
 }
 
 func addOpDeleteSchemaVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSchemaVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSchemaVersion{})
 }
 
 func addOpDescribeCodeBindingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCodeBinding{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCodeBinding{})
 }
 
 func addOpDescribeDiscovererValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDiscoverer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDiscoverer{})
 }
 
 func addOpDescribeRegistryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeRegistry{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeRegistry{})
 }
 
 func addOpDescribeSchemaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSchema{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSchema{})
 }
 
 func addOpExportSchemaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpExportSchema{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpExportSchema{})
 }
 
 func addOpGetCodeBindingSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCodeBindingSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCodeBindingSource{})
 }
 
 func addOpGetDiscoveredSchemaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDiscoveredSchema{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDiscoveredSchema{})
 }
 
 func addOpListSchemasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListSchemas{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListSchemas{})
 }
 
 func addOpListSchemaVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListSchemaVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListSchemaVersions{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPutCodeBindingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutCodeBinding{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutCodeBinding{})
 }
 
 func addOpPutResourcePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutResourcePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutResourcePolicy{})
 }
 
 func addOpSearchSchemasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSearchSchemas{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSearchSchemas{})
 }
 
 func addOpStartDiscovererValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartDiscoverer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartDiscoverer{})
 }
 
 func addOpStopDiscovererValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopDiscoverer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopDiscoverer{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateDiscovererValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDiscoverer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDiscoverer{})
 }
 
 func addOpUpdateRegistryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRegistry{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRegistry{})
 }
 
 func addOpUpdateSchemaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateSchema{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateSchema{})
 }
 
 func validateOpCreateDiscovererInput(v *CreateDiscovererInput) error {

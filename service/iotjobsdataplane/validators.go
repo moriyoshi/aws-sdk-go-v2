@@ -90,19 +90,19 @@ func (m *validateOpUpdateJobExecution) HandleInitialize(ctx context.Context, in 
 }
 
 func addOpDescribeJobExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeJobExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeJobExecution{})
 }
 
 func addOpGetPendingJobExecutionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPendingJobExecutions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPendingJobExecutions{})
 }
 
 func addOpStartNextPendingJobExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartNextPendingJobExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartNextPendingJobExecution{})
 }
 
 func addOpUpdateJobExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateJobExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateJobExecution{})
 }
 
 func validateOpDescribeJobExecutionInput(v *DescribeJobExecutionInput) error {

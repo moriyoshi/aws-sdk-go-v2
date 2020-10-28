@@ -271,55 +271,55 @@ func (m *validateOpUpdateNotificationRule) HandleInitialize(ctx context.Context,
 }
 
 func addOpCreateNotificationRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateNotificationRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateNotificationRule{})
 }
 
 func addOpDeleteNotificationRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteNotificationRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteNotificationRule{})
 }
 
 func addOpDeleteTargetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTarget{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTarget{})
 }
 
 func addOpDescribeNotificationRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeNotificationRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeNotificationRule{})
 }
 
 func addOpListEventTypesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListEventTypes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListEventTypes{})
 }
 
 func addOpListNotificationRulesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListNotificationRules{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListNotificationRules{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListTargetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTargets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTargets{})
 }
 
 func addOpSubscribeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSubscribe{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSubscribe{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUnsubscribeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUnsubscribe{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUnsubscribe{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateNotificationRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateNotificationRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateNotificationRule{})
 }
 
 func validateListEventTypesFilter(v *types.ListEventTypesFilter) error {

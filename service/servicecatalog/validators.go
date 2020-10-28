@@ -1311,263 +1311,263 @@ func (m *validateOpUpdateTagOption) HandleInitialize(ctx context.Context, in mid
 }
 
 func addOpAcceptPortfolioShareValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAcceptPortfolioShare{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAcceptPortfolioShare{})
 }
 
 func addOpAssociateBudgetWithResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateBudgetWithResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateBudgetWithResource{})
 }
 
 func addOpAssociatePrincipalWithPortfolioValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociatePrincipalWithPortfolio{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociatePrincipalWithPortfolio{})
 }
 
 func addOpAssociateProductWithPortfolioValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateProductWithPortfolio{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateProductWithPortfolio{})
 }
 
 func addOpAssociateServiceActionWithProvisioningArtifactValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateServiceActionWithProvisioningArtifact{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateServiceActionWithProvisioningArtifact{})
 }
 
 func addOpAssociateTagOptionWithResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateTagOptionWithResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateTagOptionWithResource{})
 }
 
 func addOpBatchAssociateServiceActionWithProvisioningArtifactValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchAssociateServiceActionWithProvisioningArtifact{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchAssociateServiceActionWithProvisioningArtifact{})
 }
 
 func addOpBatchDisassociateServiceActionFromProvisioningArtifactValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDisassociateServiceActionFromProvisioningArtifact{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDisassociateServiceActionFromProvisioningArtifact{})
 }
 
 func addOpCopyProductValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCopyProduct{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCopyProduct{})
 }
 
 func addOpCreateConstraintValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateConstraint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateConstraint{})
 }
 
 func addOpCreatePortfolioValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePortfolio{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePortfolio{})
 }
 
 func addOpCreatePortfolioShareValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePortfolioShare{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePortfolioShare{})
 }
 
 func addOpCreateProductValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateProduct{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateProduct{})
 }
 
 func addOpCreateProvisionedProductPlanValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateProvisionedProductPlan{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateProvisionedProductPlan{})
 }
 
 func addOpCreateProvisioningArtifactValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateProvisioningArtifact{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateProvisioningArtifact{})
 }
 
 func addOpCreateServiceActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateServiceAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateServiceAction{})
 }
 
 func addOpCreateTagOptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTagOption{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTagOption{})
 }
 
 func addOpDeleteConstraintValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteConstraint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteConstraint{})
 }
 
 func addOpDeletePortfolioValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePortfolio{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePortfolio{})
 }
 
 func addOpDeletePortfolioShareValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePortfolioShare{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePortfolioShare{})
 }
 
 func addOpDeleteProductValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteProduct{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteProduct{})
 }
 
 func addOpDeleteProvisionedProductPlanValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteProvisionedProductPlan{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteProvisionedProductPlan{})
 }
 
 func addOpDeleteProvisioningArtifactValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteProvisioningArtifact{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteProvisioningArtifact{})
 }
 
 func addOpDeleteServiceActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteServiceAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteServiceAction{})
 }
 
 func addOpDeleteTagOptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTagOption{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTagOption{})
 }
 
 func addOpDescribeConstraintValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeConstraint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeConstraint{})
 }
 
 func addOpDescribeCopyProductStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCopyProductStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCopyProductStatus{})
 }
 
 func addOpDescribePortfolioValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribePortfolio{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribePortfolio{})
 }
 
 func addOpDescribePortfolioShareStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribePortfolioShareStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribePortfolioShareStatus{})
 }
 
 func addOpDescribeProductViewValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeProductView{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeProductView{})
 }
 
 func addOpDescribeProvisionedProductPlanValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeProvisionedProductPlan{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeProvisionedProductPlan{})
 }
 
 func addOpDescribeRecordValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeRecord{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeRecord{})
 }
 
 func addOpDescribeServiceActionExecutionParametersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeServiceActionExecutionParameters{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeServiceActionExecutionParameters{})
 }
 
 func addOpDescribeServiceActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeServiceAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeServiceAction{})
 }
 
 func addOpDescribeTagOptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTagOption{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTagOption{})
 }
 
 func addOpDisassociateBudgetFromResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateBudgetFromResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateBudgetFromResource{})
 }
 
 func addOpDisassociatePrincipalFromPortfolioValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociatePrincipalFromPortfolio{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociatePrincipalFromPortfolio{})
 }
 
 func addOpDisassociateProductFromPortfolioValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateProductFromPortfolio{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateProductFromPortfolio{})
 }
 
 func addOpDisassociateServiceActionFromProvisioningArtifactValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateServiceActionFromProvisioningArtifact{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateServiceActionFromProvisioningArtifact{})
 }
 
 func addOpDisassociateTagOptionFromResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateTagOptionFromResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateTagOptionFromResource{})
 }
 
 func addOpExecuteProvisionedProductPlanValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpExecuteProvisionedProductPlan{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpExecuteProvisionedProductPlan{})
 }
 
 func addOpExecuteProvisionedProductServiceActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpExecuteProvisionedProductServiceAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpExecuteProvisionedProductServiceAction{})
 }
 
 func addOpListBudgetsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListBudgetsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListBudgetsForResource{})
 }
 
 func addOpListConstraintsForPortfolioValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListConstraintsForPortfolio{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListConstraintsForPortfolio{})
 }
 
 func addOpListLaunchPathsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListLaunchPaths{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListLaunchPaths{})
 }
 
 func addOpListOrganizationPortfolioAccessValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListOrganizationPortfolioAccess{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListOrganizationPortfolioAccess{})
 }
 
 func addOpListPortfolioAccessValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPortfolioAccess{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPortfolioAccess{})
 }
 
 func addOpListPortfoliosForProductValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPortfoliosForProduct{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPortfoliosForProduct{})
 }
 
 func addOpListPrincipalsForPortfolioValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPrincipalsForPortfolio{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPrincipalsForPortfolio{})
 }
 
 func addOpListProvisioningArtifactsForServiceActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListProvisioningArtifactsForServiceAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListProvisioningArtifactsForServiceAction{})
 }
 
 func addOpListProvisioningArtifactsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListProvisioningArtifacts{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListProvisioningArtifacts{})
 }
 
 func addOpListResourcesForTagOptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListResourcesForTagOption{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListResourcesForTagOption{})
 }
 
 func addOpListServiceActionsForProvisioningArtifactValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListServiceActionsForProvisioningArtifact{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListServiceActionsForProvisioningArtifact{})
 }
 
 func addOpListStackInstancesForProvisionedProductValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListStackInstancesForProvisionedProduct{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListStackInstancesForProvisionedProduct{})
 }
 
 func addOpProvisionProductValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpProvisionProduct{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpProvisionProduct{})
 }
 
 func addOpRejectPortfolioShareValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRejectPortfolioShare{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRejectPortfolioShare{})
 }
 
 func addOpTerminateProvisionedProductValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTerminateProvisionedProduct{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTerminateProvisionedProduct{})
 }
 
 func addOpUpdateConstraintValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateConstraint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateConstraint{})
 }
 
 func addOpUpdatePortfolioValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePortfolio{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePortfolio{})
 }
 
 func addOpUpdateProductValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateProduct{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateProduct{})
 }
 
 func addOpUpdateProvisionedProductValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateProvisionedProduct{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateProvisionedProduct{})
 }
 
 func addOpUpdateProvisionedProductPropertiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateProvisionedProductProperties{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateProvisionedProductProperties{})
 }
 
 func addOpUpdateProvisioningArtifactValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateProvisioningArtifact{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateProvisioningArtifact{})
 }
 
 func addOpUpdateServiceActionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateServiceAction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateServiceAction{})
 }
 
 func addOpUpdateTagOptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTagOption{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTagOption{})
 }
 
 func validateAddTags(v []*types.Tag) error {

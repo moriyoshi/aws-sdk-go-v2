@@ -471,95 +471,95 @@ func (m *validateOpUpdateTagsForDomain) HandleInitialize(ctx context.Context, in
 }
 
 func addOpAcceptDomainTransferFromAnotherAwsAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAcceptDomainTransferFromAnotherAwsAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAcceptDomainTransferFromAnotherAwsAccount{})
 }
 
 func addOpCancelDomainTransferToAnotherAwsAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelDomainTransferToAnotherAwsAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelDomainTransferToAnotherAwsAccount{})
 }
 
 func addOpCheckDomainAvailabilityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCheckDomainAvailability{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCheckDomainAvailability{})
 }
 
 func addOpCheckDomainTransferabilityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCheckDomainTransferability{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCheckDomainTransferability{})
 }
 
 func addOpDeleteTagsForDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTagsForDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTagsForDomain{})
 }
 
 func addOpDisableDomainAutoRenewValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableDomainAutoRenew{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableDomainAutoRenew{})
 }
 
 func addOpDisableDomainTransferLockValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableDomainTransferLock{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableDomainTransferLock{})
 }
 
 func addOpEnableDomainAutoRenewValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableDomainAutoRenew{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableDomainAutoRenew{})
 }
 
 func addOpEnableDomainTransferLockValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableDomainTransferLock{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableDomainTransferLock{})
 }
 
 func addOpGetDomainDetailValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDomainDetail{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDomainDetail{})
 }
 
 func addOpGetDomainSuggestionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDomainSuggestions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDomainSuggestions{})
 }
 
 func addOpGetOperationDetailValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetOperationDetail{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetOperationDetail{})
 }
 
 func addOpListTagsForDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForDomain{})
 }
 
 func addOpRegisterDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterDomain{})
 }
 
 func addOpRejectDomainTransferFromAnotherAwsAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRejectDomainTransferFromAnotherAwsAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRejectDomainTransferFromAnotherAwsAccount{})
 }
 
 func addOpRenewDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRenewDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRenewDomain{})
 }
 
 func addOpRetrieveDomainAuthCodeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRetrieveDomainAuthCode{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRetrieveDomainAuthCode{})
 }
 
 func addOpTransferDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTransferDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTransferDomain{})
 }
 
 func addOpTransferDomainToAnotherAwsAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTransferDomainToAnotherAwsAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTransferDomainToAnotherAwsAccount{})
 }
 
 func addOpUpdateDomainContactValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDomainContact{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDomainContact{})
 }
 
 func addOpUpdateDomainContactPrivacyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDomainContactPrivacy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDomainContactPrivacy{})
 }
 
 func addOpUpdateDomainNameserversValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDomainNameservers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDomainNameservers{})
 }
 
 func addOpUpdateTagsForDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTagsForDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTagsForDomain{})
 }
 
 func validateContactDetail(v *types.ContactDetail) error {

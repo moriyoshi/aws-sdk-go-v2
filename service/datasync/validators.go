@@ -591,119 +591,119 @@ func (m *validateOpUpdateTask) HandleInitialize(ctx context.Context, in middlewa
 }
 
 func addOpCancelTaskExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelTaskExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelTaskExecution{})
 }
 
 func addOpCreateAgentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAgent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAgent{})
 }
 
 func addOpCreateLocationEfsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLocationEfs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLocationEfs{})
 }
 
 func addOpCreateLocationFsxWindowsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLocationFsxWindows{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLocationFsxWindows{})
 }
 
 func addOpCreateLocationNfsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLocationNfs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLocationNfs{})
 }
 
 func addOpCreateLocationObjectStorageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLocationObjectStorage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLocationObjectStorage{})
 }
 
 func addOpCreateLocationS3ValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLocationS3{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLocationS3{})
 }
 
 func addOpCreateLocationSmbValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLocationSmb{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLocationSmb{})
 }
 
 func addOpCreateTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTask{})
 }
 
 func addOpDeleteAgentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAgent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAgent{})
 }
 
 func addOpDeleteLocationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLocation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLocation{})
 }
 
 func addOpDeleteTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTask{})
 }
 
 func addOpDescribeAgentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAgent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAgent{})
 }
 
 func addOpDescribeLocationEfsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeLocationEfs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeLocationEfs{})
 }
 
 func addOpDescribeLocationFsxWindowsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeLocationFsxWindows{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeLocationFsxWindows{})
 }
 
 func addOpDescribeLocationNfsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeLocationNfs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeLocationNfs{})
 }
 
 func addOpDescribeLocationObjectStorageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeLocationObjectStorage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeLocationObjectStorage{})
 }
 
 func addOpDescribeLocationS3ValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeLocationS3{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeLocationS3{})
 }
 
 func addOpDescribeLocationSmbValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeLocationSmb{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeLocationSmb{})
 }
 
 func addOpDescribeTaskExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTaskExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTaskExecution{})
 }
 
 func addOpDescribeTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTask{})
 }
 
 func addOpListLocationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListLocations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListLocations{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListTasksValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTasks{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTasks{})
 }
 
 func addOpStartTaskExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartTaskExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartTaskExecution{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateAgentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAgent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAgent{})
 }
 
 func addOpUpdateTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTask{})
 }
 
 func validateEc2Config(v *types.Ec2Config) error {

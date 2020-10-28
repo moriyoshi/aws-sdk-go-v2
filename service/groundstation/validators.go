@@ -411,83 +411,83 @@ func (m *validateOpUpdateMissionProfile) HandleInitialize(ctx context.Context, i
 }
 
 func addOpCancelContactValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelContact{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelContact{})
 }
 
 func addOpCreateConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateConfig{})
 }
 
 func addOpCreateDataflowEndpointGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDataflowEndpointGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDataflowEndpointGroup{})
 }
 
 func addOpCreateMissionProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateMissionProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateMissionProfile{})
 }
 
 func addOpDeleteConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteConfig{})
 }
 
 func addOpDeleteDataflowEndpointGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDataflowEndpointGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDataflowEndpointGroup{})
 }
 
 func addOpDeleteMissionProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMissionProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMissionProfile{})
 }
 
 func addOpDescribeContactValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeContact{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeContact{})
 }
 
 func addOpGetConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetConfig{})
 }
 
 func addOpGetDataflowEndpointGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDataflowEndpointGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDataflowEndpointGroup{})
 }
 
 func addOpGetMinuteUsageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMinuteUsage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMinuteUsage{})
 }
 
 func addOpGetMissionProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMissionProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMissionProfile{})
 }
 
 func addOpGetSatelliteValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSatellite{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSatellite{})
 }
 
 func addOpListContactsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListContacts{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListContacts{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpReserveContactValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpReserveContact{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpReserveContact{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateConfig{})
 }
 
 func addOpUpdateMissionProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateMissionProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateMissionProfile{})
 }
 
 func validateDataflowEndpoint(v *types.DataflowEndpoint) error {

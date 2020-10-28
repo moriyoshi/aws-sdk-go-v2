@@ -471,95 +471,95 @@ func (m *validateOpWithdrawByoipCidr) HandleInitialize(ctx context.Context, in m
 }
 
 func addOpAdvertiseByoipCidrValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdvertiseByoipCidr{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdvertiseByoipCidr{})
 }
 
 func addOpCreateAcceleratorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAccelerator{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAccelerator{})
 }
 
 func addOpCreateEndpointGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateEndpointGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateEndpointGroup{})
 }
 
 func addOpCreateListenerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateListener{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateListener{})
 }
 
 func addOpDeleteAcceleratorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAccelerator{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAccelerator{})
 }
 
 func addOpDeleteEndpointGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEndpointGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEndpointGroup{})
 }
 
 func addOpDeleteListenerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteListener{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteListener{})
 }
 
 func addOpDeprovisionByoipCidrValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeprovisionByoipCidr{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeprovisionByoipCidr{})
 }
 
 func addOpDescribeAcceleratorAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAcceleratorAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAcceleratorAttributes{})
 }
 
 func addOpDescribeAcceleratorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAccelerator{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAccelerator{})
 }
 
 func addOpDescribeEndpointGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEndpointGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEndpointGroup{})
 }
 
 func addOpDescribeListenerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeListener{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeListener{})
 }
 
 func addOpListEndpointGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListEndpointGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListEndpointGroups{})
 }
 
 func addOpListListenersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListListeners{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListListeners{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpProvisionByoipCidrValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpProvisionByoipCidr{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpProvisionByoipCidr{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateAcceleratorAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAcceleratorAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAcceleratorAttributes{})
 }
 
 func addOpUpdateAcceleratorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAccelerator{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAccelerator{})
 }
 
 func addOpUpdateEndpointGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateEndpointGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateEndpointGroup{})
 }
 
 func addOpUpdateListenerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateListener{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateListener{})
 }
 
 func addOpWithdrawByoipCidrValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpWithdrawByoipCidr{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpWithdrawByoipCidr{})
 }
 
 func validateCidrAuthorizationContext(v *types.CidrAuthorizationContext) error {

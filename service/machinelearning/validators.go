@@ -491,99 +491,99 @@ func (m *validateOpUpdateMLModel) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpAddTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddTags{})
 }
 
 func addOpCreateBatchPredictionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateBatchPrediction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateBatchPrediction{})
 }
 
 func addOpCreateDataSourceFromRDSValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDataSourceFromRDS{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDataSourceFromRDS{})
 }
 
 func addOpCreateDataSourceFromRedshiftValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDataSourceFromRedshift{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDataSourceFromRedshift{})
 }
 
 func addOpCreateDataSourceFromS3ValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDataSourceFromS3{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDataSourceFromS3{})
 }
 
 func addOpCreateEvaluationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateEvaluation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateEvaluation{})
 }
 
 func addOpCreateMLModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateMLModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateMLModel{})
 }
 
 func addOpCreateRealtimeEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRealtimeEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRealtimeEndpoint{})
 }
 
 func addOpDeleteBatchPredictionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBatchPrediction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBatchPrediction{})
 }
 
 func addOpDeleteDataSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDataSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDataSource{})
 }
 
 func addOpDeleteEvaluationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEvaluation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEvaluation{})
 }
 
 func addOpDeleteMLModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMLModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMLModel{})
 }
 
 func addOpDeleteRealtimeEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRealtimeEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRealtimeEndpoint{})
 }
 
 func addOpDeleteTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTags{})
 }
 
 func addOpDescribeTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTags{})
 }
 
 func addOpGetBatchPredictionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBatchPrediction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBatchPrediction{})
 }
 
 func addOpGetDataSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDataSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDataSource{})
 }
 
 func addOpGetEvaluationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetEvaluation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetEvaluation{})
 }
 
 func addOpGetMLModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMLModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMLModel{})
 }
 
 func addOpPredictValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPredict{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPredict{})
 }
 
 func addOpUpdateBatchPredictionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateBatchPrediction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateBatchPrediction{})
 }
 
 func addOpUpdateDataSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDataSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDataSource{})
 }
 
 func addOpUpdateEvaluationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateEvaluation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateEvaluation{})
 }
 
 func addOpUpdateMLModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateMLModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateMLModel{})
 }
 
 func validateRDSDatabase(v *types.RDSDatabase) error {

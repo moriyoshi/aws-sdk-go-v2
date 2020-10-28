@@ -891,179 +891,179 @@ func (m *validateOpUpdateTrafficPolicyInstance) HandleInitialize(ctx context.Con
 }
 
 func addOpAssociateVPCWithHostedZoneValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateVPCWithHostedZone{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateVPCWithHostedZone{})
 }
 
 func addOpChangeResourceRecordSetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpChangeResourceRecordSets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpChangeResourceRecordSets{})
 }
 
 func addOpChangeTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpChangeTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpChangeTagsForResource{})
 }
 
 func addOpCreateHealthCheckValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateHealthCheck{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateHealthCheck{})
 }
 
 func addOpCreateHostedZoneValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateHostedZone{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateHostedZone{})
 }
 
 func addOpCreateQueryLoggingConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateQueryLoggingConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateQueryLoggingConfig{})
 }
 
 func addOpCreateReusableDelegationSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateReusableDelegationSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateReusableDelegationSet{})
 }
 
 func addOpCreateTrafficPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTrafficPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTrafficPolicy{})
 }
 
 func addOpCreateTrafficPolicyInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTrafficPolicyInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTrafficPolicyInstance{})
 }
 
 func addOpCreateTrafficPolicyVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTrafficPolicyVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTrafficPolicyVersion{})
 }
 
 func addOpCreateVPCAssociationAuthorizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateVPCAssociationAuthorization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateVPCAssociationAuthorization{})
 }
 
 func addOpDeleteHealthCheckValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteHealthCheck{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteHealthCheck{})
 }
 
 func addOpDeleteHostedZoneValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteHostedZone{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteHostedZone{})
 }
 
 func addOpDeleteQueryLoggingConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteQueryLoggingConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteQueryLoggingConfig{})
 }
 
 func addOpDeleteReusableDelegationSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteReusableDelegationSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteReusableDelegationSet{})
 }
 
 func addOpDeleteTrafficPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTrafficPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTrafficPolicy{})
 }
 
 func addOpDeleteTrafficPolicyInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTrafficPolicyInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTrafficPolicyInstance{})
 }
 
 func addOpDeleteVPCAssociationAuthorizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVPCAssociationAuthorization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVPCAssociationAuthorization{})
 }
 
 func addOpDisassociateVPCFromHostedZoneValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateVPCFromHostedZone{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateVPCFromHostedZone{})
 }
 
 func addOpGetAccountLimitValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAccountLimit{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAccountLimit{})
 }
 
 func addOpGetChangeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetChange{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetChange{})
 }
 
 func addOpGetHealthCheckValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetHealthCheck{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetHealthCheck{})
 }
 
 func addOpGetHealthCheckLastFailureReasonValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetHealthCheckLastFailureReason{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetHealthCheckLastFailureReason{})
 }
 
 func addOpGetHealthCheckStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetHealthCheckStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetHealthCheckStatus{})
 }
 
 func addOpGetHostedZoneValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetHostedZone{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetHostedZone{})
 }
 
 func addOpGetHostedZoneLimitValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetHostedZoneLimit{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetHostedZoneLimit{})
 }
 
 func addOpGetQueryLoggingConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetQueryLoggingConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetQueryLoggingConfig{})
 }
 
 func addOpGetReusableDelegationSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetReusableDelegationSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetReusableDelegationSet{})
 }
 
 func addOpGetReusableDelegationSetLimitValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetReusableDelegationSetLimit{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetReusableDelegationSetLimit{})
 }
 
 func addOpGetTrafficPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTrafficPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTrafficPolicy{})
 }
 
 func addOpGetTrafficPolicyInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTrafficPolicyInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTrafficPolicyInstance{})
 }
 
 func addOpListHostedZonesByVPCValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListHostedZonesByVPC{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListHostedZonesByVPC{})
 }
 
 func addOpListResourceRecordSetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListResourceRecordSets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListResourceRecordSets{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListTagsForResourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResources{})
 }
 
 func addOpListTrafficPolicyInstancesByHostedZoneValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTrafficPolicyInstancesByHostedZone{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTrafficPolicyInstancesByHostedZone{})
 }
 
 func addOpListTrafficPolicyInstancesByPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTrafficPolicyInstancesByPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTrafficPolicyInstancesByPolicy{})
 }
 
 func addOpListTrafficPolicyVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTrafficPolicyVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTrafficPolicyVersions{})
 }
 
 func addOpListVPCAssociationAuthorizationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListVPCAssociationAuthorizations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListVPCAssociationAuthorizations{})
 }
 
 func addOpTestDNSAnswerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTestDNSAnswer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTestDNSAnswer{})
 }
 
 func addOpUpdateHealthCheckValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateHealthCheck{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateHealthCheck{})
 }
 
 func addOpUpdateHostedZoneCommentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateHostedZoneComment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateHostedZoneComment{})
 }
 
 func addOpUpdateTrafficPolicyCommentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTrafficPolicyComment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTrafficPolicyComment{})
 }
 
 func addOpUpdateTrafficPolicyInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTrafficPolicyInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTrafficPolicyInstance{})
 }
 
 func validateAlarmIdentifier(v *types.AlarmIdentifier) error {

@@ -651,131 +651,131 @@ func (m *validateOpTerminateJobFlows) HandleInitialize(ctx context.Context, in m
 }
 
 func addOpAddInstanceFleetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddInstanceFleet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddInstanceFleet{})
 }
 
 func addOpAddInstanceGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddInstanceGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddInstanceGroups{})
 }
 
 func addOpAddJobFlowStepsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddJobFlowSteps{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddJobFlowSteps{})
 }
 
 func addOpAddTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddTags{})
 }
 
 func addOpCancelStepsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelSteps{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelSteps{})
 }
 
 func addOpCreateSecurityConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSecurityConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSecurityConfiguration{})
 }
 
 func addOpDeleteSecurityConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSecurityConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSecurityConfiguration{})
 }
 
 func addOpDescribeClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCluster{})
 }
 
 func addOpDescribeNotebookExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeNotebookExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeNotebookExecution{})
 }
 
 func addOpDescribeSecurityConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSecurityConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSecurityConfiguration{})
 }
 
 func addOpDescribeStepValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeStep{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeStep{})
 }
 
 func addOpGetManagedScalingPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetManagedScalingPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetManagedScalingPolicy{})
 }
 
 func addOpListBootstrapActionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListBootstrapActions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListBootstrapActions{})
 }
 
 func addOpListInstanceFleetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListInstanceFleets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListInstanceFleets{})
 }
 
 func addOpListInstanceGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListInstanceGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListInstanceGroups{})
 }
 
 func addOpListInstancesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListInstances{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListInstances{})
 }
 
 func addOpListStepsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListSteps{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListSteps{})
 }
 
 func addOpModifyClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyCluster{})
 }
 
 func addOpModifyInstanceFleetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyInstanceFleet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyInstanceFleet{})
 }
 
 func addOpModifyInstanceGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyInstanceGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyInstanceGroups{})
 }
 
 func addOpPutAutoScalingPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutAutoScalingPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutAutoScalingPolicy{})
 }
 
 func addOpPutBlockPublicAccessConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBlockPublicAccessConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBlockPublicAccessConfiguration{})
 }
 
 func addOpPutManagedScalingPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutManagedScalingPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutManagedScalingPolicy{})
 }
 
 func addOpRemoveAutoScalingPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveAutoScalingPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveAutoScalingPolicy{})
 }
 
 func addOpRemoveManagedScalingPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveManagedScalingPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveManagedScalingPolicy{})
 }
 
 func addOpRemoveTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveTags{})
 }
 
 func addOpRunJobFlowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRunJobFlow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRunJobFlow{})
 }
 
 func addOpSetTerminationProtectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetTerminationProtection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetTerminationProtection{})
 }
 
 func addOpSetVisibleToAllUsersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetVisibleToAllUsers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetVisibleToAllUsers{})
 }
 
 func addOpStartNotebookExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartNotebookExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartNotebookExecution{})
 }
 
 func addOpStopNotebookExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopNotebookExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopNotebookExecution{})
 }
 
 func addOpTerminateJobFlowsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTerminateJobFlows{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTerminateJobFlows{})
 }
 
 func validateAutoScalingPolicy(v *types.AutoScalingPolicy) error {

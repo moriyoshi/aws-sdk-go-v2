@@ -70,15 +70,15 @@ func (m *validateOpUploadDocuments) HandleInitialize(ctx context.Context, in mid
 }
 
 func addOpSearchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSearch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSearch{})
 }
 
 func addOpSuggestValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSuggest{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSuggest{})
 }
 
 func addOpUploadDocumentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUploadDocuments{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUploadDocuments{})
 }
 
 func validateOpSearchInput(v *SearchInput) error {

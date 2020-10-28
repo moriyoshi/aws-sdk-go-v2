@@ -130,27 +130,27 @@ func (m *validateOpUntagResource) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpCreateSavingsPlanValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSavingsPlan{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSavingsPlan{})
 }
 
 func addOpDeleteQueuedSavingsPlanValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteQueuedSavingsPlan{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteQueuedSavingsPlan{})
 }
 
 func addOpDescribeSavingsPlanRatesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSavingsPlanRates{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSavingsPlanRates{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func validateOpCreateSavingsPlanInput(v *CreateSavingsPlanInput) error {

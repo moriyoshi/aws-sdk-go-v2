@@ -2191,439 +2191,439 @@ func (m *validateOpUpdateWorkteam) HandleInitialize(ctx context.Context, in midd
 }
 
 func addOpAddTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddTags{})
 }
 
 func addOpAssociateTrialComponentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateTrialComponent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateTrialComponent{})
 }
 
 func addOpCreateAlgorithmValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAlgorithm{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAlgorithm{})
 }
 
 func addOpCreateAppValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateApp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateApp{})
 }
 
 func addOpCreateAutoMLJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAutoMLJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAutoMLJob{})
 }
 
 func addOpCreateCodeRepositoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCodeRepository{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCodeRepository{})
 }
 
 func addOpCreateCompilationJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCompilationJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCompilationJob{})
 }
 
 func addOpCreateDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDomain{})
 }
 
 func addOpCreateEndpointConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateEndpointConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateEndpointConfig{})
 }
 
 func addOpCreateEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateEndpoint{})
 }
 
 func addOpCreateExperimentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateExperiment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateExperiment{})
 }
 
 func addOpCreateFlowDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFlowDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFlowDefinition{})
 }
 
 func addOpCreateHumanTaskUiValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateHumanTaskUi{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateHumanTaskUi{})
 }
 
 func addOpCreateHyperParameterTuningJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateHyperParameterTuningJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateHyperParameterTuningJob{})
 }
 
 func addOpCreateLabelingJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLabelingJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLabelingJob{})
 }
 
 func addOpCreateModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateModel{})
 }
 
 func addOpCreateModelPackageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateModelPackage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateModelPackage{})
 }
 
 func addOpCreateMonitoringScheduleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateMonitoringSchedule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateMonitoringSchedule{})
 }
 
 func addOpCreateNotebookInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateNotebookInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateNotebookInstance{})
 }
 
 func addOpCreateNotebookInstanceLifecycleConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateNotebookInstanceLifecycleConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateNotebookInstanceLifecycleConfig{})
 }
 
 func addOpCreatePresignedDomainUrlValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePresignedDomainUrl{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePresignedDomainUrl{})
 }
 
 func addOpCreatePresignedNotebookInstanceUrlValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePresignedNotebookInstanceUrl{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePresignedNotebookInstanceUrl{})
 }
 
 func addOpCreateProcessingJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateProcessingJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateProcessingJob{})
 }
 
 func addOpCreateTrainingJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTrainingJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTrainingJob{})
 }
 
 func addOpCreateTransformJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTransformJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTransformJob{})
 }
 
 func addOpCreateTrialComponentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTrialComponent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTrialComponent{})
 }
 
 func addOpCreateTrialValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTrial{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTrial{})
 }
 
 func addOpCreateUserProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateUserProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateUserProfile{})
 }
 
 func addOpCreateWorkforceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateWorkforce{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateWorkforce{})
 }
 
 func addOpCreateWorkteamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateWorkteam{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateWorkteam{})
 }
 
 func addOpDeleteAlgorithmValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAlgorithm{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAlgorithm{})
 }
 
 func addOpDeleteAppValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApp{})
 }
 
 func addOpDeleteCodeRepositoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCodeRepository{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCodeRepository{})
 }
 
 func addOpDeleteDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDomain{})
 }
 
 func addOpDeleteEndpointConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEndpointConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEndpointConfig{})
 }
 
 func addOpDeleteEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEndpoint{})
 }
 
 func addOpDeleteExperimentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteExperiment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteExperiment{})
 }
 
 func addOpDeleteFlowDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFlowDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFlowDefinition{})
 }
 
 func addOpDeleteHumanTaskUiValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteHumanTaskUi{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteHumanTaskUi{})
 }
 
 func addOpDeleteModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteModel{})
 }
 
 func addOpDeleteModelPackageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteModelPackage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteModelPackage{})
 }
 
 func addOpDeleteMonitoringScheduleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMonitoringSchedule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMonitoringSchedule{})
 }
 
 func addOpDeleteNotebookInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteNotebookInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteNotebookInstance{})
 }
 
 func addOpDeleteNotebookInstanceLifecycleConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteNotebookInstanceLifecycleConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteNotebookInstanceLifecycleConfig{})
 }
 
 func addOpDeleteTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTags{})
 }
 
 func addOpDeleteTrialComponentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTrialComponent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTrialComponent{})
 }
 
 func addOpDeleteTrialValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTrial{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTrial{})
 }
 
 func addOpDeleteUserProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUserProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUserProfile{})
 }
 
 func addOpDeleteWorkforceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteWorkforce{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteWorkforce{})
 }
 
 func addOpDeleteWorkteamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteWorkteam{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteWorkteam{})
 }
 
 func addOpDescribeAlgorithmValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAlgorithm{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAlgorithm{})
 }
 
 func addOpDescribeAppValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeApp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeApp{})
 }
 
 func addOpDescribeAutoMLJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAutoMLJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAutoMLJob{})
 }
 
 func addOpDescribeCodeRepositoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCodeRepository{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCodeRepository{})
 }
 
 func addOpDescribeCompilationJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCompilationJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCompilationJob{})
 }
 
 func addOpDescribeDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDomain{})
 }
 
 func addOpDescribeEndpointConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEndpointConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEndpointConfig{})
 }
 
 func addOpDescribeEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEndpoint{})
 }
 
 func addOpDescribeExperimentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeExperiment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeExperiment{})
 }
 
 func addOpDescribeFlowDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeFlowDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeFlowDefinition{})
 }
 
 func addOpDescribeHumanTaskUiValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeHumanTaskUi{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeHumanTaskUi{})
 }
 
 func addOpDescribeHyperParameterTuningJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeHyperParameterTuningJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeHyperParameterTuningJob{})
 }
 
 func addOpDescribeLabelingJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeLabelingJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeLabelingJob{})
 }
 
 func addOpDescribeModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeModel{})
 }
 
 func addOpDescribeModelPackageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeModelPackage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeModelPackage{})
 }
 
 func addOpDescribeMonitoringScheduleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeMonitoringSchedule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeMonitoringSchedule{})
 }
 
 func addOpDescribeNotebookInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeNotebookInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeNotebookInstance{})
 }
 
 func addOpDescribeNotebookInstanceLifecycleConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeNotebookInstanceLifecycleConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeNotebookInstanceLifecycleConfig{})
 }
 
 func addOpDescribeProcessingJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeProcessingJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeProcessingJob{})
 }
 
 func addOpDescribeSubscribedWorkteamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSubscribedWorkteam{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSubscribedWorkteam{})
 }
 
 func addOpDescribeTrainingJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTrainingJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTrainingJob{})
 }
 
 func addOpDescribeTransformJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTransformJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTransformJob{})
 }
 
 func addOpDescribeTrialComponentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTrialComponent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTrialComponent{})
 }
 
 func addOpDescribeTrialValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTrial{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTrial{})
 }
 
 func addOpDescribeUserProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeUserProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeUserProfile{})
 }
 
 func addOpDescribeWorkforceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeWorkforce{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeWorkforce{})
 }
 
 func addOpDescribeWorkteamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeWorkteam{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeWorkteam{})
 }
 
 func addOpDisassociateTrialComponentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateTrialComponent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateTrialComponent{})
 }
 
 func addOpGetSearchSuggestionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSearchSuggestions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSearchSuggestions{})
 }
 
 func addOpListCandidatesForAutoMLJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListCandidatesForAutoMLJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListCandidatesForAutoMLJob{})
 }
 
 func addOpListLabelingJobsForWorkteamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListLabelingJobsForWorkteam{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListLabelingJobsForWorkteam{})
 }
 
 func addOpListTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTags{})
 }
 
 func addOpListTrainingJobsForHyperParameterTuningJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTrainingJobsForHyperParameterTuningJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTrainingJobsForHyperParameterTuningJob{})
 }
 
 func addOpRenderUiTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRenderUiTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRenderUiTemplate{})
 }
 
 func addOpSearchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSearch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSearch{})
 }
 
 func addOpStartMonitoringScheduleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartMonitoringSchedule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartMonitoringSchedule{})
 }
 
 func addOpStartNotebookInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartNotebookInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartNotebookInstance{})
 }
 
 func addOpStopAutoMLJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopAutoMLJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopAutoMLJob{})
 }
 
 func addOpStopCompilationJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopCompilationJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopCompilationJob{})
 }
 
 func addOpStopHyperParameterTuningJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopHyperParameterTuningJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopHyperParameterTuningJob{})
 }
 
 func addOpStopLabelingJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopLabelingJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopLabelingJob{})
 }
 
 func addOpStopMonitoringScheduleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopMonitoringSchedule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopMonitoringSchedule{})
 }
 
 func addOpStopNotebookInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopNotebookInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopNotebookInstance{})
 }
 
 func addOpStopProcessingJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopProcessingJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopProcessingJob{})
 }
 
 func addOpStopTrainingJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopTrainingJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopTrainingJob{})
 }
 
 func addOpStopTransformJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopTransformJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopTransformJob{})
 }
 
 func addOpUpdateCodeRepositoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateCodeRepository{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateCodeRepository{})
 }
 
 func addOpUpdateDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDomain{})
 }
 
 func addOpUpdateEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateEndpoint{})
 }
 
 func addOpUpdateEndpointWeightsAndCapacitiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateEndpointWeightsAndCapacities{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateEndpointWeightsAndCapacities{})
 }
 
 func addOpUpdateExperimentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateExperiment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateExperiment{})
 }
 
 func addOpUpdateMonitoringScheduleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateMonitoringSchedule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateMonitoringSchedule{})
 }
 
 func addOpUpdateNotebookInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateNotebookInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateNotebookInstance{})
 }
 
 func addOpUpdateNotebookInstanceLifecycleConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateNotebookInstanceLifecycleConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateNotebookInstanceLifecycleConfig{})
 }
 
 func addOpUpdateTrialComponentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTrialComponent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTrialComponent{})
 }
 
 func addOpUpdateTrialValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTrial{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTrial{})
 }
 
 func addOpUpdateUserProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateUserProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateUserProfile{})
 }
 
 func addOpUpdateWorkforceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateWorkforce{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateWorkforce{})
 }
 
 func addOpUpdateWorkteamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateWorkteam{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateWorkteam{})
 }
 
 func validateAlgorithmSpecification(v *types.AlgorithmSpecification) error {

@@ -271,55 +271,55 @@ func (m *validateOpUpdateInput) HandleInitialize(ctx context.Context, in middlew
 }
 
 func addOpCreateDetectorModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDetectorModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDetectorModel{})
 }
 
 func addOpCreateInputValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateInput{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateInput{})
 }
 
 func addOpDeleteDetectorModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDetectorModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDetectorModel{})
 }
 
 func addOpDeleteInputValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteInput{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteInput{})
 }
 
 func addOpDescribeDetectorModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDetectorModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDetectorModel{})
 }
 
 func addOpDescribeInputValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeInput{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeInput{})
 }
 
 func addOpListDetectorModelVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDetectorModelVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDetectorModelVersions{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPutLoggingOptionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutLoggingOptions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutLoggingOptions{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateDetectorModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDetectorModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDetectorModel{})
 }
 
 func addOpUpdateInputValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateInput{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateInput{})
 }
 
 func validateAction(v *types.Action) error {

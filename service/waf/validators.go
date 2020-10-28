@@ -1231,247 +1231,247 @@ func (m *validateOpUpdateXssMatchSet) HandleInitialize(ctx context.Context, in m
 }
 
 func addOpCreateByteMatchSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateByteMatchSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateByteMatchSet{})
 }
 
 func addOpCreateGeoMatchSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateGeoMatchSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateGeoMatchSet{})
 }
 
 func addOpCreateIPSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateIPSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateIPSet{})
 }
 
 func addOpCreateRateBasedRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRateBasedRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRateBasedRule{})
 }
 
 func addOpCreateRegexMatchSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRegexMatchSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRegexMatchSet{})
 }
 
 func addOpCreateRegexPatternSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRegexPatternSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRegexPatternSet{})
 }
 
 func addOpCreateRuleGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRuleGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRuleGroup{})
 }
 
 func addOpCreateRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRule{})
 }
 
 func addOpCreateSizeConstraintSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSizeConstraintSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSizeConstraintSet{})
 }
 
 func addOpCreateSqlInjectionMatchSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSqlInjectionMatchSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSqlInjectionMatchSet{})
 }
 
 func addOpCreateWebACLValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateWebACL{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateWebACL{})
 }
 
 func addOpCreateWebACLMigrationStackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateWebACLMigrationStack{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateWebACLMigrationStack{})
 }
 
 func addOpCreateXssMatchSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateXssMatchSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateXssMatchSet{})
 }
 
 func addOpDeleteByteMatchSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteByteMatchSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteByteMatchSet{})
 }
 
 func addOpDeleteGeoMatchSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteGeoMatchSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteGeoMatchSet{})
 }
 
 func addOpDeleteIPSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteIPSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteIPSet{})
 }
 
 func addOpDeleteLoggingConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLoggingConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLoggingConfiguration{})
 }
 
 func addOpDeletePermissionPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePermissionPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePermissionPolicy{})
 }
 
 func addOpDeleteRateBasedRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRateBasedRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRateBasedRule{})
 }
 
 func addOpDeleteRegexMatchSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRegexMatchSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRegexMatchSet{})
 }
 
 func addOpDeleteRegexPatternSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRegexPatternSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRegexPatternSet{})
 }
 
 func addOpDeleteRuleGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRuleGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRuleGroup{})
 }
 
 func addOpDeleteRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRule{})
 }
 
 func addOpDeleteSizeConstraintSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSizeConstraintSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSizeConstraintSet{})
 }
 
 func addOpDeleteSqlInjectionMatchSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSqlInjectionMatchSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSqlInjectionMatchSet{})
 }
 
 func addOpDeleteWebACLValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteWebACL{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteWebACL{})
 }
 
 func addOpDeleteXssMatchSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteXssMatchSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteXssMatchSet{})
 }
 
 func addOpGetByteMatchSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetByteMatchSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetByteMatchSet{})
 }
 
 func addOpGetChangeTokenStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetChangeTokenStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetChangeTokenStatus{})
 }
 
 func addOpGetGeoMatchSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetGeoMatchSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetGeoMatchSet{})
 }
 
 func addOpGetIPSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetIPSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetIPSet{})
 }
 
 func addOpGetLoggingConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLoggingConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLoggingConfiguration{})
 }
 
 func addOpGetPermissionPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPermissionPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPermissionPolicy{})
 }
 
 func addOpGetRateBasedRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRateBasedRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRateBasedRule{})
 }
 
 func addOpGetRateBasedRuleManagedKeysValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRateBasedRuleManagedKeys{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRateBasedRuleManagedKeys{})
 }
 
 func addOpGetRegexMatchSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRegexMatchSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRegexMatchSet{})
 }
 
 func addOpGetRegexPatternSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRegexPatternSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRegexPatternSet{})
 }
 
 func addOpGetRuleGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRuleGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRuleGroup{})
 }
 
 func addOpGetRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRule{})
 }
 
 func addOpGetSampledRequestsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSampledRequests{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSampledRequests{})
 }
 
 func addOpGetSizeConstraintSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSizeConstraintSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSizeConstraintSet{})
 }
 
 func addOpGetSqlInjectionMatchSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSqlInjectionMatchSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSqlInjectionMatchSet{})
 }
 
 func addOpGetWebACLValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetWebACL{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetWebACL{})
 }
 
 func addOpGetXssMatchSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetXssMatchSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetXssMatchSet{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPutLoggingConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutLoggingConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutLoggingConfiguration{})
 }
 
 func addOpPutPermissionPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutPermissionPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutPermissionPolicy{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateByteMatchSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateByteMatchSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateByteMatchSet{})
 }
 
 func addOpUpdateGeoMatchSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGeoMatchSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGeoMatchSet{})
 }
 
 func addOpUpdateIPSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateIPSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateIPSet{})
 }
 
 func addOpUpdateRateBasedRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRateBasedRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRateBasedRule{})
 }
 
 func addOpUpdateRegexMatchSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRegexMatchSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRegexMatchSet{})
 }
 
 func addOpUpdateRegexPatternSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRegexPatternSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRegexPatternSet{})
 }
 
 func addOpUpdateRuleGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRuleGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRuleGroup{})
 }
 
 func addOpUpdateRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRule{})
 }
 
 func addOpUpdateSizeConstraintSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateSizeConstraintSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateSizeConstraintSet{})
 }
 
 func addOpUpdateSqlInjectionMatchSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateSqlInjectionMatchSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateSqlInjectionMatchSet{})
 }
 
 func addOpUpdateWebACLValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateWebACL{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateWebACL{})
 }
 
 func addOpUpdateXssMatchSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateXssMatchSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateXssMatchSet{})
 }
 
 func validateActivatedRule(v *types.ActivatedRule) error {

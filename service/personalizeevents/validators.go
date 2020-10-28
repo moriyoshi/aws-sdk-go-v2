@@ -71,15 +71,15 @@ func (m *validateOpPutUsers) HandleInitialize(ctx context.Context, in middleware
 }
 
 func addOpPutEventsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutEvents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutEvents{})
 }
 
 func addOpPutItemsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutItems{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutItems{})
 }
 
 func addOpPutUsersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutUsers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutUsers{})
 }
 
 func validateEvent(v *types.Event) error {

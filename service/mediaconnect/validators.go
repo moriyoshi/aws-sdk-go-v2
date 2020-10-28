@@ -471,95 +471,95 @@ func (m *validateOpUpdateFlowSource) HandleInitialize(ctx context.Context, in mi
 }
 
 func addOpAddFlowOutputsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddFlowOutputs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddFlowOutputs{})
 }
 
 func addOpAddFlowSourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddFlowSources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddFlowSources{})
 }
 
 func addOpAddFlowVpcInterfacesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddFlowVpcInterfaces{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddFlowVpcInterfaces{})
 }
 
 func addOpCreateFlowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFlow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFlow{})
 }
 
 func addOpDeleteFlowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFlow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFlow{})
 }
 
 func addOpDescribeFlowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeFlow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeFlow{})
 }
 
 func addOpDescribeOfferingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeOffering{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeOffering{})
 }
 
 func addOpDescribeReservationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeReservation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeReservation{})
 }
 
 func addOpGrantFlowEntitlementsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGrantFlowEntitlements{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGrantFlowEntitlements{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPurchaseOfferingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPurchaseOffering{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPurchaseOffering{})
 }
 
 func addOpRemoveFlowOutputValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveFlowOutput{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveFlowOutput{})
 }
 
 func addOpRemoveFlowSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveFlowSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveFlowSource{})
 }
 
 func addOpRemoveFlowVpcInterfaceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveFlowVpcInterface{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveFlowVpcInterface{})
 }
 
 func addOpRevokeFlowEntitlementValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRevokeFlowEntitlement{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRevokeFlowEntitlement{})
 }
 
 func addOpStartFlowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartFlow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartFlow{})
 }
 
 func addOpStopFlowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopFlow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopFlow{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateFlowEntitlementValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFlowEntitlement{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFlowEntitlement{})
 }
 
 func addOpUpdateFlowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFlow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFlow{})
 }
 
 func addOpUpdateFlowOutputValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFlowOutput{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFlowOutput{})
 }
 
 func addOpUpdateFlowSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFlowSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFlowSource{})
 }
 
 func validate__listOfAddOutputRequest(v []*types.AddOutputRequest) error {

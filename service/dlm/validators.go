@@ -151,31 +151,31 @@ func (m *validateOpUpdateLifecyclePolicy) HandleInitialize(ctx context.Context, 
 }
 
 func addOpCreateLifecyclePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLifecyclePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLifecyclePolicy{})
 }
 
 func addOpDeleteLifecyclePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLifecyclePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLifecyclePolicy{})
 }
 
 func addOpGetLifecyclePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLifecyclePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLifecyclePolicy{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateLifecyclePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateLifecyclePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateLifecyclePolicy{})
 }
 
 func validateCrossRegionCopyRule(v *types.CrossRegionCopyRule) error {

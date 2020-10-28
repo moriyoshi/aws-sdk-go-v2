@@ -671,135 +671,135 @@ func (m *validateOpUpdateQualificationType) HandleInitialize(ctx context.Context
 }
 
 func addOpAcceptQualificationRequestValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAcceptQualificationRequest{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAcceptQualificationRequest{})
 }
 
 func addOpApproveAssignmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpApproveAssignment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpApproveAssignment{})
 }
 
 func addOpAssociateQualificationWithWorkerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateQualificationWithWorker{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateQualificationWithWorker{})
 }
 
 func addOpCreateAdditionalAssignmentsForHITValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAdditionalAssignmentsForHIT{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAdditionalAssignmentsForHIT{})
 }
 
 func addOpCreateHITValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateHIT{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateHIT{})
 }
 
 func addOpCreateHITTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateHITType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateHITType{})
 }
 
 func addOpCreateHITWithHITTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateHITWithHITType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateHITWithHITType{})
 }
 
 func addOpCreateQualificationTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateQualificationType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateQualificationType{})
 }
 
 func addOpCreateWorkerBlockValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateWorkerBlock{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateWorkerBlock{})
 }
 
 func addOpDeleteHITValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteHIT{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteHIT{})
 }
 
 func addOpDeleteQualificationTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteQualificationType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteQualificationType{})
 }
 
 func addOpDeleteWorkerBlockValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteWorkerBlock{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteWorkerBlock{})
 }
 
 func addOpDisassociateQualificationFromWorkerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateQualificationFromWorker{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateQualificationFromWorker{})
 }
 
 func addOpGetAssignmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAssignment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAssignment{})
 }
 
 func addOpGetFileUploadURLValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFileUploadURL{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFileUploadURL{})
 }
 
 func addOpGetHITValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetHIT{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetHIT{})
 }
 
 func addOpGetQualificationScoreValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetQualificationScore{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetQualificationScore{})
 }
 
 func addOpGetQualificationTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetQualificationType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetQualificationType{})
 }
 
 func addOpListAssignmentsForHITValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAssignmentsForHIT{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAssignmentsForHIT{})
 }
 
 func addOpListHITsForQualificationTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListHITsForQualificationType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListHITsForQualificationType{})
 }
 
 func addOpListQualificationTypesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListQualificationTypes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListQualificationTypes{})
 }
 
 func addOpListReviewPolicyResultsForHITValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListReviewPolicyResultsForHIT{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListReviewPolicyResultsForHIT{})
 }
 
 func addOpListWorkersWithQualificationTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListWorkersWithQualificationType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListWorkersWithQualificationType{})
 }
 
 func addOpNotifyWorkersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpNotifyWorkers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpNotifyWorkers{})
 }
 
 func addOpRejectAssignmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRejectAssignment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRejectAssignment{})
 }
 
 func addOpRejectQualificationRequestValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRejectQualificationRequest{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRejectQualificationRequest{})
 }
 
 func addOpSendBonusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSendBonus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSendBonus{})
 }
 
 func addOpSendTestEventNotificationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSendTestEventNotification{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSendTestEventNotification{})
 }
 
 func addOpUpdateExpirationForHITValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateExpirationForHIT{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateExpirationForHIT{})
 }
 
 func addOpUpdateHITReviewStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateHITReviewStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateHITReviewStatus{})
 }
 
 func addOpUpdateHITTypeOfHITValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateHITTypeOfHIT{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateHITTypeOfHIT{})
 }
 
 func addOpUpdateNotificationSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateNotificationSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateNotificationSettings{})
 }
 
 func addOpUpdateQualificationTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateQualificationType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateQualificationType{})
 }
 
 func validateHITLayoutParameter(v *types.HITLayoutParameter) error {

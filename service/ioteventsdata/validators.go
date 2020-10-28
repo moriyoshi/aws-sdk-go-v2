@@ -91,19 +91,19 @@ func (m *validateOpListDetectors) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpBatchPutMessageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchPutMessage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchPutMessage{})
 }
 
 func addOpBatchUpdateDetectorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchUpdateDetector{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchUpdateDetector{})
 }
 
 func addOpDescribeDetectorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDetector{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDetector{})
 }
 
 func addOpListDetectorsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDetectors{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDetectors{})
 }
 
 func validateDetectorStateDefinition(v *types.DetectorStateDefinition) error {

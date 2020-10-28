@@ -911,183 +911,183 @@ func (m *validateOpUpdateFunctionEventInvokeConfig) HandleInitialize(ctx context
 }
 
 func addOpAddLayerVersionPermissionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddLayerVersionPermission{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddLayerVersionPermission{})
 }
 
 func addOpAddPermissionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddPermission{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddPermission{})
 }
 
 func addOpCreateAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAlias{})
 }
 
 func addOpCreateEventSourceMappingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateEventSourceMapping{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateEventSourceMapping{})
 }
 
 func addOpCreateFunctionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFunction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFunction{})
 }
 
 func addOpDeleteAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAlias{})
 }
 
 func addOpDeleteEventSourceMappingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEventSourceMapping{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEventSourceMapping{})
 }
 
 func addOpDeleteFunctionConcurrencyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFunctionConcurrency{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFunctionConcurrency{})
 }
 
 func addOpDeleteFunctionEventInvokeConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFunctionEventInvokeConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFunctionEventInvokeConfig{})
 }
 
 func addOpDeleteFunctionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFunction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFunction{})
 }
 
 func addOpDeleteLayerVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLayerVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLayerVersion{})
 }
 
 func addOpDeleteProvisionedConcurrencyConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteProvisionedConcurrencyConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteProvisionedConcurrencyConfig{})
 }
 
 func addOpGetAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAlias{})
 }
 
 func addOpGetEventSourceMappingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetEventSourceMapping{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetEventSourceMapping{})
 }
 
 func addOpGetFunctionConcurrencyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFunctionConcurrency{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFunctionConcurrency{})
 }
 
 func addOpGetFunctionConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFunctionConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFunctionConfiguration{})
 }
 
 func addOpGetFunctionEventInvokeConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFunctionEventInvokeConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFunctionEventInvokeConfig{})
 }
 
 func addOpGetFunctionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFunction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFunction{})
 }
 
 func addOpGetLayerVersionByArnValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLayerVersionByArn{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLayerVersionByArn{})
 }
 
 func addOpGetLayerVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLayerVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLayerVersion{})
 }
 
 func addOpGetLayerVersionPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLayerVersionPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLayerVersionPolicy{})
 }
 
 func addOpGetPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPolicy{})
 }
 
 func addOpGetProvisionedConcurrencyConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetProvisionedConcurrencyConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetProvisionedConcurrencyConfig{})
 }
 
 func addOpInvokeAsyncValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpInvokeAsync{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpInvokeAsync{})
 }
 
 func addOpInvokeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpInvoke{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpInvoke{})
 }
 
 func addOpListAliasesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAliases{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAliases{})
 }
 
 func addOpListFunctionEventInvokeConfigsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListFunctionEventInvokeConfigs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListFunctionEventInvokeConfigs{})
 }
 
 func addOpListLayerVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListLayerVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListLayerVersions{})
 }
 
 func addOpListProvisionedConcurrencyConfigsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListProvisionedConcurrencyConfigs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListProvisionedConcurrencyConfigs{})
 }
 
 func addOpListTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTags{})
 }
 
 func addOpListVersionsByFunctionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListVersionsByFunction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListVersionsByFunction{})
 }
 
 func addOpPublishLayerVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPublishLayerVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPublishLayerVersion{})
 }
 
 func addOpPublishVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPublishVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPublishVersion{})
 }
 
 func addOpPutFunctionConcurrencyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutFunctionConcurrency{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutFunctionConcurrency{})
 }
 
 func addOpPutFunctionEventInvokeConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutFunctionEventInvokeConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutFunctionEventInvokeConfig{})
 }
 
 func addOpPutProvisionedConcurrencyConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutProvisionedConcurrencyConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutProvisionedConcurrencyConfig{})
 }
 
 func addOpRemoveLayerVersionPermissionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveLayerVersionPermission{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveLayerVersionPermission{})
 }
 
 func addOpRemovePermissionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemovePermission{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemovePermission{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAlias{})
 }
 
 func addOpUpdateEventSourceMappingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateEventSourceMapping{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateEventSourceMapping{})
 }
 
 func addOpUpdateFunctionCodeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFunctionCode{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFunctionCode{})
 }
 
 func addOpUpdateFunctionConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFunctionConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFunctionConfiguration{})
 }
 
 func addOpUpdateFunctionEventInvokeConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFunctionEventInvokeConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFunctionEventInvokeConfig{})
 }
 
 func validateFileSystemConfig(v *types.FileSystemConfig) error {

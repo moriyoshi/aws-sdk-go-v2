@@ -31,7 +31,7 @@ func (m *validateOpGetMedia) HandleInitialize(ctx context.Context, in middleware
 }
 
 func addOpGetMediaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMedia{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMedia{})
 }
 
 func validateStartSelector(v *types.StartSelector) error {

@@ -531,107 +531,107 @@ func (m *validateOpUntagResource) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpDeleteAlarmsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAlarms{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAlarms{})
 }
 
 func addOpDeleteAnomalyDetectorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAnomalyDetector{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAnomalyDetector{})
 }
 
 func addOpDeleteDashboardsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDashboards{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDashboards{})
 }
 
 func addOpDeleteInsightRulesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteInsightRules{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteInsightRules{})
 }
 
 func addOpDescribeAlarmsForMetricValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAlarmsForMetric{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAlarmsForMetric{})
 }
 
 func addOpDescribeAnomalyDetectorsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAnomalyDetectors{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAnomalyDetectors{})
 }
 
 func addOpDisableAlarmActionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableAlarmActions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableAlarmActions{})
 }
 
 func addOpDisableInsightRulesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableInsightRules{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableInsightRules{})
 }
 
 func addOpEnableAlarmActionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableAlarmActions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableAlarmActions{})
 }
 
 func addOpEnableInsightRulesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableInsightRules{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableInsightRules{})
 }
 
 func addOpGetDashboardValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDashboard{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDashboard{})
 }
 
 func addOpGetInsightRuleReportValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetInsightRuleReport{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetInsightRuleReport{})
 }
 
 func addOpGetMetricDataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMetricData{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMetricData{})
 }
 
 func addOpGetMetricStatisticsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMetricStatistics{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMetricStatistics{})
 }
 
 func addOpGetMetricWidgetImageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMetricWidgetImage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMetricWidgetImage{})
 }
 
 func addOpListMetricsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListMetrics{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListMetrics{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPutAnomalyDetectorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutAnomalyDetector{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutAnomalyDetector{})
 }
 
 func addOpPutCompositeAlarmValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutCompositeAlarm{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutCompositeAlarm{})
 }
 
 func addOpPutDashboardValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutDashboard{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutDashboard{})
 }
 
 func addOpPutInsightRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutInsightRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutInsightRule{})
 }
 
 func addOpPutMetricAlarmValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutMetricAlarm{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutMetricAlarm{})
 }
 
 func addOpPutMetricDataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutMetricData{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutMetricData{})
 }
 
 func addOpSetAlarmStateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetAlarmState{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetAlarmState{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func validateAnomalyDetectorConfiguration(v *types.AnomalyDetectorConfiguration) error {

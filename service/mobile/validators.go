@@ -130,27 +130,27 @@ func (m *validateOpUpdateProject) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpDeleteProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteProject{})
 }
 
 func addOpDescribeBundleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeBundle{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeBundle{})
 }
 
 func addOpDescribeProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeProject{})
 }
 
 func addOpExportBundleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpExportBundle{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpExportBundle{})
 }
 
 func addOpExportProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpExportProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpExportProject{})
 }
 
 func addOpUpdateProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateProject{})
 }
 
 func validateOpDeleteProjectInput(v *DeleteProjectInput) error {

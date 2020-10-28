@@ -111,23 +111,23 @@ func (m *validateOpStopHumanLoop) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpDeleteHumanLoopValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteHumanLoop{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteHumanLoop{})
 }
 
 func addOpDescribeHumanLoopValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeHumanLoop{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeHumanLoop{})
 }
 
 func addOpListHumanLoopsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListHumanLoops{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListHumanLoops{})
 }
 
 func addOpStartHumanLoopValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartHumanLoop{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartHumanLoop{})
 }
 
 func addOpStopHumanLoopValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopHumanLoop{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopHumanLoop{})
 }
 
 func validateHumanLoopDataAttributes(v *types.HumanLoopDataAttributes) error {

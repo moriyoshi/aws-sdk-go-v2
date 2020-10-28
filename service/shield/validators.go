@@ -211,43 +211,43 @@ func (m *validateOpUpdateEmergencyContactSettings) HandleInitialize(ctx context.
 }
 
 func addOpAssociateDRTLogBucketValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateDRTLogBucket{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateDRTLogBucket{})
 }
 
 func addOpAssociateDRTRoleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateDRTRole{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateDRTRole{})
 }
 
 func addOpAssociateHealthCheckValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateHealthCheck{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateHealthCheck{})
 }
 
 func addOpAssociateProactiveEngagementDetailsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateProactiveEngagementDetails{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateProactiveEngagementDetails{})
 }
 
 func addOpCreateProtectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateProtection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateProtection{})
 }
 
 func addOpDeleteProtectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteProtection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteProtection{})
 }
 
 func addOpDescribeAttackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAttack{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAttack{})
 }
 
 func addOpDisassociateDRTLogBucketValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateDRTLogBucket{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateDRTLogBucket{})
 }
 
 func addOpDisassociateHealthCheckValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateHealthCheck{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateHealthCheck{})
 }
 
 func addOpUpdateEmergencyContactSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateEmergencyContactSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateEmergencyContactSettings{})
 }
 
 func validateEmergencyContact(v *types.EmergencyContact) error {

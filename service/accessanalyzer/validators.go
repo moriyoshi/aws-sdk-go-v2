@@ -351,71 +351,71 @@ func (m *validateOpUpdateFindings) HandleInitialize(ctx context.Context, in midd
 }
 
 func addOpCreateAnalyzerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAnalyzer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAnalyzer{})
 }
 
 func addOpCreateArchiveRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateArchiveRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateArchiveRule{})
 }
 
 func addOpDeleteAnalyzerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAnalyzer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAnalyzer{})
 }
 
 func addOpDeleteArchiveRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteArchiveRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteArchiveRule{})
 }
 
 func addOpGetAnalyzedResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAnalyzedResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAnalyzedResource{})
 }
 
 func addOpGetAnalyzerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAnalyzer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAnalyzer{})
 }
 
 func addOpGetArchiveRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetArchiveRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetArchiveRule{})
 }
 
 func addOpGetFindingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFinding{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFinding{})
 }
 
 func addOpListAnalyzedResourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAnalyzedResources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAnalyzedResources{})
 }
 
 func addOpListArchiveRulesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListArchiveRules{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListArchiveRules{})
 }
 
 func addOpListFindingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListFindings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListFindings{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpStartResourceScanValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartResourceScan{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartResourceScan{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateArchiveRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateArchiveRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateArchiveRule{})
 }
 
 func addOpUpdateFindingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFindings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFindings{})
 }
 
 func validateInlineArchiveRule(v *types.InlineArchiveRule) error {

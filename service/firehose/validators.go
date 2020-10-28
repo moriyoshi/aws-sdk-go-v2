@@ -231,47 +231,47 @@ func (m *validateOpUpdateDestination) HandleInitialize(ctx context.Context, in m
 }
 
 func addOpCreateDeliveryStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDeliveryStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDeliveryStream{})
 }
 
 func addOpDeleteDeliveryStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDeliveryStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDeliveryStream{})
 }
 
 func addOpDescribeDeliveryStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDeliveryStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDeliveryStream{})
 }
 
 func addOpListTagsForDeliveryStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForDeliveryStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForDeliveryStream{})
 }
 
 func addOpPutRecordBatchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutRecordBatch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutRecordBatch{})
 }
 
 func addOpPutRecordValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutRecord{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutRecord{})
 }
 
 func addOpStartDeliveryStreamEncryptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartDeliveryStreamEncryption{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartDeliveryStreamEncryption{})
 }
 
 func addOpStopDeliveryStreamEncryptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopDeliveryStreamEncryption{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopDeliveryStreamEncryption{})
 }
 
 func addOpTagDeliveryStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagDeliveryStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagDeliveryStream{})
 }
 
 func addOpUntagDeliveryStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagDeliveryStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagDeliveryStream{})
 }
 
 func addOpUpdateDestinationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDestination{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDestination{})
 }
 
 func validateCopyCommand(v *types.CopyCommand) error {

@@ -92,31 +92,65 @@ type GetBucketPolicyOutput struct {
 }
 
 func addOperationGetBucketPolicyMiddlewares(stack *middleware.Stack, options Options) (err error) {
-	err = stack.Serialize.Add(&awsRestxml_serializeOpGetBucketPolicy{}, middleware.After)
+	err = stack.Serialize.Add(middleware.After, &awsRestxml_serializeOpGetBucketPolicy{})
 	if err != nil {
 		return err
 	}
-	err = stack.Deserialize.Add(&awsRestxml_deserializeOpGetBucketPolicy{}, middleware.After)
+	err = stack.Deserialize.Add(middleware.After, &awsRestxml_deserializeOpGetBucketPolicy{})
 	if err != nil {
 		return err
 	}
-	awsmiddleware.AddRequestInvocationIDMiddleware(stack)
-	smithyhttp.AddContentLengthMiddleware(stack)
-	addResolveEndpointMiddleware(stack, options)
-	v4.AddComputePayloadSHA256Middleware(stack)
-	addRetryMiddlewares(stack, options)
-	addHTTPSignerV4Middleware(stack, options)
-	awsmiddleware.AddAttemptClockSkewMiddleware(stack)
-	addClientUserAgent(stack)
-	smithyhttp.AddErrorCloseResponseBodyMiddleware(stack)
-	smithyhttp.AddCloseResponseBodyMiddleware(stack)
-	addEndpointPrefix_opGetBucketPolicyMiddleware(stack)
-	addOpGetBucketPolicyValidationMiddleware(stack)
-	stack.Initialize.Add(newServiceMetadataMiddleware_opGetBucketPolicy(options.Region), middleware.Before)
-	addMetadataRetrieverMiddleware(stack)
-	addUpdateEndpointMiddleware(stack, options)
-	addResponseErrorMiddleware(stack)
-	v4.AddContentSHA256HeaderMiddleware(stack)
+	if err := awsmiddleware.AddClientRequestIDMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddComputeContentLengthMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addResolveEndpointMiddleware(stack, options); err != nil {
+		return err
+	}
+	if err := v4.AddComputePayloadSHA256Middleware(stack); err != nil {
+		return err
+	}
+	if err := addRetryMiddlewares(stack, options); err != nil {
+		return err
+	}
+	if err := addHTTPSignerV4Middleware(stack, options); err != nil {
+		return err
+	}
+	if err := awsmiddleware.AddAttemptClockSkewMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addClientUserAgent(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddErrorCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addEndpointPrefix_opGetBucketPolicyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addOpGetBucketPolicyValidationMiddleware(stack); err != nil {
+		return err
+	}
+	if err := stack.Initialize.Add(middleware.Before, newServiceMetadataMiddleware_opGetBucketPolicy(options.Region)); err != nil {
+		return err
+	}
+	if err := addMetadataRetrieverMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addUpdateEndpointMiddleware(stack, options); err != nil {
+		return err
+	}
+	if err := addResponseErrorMiddleware(stack); err != nil {
+		return err
+	}
+	if err := v4.AddContentSHA256HeaderMiddleware(stack); err != nil {
+		return err
+	}
 	return nil
 }
 
@@ -158,11 +192,11 @@ func (m *endpointPrefix_opGetBucketPolicyMiddleware) HandleSerialize(ctx context
 	return next.HandleSerialize(ctx, in)
 }
 func addEndpointPrefix_opGetBucketPolicyMiddleware(stack *middleware.Stack) error {
-	return stack.Serialize.Insert(&endpointPrefix_opGetBucketPolicyMiddleware{}, `OperationSerializer`, middleware.Before)
+	return stack.Serialize.Insert("OperationSerializer", middleware.Before, &endpointPrefix_opGetBucketPolicyMiddleware{})
 }
 
-func newServiceMetadataMiddleware_opGetBucketPolicy(region string) awsmiddleware.RegisterServiceMetadata {
-	return awsmiddleware.RegisterServiceMetadata{
+func newServiceMetadataMiddleware_opGetBucketPolicy(region string) *awsmiddleware.RegisterServiceMetadata {
+	return &awsmiddleware.RegisterServiceMetadata{
 		Region:        region,
 		ServiceID:     ServiceID,
 		SigningName:   "s3",

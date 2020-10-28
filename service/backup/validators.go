@@ -771,155 +771,155 @@ func (m *validateOpUpdateRecoveryPointLifecycle) HandleInitialize(ctx context.Co
 }
 
 func addOpCreateBackupPlanValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateBackupPlan{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateBackupPlan{})
 }
 
 func addOpCreateBackupSelectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateBackupSelection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateBackupSelection{})
 }
 
 func addOpCreateBackupVaultValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateBackupVault{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateBackupVault{})
 }
 
 func addOpDeleteBackupPlanValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBackupPlan{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBackupPlan{})
 }
 
 func addOpDeleteBackupSelectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBackupSelection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBackupSelection{})
 }
 
 func addOpDeleteBackupVaultAccessPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBackupVaultAccessPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBackupVaultAccessPolicy{})
 }
 
 func addOpDeleteBackupVaultValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBackupVault{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBackupVault{})
 }
 
 func addOpDeleteBackupVaultNotificationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBackupVaultNotifications{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBackupVaultNotifications{})
 }
 
 func addOpDeleteRecoveryPointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRecoveryPoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRecoveryPoint{})
 }
 
 func addOpDescribeBackupJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeBackupJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeBackupJob{})
 }
 
 func addOpDescribeBackupVaultValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeBackupVault{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeBackupVault{})
 }
 
 func addOpDescribeCopyJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCopyJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCopyJob{})
 }
 
 func addOpDescribeProtectedResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeProtectedResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeProtectedResource{})
 }
 
 func addOpDescribeRecoveryPointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeRecoveryPoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeRecoveryPoint{})
 }
 
 func addOpDescribeRestoreJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeRestoreJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeRestoreJob{})
 }
 
 func addOpExportBackupPlanTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpExportBackupPlanTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpExportBackupPlanTemplate{})
 }
 
 func addOpGetBackupPlanFromJSONValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBackupPlanFromJSON{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBackupPlanFromJSON{})
 }
 
 func addOpGetBackupPlanFromTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBackupPlanFromTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBackupPlanFromTemplate{})
 }
 
 func addOpGetBackupPlanValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBackupPlan{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBackupPlan{})
 }
 
 func addOpGetBackupSelectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBackupSelection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBackupSelection{})
 }
 
 func addOpGetBackupVaultAccessPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBackupVaultAccessPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBackupVaultAccessPolicy{})
 }
 
 func addOpGetBackupVaultNotificationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBackupVaultNotifications{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBackupVaultNotifications{})
 }
 
 func addOpGetRecoveryPointRestoreMetadataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRecoveryPointRestoreMetadata{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRecoveryPointRestoreMetadata{})
 }
 
 func addOpListBackupPlanVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListBackupPlanVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListBackupPlanVersions{})
 }
 
 func addOpListBackupSelectionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListBackupSelections{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListBackupSelections{})
 }
 
 func addOpListRecoveryPointsByBackupVaultValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListRecoveryPointsByBackupVault{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListRecoveryPointsByBackupVault{})
 }
 
 func addOpListRecoveryPointsByResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListRecoveryPointsByResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListRecoveryPointsByResource{})
 }
 
 func addOpListTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTags{})
 }
 
 func addOpPutBackupVaultAccessPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBackupVaultAccessPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBackupVaultAccessPolicy{})
 }
 
 func addOpPutBackupVaultNotificationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBackupVaultNotifications{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBackupVaultNotifications{})
 }
 
 func addOpStartBackupJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartBackupJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartBackupJob{})
 }
 
 func addOpStartCopyJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartCopyJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartCopyJob{})
 }
 
 func addOpStartRestoreJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartRestoreJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartRestoreJob{})
 }
 
 func addOpStopBackupJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopBackupJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopBackupJob{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateBackupPlanValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateBackupPlan{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateBackupPlan{})
 }
 
 func addOpUpdateRecoveryPointLifecycleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRecoveryPointLifecycle{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRecoveryPointLifecycle{})
 }
 
 func validateBackupPlanInput(v *types.BackupPlanInput) error {

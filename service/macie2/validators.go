@@ -571,115 +571,115 @@ func (m *validateOpUpdateOrganizationConfiguration) HandleInitialize(ctx context
 }
 
 func addOpAcceptInvitationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAcceptInvitation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAcceptInvitation{})
 }
 
 func addOpCreateClassificationJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateClassificationJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateClassificationJob{})
 }
 
 func addOpCreateFindingsFilterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFindingsFilter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFindingsFilter{})
 }
 
 func addOpCreateInvitationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateInvitations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateInvitations{})
 }
 
 func addOpCreateMemberValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateMember{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateMember{})
 }
 
 func addOpDeclineInvitationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeclineInvitations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeclineInvitations{})
 }
 
 func addOpDeleteCustomDataIdentifierValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCustomDataIdentifier{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCustomDataIdentifier{})
 }
 
 func addOpDeleteFindingsFilterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFindingsFilter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFindingsFilter{})
 }
 
 func addOpDeleteInvitationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteInvitations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteInvitations{})
 }
 
 func addOpDeleteMemberValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMember{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMember{})
 }
 
 func addOpDescribeClassificationJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeClassificationJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeClassificationJob{})
 }
 
 func addOpDisableOrganizationAdminAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableOrganizationAdminAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableOrganizationAdminAccount{})
 }
 
 func addOpDisassociateMemberValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateMember{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateMember{})
 }
 
 func addOpEnableOrganizationAdminAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableOrganizationAdminAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableOrganizationAdminAccount{})
 }
 
 func addOpGetCustomDataIdentifierValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCustomDataIdentifier{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCustomDataIdentifier{})
 }
 
 func addOpGetFindingsFilterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFindingsFilter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFindingsFilter{})
 }
 
 func addOpGetFindingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFindings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFindings{})
 }
 
 func addOpGetFindingStatisticsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFindingStatistics{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFindingStatistics{})
 }
 
 func addOpGetMemberValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMember{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMember{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPutClassificationExportConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutClassificationExportConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutClassificationExportConfiguration{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpTestCustomDataIdentifierValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTestCustomDataIdentifier{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTestCustomDataIdentifier{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateClassificationJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateClassificationJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateClassificationJob{})
 }
 
 func addOpUpdateFindingsFilterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFindingsFilter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFindingsFilter{})
 }
 
 func addOpUpdateMemberSessionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateMemberSession{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateMemberSession{})
 }
 
 func addOpUpdateOrganizationConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateOrganizationConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateOrganizationConfiguration{})
 }
 
 func validateAccountDetail(v *types.AccountDetail) error {

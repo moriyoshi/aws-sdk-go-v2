@@ -31,7 +31,7 @@ func (m *validateOpSendCommand) HandleInitialize(ctx context.Context, in middlew
 }
 
 func addOpSendCommandValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSendCommand{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSendCommand{})
 }
 
 func validateCommitTransactionRequest(v *types.CommitTransactionRequest) error {

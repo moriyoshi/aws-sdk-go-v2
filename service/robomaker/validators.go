@@ -911,183 +911,183 @@ func (m *validateOpUpdateWorldTemplate) HandleInitialize(ctx context.Context, in
 }
 
 func addOpBatchDeleteWorldsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDeleteWorlds{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDeleteWorlds{})
 }
 
 func addOpBatchDescribeSimulationJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDescribeSimulationJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDescribeSimulationJob{})
 }
 
 func addOpCancelDeploymentJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelDeploymentJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelDeploymentJob{})
 }
 
 func addOpCancelSimulationJobBatchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelSimulationJobBatch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelSimulationJobBatch{})
 }
 
 func addOpCancelSimulationJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelSimulationJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelSimulationJob{})
 }
 
 func addOpCancelWorldExportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelWorldExportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelWorldExportJob{})
 }
 
 func addOpCancelWorldGenerationJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelWorldGenerationJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelWorldGenerationJob{})
 }
 
 func addOpCreateDeploymentJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDeploymentJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDeploymentJob{})
 }
 
 func addOpCreateFleetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFleet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFleet{})
 }
 
 func addOpCreateRobotApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRobotApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRobotApplication{})
 }
 
 func addOpCreateRobotApplicationVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRobotApplicationVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRobotApplicationVersion{})
 }
 
 func addOpCreateRobotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRobot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRobot{})
 }
 
 func addOpCreateSimulationApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSimulationApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSimulationApplication{})
 }
 
 func addOpCreateSimulationApplicationVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSimulationApplicationVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSimulationApplicationVersion{})
 }
 
 func addOpCreateSimulationJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSimulationJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSimulationJob{})
 }
 
 func addOpCreateWorldExportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateWorldExportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateWorldExportJob{})
 }
 
 func addOpCreateWorldGenerationJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateWorldGenerationJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateWorldGenerationJob{})
 }
 
 func addOpCreateWorldTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateWorldTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateWorldTemplate{})
 }
 
 func addOpDeleteFleetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFleet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFleet{})
 }
 
 func addOpDeleteRobotApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRobotApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRobotApplication{})
 }
 
 func addOpDeleteRobotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRobot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRobot{})
 }
 
 func addOpDeleteSimulationApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSimulationApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSimulationApplication{})
 }
 
 func addOpDeleteWorldTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteWorldTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteWorldTemplate{})
 }
 
 func addOpDeregisterRobotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterRobot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterRobot{})
 }
 
 func addOpDescribeDeploymentJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDeploymentJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDeploymentJob{})
 }
 
 func addOpDescribeFleetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeFleet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeFleet{})
 }
 
 func addOpDescribeRobotApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeRobotApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeRobotApplication{})
 }
 
 func addOpDescribeRobotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeRobot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeRobot{})
 }
 
 func addOpDescribeSimulationApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSimulationApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSimulationApplication{})
 }
 
 func addOpDescribeSimulationJobBatchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSimulationJobBatch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSimulationJobBatch{})
 }
 
 func addOpDescribeSimulationJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSimulationJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSimulationJob{})
 }
 
 func addOpDescribeWorldExportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeWorldExportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeWorldExportJob{})
 }
 
 func addOpDescribeWorldGenerationJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeWorldGenerationJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeWorldGenerationJob{})
 }
 
 func addOpDescribeWorldValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeWorld{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeWorld{})
 }
 
 func addOpDescribeWorldTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeWorldTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeWorldTemplate{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpRegisterRobotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterRobot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterRobot{})
 }
 
 func addOpRestartSimulationJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRestartSimulationJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRestartSimulationJob{})
 }
 
 func addOpStartSimulationJobBatchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartSimulationJobBatch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartSimulationJobBatch{})
 }
 
 func addOpSyncDeploymentJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSyncDeploymentJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSyncDeploymentJob{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateRobotApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRobotApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRobotApplication{})
 }
 
 func addOpUpdateSimulationApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateSimulationApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateSimulationApplication{})
 }
 
 func addOpUpdateWorldTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateWorldTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateWorldTemplate{})
 }
 
 func validateCreateSimulationJobRequests(v []*types.SimulationJobRequest) error {

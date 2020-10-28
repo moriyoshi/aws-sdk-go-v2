@@ -671,135 +671,135 @@ func (m *validateOpUploadMultipartPart) HandleInitialize(ctx context.Context, in
 }
 
 func addOpAbortMultipartUploadValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAbortMultipartUpload{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAbortMultipartUpload{})
 }
 
 func addOpAbortVaultLockValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAbortVaultLock{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAbortVaultLock{})
 }
 
 func addOpAddTagsToVaultValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddTagsToVault{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddTagsToVault{})
 }
 
 func addOpCompleteMultipartUploadValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCompleteMultipartUpload{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCompleteMultipartUpload{})
 }
 
 func addOpCompleteVaultLockValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCompleteVaultLock{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCompleteVaultLock{})
 }
 
 func addOpCreateVaultValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateVault{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateVault{})
 }
 
 func addOpDeleteArchiveValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteArchive{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteArchive{})
 }
 
 func addOpDeleteVaultAccessPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVaultAccessPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVaultAccessPolicy{})
 }
 
 func addOpDeleteVaultValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVault{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVault{})
 }
 
 func addOpDeleteVaultNotificationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVaultNotifications{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVaultNotifications{})
 }
 
 func addOpDescribeJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeJob{})
 }
 
 func addOpDescribeVaultValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeVault{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeVault{})
 }
 
 func addOpGetDataRetrievalPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDataRetrievalPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDataRetrievalPolicy{})
 }
 
 func addOpGetJobOutputValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetJobOutput{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetJobOutput{})
 }
 
 func addOpGetVaultAccessPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetVaultAccessPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetVaultAccessPolicy{})
 }
 
 func addOpGetVaultLockValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetVaultLock{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetVaultLock{})
 }
 
 func addOpGetVaultNotificationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetVaultNotifications{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetVaultNotifications{})
 }
 
 func addOpInitiateJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpInitiateJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpInitiateJob{})
 }
 
 func addOpInitiateMultipartUploadValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpInitiateMultipartUpload{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpInitiateMultipartUpload{})
 }
 
 func addOpInitiateVaultLockValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpInitiateVaultLock{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpInitiateVaultLock{})
 }
 
 func addOpListJobsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListJobs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListJobs{})
 }
 
 func addOpListMultipartUploadsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListMultipartUploads{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListMultipartUploads{})
 }
 
 func addOpListPartsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListParts{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListParts{})
 }
 
 func addOpListProvisionedCapacityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListProvisionedCapacity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListProvisionedCapacity{})
 }
 
 func addOpListTagsForVaultValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForVault{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForVault{})
 }
 
 func addOpListVaultsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListVaults{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListVaults{})
 }
 
 func addOpPurchaseProvisionedCapacityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPurchaseProvisionedCapacity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPurchaseProvisionedCapacity{})
 }
 
 func addOpRemoveTagsFromVaultValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveTagsFromVault{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveTagsFromVault{})
 }
 
 func addOpSetDataRetrievalPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetDataRetrievalPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetDataRetrievalPolicy{})
 }
 
 func addOpSetVaultAccessPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetVaultAccessPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetVaultAccessPolicy{})
 }
 
 func addOpSetVaultNotificationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetVaultNotifications{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetVaultNotifications{})
 }
 
 func addOpUploadArchiveValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUploadArchive{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUploadArchive{})
 }
 
 func addOpUploadMultipartPartValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUploadMultipartPart{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUploadMultipartPart{})
 }
 
 func validateAccessControlPolicyList(v []*types.Grant) error {

@@ -250,51 +250,51 @@ func (m *validateOpUpdateReplicationJob) HandleInitialize(ctx context.Context, i
 }
 
 func addOpCreateReplicationJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateReplicationJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateReplicationJob{})
 }
 
 func addOpDeleteAppValidationConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAppValidationConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAppValidationConfiguration{})
 }
 
 func addOpDeleteReplicationJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteReplicationJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteReplicationJob{})
 }
 
 func addOpDisassociateConnectorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateConnector{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateConnector{})
 }
 
 func addOpGetAppValidationConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAppValidationConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAppValidationConfiguration{})
 }
 
 func addOpGetAppValidationOutputValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAppValidationOutput{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAppValidationOutput{})
 }
 
 func addOpGetReplicationRunsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetReplicationRuns{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetReplicationRuns{})
 }
 
 func addOpNotifyAppValidationOutputValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpNotifyAppValidationOutput{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpNotifyAppValidationOutput{})
 }
 
 func addOpPutAppValidationConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutAppValidationConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutAppValidationConfiguration{})
 }
 
 func addOpStartOnDemandAppReplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartOnDemandAppReplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartOnDemandAppReplication{})
 }
 
 func addOpStartOnDemandReplicationRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartOnDemandReplicationRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartOnDemandReplicationRun{})
 }
 
 func addOpUpdateReplicationJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateReplicationJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateReplicationJob{})
 }
 
 func validateOpCreateReplicationJobInput(v *CreateReplicationJobInput) error {

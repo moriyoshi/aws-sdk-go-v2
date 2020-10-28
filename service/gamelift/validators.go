@@ -1451,291 +1451,291 @@ func (m *validateOpValidateMatchmakingRuleSet) HandleInitialize(ctx context.Cont
 }
 
 func addOpAcceptMatchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAcceptMatch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAcceptMatch{})
 }
 
 func addOpClaimGameServerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpClaimGameServer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpClaimGameServer{})
 }
 
 func addOpCreateAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAlias{})
 }
 
 func addOpCreateBuildValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateBuild{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateBuild{})
 }
 
 func addOpCreateFleetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFleet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFleet{})
 }
 
 func addOpCreateGameServerGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateGameServerGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateGameServerGroup{})
 }
 
 func addOpCreateGameSessionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateGameSession{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateGameSession{})
 }
 
 func addOpCreateGameSessionQueueValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateGameSessionQueue{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateGameSessionQueue{})
 }
 
 func addOpCreateMatchmakingConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateMatchmakingConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateMatchmakingConfiguration{})
 }
 
 func addOpCreateMatchmakingRuleSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateMatchmakingRuleSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateMatchmakingRuleSet{})
 }
 
 func addOpCreatePlayerSessionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePlayerSession{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePlayerSession{})
 }
 
 func addOpCreatePlayerSessionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePlayerSessions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePlayerSessions{})
 }
 
 func addOpCreateScriptValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateScript{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateScript{})
 }
 
 func addOpCreateVpcPeeringAuthorizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateVpcPeeringAuthorization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateVpcPeeringAuthorization{})
 }
 
 func addOpCreateVpcPeeringConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateVpcPeeringConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateVpcPeeringConnection{})
 }
 
 func addOpDeleteAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAlias{})
 }
 
 func addOpDeleteBuildValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBuild{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBuild{})
 }
 
 func addOpDeleteFleetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFleet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFleet{})
 }
 
 func addOpDeleteGameServerGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteGameServerGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteGameServerGroup{})
 }
 
 func addOpDeleteGameSessionQueueValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteGameSessionQueue{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteGameSessionQueue{})
 }
 
 func addOpDeleteMatchmakingConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMatchmakingConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMatchmakingConfiguration{})
 }
 
 func addOpDeleteMatchmakingRuleSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMatchmakingRuleSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMatchmakingRuleSet{})
 }
 
 func addOpDeleteScalingPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteScalingPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteScalingPolicy{})
 }
 
 func addOpDeleteScriptValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteScript{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteScript{})
 }
 
 func addOpDeleteVpcPeeringAuthorizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVpcPeeringAuthorization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVpcPeeringAuthorization{})
 }
 
 func addOpDeleteVpcPeeringConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVpcPeeringConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVpcPeeringConnection{})
 }
 
 func addOpDeregisterGameServerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterGameServer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterGameServer{})
 }
 
 func addOpDescribeAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAlias{})
 }
 
 func addOpDescribeBuildValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeBuild{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeBuild{})
 }
 
 func addOpDescribeFleetEventsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeFleetEvents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeFleetEvents{})
 }
 
 func addOpDescribeFleetPortSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeFleetPortSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeFleetPortSettings{})
 }
 
 func addOpDescribeGameServerGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeGameServerGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeGameServerGroup{})
 }
 
 func addOpDescribeGameServerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeGameServer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeGameServer{})
 }
 
 func addOpDescribeGameServerInstancesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeGameServerInstances{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeGameServerInstances{})
 }
 
 func addOpDescribeGameSessionPlacementValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeGameSessionPlacement{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeGameSessionPlacement{})
 }
 
 func addOpDescribeInstancesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeInstances{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeInstances{})
 }
 
 func addOpDescribeMatchmakingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeMatchmaking{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeMatchmaking{})
 }
 
 func addOpDescribeRuntimeConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeRuntimeConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeRuntimeConfiguration{})
 }
 
 func addOpDescribeScalingPoliciesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeScalingPolicies{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeScalingPolicies{})
 }
 
 func addOpDescribeScriptValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeScript{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeScript{})
 }
 
 func addOpGetGameSessionLogUrlValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetGameSessionLogUrl{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetGameSessionLogUrl{})
 }
 
 func addOpGetInstanceAccessValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetInstanceAccess{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetInstanceAccess{})
 }
 
 func addOpListGameServersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListGameServers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListGameServers{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPutScalingPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutScalingPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutScalingPolicy{})
 }
 
 func addOpRegisterGameServerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterGameServer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterGameServer{})
 }
 
 func addOpRequestUploadCredentialsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRequestUploadCredentials{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRequestUploadCredentials{})
 }
 
 func addOpResolveAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResolveAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResolveAlias{})
 }
 
 func addOpResumeGameServerGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResumeGameServerGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResumeGameServerGroup{})
 }
 
 func addOpStartFleetActionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartFleetActions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartFleetActions{})
 }
 
 func addOpStartGameSessionPlacementValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartGameSessionPlacement{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartGameSessionPlacement{})
 }
 
 func addOpStartMatchBackfillValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartMatchBackfill{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartMatchBackfill{})
 }
 
 func addOpStartMatchmakingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartMatchmaking{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartMatchmaking{})
 }
 
 func addOpStopFleetActionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopFleetActions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopFleetActions{})
 }
 
 func addOpStopGameSessionPlacementValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopGameSessionPlacement{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopGameSessionPlacement{})
 }
 
 func addOpStopMatchmakingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopMatchmaking{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopMatchmaking{})
 }
 
 func addOpSuspendGameServerGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSuspendGameServerGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSuspendGameServerGroup{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAlias{})
 }
 
 func addOpUpdateBuildValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateBuild{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateBuild{})
 }
 
 func addOpUpdateFleetAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFleetAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFleetAttributes{})
 }
 
 func addOpUpdateFleetCapacityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFleetCapacity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFleetCapacity{})
 }
 
 func addOpUpdateFleetPortSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFleetPortSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFleetPortSettings{})
 }
 
 func addOpUpdateGameServerGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGameServerGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGameServerGroup{})
 }
 
 func addOpUpdateGameServerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGameServer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGameServer{})
 }
 
 func addOpUpdateGameSessionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGameSession{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGameSession{})
 }
 
 func addOpUpdateGameSessionQueueValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGameSessionQueue{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGameSessionQueue{})
 }
 
 func addOpUpdateMatchmakingConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateMatchmakingConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateMatchmakingConfiguration{})
 }
 
 func addOpUpdateRuntimeConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRuntimeConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRuntimeConfiguration{})
 }
 
 func addOpUpdateScriptValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateScript{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateScript{})
 }
 
 func addOpValidateMatchmakingRuleSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpValidateMatchmakingRuleSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpValidateMatchmakingRuleSet{})
 }
 
 func validateCertificateConfiguration(v *types.CertificateConfiguration) error {

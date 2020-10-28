@@ -51,11 +51,11 @@ func (m *validateOpGetResourceMetrics) HandleInitialize(ctx context.Context, in 
 }
 
 func addOpDescribeDimensionKeysValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDimensionKeys{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDimensionKeys{})
 }
 
 func addOpGetResourceMetricsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetResourceMetrics{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetResourceMetrics{})
 }
 
 func validateDimensionGroup(v *types.DimensionGroup) error {

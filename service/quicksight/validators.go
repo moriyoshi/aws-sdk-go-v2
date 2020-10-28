@@ -1991,399 +1991,399 @@ func (m *validateOpUpdateUser) HandleInitialize(ctx context.Context, in middlewa
 }
 
 func addOpCancelIngestionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelIngestion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelIngestion{})
 }
 
 func addOpCreateAccountCustomizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAccountCustomization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAccountCustomization{})
 }
 
 func addOpCreateAnalysisValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAnalysis{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAnalysis{})
 }
 
 func addOpCreateDashboardValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDashboard{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDashboard{})
 }
 
 func addOpCreateDataSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDataSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDataSet{})
 }
 
 func addOpCreateDataSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDataSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDataSource{})
 }
 
 func addOpCreateGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateGroup{})
 }
 
 func addOpCreateGroupMembershipValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateGroupMembership{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateGroupMembership{})
 }
 
 func addOpCreateIAMPolicyAssignmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateIAMPolicyAssignment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateIAMPolicyAssignment{})
 }
 
 func addOpCreateIngestionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateIngestion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateIngestion{})
 }
 
 func addOpCreateNamespaceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateNamespace{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateNamespace{})
 }
 
 func addOpCreateTemplateAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTemplateAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTemplateAlias{})
 }
 
 func addOpCreateTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTemplate{})
 }
 
 func addOpCreateThemeAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateThemeAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateThemeAlias{})
 }
 
 func addOpCreateThemeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTheme{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTheme{})
 }
 
 func addOpDeleteAccountCustomizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAccountCustomization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAccountCustomization{})
 }
 
 func addOpDeleteAnalysisValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAnalysis{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAnalysis{})
 }
 
 func addOpDeleteDashboardValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDashboard{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDashboard{})
 }
 
 func addOpDeleteDataSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDataSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDataSet{})
 }
 
 func addOpDeleteDataSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDataSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDataSource{})
 }
 
 func addOpDeleteGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteGroup{})
 }
 
 func addOpDeleteGroupMembershipValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteGroupMembership{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteGroupMembership{})
 }
 
 func addOpDeleteIAMPolicyAssignmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteIAMPolicyAssignment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteIAMPolicyAssignment{})
 }
 
 func addOpDeleteNamespaceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteNamespace{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteNamespace{})
 }
 
 func addOpDeleteTemplateAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTemplateAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTemplateAlias{})
 }
 
 func addOpDeleteTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTemplate{})
 }
 
 func addOpDeleteThemeAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteThemeAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteThemeAlias{})
 }
 
 func addOpDeleteThemeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTheme{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTheme{})
 }
 
 func addOpDeleteUserByPrincipalIdValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUserByPrincipalId{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUserByPrincipalId{})
 }
 
 func addOpDeleteUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUser{})
 }
 
 func addOpDescribeAccountCustomizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAccountCustomization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAccountCustomization{})
 }
 
 func addOpDescribeAccountSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAccountSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAccountSettings{})
 }
 
 func addOpDescribeAnalysisValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAnalysis{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAnalysis{})
 }
 
 func addOpDescribeAnalysisPermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAnalysisPermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAnalysisPermissions{})
 }
 
 func addOpDescribeDashboardValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDashboard{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDashboard{})
 }
 
 func addOpDescribeDashboardPermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDashboardPermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDashboardPermissions{})
 }
 
 func addOpDescribeDataSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDataSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDataSet{})
 }
 
 func addOpDescribeDataSetPermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDataSetPermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDataSetPermissions{})
 }
 
 func addOpDescribeDataSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDataSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDataSource{})
 }
 
 func addOpDescribeDataSourcePermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDataSourcePermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDataSourcePermissions{})
 }
 
 func addOpDescribeGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeGroup{})
 }
 
 func addOpDescribeIAMPolicyAssignmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeIAMPolicyAssignment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeIAMPolicyAssignment{})
 }
 
 func addOpDescribeIngestionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeIngestion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeIngestion{})
 }
 
 func addOpDescribeNamespaceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeNamespace{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeNamespace{})
 }
 
 func addOpDescribeTemplateAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTemplateAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTemplateAlias{})
 }
 
 func addOpDescribeTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTemplate{})
 }
 
 func addOpDescribeTemplatePermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTemplatePermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTemplatePermissions{})
 }
 
 func addOpDescribeThemeAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeThemeAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeThemeAlias{})
 }
 
 func addOpDescribeThemeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTheme{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTheme{})
 }
 
 func addOpDescribeThemePermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeThemePermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeThemePermissions{})
 }
 
 func addOpDescribeUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeUser{})
 }
 
 func addOpGetDashboardEmbedUrlValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDashboardEmbedUrl{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDashboardEmbedUrl{})
 }
 
 func addOpGetSessionEmbedUrlValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSessionEmbedUrl{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSessionEmbedUrl{})
 }
 
 func addOpListAnalysesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAnalyses{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAnalyses{})
 }
 
 func addOpListDashboardsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDashboards{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDashboards{})
 }
 
 func addOpListDashboardVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDashboardVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDashboardVersions{})
 }
 
 func addOpListDataSetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDataSets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDataSets{})
 }
 
 func addOpListDataSourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDataSources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDataSources{})
 }
 
 func addOpListGroupMembershipsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListGroupMemberships{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListGroupMemberships{})
 }
 
 func addOpListGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListGroups{})
 }
 
 func addOpListIAMPolicyAssignmentsForUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListIAMPolicyAssignmentsForUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListIAMPolicyAssignmentsForUser{})
 }
 
 func addOpListIAMPolicyAssignmentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListIAMPolicyAssignments{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListIAMPolicyAssignments{})
 }
 
 func addOpListIngestionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListIngestions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListIngestions{})
 }
 
 func addOpListNamespacesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListNamespaces{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListNamespaces{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListTemplateAliasesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTemplateAliases{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTemplateAliases{})
 }
 
 func addOpListTemplatesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTemplates{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTemplates{})
 }
 
 func addOpListTemplateVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTemplateVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTemplateVersions{})
 }
 
 func addOpListThemeAliasesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListThemeAliases{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListThemeAliases{})
 }
 
 func addOpListThemesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListThemes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListThemes{})
 }
 
 func addOpListThemeVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListThemeVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListThemeVersions{})
 }
 
 func addOpListUserGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListUserGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListUserGroups{})
 }
 
 func addOpListUsersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListUsers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListUsers{})
 }
 
 func addOpRegisterUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterUser{})
 }
 
 func addOpRestoreAnalysisValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRestoreAnalysis{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRestoreAnalysis{})
 }
 
 func addOpSearchAnalysesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSearchAnalyses{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSearchAnalyses{})
 }
 
 func addOpSearchDashboardsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSearchDashboards{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSearchDashboards{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateAccountCustomizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAccountCustomization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAccountCustomization{})
 }
 
 func addOpUpdateAccountSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAccountSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAccountSettings{})
 }
 
 func addOpUpdateAnalysisValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAnalysis{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAnalysis{})
 }
 
 func addOpUpdateAnalysisPermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAnalysisPermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAnalysisPermissions{})
 }
 
 func addOpUpdateDashboardValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDashboard{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDashboard{})
 }
 
 func addOpUpdateDashboardPermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDashboardPermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDashboardPermissions{})
 }
 
 func addOpUpdateDashboardPublishedVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDashboardPublishedVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDashboardPublishedVersion{})
 }
 
 func addOpUpdateDataSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDataSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDataSet{})
 }
 
 func addOpUpdateDataSetPermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDataSetPermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDataSetPermissions{})
 }
 
 func addOpUpdateDataSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDataSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDataSource{})
 }
 
 func addOpUpdateDataSourcePermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDataSourcePermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDataSourcePermissions{})
 }
 
 func addOpUpdateGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGroup{})
 }
 
 func addOpUpdateIAMPolicyAssignmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateIAMPolicyAssignment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateIAMPolicyAssignment{})
 }
 
 func addOpUpdateTemplateAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTemplateAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTemplateAlias{})
 }
 
 func addOpUpdateTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTemplate{})
 }
 
 func addOpUpdateTemplatePermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTemplatePermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTemplatePermissions{})
 }
 
 func addOpUpdateThemeAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateThemeAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateThemeAlias{})
 }
 
 func addOpUpdateThemeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTheme{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTheme{})
 }
 
 func addOpUpdateThemePermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateThemePermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateThemePermissions{})
 }
 
 func addOpUpdateUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateUser{})
 }
 
 func validateAmazonElasticsearchParameters(v *types.AmazonElasticsearchParameters) error {

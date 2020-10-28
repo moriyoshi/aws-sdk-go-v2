@@ -90,19 +90,19 @@ func (m *validateOpUntagResources) HandleInitialize(ctx context.Context, in midd
 }
 
 func addOpGetTagValuesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTagValues{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTagValues{})
 }
 
 func addOpStartReportCreationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartReportCreation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartReportCreation{})
 }
 
 func addOpTagResourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResources{})
 }
 
 func addOpUntagResourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResources{})
 }
 
 func validateOpGetTagValuesInput(v *GetTagValuesInput) error {

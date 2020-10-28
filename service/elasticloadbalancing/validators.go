@@ -511,103 +511,103 @@ func (m *validateOpSetLoadBalancerPoliciesOfListener) HandleInitialize(ctx conte
 }
 
 func addOpAddTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddTags{})
 }
 
 func addOpApplySecurityGroupsToLoadBalancerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpApplySecurityGroupsToLoadBalancer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpApplySecurityGroupsToLoadBalancer{})
 }
 
 func addOpAttachLoadBalancerToSubnetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAttachLoadBalancerToSubnets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAttachLoadBalancerToSubnets{})
 }
 
 func addOpConfigureHealthCheckValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpConfigureHealthCheck{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpConfigureHealthCheck{})
 }
 
 func addOpCreateAppCookieStickinessPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAppCookieStickinessPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAppCookieStickinessPolicy{})
 }
 
 func addOpCreateLBCookieStickinessPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLBCookieStickinessPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLBCookieStickinessPolicy{})
 }
 
 func addOpCreateLoadBalancerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLoadBalancer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLoadBalancer{})
 }
 
 func addOpCreateLoadBalancerListenersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLoadBalancerListeners{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLoadBalancerListeners{})
 }
 
 func addOpCreateLoadBalancerPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLoadBalancerPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLoadBalancerPolicy{})
 }
 
 func addOpDeleteLoadBalancerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLoadBalancer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLoadBalancer{})
 }
 
 func addOpDeleteLoadBalancerListenersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLoadBalancerListeners{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLoadBalancerListeners{})
 }
 
 func addOpDeleteLoadBalancerPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLoadBalancerPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLoadBalancerPolicy{})
 }
 
 func addOpDeregisterInstancesFromLoadBalancerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterInstancesFromLoadBalancer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterInstancesFromLoadBalancer{})
 }
 
 func addOpDescribeInstanceHealthValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeInstanceHealth{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeInstanceHealth{})
 }
 
 func addOpDescribeLoadBalancerAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeLoadBalancerAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeLoadBalancerAttributes{})
 }
 
 func addOpDescribeTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTags{})
 }
 
 func addOpDetachLoadBalancerFromSubnetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetachLoadBalancerFromSubnets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetachLoadBalancerFromSubnets{})
 }
 
 func addOpDisableAvailabilityZonesForLoadBalancerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableAvailabilityZonesForLoadBalancer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableAvailabilityZonesForLoadBalancer{})
 }
 
 func addOpEnableAvailabilityZonesForLoadBalancerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableAvailabilityZonesForLoadBalancer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableAvailabilityZonesForLoadBalancer{})
 }
 
 func addOpModifyLoadBalancerAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyLoadBalancerAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyLoadBalancerAttributes{})
 }
 
 func addOpRegisterInstancesWithLoadBalancerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterInstancesWithLoadBalancer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterInstancesWithLoadBalancer{})
 }
 
 func addOpRemoveTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveTags{})
 }
 
 func addOpSetLoadBalancerListenerSSLCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetLoadBalancerListenerSSLCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetLoadBalancerListenerSSLCertificate{})
 }
 
 func addOpSetLoadBalancerPoliciesForBackendServerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetLoadBalancerPoliciesForBackendServer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetLoadBalancerPoliciesForBackendServer{})
 }
 
 func addOpSetLoadBalancerPoliciesOfListenerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetLoadBalancerPoliciesOfListener{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetLoadBalancerPoliciesOfListener{})
 }
 
 func validateAccessLog(v *types.AccessLog) error {

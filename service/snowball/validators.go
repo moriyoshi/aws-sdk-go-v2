@@ -331,67 +331,67 @@ func (m *validateOpUpdateJobShipmentState) HandleInitialize(ctx context.Context,
 }
 
 func addOpCancelClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelCluster{})
 }
 
 func addOpCancelJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelJob{})
 }
 
 func addOpCreateAddressValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAddress{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAddress{})
 }
 
 func addOpCreateClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCluster{})
 }
 
 func addOpCreateJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateJob{})
 }
 
 func addOpCreateReturnShippingLabelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateReturnShippingLabel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateReturnShippingLabel{})
 }
 
 func addOpDescribeAddressValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAddress{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAddress{})
 }
 
 func addOpDescribeClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCluster{})
 }
 
 func addOpDescribeJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeJob{})
 }
 
 func addOpGetJobManifestValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetJobManifest{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetJobManifest{})
 }
 
 func addOpGetJobUnlockCodeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetJobUnlockCode{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetJobUnlockCode{})
 }
 
 func addOpGetSoftwareUpdatesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSoftwareUpdates{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSoftwareUpdates{})
 }
 
 func addOpListClusterJobsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListClusterJobs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListClusterJobs{})
 }
 
 func addOpUpdateClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateCluster{})
 }
 
 func addOpUpdateJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateJob{})
 }
 
 func addOpUpdateJobShipmentStateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateJobShipmentState{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateJobShipmentState{})
 }
 
 func validateEc2AmiResource(v *types.Ec2AmiResource) error {

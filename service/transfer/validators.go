@@ -371,75 +371,75 @@ func (m *validateOpUpdateUser) HandleInitialize(ctx context.Context, in middlewa
 }
 
 func addOpCreateServerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateServer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateServer{})
 }
 
 func addOpCreateUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateUser{})
 }
 
 func addOpDeleteServerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteServer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteServer{})
 }
 
 func addOpDeleteSshPublicKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSshPublicKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSshPublicKey{})
 }
 
 func addOpDeleteUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUser{})
 }
 
 func addOpDescribeSecurityPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSecurityPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSecurityPolicy{})
 }
 
 func addOpDescribeServerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeServer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeServer{})
 }
 
 func addOpDescribeUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeUser{})
 }
 
 func addOpImportSshPublicKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpImportSshPublicKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpImportSshPublicKey{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListUsersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListUsers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListUsers{})
 }
 
 func addOpStartServerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartServer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartServer{})
 }
 
 func addOpStopServerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopServer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopServer{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpTestIdentityProviderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTestIdentityProvider{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTestIdentityProvider{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateServerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateServer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateServer{})
 }
 
 func addOpUpdateUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateUser{})
 }
 
 func validateHomeDirectoryMapEntry(v *types.HomeDirectoryMapEntry) error {

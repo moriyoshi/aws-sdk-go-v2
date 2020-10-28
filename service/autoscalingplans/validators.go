@@ -111,23 +111,23 @@ func (m *validateOpUpdateScalingPlan) HandleInitialize(ctx context.Context, in m
 }
 
 func addOpCreateScalingPlanValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateScalingPlan{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateScalingPlan{})
 }
 
 func addOpDeleteScalingPlanValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteScalingPlan{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteScalingPlan{})
 }
 
 func addOpDescribeScalingPlanResourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeScalingPlanResources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeScalingPlanResources{})
 }
 
 func addOpGetScalingPlanResourceForecastDataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetScalingPlanResourceForecastData{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetScalingPlanResourceForecastData{})
 }
 
 func addOpUpdateScalingPlanValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateScalingPlan{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateScalingPlan{})
 }
 
 func validateCustomizedLoadMetricSpecification(v *types.CustomizedLoadMetricSpecification) error {

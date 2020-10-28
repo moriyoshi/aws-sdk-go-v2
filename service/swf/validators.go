@@ -751,151 +751,151 @@ func (m *validateOpUntagResource) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpCountClosedWorkflowExecutionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCountClosedWorkflowExecutions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCountClosedWorkflowExecutions{})
 }
 
 func addOpCountOpenWorkflowExecutionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCountOpenWorkflowExecutions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCountOpenWorkflowExecutions{})
 }
 
 func addOpCountPendingActivityTasksValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCountPendingActivityTasks{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCountPendingActivityTasks{})
 }
 
 func addOpCountPendingDecisionTasksValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCountPendingDecisionTasks{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCountPendingDecisionTasks{})
 }
 
 func addOpDeprecateActivityTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeprecateActivityType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeprecateActivityType{})
 }
 
 func addOpDeprecateDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeprecateDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeprecateDomain{})
 }
 
 func addOpDeprecateWorkflowTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeprecateWorkflowType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeprecateWorkflowType{})
 }
 
 func addOpDescribeActivityTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeActivityType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeActivityType{})
 }
 
 func addOpDescribeDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDomain{})
 }
 
 func addOpDescribeWorkflowExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeWorkflowExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeWorkflowExecution{})
 }
 
 func addOpDescribeWorkflowTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeWorkflowType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeWorkflowType{})
 }
 
 func addOpGetWorkflowExecutionHistoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetWorkflowExecutionHistory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetWorkflowExecutionHistory{})
 }
 
 func addOpListActivityTypesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListActivityTypes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListActivityTypes{})
 }
 
 func addOpListClosedWorkflowExecutionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListClosedWorkflowExecutions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListClosedWorkflowExecutions{})
 }
 
 func addOpListDomainsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDomains{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDomains{})
 }
 
 func addOpListOpenWorkflowExecutionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListOpenWorkflowExecutions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListOpenWorkflowExecutions{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListWorkflowTypesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListWorkflowTypes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListWorkflowTypes{})
 }
 
 func addOpPollForActivityTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPollForActivityTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPollForActivityTask{})
 }
 
 func addOpPollForDecisionTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPollForDecisionTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPollForDecisionTask{})
 }
 
 func addOpRecordActivityTaskHeartbeatValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRecordActivityTaskHeartbeat{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRecordActivityTaskHeartbeat{})
 }
 
 func addOpRegisterActivityTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterActivityType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterActivityType{})
 }
 
 func addOpRegisterDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterDomain{})
 }
 
 func addOpRegisterWorkflowTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterWorkflowType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterWorkflowType{})
 }
 
 func addOpRequestCancelWorkflowExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRequestCancelWorkflowExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRequestCancelWorkflowExecution{})
 }
 
 func addOpRespondActivityTaskCanceledValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRespondActivityTaskCanceled{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRespondActivityTaskCanceled{})
 }
 
 func addOpRespondActivityTaskCompletedValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRespondActivityTaskCompleted{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRespondActivityTaskCompleted{})
 }
 
 func addOpRespondActivityTaskFailedValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRespondActivityTaskFailed{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRespondActivityTaskFailed{})
 }
 
 func addOpRespondDecisionTaskCompletedValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRespondDecisionTaskCompleted{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRespondDecisionTaskCompleted{})
 }
 
 func addOpSignalWorkflowExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSignalWorkflowExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSignalWorkflowExecution{})
 }
 
 func addOpStartWorkflowExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartWorkflowExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartWorkflowExecution{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpTerminateWorkflowExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTerminateWorkflowExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTerminateWorkflowExecution{})
 }
 
 func addOpUndeprecateActivityTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUndeprecateActivityType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUndeprecateActivityType{})
 }
 
 func addOpUndeprecateDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUndeprecateDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUndeprecateDomain{})
 }
 
 func addOpUndeprecateWorkflowTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUndeprecateWorkflowType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUndeprecateWorkflowType{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func validateActivityType(v *types.ActivityType) error {

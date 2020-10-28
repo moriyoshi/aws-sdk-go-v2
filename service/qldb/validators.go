@@ -351,71 +351,71 @@ func (m *validateOpUpdateLedger) HandleInitialize(ctx context.Context, in middle
 }
 
 func addOpCancelJournalKinesisStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelJournalKinesisStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelJournalKinesisStream{})
 }
 
 func addOpCreateLedgerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLedger{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLedger{})
 }
 
 func addOpDeleteLedgerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLedger{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLedger{})
 }
 
 func addOpDescribeJournalKinesisStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeJournalKinesisStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeJournalKinesisStream{})
 }
 
 func addOpDescribeJournalS3ExportValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeJournalS3Export{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeJournalS3Export{})
 }
 
 func addOpDescribeLedgerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeLedger{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeLedger{})
 }
 
 func addOpExportJournalToS3ValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpExportJournalToS3{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpExportJournalToS3{})
 }
 
 func addOpGetBlockValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBlock{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBlock{})
 }
 
 func addOpGetDigestValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDigest{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDigest{})
 }
 
 func addOpGetRevisionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRevision{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRevision{})
 }
 
 func addOpListJournalKinesisStreamsForLedgerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListJournalKinesisStreamsForLedger{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListJournalKinesisStreamsForLedger{})
 }
 
 func addOpListJournalS3ExportsForLedgerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListJournalS3ExportsForLedger{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListJournalS3ExportsForLedger{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpStreamJournalToKinesisValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStreamJournalToKinesis{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStreamJournalToKinesis{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateLedgerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateLedger{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateLedger{})
 }
 
 func validateKinesisConfiguration(v *types.KinesisConfiguration) error {

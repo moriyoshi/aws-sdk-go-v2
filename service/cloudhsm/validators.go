@@ -291,59 +291,59 @@ func (m *validateOpRemoveTagsFromResource) HandleInitialize(ctx context.Context,
 }
 
 func addOpAddTagsToResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddTagsToResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddTagsToResource{})
 }
 
 func addOpCreateHapgValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateHapg{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateHapg{})
 }
 
 func addOpCreateHsmValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateHsm{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateHsm{})
 }
 
 func addOpCreateLunaClientValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLunaClient{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLunaClient{})
 }
 
 func addOpDeleteHapgValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteHapg{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteHapg{})
 }
 
 func addOpDeleteHsmValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteHsm{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteHsm{})
 }
 
 func addOpDeleteLunaClientValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLunaClient{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLunaClient{})
 }
 
 func addOpDescribeHapgValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeHapg{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeHapg{})
 }
 
 func addOpGetConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetConfig{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpModifyHapgValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyHapg{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyHapg{})
 }
 
 func addOpModifyHsmValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyHsm{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyHsm{})
 }
 
 func addOpModifyLunaClientValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyLunaClient{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyLunaClient{})
 }
 
 func addOpRemoveTagsFromResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveTagsFromResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveTagsFromResource{})
 }
 
 func validateTag(v *types.Tag) error {

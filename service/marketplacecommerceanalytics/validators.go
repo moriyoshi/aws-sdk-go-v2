@@ -50,11 +50,11 @@ func (m *validateOpStartSupportDataExport) HandleInitialize(ctx context.Context,
 }
 
 func addOpGenerateDataSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGenerateDataSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGenerateDataSet{})
 }
 
 func addOpStartSupportDataExportValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartSupportDataExport{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartSupportDataExport{})
 }
 
 func validateOpGenerateDataSetInput(v *GenerateDataSetInput) error {

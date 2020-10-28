@@ -1151,231 +1151,231 @@ func (m *validateOpUntagResource) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpBatchGetAggregateResourceConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetAggregateResourceConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetAggregateResourceConfig{})
 }
 
 func addOpBatchGetResourceConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetResourceConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetResourceConfig{})
 }
 
 func addOpDeleteAggregationAuthorizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAggregationAuthorization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAggregationAuthorization{})
 }
 
 func addOpDeleteConfigRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteConfigRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteConfigRule{})
 }
 
 func addOpDeleteConfigurationAggregatorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteConfigurationAggregator{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteConfigurationAggregator{})
 }
 
 func addOpDeleteConfigurationRecorderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteConfigurationRecorder{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteConfigurationRecorder{})
 }
 
 func addOpDeleteConformancePackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteConformancePack{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteConformancePack{})
 }
 
 func addOpDeleteDeliveryChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDeliveryChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDeliveryChannel{})
 }
 
 func addOpDeleteEvaluationResultsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEvaluationResults{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEvaluationResults{})
 }
 
 func addOpDeleteOrganizationConfigRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteOrganizationConfigRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteOrganizationConfigRule{})
 }
 
 func addOpDeleteOrganizationConformancePackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteOrganizationConformancePack{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteOrganizationConformancePack{})
 }
 
 func addOpDeletePendingAggregationRequestValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePendingAggregationRequest{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePendingAggregationRequest{})
 }
 
 func addOpDeleteRemediationConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRemediationConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRemediationConfiguration{})
 }
 
 func addOpDeleteRemediationExceptionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRemediationExceptions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRemediationExceptions{})
 }
 
 func addOpDeleteResourceConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteResourceConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteResourceConfig{})
 }
 
 func addOpDeleteRetentionConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRetentionConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRetentionConfiguration{})
 }
 
 func addOpDeliverConfigSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeliverConfigSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeliverConfigSnapshot{})
 }
 
 func addOpDescribeAggregateComplianceByConfigRulesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAggregateComplianceByConfigRules{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAggregateComplianceByConfigRules{})
 }
 
 func addOpDescribeConfigurationAggregatorSourcesStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeConfigurationAggregatorSourcesStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeConfigurationAggregatorSourcesStatus{})
 }
 
 func addOpDescribeConformancePackComplianceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeConformancePackCompliance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeConformancePackCompliance{})
 }
 
 func addOpDescribeRemediationConfigurationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeRemediationConfigurations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeRemediationConfigurations{})
 }
 
 func addOpDescribeRemediationExceptionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeRemediationExceptions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeRemediationExceptions{})
 }
 
 func addOpDescribeRemediationExecutionStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeRemediationExecutionStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeRemediationExecutionStatus{})
 }
 
 func addOpGetAggregateComplianceDetailsByConfigRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAggregateComplianceDetailsByConfigRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAggregateComplianceDetailsByConfigRule{})
 }
 
 func addOpGetAggregateConfigRuleComplianceSummaryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAggregateConfigRuleComplianceSummary{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAggregateConfigRuleComplianceSummary{})
 }
 
 func addOpGetAggregateDiscoveredResourceCountsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAggregateDiscoveredResourceCounts{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAggregateDiscoveredResourceCounts{})
 }
 
 func addOpGetAggregateResourceConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAggregateResourceConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAggregateResourceConfig{})
 }
 
 func addOpGetComplianceDetailsByConfigRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetComplianceDetailsByConfigRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetComplianceDetailsByConfigRule{})
 }
 
 func addOpGetComplianceDetailsByResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetComplianceDetailsByResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetComplianceDetailsByResource{})
 }
 
 func addOpGetConformancePackComplianceDetailsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetConformancePackComplianceDetails{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetConformancePackComplianceDetails{})
 }
 
 func addOpGetConformancePackComplianceSummaryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetConformancePackComplianceSummary{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetConformancePackComplianceSummary{})
 }
 
 func addOpGetOrganizationConfigRuleDetailedStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetOrganizationConfigRuleDetailedStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetOrganizationConfigRuleDetailedStatus{})
 }
 
 func addOpGetOrganizationConformancePackDetailedStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetOrganizationConformancePackDetailedStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetOrganizationConformancePackDetailedStatus{})
 }
 
 func addOpGetResourceConfigHistoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetResourceConfigHistory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetResourceConfigHistory{})
 }
 
 func addOpListAggregateDiscoveredResourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAggregateDiscoveredResources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAggregateDiscoveredResources{})
 }
 
 func addOpListDiscoveredResourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDiscoveredResources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDiscoveredResources{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPutAggregationAuthorizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutAggregationAuthorization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutAggregationAuthorization{})
 }
 
 func addOpPutConfigRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutConfigRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutConfigRule{})
 }
 
 func addOpPutConfigurationAggregatorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutConfigurationAggregator{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutConfigurationAggregator{})
 }
 
 func addOpPutConfigurationRecorderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutConfigurationRecorder{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutConfigurationRecorder{})
 }
 
 func addOpPutConformancePackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutConformancePack{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutConformancePack{})
 }
 
 func addOpPutDeliveryChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutDeliveryChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutDeliveryChannel{})
 }
 
 func addOpPutEvaluationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutEvaluations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutEvaluations{})
 }
 
 func addOpPutOrganizationConfigRuleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutOrganizationConfigRule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutOrganizationConfigRule{})
 }
 
 func addOpPutOrganizationConformancePackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutOrganizationConformancePack{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutOrganizationConformancePack{})
 }
 
 func addOpPutRemediationConfigurationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutRemediationConfigurations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutRemediationConfigurations{})
 }
 
 func addOpPutRemediationExceptionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutRemediationExceptions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutRemediationExceptions{})
 }
 
 func addOpPutResourceConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutResourceConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutResourceConfig{})
 }
 
 func addOpPutRetentionConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutRetentionConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutRetentionConfiguration{})
 }
 
 func addOpSelectAggregateResourceConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSelectAggregateResourceConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSelectAggregateResourceConfig{})
 }
 
 func addOpSelectResourceConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSelectResourceConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSelectResourceConfig{})
 }
 
 func addOpStartConfigurationRecorderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartConfigurationRecorder{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartConfigurationRecorder{})
 }
 
 func addOpStartRemediationExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartRemediationExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartRemediationExecution{})
 }
 
 func addOpStopConfigurationRecorderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopConfigurationRecorder{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopConfigurationRecorder{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func validateAccountAggregationSource(v *types.AccountAggregationSource) error {

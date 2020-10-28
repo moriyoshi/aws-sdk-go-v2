@@ -1390,279 +1390,279 @@ func (m *validateOpUpdateVpcLink) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpCreateApiValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateApi{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateApi{})
 }
 
 func addOpCreateApiMappingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateApiMapping{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateApiMapping{})
 }
 
 func addOpCreateAuthorizerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAuthorizer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAuthorizer{})
 }
 
 func addOpCreateDeploymentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDeployment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDeployment{})
 }
 
 func addOpCreateDomainNameValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDomainName{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDomainName{})
 }
 
 func addOpCreateIntegrationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateIntegration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateIntegration{})
 }
 
 func addOpCreateIntegrationResponseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateIntegrationResponse{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateIntegrationResponse{})
 }
 
 func addOpCreateModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateModel{})
 }
 
 func addOpCreateRouteValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRoute{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRoute{})
 }
 
 func addOpCreateRouteResponseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRouteResponse{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRouteResponse{})
 }
 
 func addOpCreateStageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateStage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateStage{})
 }
 
 func addOpCreateVpcLinkValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateVpcLink{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateVpcLink{})
 }
 
 func addOpDeleteAccessLogSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAccessLogSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAccessLogSettings{})
 }
 
 func addOpDeleteApiValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApi{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApi{})
 }
 
 func addOpDeleteApiMappingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApiMapping{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApiMapping{})
 }
 
 func addOpDeleteAuthorizerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAuthorizer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAuthorizer{})
 }
 
 func addOpDeleteCorsConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCorsConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCorsConfiguration{})
 }
 
 func addOpDeleteDeploymentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDeployment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDeployment{})
 }
 
 func addOpDeleteDomainNameValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDomainName{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDomainName{})
 }
 
 func addOpDeleteIntegrationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteIntegration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteIntegration{})
 }
 
 func addOpDeleteIntegrationResponseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteIntegrationResponse{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteIntegrationResponse{})
 }
 
 func addOpDeleteModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteModel{})
 }
 
 func addOpDeleteRouteValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRoute{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRoute{})
 }
 
 func addOpDeleteRouteRequestParameterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRouteRequestParameter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRouteRequestParameter{})
 }
 
 func addOpDeleteRouteResponseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRouteResponse{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRouteResponse{})
 }
 
 func addOpDeleteRouteSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRouteSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRouteSettings{})
 }
 
 func addOpDeleteStageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteStage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteStage{})
 }
 
 func addOpDeleteVpcLinkValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVpcLink{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVpcLink{})
 }
 
 func addOpExportApiValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpExportApi{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpExportApi{})
 }
 
 func addOpGetApiValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetApi{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetApi{})
 }
 
 func addOpGetApiMappingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetApiMapping{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetApiMapping{})
 }
 
 func addOpGetApiMappingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetApiMappings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetApiMappings{})
 }
 
 func addOpGetAuthorizerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAuthorizer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAuthorizer{})
 }
 
 func addOpGetAuthorizersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAuthorizers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAuthorizers{})
 }
 
 func addOpGetDeploymentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDeployment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDeployment{})
 }
 
 func addOpGetDeploymentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDeployments{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDeployments{})
 }
 
 func addOpGetDomainNameValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDomainName{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDomainName{})
 }
 
 func addOpGetIntegrationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetIntegration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetIntegration{})
 }
 
 func addOpGetIntegrationResponseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetIntegrationResponse{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetIntegrationResponse{})
 }
 
 func addOpGetIntegrationResponsesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetIntegrationResponses{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetIntegrationResponses{})
 }
 
 func addOpGetIntegrationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetIntegrations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetIntegrations{})
 }
 
 func addOpGetModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetModel{})
 }
 
 func addOpGetModelsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetModels{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetModels{})
 }
 
 func addOpGetModelTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetModelTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetModelTemplate{})
 }
 
 func addOpGetRouteValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRoute{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRoute{})
 }
 
 func addOpGetRouteResponseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRouteResponse{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRouteResponse{})
 }
 
 func addOpGetRouteResponsesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRouteResponses{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRouteResponses{})
 }
 
 func addOpGetRoutesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRoutes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRoutes{})
 }
 
 func addOpGetStageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetStage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetStage{})
 }
 
 func addOpGetStagesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetStages{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetStages{})
 }
 
 func addOpGetTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTags{})
 }
 
 func addOpGetVpcLinkValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetVpcLink{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetVpcLink{})
 }
 
 func addOpImportApiValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpImportApi{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpImportApi{})
 }
 
 func addOpReimportApiValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpReimportApi{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpReimportApi{})
 }
 
 func addOpResetAuthorizersCacheValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResetAuthorizersCache{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResetAuthorizersCache{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateApiValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateApi{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateApi{})
 }
 
 func addOpUpdateApiMappingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateApiMapping{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateApiMapping{})
 }
 
 func addOpUpdateAuthorizerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAuthorizer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAuthorizer{})
 }
 
 func addOpUpdateDeploymentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDeployment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDeployment{})
 }
 
 func addOpUpdateDomainNameValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDomainName{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDomainName{})
 }
 
 func addOpUpdateIntegrationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateIntegration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateIntegration{})
 }
 
 func addOpUpdateIntegrationResponseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateIntegrationResponse{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateIntegrationResponse{})
 }
 
 func addOpUpdateModelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateModel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateModel{})
 }
 
 func addOpUpdateRouteValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRoute{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRoute{})
 }
 
 func addOpUpdateRouteResponseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRouteResponse{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRouteResponse{})
 }
 
 func addOpUpdateStageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateStage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateStage{})
 }
 
 func addOpUpdateVpcLinkValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateVpcLink{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateVpcLink{})
 }
 
 func validateOpCreateApiInput(v *CreateApiInput) error {

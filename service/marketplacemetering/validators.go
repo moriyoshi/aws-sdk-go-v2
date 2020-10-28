@@ -91,19 +91,19 @@ func (m *validateOpResolveCustomer) HandleInitialize(ctx context.Context, in mid
 }
 
 func addOpBatchMeterUsageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchMeterUsage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchMeterUsage{})
 }
 
 func addOpMeterUsageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpMeterUsage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpMeterUsage{})
 }
 
 func addOpRegisterUsageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterUsage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterUsage{})
 }
 
 func addOpResolveCustomerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResolveCustomer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResolveCustomer{})
 }
 
 func validateUsageRecord(v *types.UsageRecord) error {

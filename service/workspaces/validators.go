@@ -811,163 +811,163 @@ func (m *validateOpUpdateWorkspaceImagePermission) HandleInitialize(ctx context.
 }
 
 func addOpAssociateConnectionAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateConnectionAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateConnectionAlias{})
 }
 
 func addOpAssociateIpGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateIpGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateIpGroups{})
 }
 
 func addOpAuthorizeIpRulesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAuthorizeIpRules{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAuthorizeIpRules{})
 }
 
 func addOpCopyWorkspaceImageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCopyWorkspaceImage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCopyWorkspaceImage{})
 }
 
 func addOpCreateConnectionAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateConnectionAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateConnectionAlias{})
 }
 
 func addOpCreateIpGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateIpGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateIpGroup{})
 }
 
 func addOpCreateTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTags{})
 }
 
 func addOpCreateWorkspacesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateWorkspaces{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateWorkspaces{})
 }
 
 func addOpDeleteConnectionAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteConnectionAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteConnectionAlias{})
 }
 
 func addOpDeleteIpGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteIpGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteIpGroup{})
 }
 
 func addOpDeleteTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTags{})
 }
 
 func addOpDeleteWorkspaceImageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteWorkspaceImage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteWorkspaceImage{})
 }
 
 func addOpDeregisterWorkspaceDirectoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterWorkspaceDirectory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterWorkspaceDirectory{})
 }
 
 func addOpDescribeClientPropertiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeClientProperties{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeClientProperties{})
 }
 
 func addOpDescribeConnectionAliasPermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeConnectionAliasPermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeConnectionAliasPermissions{})
 }
 
 func addOpDescribeTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTags{})
 }
 
 func addOpDescribeWorkspaceImagePermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeWorkspaceImagePermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeWorkspaceImagePermissions{})
 }
 
 func addOpDescribeWorkspaceSnapshotsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeWorkspaceSnapshots{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeWorkspaceSnapshots{})
 }
 
 func addOpDisassociateConnectionAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateConnectionAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateConnectionAlias{})
 }
 
 func addOpDisassociateIpGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateIpGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateIpGroups{})
 }
 
 func addOpImportWorkspaceImageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpImportWorkspaceImage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpImportWorkspaceImage{})
 }
 
 func addOpListAvailableManagementCidrRangesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAvailableManagementCidrRanges{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAvailableManagementCidrRanges{})
 }
 
 func addOpMigrateWorkspaceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpMigrateWorkspace{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpMigrateWorkspace{})
 }
 
 func addOpModifyClientPropertiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyClientProperties{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyClientProperties{})
 }
 
 func addOpModifySelfservicePermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifySelfservicePermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifySelfservicePermissions{})
 }
 
 func addOpModifyWorkspaceAccessPropertiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyWorkspaceAccessProperties{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyWorkspaceAccessProperties{})
 }
 
 func addOpModifyWorkspaceCreationPropertiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyWorkspaceCreationProperties{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyWorkspaceCreationProperties{})
 }
 
 func addOpModifyWorkspacePropertiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyWorkspaceProperties{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyWorkspaceProperties{})
 }
 
 func addOpModifyWorkspaceStateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyWorkspaceState{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyWorkspaceState{})
 }
 
 func addOpRebootWorkspacesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRebootWorkspaces{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRebootWorkspaces{})
 }
 
 func addOpRebuildWorkspacesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRebuildWorkspaces{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRebuildWorkspaces{})
 }
 
 func addOpRegisterWorkspaceDirectoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterWorkspaceDirectory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterWorkspaceDirectory{})
 }
 
 func addOpRestoreWorkspaceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRestoreWorkspace{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRestoreWorkspace{})
 }
 
 func addOpRevokeIpRulesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRevokeIpRules{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRevokeIpRules{})
 }
 
 func addOpStartWorkspacesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartWorkspaces{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartWorkspaces{})
 }
 
 func addOpStopWorkspacesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopWorkspaces{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopWorkspaces{})
 }
 
 func addOpTerminateWorkspacesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTerminateWorkspaces{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTerminateWorkspaces{})
 }
 
 func addOpUpdateConnectionAliasPermissionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateConnectionAliasPermission{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateConnectionAliasPermission{})
 }
 
 func addOpUpdateRulesOfIpGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRulesOfIpGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRulesOfIpGroup{})
 }
 
 func addOpUpdateWorkspaceImagePermissionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateWorkspaceImagePermission{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateWorkspaceImagePermission{})
 }
 
 func validateConnectionAliasPermission(v *types.ConnectionAliasPermission) error {

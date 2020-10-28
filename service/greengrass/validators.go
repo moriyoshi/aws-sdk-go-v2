@@ -1611,323 +1611,323 @@ func (m *validateOpUpdateThingRuntimeConfiguration) HandleInitialize(ctx context
 }
 
 func addOpAssociateRoleToGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateRoleToGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateRoleToGroup{})
 }
 
 func addOpAssociateServiceRoleToAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateServiceRoleToAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateServiceRoleToAccount{})
 }
 
 func addOpCreateConnectorDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateConnectorDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateConnectorDefinition{})
 }
 
 func addOpCreateConnectorDefinitionVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateConnectorDefinitionVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateConnectorDefinitionVersion{})
 }
 
 func addOpCreateCoreDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCoreDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCoreDefinition{})
 }
 
 func addOpCreateCoreDefinitionVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCoreDefinitionVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCoreDefinitionVersion{})
 }
 
 func addOpCreateDeploymentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDeployment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDeployment{})
 }
 
 func addOpCreateDeviceDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDeviceDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDeviceDefinition{})
 }
 
 func addOpCreateDeviceDefinitionVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDeviceDefinitionVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDeviceDefinitionVersion{})
 }
 
 func addOpCreateFunctionDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFunctionDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFunctionDefinition{})
 }
 
 func addOpCreateFunctionDefinitionVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFunctionDefinitionVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFunctionDefinitionVersion{})
 }
 
 func addOpCreateGroupCertificateAuthorityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateGroupCertificateAuthority{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateGroupCertificateAuthority{})
 }
 
 func addOpCreateGroupVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateGroupVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateGroupVersion{})
 }
 
 func addOpCreateLoggerDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLoggerDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLoggerDefinition{})
 }
 
 func addOpCreateLoggerDefinitionVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLoggerDefinitionVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLoggerDefinitionVersion{})
 }
 
 func addOpCreateResourceDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateResourceDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateResourceDefinition{})
 }
 
 func addOpCreateResourceDefinitionVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateResourceDefinitionVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateResourceDefinitionVersion{})
 }
 
 func addOpCreateSoftwareUpdateJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSoftwareUpdateJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSoftwareUpdateJob{})
 }
 
 func addOpCreateSubscriptionDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSubscriptionDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSubscriptionDefinition{})
 }
 
 func addOpCreateSubscriptionDefinitionVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSubscriptionDefinitionVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSubscriptionDefinitionVersion{})
 }
 
 func addOpDeleteConnectorDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteConnectorDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteConnectorDefinition{})
 }
 
 func addOpDeleteCoreDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCoreDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCoreDefinition{})
 }
 
 func addOpDeleteDeviceDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDeviceDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDeviceDefinition{})
 }
 
 func addOpDeleteFunctionDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFunctionDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFunctionDefinition{})
 }
 
 func addOpDeleteGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteGroup{})
 }
 
 func addOpDeleteLoggerDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLoggerDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLoggerDefinition{})
 }
 
 func addOpDeleteResourceDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteResourceDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteResourceDefinition{})
 }
 
 func addOpDeleteSubscriptionDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSubscriptionDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSubscriptionDefinition{})
 }
 
 func addOpDisassociateRoleFromGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateRoleFromGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateRoleFromGroup{})
 }
 
 func addOpGetAssociatedRoleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAssociatedRole{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAssociatedRole{})
 }
 
 func addOpGetBulkDeploymentStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBulkDeploymentStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBulkDeploymentStatus{})
 }
 
 func addOpGetConnectivityInfoValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetConnectivityInfo{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetConnectivityInfo{})
 }
 
 func addOpGetConnectorDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetConnectorDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetConnectorDefinition{})
 }
 
 func addOpGetConnectorDefinitionVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetConnectorDefinitionVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetConnectorDefinitionVersion{})
 }
 
 func addOpGetCoreDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCoreDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCoreDefinition{})
 }
 
 func addOpGetCoreDefinitionVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCoreDefinitionVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCoreDefinitionVersion{})
 }
 
 func addOpGetDeploymentStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDeploymentStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDeploymentStatus{})
 }
 
 func addOpGetDeviceDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDeviceDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDeviceDefinition{})
 }
 
 func addOpGetDeviceDefinitionVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDeviceDefinitionVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDeviceDefinitionVersion{})
 }
 
 func addOpGetFunctionDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFunctionDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFunctionDefinition{})
 }
 
 func addOpGetFunctionDefinitionVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFunctionDefinitionVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFunctionDefinitionVersion{})
 }
 
 func addOpGetGroupCertificateAuthorityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetGroupCertificateAuthority{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetGroupCertificateAuthority{})
 }
 
 func addOpGetGroupCertificateConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetGroupCertificateConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetGroupCertificateConfiguration{})
 }
 
 func addOpGetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetGroup{})
 }
 
 func addOpGetGroupVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetGroupVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetGroupVersion{})
 }
 
 func addOpGetLoggerDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLoggerDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLoggerDefinition{})
 }
 
 func addOpGetLoggerDefinitionVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLoggerDefinitionVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLoggerDefinitionVersion{})
 }
 
 func addOpGetResourceDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetResourceDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetResourceDefinition{})
 }
 
 func addOpGetResourceDefinitionVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetResourceDefinitionVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetResourceDefinitionVersion{})
 }
 
 func addOpGetSubscriptionDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSubscriptionDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSubscriptionDefinition{})
 }
 
 func addOpGetSubscriptionDefinitionVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSubscriptionDefinitionVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSubscriptionDefinitionVersion{})
 }
 
 func addOpGetThingRuntimeConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetThingRuntimeConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetThingRuntimeConfiguration{})
 }
 
 func addOpListBulkDeploymentDetailedReportsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListBulkDeploymentDetailedReports{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListBulkDeploymentDetailedReports{})
 }
 
 func addOpListConnectorDefinitionVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListConnectorDefinitionVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListConnectorDefinitionVersions{})
 }
 
 func addOpListCoreDefinitionVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListCoreDefinitionVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListCoreDefinitionVersions{})
 }
 
 func addOpListDeploymentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDeployments{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDeployments{})
 }
 
 func addOpListDeviceDefinitionVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDeviceDefinitionVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDeviceDefinitionVersions{})
 }
 
 func addOpListFunctionDefinitionVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListFunctionDefinitionVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListFunctionDefinitionVersions{})
 }
 
 func addOpListGroupCertificateAuthoritiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListGroupCertificateAuthorities{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListGroupCertificateAuthorities{})
 }
 
 func addOpListGroupVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListGroupVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListGroupVersions{})
 }
 
 func addOpListLoggerDefinitionVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListLoggerDefinitionVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListLoggerDefinitionVersions{})
 }
 
 func addOpListResourceDefinitionVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListResourceDefinitionVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListResourceDefinitionVersions{})
 }
 
 func addOpListSubscriptionDefinitionVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListSubscriptionDefinitionVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListSubscriptionDefinitionVersions{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpResetDeploymentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResetDeployments{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResetDeployments{})
 }
 
 func addOpStartBulkDeploymentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartBulkDeployment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartBulkDeployment{})
 }
 
 func addOpStopBulkDeploymentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopBulkDeployment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopBulkDeployment{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateConnectivityInfoValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateConnectivityInfo{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateConnectivityInfo{})
 }
 
 func addOpUpdateConnectorDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateConnectorDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateConnectorDefinition{})
 }
 
 func addOpUpdateCoreDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateCoreDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateCoreDefinition{})
 }
 
 func addOpUpdateDeviceDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDeviceDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDeviceDefinition{})
 }
 
 func addOpUpdateFunctionDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFunctionDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFunctionDefinition{})
 }
 
 func addOpUpdateGroupCertificateConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGroupCertificateConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGroupCertificateConfiguration{})
 }
 
 func addOpUpdateGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGroup{})
 }
 
 func addOpUpdateLoggerDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateLoggerDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateLoggerDefinition{})
 }
 
 func addOpUpdateResourceDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateResourceDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateResourceDefinition{})
 }
 
 func addOpUpdateSubscriptionDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateSubscriptionDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateSubscriptionDefinition{})
 }
 
 func addOpUpdateThingRuntimeConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateThingRuntimeConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateThingRuntimeConfiguration{})
 }
 
 func validate__listOfConnector(v []*types.Connector) error {

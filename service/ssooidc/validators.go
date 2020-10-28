@@ -70,15 +70,15 @@ func (m *validateOpStartDeviceAuthorization) HandleInitialize(ctx context.Contex
 }
 
 func addOpCreateTokenValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateToken{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateToken{})
 }
 
 func addOpRegisterClientValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterClient{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterClient{})
 }
 
 func addOpStartDeviceAuthorizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartDeviceAuthorization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartDeviceAuthorization{})
 }
 
 func validateOpCreateTokenInput(v *CreateTokenInput) error {

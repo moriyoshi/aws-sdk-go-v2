@@ -811,163 +811,163 @@ func (m *validateOpUpdateType) HandleInitialize(ctx context.Context, in middlewa
 }
 
 func addOpCreateApiCacheValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateApiCache{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateApiCache{})
 }
 
 func addOpCreateApiKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateApiKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateApiKey{})
 }
 
 func addOpCreateDataSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDataSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDataSource{})
 }
 
 func addOpCreateFunctionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFunction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFunction{})
 }
 
 func addOpCreateGraphqlApiValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateGraphqlApi{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateGraphqlApi{})
 }
 
 func addOpCreateResolverValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateResolver{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateResolver{})
 }
 
 func addOpCreateTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateType{})
 }
 
 func addOpDeleteApiCacheValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApiCache{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApiCache{})
 }
 
 func addOpDeleteApiKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApiKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApiKey{})
 }
 
 func addOpDeleteDataSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDataSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDataSource{})
 }
 
 func addOpDeleteFunctionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFunction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFunction{})
 }
 
 func addOpDeleteGraphqlApiValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteGraphqlApi{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteGraphqlApi{})
 }
 
 func addOpDeleteResolverValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteResolver{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteResolver{})
 }
 
 func addOpDeleteTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteType{})
 }
 
 func addOpFlushApiCacheValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpFlushApiCache{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpFlushApiCache{})
 }
 
 func addOpGetApiCacheValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetApiCache{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetApiCache{})
 }
 
 func addOpGetDataSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDataSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDataSource{})
 }
 
 func addOpGetFunctionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFunction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFunction{})
 }
 
 func addOpGetGraphqlApiValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetGraphqlApi{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetGraphqlApi{})
 }
 
 func addOpGetIntrospectionSchemaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetIntrospectionSchema{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetIntrospectionSchema{})
 }
 
 func addOpGetResolverValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetResolver{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetResolver{})
 }
 
 func addOpGetSchemaCreationStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSchemaCreationStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSchemaCreationStatus{})
 }
 
 func addOpGetTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetType{})
 }
 
 func addOpListApiKeysValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListApiKeys{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListApiKeys{})
 }
 
 func addOpListDataSourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDataSources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDataSources{})
 }
 
 func addOpListFunctionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListFunctions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListFunctions{})
 }
 
 func addOpListResolversByFunctionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListResolversByFunction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListResolversByFunction{})
 }
 
 func addOpListResolversValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListResolvers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListResolvers{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListTypesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTypes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTypes{})
 }
 
 func addOpStartSchemaCreationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartSchemaCreation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartSchemaCreation{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateApiCacheValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateApiCache{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateApiCache{})
 }
 
 func addOpUpdateApiKeyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateApiKey{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateApiKey{})
 }
 
 func addOpUpdateDataSourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDataSource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDataSource{})
 }
 
 func addOpUpdateFunctionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFunction{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFunction{})
 }
 
 func addOpUpdateGraphqlApiValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGraphqlApi{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGraphqlApi{})
 }
 
 func addOpUpdateResolverValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateResolver{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateResolver{})
 }
 
 func addOpUpdateTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateType{})
 }
 
 func validateAdditionalAuthenticationProvider(v *types.AdditionalAuthenticationProvider) error {

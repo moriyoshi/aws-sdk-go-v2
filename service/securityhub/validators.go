@@ -471,95 +471,95 @@ func (m *validateOpUpdateStandardsControl) HandleInitialize(ctx context.Context,
 }
 
 func addOpAcceptInvitationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAcceptInvitation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAcceptInvitation{})
 }
 
 func addOpBatchDisableStandardsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDisableStandards{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDisableStandards{})
 }
 
 func addOpBatchEnableStandardsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchEnableStandards{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchEnableStandards{})
 }
 
 func addOpBatchImportFindingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchImportFindings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchImportFindings{})
 }
 
 func addOpBatchUpdateFindingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchUpdateFindings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchUpdateFindings{})
 }
 
 func addOpCreateActionTargetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateActionTarget{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateActionTarget{})
 }
 
 func addOpCreateInsightValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateInsight{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateInsight{})
 }
 
 func addOpDeclineInvitationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeclineInvitations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeclineInvitations{})
 }
 
 func addOpDeleteActionTargetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteActionTarget{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteActionTarget{})
 }
 
 func addOpDeleteInsightValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteInsight{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteInsight{})
 }
 
 func addOpDeleteInvitationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteInvitations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteInvitations{})
 }
 
 func addOpDescribeStandardsControlsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeStandardsControls{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeStandardsControls{})
 }
 
 func addOpDisableImportFindingsForProductValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableImportFindingsForProduct{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableImportFindingsForProduct{})
 }
 
 func addOpEnableImportFindingsForProductValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableImportFindingsForProduct{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableImportFindingsForProduct{})
 }
 
 func addOpGetInsightResultsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetInsightResults{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetInsightResults{})
 }
 
 func addOpGetMembersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMembers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMembers{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateActionTargetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateActionTarget{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateActionTarget{})
 }
 
 func addOpUpdateFindingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFindings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFindings{})
 }
 
 func addOpUpdateInsightValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateInsight{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateInsight{})
 }
 
 func addOpUpdateStandardsControlValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateStandardsControl{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateStandardsControl{})
 }
 
 func validateAwsSecurityFinding(v *types.AwsSecurityFinding) error {

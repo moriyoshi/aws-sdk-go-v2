@@ -651,131 +651,131 @@ func (m *validateOpUpdatePipeline) HandleInitialize(ctx context.Context, in midd
 }
 
 func addOpAcknowledgeJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAcknowledgeJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAcknowledgeJob{})
 }
 
 func addOpAcknowledgeThirdPartyJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAcknowledgeThirdPartyJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAcknowledgeThirdPartyJob{})
 }
 
 func addOpCreateCustomActionTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCustomActionType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCustomActionType{})
 }
 
 func addOpCreatePipelineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePipeline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePipeline{})
 }
 
 func addOpDeleteCustomActionTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCustomActionType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCustomActionType{})
 }
 
 func addOpDeletePipelineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePipeline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePipeline{})
 }
 
 func addOpDeleteWebhookValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteWebhook{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteWebhook{})
 }
 
 func addOpDisableStageTransitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableStageTransition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableStageTransition{})
 }
 
 func addOpEnableStageTransitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableStageTransition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableStageTransition{})
 }
 
 func addOpGetJobDetailsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetJobDetails{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetJobDetails{})
 }
 
 func addOpGetPipelineExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPipelineExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPipelineExecution{})
 }
 
 func addOpGetPipelineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPipeline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPipeline{})
 }
 
 func addOpGetPipelineStateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPipelineState{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPipelineState{})
 }
 
 func addOpGetThirdPartyJobDetailsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetThirdPartyJobDetails{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetThirdPartyJobDetails{})
 }
 
 func addOpListActionExecutionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListActionExecutions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListActionExecutions{})
 }
 
 func addOpListPipelineExecutionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPipelineExecutions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPipelineExecutions{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPollForJobsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPollForJobs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPollForJobs{})
 }
 
 func addOpPollForThirdPartyJobsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPollForThirdPartyJobs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPollForThirdPartyJobs{})
 }
 
 func addOpPutActionRevisionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutActionRevision{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutActionRevision{})
 }
 
 func addOpPutApprovalResultValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutApprovalResult{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutApprovalResult{})
 }
 
 func addOpPutJobFailureResultValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutJobFailureResult{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutJobFailureResult{})
 }
 
 func addOpPutJobSuccessResultValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutJobSuccessResult{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutJobSuccessResult{})
 }
 
 func addOpPutThirdPartyJobFailureResultValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutThirdPartyJobFailureResult{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutThirdPartyJobFailureResult{})
 }
 
 func addOpPutThirdPartyJobSuccessResultValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutThirdPartyJobSuccessResult{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutThirdPartyJobSuccessResult{})
 }
 
 func addOpPutWebhookValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutWebhook{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutWebhook{})
 }
 
 func addOpRetryStageExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRetryStageExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRetryStageExecution{})
 }
 
 func addOpStartPipelineExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartPipelineExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartPipelineExecution{})
 }
 
 func addOpStopPipelineExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopPipelineExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopPipelineExecution{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdatePipelineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePipeline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePipeline{})
 }
 
 func validateActionConfigurationProperty(v *types.ActionConfigurationProperty) error {

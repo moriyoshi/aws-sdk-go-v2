@@ -551,111 +551,111 @@ func (m *validateOpUpdateDatasetGroup) HandleInitialize(ctx context.Context, in 
 }
 
 func addOpCreateDatasetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDatasetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDatasetGroup{})
 }
 
 func addOpCreateDatasetImportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDatasetImportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDatasetImportJob{})
 }
 
 func addOpCreateDatasetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDataset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDataset{})
 }
 
 func addOpCreateForecastExportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateForecastExportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateForecastExportJob{})
 }
 
 func addOpCreateForecastValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateForecast{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateForecast{})
 }
 
 func addOpCreatePredictorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePredictor{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePredictor{})
 }
 
 func addOpDeleteDatasetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDatasetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDatasetGroup{})
 }
 
 func addOpDeleteDatasetImportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDatasetImportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDatasetImportJob{})
 }
 
 func addOpDeleteDatasetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDataset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDataset{})
 }
 
 func addOpDeleteForecastExportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteForecastExportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteForecastExportJob{})
 }
 
 func addOpDeleteForecastValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteForecast{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteForecast{})
 }
 
 func addOpDeletePredictorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePredictor{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePredictor{})
 }
 
 func addOpDescribeDatasetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDatasetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDatasetGroup{})
 }
 
 func addOpDescribeDatasetImportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDatasetImportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDatasetImportJob{})
 }
 
 func addOpDescribeDatasetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDataset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDataset{})
 }
 
 func addOpDescribeForecastExportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeForecastExportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeForecastExportJob{})
 }
 
 func addOpDescribeForecastValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeForecast{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeForecast{})
 }
 
 func addOpDescribePredictorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribePredictor{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribePredictor{})
 }
 
 func addOpGetAccuracyMetricsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAccuracyMetrics{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAccuracyMetrics{})
 }
 
 func addOpListDatasetImportJobsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDatasetImportJobs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDatasetImportJobs{})
 }
 
 func addOpListForecastExportJobsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListForecastExportJobs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListForecastExportJobs{})
 }
 
 func addOpListForecastsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListForecasts{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListForecasts{})
 }
 
 func addOpListPredictorsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPredictors{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPredictors{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateDatasetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDatasetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDatasetGroup{})
 }
 
 func validateCategoricalParameterRange(v *types.CategoricalParameterRange) error {

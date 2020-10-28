@@ -351,71 +351,71 @@ func (m *validateOpUpdateUser) HandleInitialize(ctx context.Context, in middlewa
 }
 
 func addOpCreateBrokerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateBroker{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateBroker{})
 }
 
 func addOpCreateTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTags{})
 }
 
 func addOpCreateUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateUser{})
 }
 
 func addOpDeleteBrokerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBroker{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBroker{})
 }
 
 func addOpDeleteTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTags{})
 }
 
 func addOpDeleteUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUser{})
 }
 
 func addOpDescribeBrokerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeBroker{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeBroker{})
 }
 
 func addOpDescribeConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeConfiguration{})
 }
 
 func addOpDescribeConfigurationRevisionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeConfigurationRevision{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeConfigurationRevision{})
 }
 
 func addOpDescribeUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeUser{})
 }
 
 func addOpListConfigurationRevisionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListConfigurationRevisions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListConfigurationRevisions{})
 }
 
 func addOpListTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTags{})
 }
 
 func addOpListUsersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListUsers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListUsers{})
 }
 
 func addOpRebootBrokerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRebootBroker{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRebootBroker{})
 }
 
 func addOpUpdateBrokerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateBroker{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateBroker{})
 }
 
 func addOpUpdateConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateConfiguration{})
 }
 
 func addOpUpdateUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateUser{})
 }
 
 func validateEncryptionOptions(v *types.EncryptionOptions) error {

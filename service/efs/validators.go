@@ -451,91 +451,91 @@ func (m *validateOpUpdateFileSystem) HandleInitialize(ctx context.Context, in mi
 }
 
 func addOpCreateAccessPointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAccessPoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAccessPoint{})
 }
 
 func addOpCreateFileSystemValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFileSystem{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFileSystem{})
 }
 
 func addOpCreateMountTargetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateMountTarget{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateMountTarget{})
 }
 
 func addOpCreateTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTags{})
 }
 
 func addOpDeleteAccessPointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAccessPoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAccessPoint{})
 }
 
 func addOpDeleteFileSystemValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFileSystem{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFileSystem{})
 }
 
 func addOpDeleteFileSystemPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFileSystemPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFileSystemPolicy{})
 }
 
 func addOpDeleteMountTargetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMountTarget{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMountTarget{})
 }
 
 func addOpDeleteTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTags{})
 }
 
 func addOpDescribeBackupPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeBackupPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeBackupPolicy{})
 }
 
 func addOpDescribeFileSystemPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeFileSystemPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeFileSystemPolicy{})
 }
 
 func addOpDescribeLifecycleConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeLifecycleConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeLifecycleConfiguration{})
 }
 
 func addOpDescribeMountTargetSecurityGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeMountTargetSecurityGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeMountTargetSecurityGroups{})
 }
 
 func addOpDescribeTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTags{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpModifyMountTargetSecurityGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyMountTargetSecurityGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyMountTargetSecurityGroups{})
 }
 
 func addOpPutBackupPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBackupPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBackupPolicy{})
 }
 
 func addOpPutFileSystemPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutFileSystemPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutFileSystemPolicy{})
 }
 
 func addOpPutLifecycleConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutLifecycleConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutLifecycleConfiguration{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateFileSystemValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFileSystem{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFileSystem{})
 }
 
 func validateBackupPolicy(v *types.BackupPolicy) error {

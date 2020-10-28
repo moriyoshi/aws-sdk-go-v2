@@ -670,135 +670,135 @@ func (m *validateOpUpdateDeploymentGroup) HandleInitialize(ctx context.Context, 
 }
 
 func addOpAddTagsToOnPremisesInstancesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddTagsToOnPremisesInstances{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddTagsToOnPremisesInstances{})
 }
 
 func addOpBatchGetApplicationRevisionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetApplicationRevisions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetApplicationRevisions{})
 }
 
 func addOpBatchGetApplicationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetApplications{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetApplications{})
 }
 
 func addOpBatchGetDeploymentGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetDeploymentGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetDeploymentGroups{})
 }
 
 func addOpBatchGetDeploymentInstancesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetDeploymentInstances{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetDeploymentInstances{})
 }
 
 func addOpBatchGetDeploymentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetDeployments{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetDeployments{})
 }
 
 func addOpBatchGetOnPremisesInstancesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetOnPremisesInstances{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetOnPremisesInstances{})
 }
 
 func addOpCreateApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateApplication{})
 }
 
 func addOpCreateDeploymentConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDeploymentConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDeploymentConfig{})
 }
 
 func addOpCreateDeploymentGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDeploymentGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDeploymentGroup{})
 }
 
 func addOpCreateDeploymentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDeployment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDeployment{})
 }
 
 func addOpDeleteApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApplication{})
 }
 
 func addOpDeleteDeploymentConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDeploymentConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDeploymentConfig{})
 }
 
 func addOpDeleteDeploymentGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDeploymentGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDeploymentGroup{})
 }
 
 func addOpDeregisterOnPremisesInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterOnPremisesInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterOnPremisesInstance{})
 }
 
 func addOpGetApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetApplication{})
 }
 
 func addOpGetApplicationRevisionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetApplicationRevision{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetApplicationRevision{})
 }
 
 func addOpGetDeploymentConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDeploymentConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDeploymentConfig{})
 }
 
 func addOpGetDeploymentGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDeploymentGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDeploymentGroup{})
 }
 
 func addOpGetDeploymentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDeployment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDeployment{})
 }
 
 func addOpGetDeploymentInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDeploymentInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDeploymentInstance{})
 }
 
 func addOpGetOnPremisesInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetOnPremisesInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetOnPremisesInstance{})
 }
 
 func addOpListApplicationRevisionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListApplicationRevisions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListApplicationRevisions{})
 }
 
 func addOpListDeploymentGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDeploymentGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDeploymentGroups{})
 }
 
 func addOpListDeploymentInstancesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDeploymentInstances{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDeploymentInstances{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpRegisterApplicationRevisionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterApplicationRevision{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterApplicationRevision{})
 }
 
 func addOpRegisterOnPremisesInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterOnPremisesInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterOnPremisesInstance{})
 }
 
 func addOpRemoveTagsFromOnPremisesInstancesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveTagsFromOnPremisesInstances{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveTagsFromOnPremisesInstances{})
 }
 
 func addOpStopDeploymentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopDeployment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopDeployment{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateDeploymentGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDeploymentGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDeploymentGroup{})
 }
 
 func validateOpAddTagsToOnPremisesInstancesInput(v *AddTagsToOnPremisesInstancesInput) error {

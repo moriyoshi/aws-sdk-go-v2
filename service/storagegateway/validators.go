@@ -1491,299 +1491,299 @@ func (m *validateOpUpdateVTLDeviceType) HandleInitialize(ctx context.Context, in
 }
 
 func addOpActivateGatewayValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpActivateGateway{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpActivateGateway{})
 }
 
 func addOpAddCacheValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddCache{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddCache{})
 }
 
 func addOpAddTagsToResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddTagsToResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddTagsToResource{})
 }
 
 func addOpAddUploadBufferValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddUploadBuffer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddUploadBuffer{})
 }
 
 func addOpAddWorkingStorageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddWorkingStorage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddWorkingStorage{})
 }
 
 func addOpAssignTapePoolValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssignTapePool{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssignTapePool{})
 }
 
 func addOpAttachVolumeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAttachVolume{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAttachVolume{})
 }
 
 func addOpCancelArchivalValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelArchival{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelArchival{})
 }
 
 func addOpCancelRetrievalValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelRetrieval{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelRetrieval{})
 }
 
 func addOpCreateCachediSCSIVolumeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCachediSCSIVolume{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCachediSCSIVolume{})
 }
 
 func addOpCreateNFSFileShareValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateNFSFileShare{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateNFSFileShare{})
 }
 
 func addOpCreateSMBFileShareValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSMBFileShare{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSMBFileShare{})
 }
 
 func addOpCreateSnapshotFromVolumeRecoveryPointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSnapshotFromVolumeRecoveryPoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSnapshotFromVolumeRecoveryPoint{})
 }
 
 func addOpCreateSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSnapshot{})
 }
 
 func addOpCreateStorediSCSIVolumeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateStorediSCSIVolume{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateStorediSCSIVolume{})
 }
 
 func addOpCreateTapePoolValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTapePool{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTapePool{})
 }
 
 func addOpCreateTapesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTapes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTapes{})
 }
 
 func addOpCreateTapeWithBarcodeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTapeWithBarcode{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTapeWithBarcode{})
 }
 
 func addOpDeleteAutomaticTapeCreationPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAutomaticTapeCreationPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAutomaticTapeCreationPolicy{})
 }
 
 func addOpDeleteBandwidthRateLimitValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBandwidthRateLimit{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBandwidthRateLimit{})
 }
 
 func addOpDeleteChapCredentialsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteChapCredentials{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteChapCredentials{})
 }
 
 func addOpDeleteFileShareValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFileShare{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFileShare{})
 }
 
 func addOpDeleteGatewayValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteGateway{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteGateway{})
 }
 
 func addOpDeleteSnapshotScheduleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSnapshotSchedule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSnapshotSchedule{})
 }
 
 func addOpDeleteTapeArchiveValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTapeArchive{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTapeArchive{})
 }
 
 func addOpDeleteTapeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTape{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTape{})
 }
 
 func addOpDeleteTapePoolValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTapePool{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTapePool{})
 }
 
 func addOpDeleteVolumeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVolume{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVolume{})
 }
 
 func addOpDescribeAvailabilityMonitorTestValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAvailabilityMonitorTest{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAvailabilityMonitorTest{})
 }
 
 func addOpDescribeBandwidthRateLimitValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeBandwidthRateLimit{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeBandwidthRateLimit{})
 }
 
 func addOpDescribeCachediSCSIVolumesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCachediSCSIVolumes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCachediSCSIVolumes{})
 }
 
 func addOpDescribeCacheValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCache{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCache{})
 }
 
 func addOpDescribeChapCredentialsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeChapCredentials{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeChapCredentials{})
 }
 
 func addOpDescribeGatewayInformationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeGatewayInformation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeGatewayInformation{})
 }
 
 func addOpDescribeMaintenanceStartTimeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeMaintenanceStartTime{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeMaintenanceStartTime{})
 }
 
 func addOpDescribeNFSFileSharesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeNFSFileShares{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeNFSFileShares{})
 }
 
 func addOpDescribeSMBFileSharesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSMBFileShares{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSMBFileShares{})
 }
 
 func addOpDescribeSMBSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSMBSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSMBSettings{})
 }
 
 func addOpDescribeSnapshotScheduleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSnapshotSchedule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSnapshotSchedule{})
 }
 
 func addOpDescribeStorediSCSIVolumesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeStorediSCSIVolumes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeStorediSCSIVolumes{})
 }
 
 func addOpDescribeTapeRecoveryPointsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTapeRecoveryPoints{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTapeRecoveryPoints{})
 }
 
 func addOpDescribeTapesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTapes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTapes{})
 }
 
 func addOpDescribeUploadBufferValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeUploadBuffer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeUploadBuffer{})
 }
 
 func addOpDescribeVTLDevicesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeVTLDevices{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeVTLDevices{})
 }
 
 func addOpDescribeWorkingStorageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeWorkingStorage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeWorkingStorage{})
 }
 
 func addOpDetachVolumeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetachVolume{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetachVolume{})
 }
 
 func addOpDisableGatewayValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableGateway{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableGateway{})
 }
 
 func addOpJoinDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpJoinDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpJoinDomain{})
 }
 
 func addOpListLocalDisksValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListLocalDisks{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListLocalDisks{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListVolumeInitiatorsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListVolumeInitiators{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListVolumeInitiators{})
 }
 
 func addOpListVolumeRecoveryPointsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListVolumeRecoveryPoints{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListVolumeRecoveryPoints{})
 }
 
 func addOpNotifyWhenUploadedValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpNotifyWhenUploaded{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpNotifyWhenUploaded{})
 }
 
 func addOpRefreshCacheValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRefreshCache{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRefreshCache{})
 }
 
 func addOpRemoveTagsFromResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveTagsFromResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveTagsFromResource{})
 }
 
 func addOpResetCacheValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResetCache{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResetCache{})
 }
 
 func addOpRetrieveTapeArchiveValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRetrieveTapeArchive{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRetrieveTapeArchive{})
 }
 
 func addOpRetrieveTapeRecoveryPointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRetrieveTapeRecoveryPoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRetrieveTapeRecoveryPoint{})
 }
 
 func addOpSetLocalConsolePasswordValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetLocalConsolePassword{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetLocalConsolePassword{})
 }
 
 func addOpSetSMBGuestPasswordValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetSMBGuestPassword{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetSMBGuestPassword{})
 }
 
 func addOpShutdownGatewayValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpShutdownGateway{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpShutdownGateway{})
 }
 
 func addOpStartAvailabilityMonitorTestValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartAvailabilityMonitorTest{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartAvailabilityMonitorTest{})
 }
 
 func addOpStartGatewayValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartGateway{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartGateway{})
 }
 
 func addOpUpdateAutomaticTapeCreationPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAutomaticTapeCreationPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAutomaticTapeCreationPolicy{})
 }
 
 func addOpUpdateBandwidthRateLimitValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateBandwidthRateLimit{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateBandwidthRateLimit{})
 }
 
 func addOpUpdateChapCredentialsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateChapCredentials{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateChapCredentials{})
 }
 
 func addOpUpdateGatewayInformationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGatewayInformation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGatewayInformation{})
 }
 
 func addOpUpdateGatewaySoftwareNowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGatewaySoftwareNow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGatewaySoftwareNow{})
 }
 
 func addOpUpdateMaintenanceStartTimeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateMaintenanceStartTime{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateMaintenanceStartTime{})
 }
 
 func addOpUpdateNFSFileShareValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateNFSFileShare{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateNFSFileShare{})
 }
 
 func addOpUpdateSMBFileShareValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateSMBFileShare{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateSMBFileShare{})
 }
 
 func addOpUpdateSMBSecurityStrategyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateSMBSecurityStrategy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateSMBSecurityStrategy{})
 }
 
 func addOpUpdateSnapshotScheduleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateSnapshotSchedule{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateSnapshotSchedule{})
 }
 
 func addOpUpdateVTLDeviceTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateVTLDeviceType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateVTLDeviceType{})
 }
 
 func validateAutomaticTapeCreationRule(v *types.AutomaticTapeCreationRule) error {

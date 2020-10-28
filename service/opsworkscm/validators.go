@@ -331,67 +331,67 @@ func (m *validateOpUpdateServer) HandleInitialize(ctx context.Context, in middle
 }
 
 func addOpAssociateNodeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateNode{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateNode{})
 }
 
 func addOpCreateBackupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateBackup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateBackup{})
 }
 
 func addOpCreateServerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateServer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateServer{})
 }
 
 func addOpDeleteBackupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBackup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBackup{})
 }
 
 func addOpDeleteServerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteServer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteServer{})
 }
 
 func addOpDescribeEventsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEvents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEvents{})
 }
 
 func addOpDescribeNodeAssociationStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeNodeAssociationStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeNodeAssociationStatus{})
 }
 
 func addOpDisassociateNodeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateNode{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateNode{})
 }
 
 func addOpExportServerEngineAttributeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpExportServerEngineAttribute{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpExportServerEngineAttribute{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpRestoreServerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRestoreServer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRestoreServer{})
 }
 
 func addOpStartMaintenanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartMaintenance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartMaintenance{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateServerEngineAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateServerEngineAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateServerEngineAttributes{})
 }
 
 func addOpUpdateServerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateServer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateServer{})
 }
 
 func validateTag(v *types.Tag) error {

@@ -310,63 +310,63 @@ func (m *validateOpUpdatePipelineStatus) HandleInitialize(ctx context.Context, i
 }
 
 func addOpCancelJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelJob{})
 }
 
 func addOpCreateJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateJob{})
 }
 
 func addOpCreatePipelineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePipeline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePipeline{})
 }
 
 func addOpCreatePresetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePreset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePreset{})
 }
 
 func addOpDeletePipelineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePipeline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePipeline{})
 }
 
 func addOpDeletePresetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePreset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePreset{})
 }
 
 func addOpListJobsByPipelineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListJobsByPipeline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListJobsByPipeline{})
 }
 
 func addOpListJobsByStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListJobsByStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListJobsByStatus{})
 }
 
 func addOpReadJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpReadJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpReadJob{})
 }
 
 func addOpReadPipelineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpReadPipeline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpReadPipeline{})
 }
 
 func addOpReadPresetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpReadPreset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpReadPreset{})
 }
 
 func addOpTestRoleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTestRole{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTestRole{})
 }
 
 func addOpUpdatePipelineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePipeline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePipeline{})
 }
 
 func addOpUpdatePipelineNotificationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePipelineNotifications{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePipelineNotifications{})
 }
 
 func addOpUpdatePipelineStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePipelineStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePipelineStatus{})
 }
 
 func validateOpCancelJobInput(v *CancelJobInput) error {

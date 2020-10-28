@@ -410,83 +410,83 @@ func (m *validateOpUpdateResourceShare) HandleInitialize(ctx context.Context, in
 }
 
 func addOpAcceptResourceShareInvitationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAcceptResourceShareInvitation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAcceptResourceShareInvitation{})
 }
 
 func addOpAssociateResourceShareValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateResourceShare{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateResourceShare{})
 }
 
 func addOpAssociateResourceSharePermissionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateResourceSharePermission{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateResourceSharePermission{})
 }
 
 func addOpCreateResourceShareValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateResourceShare{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateResourceShare{})
 }
 
 func addOpDeleteResourceShareValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteResourceShare{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteResourceShare{})
 }
 
 func addOpDisassociateResourceShareValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateResourceShare{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateResourceShare{})
 }
 
 func addOpDisassociateResourceSharePermissionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateResourceSharePermission{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateResourceSharePermission{})
 }
 
 func addOpGetPermissionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPermission{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPermission{})
 }
 
 func addOpGetResourcePoliciesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetResourcePolicies{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetResourcePolicies{})
 }
 
 func addOpGetResourceShareAssociationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetResourceShareAssociations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetResourceShareAssociations{})
 }
 
 func addOpGetResourceSharesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetResourceShares{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetResourceShares{})
 }
 
 func addOpListPendingInvitationResourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPendingInvitationResources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPendingInvitationResources{})
 }
 
 func addOpListPrincipalsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPrincipals{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPrincipals{})
 }
 
 func addOpListResourceSharePermissionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListResourceSharePermissions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListResourceSharePermissions{})
 }
 
 func addOpListResourcesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListResources{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListResources{})
 }
 
 func addOpPromoteResourceShareCreatedFromPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPromoteResourceShareCreatedFromPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPromoteResourceShareCreatedFromPolicy{})
 }
 
 func addOpRejectResourceShareInvitationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRejectResourceShareInvitation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRejectResourceShareInvitation{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateResourceShareValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateResourceShare{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateResourceShare{})
 }
 
 func validateOpAcceptResourceShareInvitationInput(v *AcceptResourceShareInvitationInput) error {

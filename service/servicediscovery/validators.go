@@ -471,95 +471,95 @@ func (m *validateOpUpdateService) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpCreateHttpNamespaceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateHttpNamespace{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateHttpNamespace{})
 }
 
 func addOpCreatePrivateDnsNamespaceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePrivateDnsNamespace{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePrivateDnsNamespace{})
 }
 
 func addOpCreatePublicDnsNamespaceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePublicDnsNamespace{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePublicDnsNamespace{})
 }
 
 func addOpCreateServiceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateService{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateService{})
 }
 
 func addOpDeleteNamespaceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteNamespace{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteNamespace{})
 }
 
 func addOpDeleteServiceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteService{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteService{})
 }
 
 func addOpDeregisterInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterInstance{})
 }
 
 func addOpDiscoverInstancesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDiscoverInstances{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDiscoverInstances{})
 }
 
 func addOpGetInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetInstance{})
 }
 
 func addOpGetInstancesHealthStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetInstancesHealthStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetInstancesHealthStatus{})
 }
 
 func addOpGetNamespaceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetNamespace{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetNamespace{})
 }
 
 func addOpGetOperationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetOperation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetOperation{})
 }
 
 func addOpGetServiceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetService{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetService{})
 }
 
 func addOpListInstancesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListInstances{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListInstances{})
 }
 
 func addOpListNamespacesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListNamespaces{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListNamespaces{})
 }
 
 func addOpListOperationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListOperations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListOperations{})
 }
 
 func addOpListServicesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListServices{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListServices{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpRegisterInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterInstance{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateInstanceCustomHealthStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateInstanceCustomHealthStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateInstanceCustomHealthStatus{})
 }
 
 func addOpUpdateServiceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateService{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateService{})
 }
 
 func validateDnsConfig(v *types.DnsConfig) error {

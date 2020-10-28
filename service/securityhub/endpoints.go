@@ -91,14 +91,15 @@ func (m *ResolveEndpoint) HandleSerialize(ctx context.Context, in middleware.Ser
 	return next.HandleSerialize(ctx, in)
 }
 func addResolveEndpointMiddleware(stack *middleware.Stack, o Options) error {
-	return stack.Serialize.Insert(&ResolveEndpoint{
+	return stack.Serialize.Add(middleware.Before, &ResolveEndpoint{
 		Resolver: o.EndpointResolver,
 		Options:  o.EndpointOptions,
-	}, "OperationSerializer", middleware.Before)
+	})
 }
 
 func removeResolveEndpointMiddleware(stack *middleware.Stack) error {
-	return stack.Serialize.Remove((&ResolveEndpoint{}).ID())
+	_, err := stack.Serialize.Remove((&ResolveEndpoint{}).ID())
+	return err
 }
 
 type wrappedEndpointResolver struct {

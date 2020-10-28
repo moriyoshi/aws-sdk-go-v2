@@ -1911,383 +1911,383 @@ func (m *validateOpUpdateRelationalDatabaseParameters) HandleInitialize(ctx cont
 }
 
 func addOpAllocateStaticIpValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAllocateStaticIp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAllocateStaticIp{})
 }
 
 func addOpAttachCertificateToDistributionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAttachCertificateToDistribution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAttachCertificateToDistribution{})
 }
 
 func addOpAttachDiskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAttachDisk{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAttachDisk{})
 }
 
 func addOpAttachInstancesToLoadBalancerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAttachInstancesToLoadBalancer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAttachInstancesToLoadBalancer{})
 }
 
 func addOpAttachLoadBalancerTlsCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAttachLoadBalancerTlsCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAttachLoadBalancerTlsCertificate{})
 }
 
 func addOpAttachStaticIpValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAttachStaticIp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAttachStaticIp{})
 }
 
 func addOpCloseInstancePublicPortsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCloseInstancePublicPorts{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCloseInstancePublicPorts{})
 }
 
 func addOpCopySnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCopySnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCopySnapshot{})
 }
 
 func addOpCreateCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCertificate{})
 }
 
 func addOpCreateCloudFormationStackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCloudFormationStack{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCloudFormationStack{})
 }
 
 func addOpCreateContactMethodValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateContactMethod{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateContactMethod{})
 }
 
 func addOpCreateDiskFromSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDiskFromSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDiskFromSnapshot{})
 }
 
 func addOpCreateDiskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDisk{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDisk{})
 }
 
 func addOpCreateDiskSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDiskSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDiskSnapshot{})
 }
 
 func addOpCreateDistributionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDistribution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDistribution{})
 }
 
 func addOpCreateDomainEntryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDomainEntry{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDomainEntry{})
 }
 
 func addOpCreateDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDomain{})
 }
 
 func addOpCreateInstancesFromSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateInstancesFromSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateInstancesFromSnapshot{})
 }
 
 func addOpCreateInstancesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateInstances{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateInstances{})
 }
 
 func addOpCreateInstanceSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateInstanceSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateInstanceSnapshot{})
 }
 
 func addOpCreateKeyPairValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateKeyPair{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateKeyPair{})
 }
 
 func addOpCreateLoadBalancerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLoadBalancer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLoadBalancer{})
 }
 
 func addOpCreateLoadBalancerTlsCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLoadBalancerTlsCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLoadBalancerTlsCertificate{})
 }
 
 func addOpCreateRelationalDatabaseFromSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRelationalDatabaseFromSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRelationalDatabaseFromSnapshot{})
 }
 
 func addOpCreateRelationalDatabaseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRelationalDatabase{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRelationalDatabase{})
 }
 
 func addOpCreateRelationalDatabaseSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRelationalDatabaseSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRelationalDatabaseSnapshot{})
 }
 
 func addOpDeleteAlarmValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAlarm{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAlarm{})
 }
 
 func addOpDeleteAutoSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAutoSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAutoSnapshot{})
 }
 
 func addOpDeleteCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCertificate{})
 }
 
 func addOpDeleteContactMethodValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteContactMethod{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteContactMethod{})
 }
 
 func addOpDeleteDiskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDisk{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDisk{})
 }
 
 func addOpDeleteDiskSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDiskSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDiskSnapshot{})
 }
 
 func addOpDeleteDomainEntryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDomainEntry{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDomainEntry{})
 }
 
 func addOpDeleteDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDomain{})
 }
 
 func addOpDeleteInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteInstance{})
 }
 
 func addOpDeleteInstanceSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteInstanceSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteInstanceSnapshot{})
 }
 
 func addOpDeleteKeyPairValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteKeyPair{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteKeyPair{})
 }
 
 func addOpDeleteKnownHostKeysValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteKnownHostKeys{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteKnownHostKeys{})
 }
 
 func addOpDeleteLoadBalancerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLoadBalancer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLoadBalancer{})
 }
 
 func addOpDeleteLoadBalancerTlsCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLoadBalancerTlsCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLoadBalancerTlsCertificate{})
 }
 
 func addOpDeleteRelationalDatabaseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRelationalDatabase{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRelationalDatabase{})
 }
 
 func addOpDeleteRelationalDatabaseSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRelationalDatabaseSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRelationalDatabaseSnapshot{})
 }
 
 func addOpDetachCertificateFromDistributionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetachCertificateFromDistribution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetachCertificateFromDistribution{})
 }
 
 func addOpDetachDiskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetachDisk{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetachDisk{})
 }
 
 func addOpDetachInstancesFromLoadBalancerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetachInstancesFromLoadBalancer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetachInstancesFromLoadBalancer{})
 }
 
 func addOpDetachStaticIpValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetachStaticIp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetachStaticIp{})
 }
 
 func addOpDisableAddOnValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableAddOn{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableAddOn{})
 }
 
 func addOpEnableAddOnValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableAddOn{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableAddOn{})
 }
 
 func addOpExportSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpExportSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpExportSnapshot{})
 }
 
 func addOpGetAutoSnapshotsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAutoSnapshots{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAutoSnapshots{})
 }
 
 func addOpGetDiskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDisk{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDisk{})
 }
 
 func addOpGetDiskSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDiskSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDiskSnapshot{})
 }
 
 func addOpGetDistributionMetricDataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDistributionMetricData{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDistributionMetricData{})
 }
 
 func addOpGetDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDomain{})
 }
 
 func addOpGetInstanceAccessDetailsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetInstanceAccessDetails{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetInstanceAccessDetails{})
 }
 
 func addOpGetInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetInstance{})
 }
 
 func addOpGetInstanceMetricDataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetInstanceMetricData{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetInstanceMetricData{})
 }
 
 func addOpGetInstancePortStatesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetInstancePortStates{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetInstancePortStates{})
 }
 
 func addOpGetInstanceSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetInstanceSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetInstanceSnapshot{})
 }
 
 func addOpGetInstanceStateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetInstanceState{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetInstanceState{})
 }
 
 func addOpGetKeyPairValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetKeyPair{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetKeyPair{})
 }
 
 func addOpGetLoadBalancerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLoadBalancer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLoadBalancer{})
 }
 
 func addOpGetLoadBalancerMetricDataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLoadBalancerMetricData{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLoadBalancerMetricData{})
 }
 
 func addOpGetLoadBalancerTlsCertificatesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLoadBalancerTlsCertificates{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLoadBalancerTlsCertificates{})
 }
 
 func addOpGetOperationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetOperation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetOperation{})
 }
 
 func addOpGetOperationsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetOperationsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetOperationsForResource{})
 }
 
 func addOpGetRelationalDatabaseEventsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRelationalDatabaseEvents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRelationalDatabaseEvents{})
 }
 
 func addOpGetRelationalDatabaseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRelationalDatabase{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRelationalDatabase{})
 }
 
 func addOpGetRelationalDatabaseLogEventsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRelationalDatabaseLogEvents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRelationalDatabaseLogEvents{})
 }
 
 func addOpGetRelationalDatabaseLogStreamsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRelationalDatabaseLogStreams{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRelationalDatabaseLogStreams{})
 }
 
 func addOpGetRelationalDatabaseMasterUserPasswordValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRelationalDatabaseMasterUserPassword{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRelationalDatabaseMasterUserPassword{})
 }
 
 func addOpGetRelationalDatabaseMetricDataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRelationalDatabaseMetricData{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRelationalDatabaseMetricData{})
 }
 
 func addOpGetRelationalDatabaseParametersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRelationalDatabaseParameters{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRelationalDatabaseParameters{})
 }
 
 func addOpGetRelationalDatabaseSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRelationalDatabaseSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRelationalDatabaseSnapshot{})
 }
 
 func addOpGetStaticIpValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetStaticIp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetStaticIp{})
 }
 
 func addOpImportKeyPairValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpImportKeyPair{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpImportKeyPair{})
 }
 
 func addOpOpenInstancePublicPortsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpOpenInstancePublicPorts{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpOpenInstancePublicPorts{})
 }
 
 func addOpPutAlarmValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutAlarm{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutAlarm{})
 }
 
 func addOpPutInstancePublicPortsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutInstancePublicPorts{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutInstancePublicPorts{})
 }
 
 func addOpRebootInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRebootInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRebootInstance{})
 }
 
 func addOpRebootRelationalDatabaseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRebootRelationalDatabase{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRebootRelationalDatabase{})
 }
 
 func addOpReleaseStaticIpValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpReleaseStaticIp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpReleaseStaticIp{})
 }
 
 func addOpSendContactMethodVerificationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSendContactMethodVerification{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSendContactMethodVerification{})
 }
 
 func addOpStartInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartInstance{})
 }
 
 func addOpStartRelationalDatabaseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartRelationalDatabase{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartRelationalDatabase{})
 }
 
 func addOpStopInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopInstance{})
 }
 
 func addOpStopRelationalDatabaseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopRelationalDatabase{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopRelationalDatabase{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpTestAlarmValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTestAlarm{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTestAlarm{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateDistributionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDistribution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDistribution{})
 }
 
 func addOpUpdateDomainEntryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDomainEntry{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDomainEntry{})
 }
 
 func addOpUpdateLoadBalancerAttributeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateLoadBalancerAttribute{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateLoadBalancerAttribute{})
 }
 
 func addOpUpdateRelationalDatabaseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRelationalDatabase{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRelationalDatabase{})
 }
 
 func addOpUpdateRelationalDatabaseParametersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRelationalDatabaseParameters{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRelationalDatabaseParameters{})
 }
 
 func validateAddOnRequest(v *types.AddOnRequest) error {

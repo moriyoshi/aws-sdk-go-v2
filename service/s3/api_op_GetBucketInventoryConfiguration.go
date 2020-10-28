@@ -76,36 +76,70 @@ type GetBucketInventoryConfigurationOutput struct {
 }
 
 func addOperationGetBucketInventoryConfigurationMiddlewares(stack *middleware.Stack, options Options) (err error) {
-	err = stack.Serialize.Add(&awsRestxml_serializeOpGetBucketInventoryConfiguration{}, middleware.After)
+	err = stack.Serialize.Add(middleware.After, &awsRestxml_serializeOpGetBucketInventoryConfiguration{})
 	if err != nil {
 		return err
 	}
-	err = stack.Deserialize.Add(&awsRestxml_deserializeOpGetBucketInventoryConfiguration{}, middleware.After)
+	err = stack.Deserialize.Add(middleware.After, &awsRestxml_deserializeOpGetBucketInventoryConfiguration{})
 	if err != nil {
 		return err
 	}
-	awsmiddleware.AddRequestInvocationIDMiddleware(stack)
-	smithyhttp.AddContentLengthMiddleware(stack)
-	addResolveEndpointMiddleware(stack, options)
-	v4.AddComputePayloadSHA256Middleware(stack)
-	addRetryMiddlewares(stack, options)
-	addHTTPSignerV4Middleware(stack, options)
-	awsmiddleware.AddAttemptClockSkewMiddleware(stack)
-	addClientUserAgent(stack)
-	smithyhttp.AddErrorCloseResponseBodyMiddleware(stack)
-	smithyhttp.AddCloseResponseBodyMiddleware(stack)
-	addOpGetBucketInventoryConfigurationValidationMiddleware(stack)
-	stack.Initialize.Add(newServiceMetadataMiddleware_opGetBucketInventoryConfiguration(options.Region), middleware.Before)
-	addMetadataRetrieverMiddleware(stack)
-	addUpdateEndpointMiddleware(stack, options)
-	addResponseErrorMiddleware(stack)
-	v4.AddContentSHA256HeaderMiddleware(stack)
-	disableAcceptEncodingGzip(stack)
+	if err := awsmiddleware.AddClientRequestIDMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddComputeContentLengthMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addResolveEndpointMiddleware(stack, options); err != nil {
+		return err
+	}
+	if err := v4.AddComputePayloadSHA256Middleware(stack); err != nil {
+		return err
+	}
+	if err := addRetryMiddlewares(stack, options); err != nil {
+		return err
+	}
+	if err := addHTTPSignerV4Middleware(stack, options); err != nil {
+		return err
+	}
+	if err := awsmiddleware.AddAttemptClockSkewMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addClientUserAgent(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddErrorCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := smithyhttp.AddCloseResponseBodyMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addOpGetBucketInventoryConfigurationValidationMiddleware(stack); err != nil {
+		return err
+	}
+	if err := stack.Initialize.Add(middleware.Before, newServiceMetadataMiddleware_opGetBucketInventoryConfiguration(options.Region)); err != nil {
+		return err
+	}
+	if err := addMetadataRetrieverMiddleware(stack); err != nil {
+		return err
+	}
+	if err := addUpdateEndpointMiddleware(stack, options); err != nil {
+		return err
+	}
+	if err := addResponseErrorMiddleware(stack); err != nil {
+		return err
+	}
+	if err := v4.AddContentSHA256HeaderMiddleware(stack); err != nil {
+		return err
+	}
+	if err := disableAcceptEncodingGzip(stack); err != nil {
+		return err
+	}
 	return nil
 }
 
-func newServiceMetadataMiddleware_opGetBucketInventoryConfiguration(region string) awsmiddleware.RegisterServiceMetadata {
-	return awsmiddleware.RegisterServiceMetadata{
+func newServiceMetadataMiddleware_opGetBucketInventoryConfiguration(region string) *awsmiddleware.RegisterServiceMetadata {
+	return &awsmiddleware.RegisterServiceMetadata{
 		Region:        region,
 		ServiceID:     ServiceID,
 		SigningName:   "s3",

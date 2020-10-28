@@ -831,167 +831,167 @@ func (m *validateOpUpdateVirtualInterfaceAttributes) HandleInitialize(ctx contex
 }
 
 func addOpAcceptDirectConnectGatewayAssociationProposalValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAcceptDirectConnectGatewayAssociationProposal{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAcceptDirectConnectGatewayAssociationProposal{})
 }
 
 func addOpAllocateConnectionOnInterconnectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAllocateConnectionOnInterconnect{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAllocateConnectionOnInterconnect{})
 }
 
 func addOpAllocateHostedConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAllocateHostedConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAllocateHostedConnection{})
 }
 
 func addOpAllocatePrivateVirtualInterfaceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAllocatePrivateVirtualInterface{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAllocatePrivateVirtualInterface{})
 }
 
 func addOpAllocatePublicVirtualInterfaceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAllocatePublicVirtualInterface{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAllocatePublicVirtualInterface{})
 }
 
 func addOpAllocateTransitVirtualInterfaceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAllocateTransitVirtualInterface{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAllocateTransitVirtualInterface{})
 }
 
 func addOpAssociateConnectionWithLagValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateConnectionWithLag{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateConnectionWithLag{})
 }
 
 func addOpAssociateHostedConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateHostedConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateHostedConnection{})
 }
 
 func addOpAssociateVirtualInterfaceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateVirtualInterface{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateVirtualInterface{})
 }
 
 func addOpConfirmConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpConfirmConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpConfirmConnection{})
 }
 
 func addOpConfirmPrivateVirtualInterfaceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpConfirmPrivateVirtualInterface{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpConfirmPrivateVirtualInterface{})
 }
 
 func addOpConfirmPublicVirtualInterfaceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpConfirmPublicVirtualInterface{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpConfirmPublicVirtualInterface{})
 }
 
 func addOpConfirmTransitVirtualInterfaceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpConfirmTransitVirtualInterface{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpConfirmTransitVirtualInterface{})
 }
 
 func addOpCreateConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateConnection{})
 }
 
 func addOpCreateDirectConnectGatewayAssociationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDirectConnectGatewayAssociation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDirectConnectGatewayAssociation{})
 }
 
 func addOpCreateDirectConnectGatewayAssociationProposalValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDirectConnectGatewayAssociationProposal{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDirectConnectGatewayAssociationProposal{})
 }
 
 func addOpCreateDirectConnectGatewayValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDirectConnectGateway{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDirectConnectGateway{})
 }
 
 func addOpCreateInterconnectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateInterconnect{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateInterconnect{})
 }
 
 func addOpCreateLagValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLag{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLag{})
 }
 
 func addOpCreatePrivateVirtualInterfaceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePrivateVirtualInterface{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePrivateVirtualInterface{})
 }
 
 func addOpCreatePublicVirtualInterfaceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePublicVirtualInterface{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePublicVirtualInterface{})
 }
 
 func addOpCreateTransitVirtualInterfaceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTransitVirtualInterface{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTransitVirtualInterface{})
 }
 
 func addOpDeleteConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteConnection{})
 }
 
 func addOpDeleteDirectConnectGatewayAssociationProposalValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDirectConnectGatewayAssociationProposal{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDirectConnectGatewayAssociationProposal{})
 }
 
 func addOpDeleteDirectConnectGatewayValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDirectConnectGateway{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDirectConnectGateway{})
 }
 
 func addOpDeleteInterconnectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteInterconnect{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteInterconnect{})
 }
 
 func addOpDeleteLagValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLag{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLag{})
 }
 
 func addOpDeleteVirtualInterfaceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteVirtualInterface{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteVirtualInterface{})
 }
 
 func addOpDescribeConnectionLoaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeConnectionLoa{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeConnectionLoa{})
 }
 
 func addOpDescribeConnectionsOnInterconnectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeConnectionsOnInterconnect{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeConnectionsOnInterconnect{})
 }
 
 func addOpDescribeHostedConnectionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeHostedConnections{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeHostedConnections{})
 }
 
 func addOpDescribeInterconnectLoaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeInterconnectLoa{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeInterconnectLoa{})
 }
 
 func addOpDescribeLoaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeLoa{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeLoa{})
 }
 
 func addOpDescribeTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTags{})
 }
 
 func addOpDisassociateConnectionFromLagValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateConnectionFromLag{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateConnectionFromLag{})
 }
 
 func addOpStartBgpFailoverTestValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartBgpFailoverTest{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartBgpFailoverTest{})
 }
 
 func addOpStopBgpFailoverTestValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopBgpFailoverTest{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopBgpFailoverTest{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateLagValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateLag{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateLag{})
 }
 
 func addOpUpdateVirtualInterfaceAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateVirtualInterfaceAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateVirtualInterfaceAttributes{})
 }
 
 func validateNewPrivateVirtualInterface(v *types.NewPrivateVirtualInterface) error {

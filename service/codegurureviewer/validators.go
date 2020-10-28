@@ -211,43 +211,43 @@ func (m *validateOpPutRecommendationFeedback) HandleInitialize(ctx context.Conte
 }
 
 func addOpAssociateRepositoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateRepository{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateRepository{})
 }
 
 func addOpCreateCodeReviewValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCodeReview{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCodeReview{})
 }
 
 func addOpDescribeCodeReviewValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCodeReview{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCodeReview{})
 }
 
 func addOpDescribeRecommendationFeedbackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeRecommendationFeedback{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeRecommendationFeedback{})
 }
 
 func addOpDescribeRepositoryAssociationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeRepositoryAssociation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeRepositoryAssociation{})
 }
 
 func addOpDisassociateRepositoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateRepository{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateRepository{})
 }
 
 func addOpListCodeReviewsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListCodeReviews{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListCodeReviews{})
 }
 
 func addOpListRecommendationFeedbackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListRecommendationFeedback{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListRecommendationFeedback{})
 }
 
 func addOpListRecommendationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListRecommendations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListRecommendations{})
 }
 
 func addOpPutRecommendationFeedbackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutRecommendationFeedback{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutRecommendationFeedback{})
 }
 
 func validateCodeCommitRepository(v *types.CodeCommitRepository) error {

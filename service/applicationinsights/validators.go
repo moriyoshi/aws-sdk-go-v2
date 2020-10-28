@@ -491,99 +491,99 @@ func (m *validateOpUpdateLogPattern) HandleInitialize(ctx context.Context, in mi
 }
 
 func addOpCreateApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateApplication{})
 }
 
 func addOpCreateComponentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateComponent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateComponent{})
 }
 
 func addOpCreateLogPatternValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLogPattern{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLogPattern{})
 }
 
 func addOpDeleteApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApplication{})
 }
 
 func addOpDeleteComponentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteComponent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteComponent{})
 }
 
 func addOpDeleteLogPatternValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLogPattern{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLogPattern{})
 }
 
 func addOpDescribeApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeApplication{})
 }
 
 func addOpDescribeComponentConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeComponentConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeComponentConfiguration{})
 }
 
 func addOpDescribeComponentConfigurationRecommendationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeComponentConfigurationRecommendation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeComponentConfigurationRecommendation{})
 }
 
 func addOpDescribeComponentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeComponent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeComponent{})
 }
 
 func addOpDescribeLogPatternValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeLogPattern{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeLogPattern{})
 }
 
 func addOpDescribeObservationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeObservation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeObservation{})
 }
 
 func addOpDescribeProblemValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeProblem{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeProblem{})
 }
 
 func addOpDescribeProblemObservationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeProblemObservations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeProblemObservations{})
 }
 
 func addOpListComponentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListComponents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListComponents{})
 }
 
 func addOpListLogPatternSetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListLogPatternSets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListLogPatternSets{})
 }
 
 func addOpListLogPatternsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListLogPatterns{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListLogPatterns{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateApplication{})
 }
 
 func addOpUpdateComponentConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateComponentConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateComponentConfiguration{})
 }
 
 func addOpUpdateComponentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateComponent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateComponent{})
 }
 
 func addOpUpdateLogPatternValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateLogPattern{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateLogPattern{})
 }
 
 func validateTag(v *types.Tag) error {

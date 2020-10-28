@@ -791,159 +791,159 @@ func (m *validateOpUpdatePolicy) HandleInitialize(ctx context.Context, in middle
 }
 
 func addOpAcceptHandshakeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAcceptHandshake{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAcceptHandshake{})
 }
 
 func addOpAttachPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAttachPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAttachPolicy{})
 }
 
 func addOpCancelHandshakeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelHandshake{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelHandshake{})
 }
 
 func addOpCreateAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAccount{})
 }
 
 func addOpCreateGovCloudAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateGovCloudAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateGovCloudAccount{})
 }
 
 func addOpCreateOrganizationalUnitValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateOrganizationalUnit{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateOrganizationalUnit{})
 }
 
 func addOpCreatePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePolicy{})
 }
 
 func addOpDeclineHandshakeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeclineHandshake{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeclineHandshake{})
 }
 
 func addOpDeleteOrganizationalUnitValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteOrganizationalUnit{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteOrganizationalUnit{})
 }
 
 func addOpDeletePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePolicy{})
 }
 
 func addOpDeregisterDelegatedAdministratorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterDelegatedAdministrator{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterDelegatedAdministrator{})
 }
 
 func addOpDescribeAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAccount{})
 }
 
 func addOpDescribeCreateAccountStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCreateAccountStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCreateAccountStatus{})
 }
 
 func addOpDescribeEffectivePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEffectivePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEffectivePolicy{})
 }
 
 func addOpDescribeHandshakeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeHandshake{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeHandshake{})
 }
 
 func addOpDescribeOrganizationalUnitValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeOrganizationalUnit{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeOrganizationalUnit{})
 }
 
 func addOpDescribePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribePolicy{})
 }
 
 func addOpDetachPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetachPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetachPolicy{})
 }
 
 func addOpDisableAWSServiceAccessValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableAWSServiceAccess{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableAWSServiceAccess{})
 }
 
 func addOpDisablePolicyTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisablePolicyType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisablePolicyType{})
 }
 
 func addOpEnableAWSServiceAccessValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableAWSServiceAccess{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableAWSServiceAccess{})
 }
 
 func addOpEnablePolicyTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnablePolicyType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnablePolicyType{})
 }
 
 func addOpInviteAccountToOrganizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpInviteAccountToOrganization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpInviteAccountToOrganization{})
 }
 
 func addOpListAccountsForParentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAccountsForParent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAccountsForParent{})
 }
 
 func addOpListChildrenValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListChildren{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListChildren{})
 }
 
 func addOpListDelegatedServicesForAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDelegatedServicesForAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDelegatedServicesForAccount{})
 }
 
 func addOpListOrganizationalUnitsForParentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListOrganizationalUnitsForParent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListOrganizationalUnitsForParent{})
 }
 
 func addOpListParentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListParents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListParents{})
 }
 
 func addOpListPoliciesForTargetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPoliciesForTarget{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPoliciesForTarget{})
 }
 
 func addOpListPoliciesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPolicies{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPolicies{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListTargetsForPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTargetsForPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTargetsForPolicy{})
 }
 
 func addOpMoveAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpMoveAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpMoveAccount{})
 }
 
 func addOpRegisterDelegatedAdministratorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterDelegatedAdministrator{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterDelegatedAdministrator{})
 }
 
 func addOpRemoveAccountFromOrganizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveAccountFromOrganization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveAccountFromOrganization{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateOrganizationalUnitValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateOrganizationalUnit{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateOrganizationalUnit{})
 }
 
 func addOpUpdatePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePolicy{})
 }
 
 func validateHandshakeParty(v *types.HandshakeParty) error {

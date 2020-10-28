@@ -210,43 +210,43 @@ func (m *validateOpRequestServiceQuotaIncrease) HandleInitialize(ctx context.Con
 }
 
 func addOpDeleteServiceQuotaIncreaseRequestFromTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteServiceQuotaIncreaseRequestFromTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteServiceQuotaIncreaseRequestFromTemplate{})
 }
 
 func addOpGetAWSDefaultServiceQuotaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAWSDefaultServiceQuota{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAWSDefaultServiceQuota{})
 }
 
 func addOpGetRequestedServiceQuotaChangeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRequestedServiceQuotaChange{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRequestedServiceQuotaChange{})
 }
 
 func addOpGetServiceQuotaIncreaseRequestFromTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetServiceQuotaIncreaseRequestFromTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetServiceQuotaIncreaseRequestFromTemplate{})
 }
 
 func addOpGetServiceQuotaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetServiceQuota{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetServiceQuota{})
 }
 
 func addOpListAWSDefaultServiceQuotasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAWSDefaultServiceQuotas{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAWSDefaultServiceQuotas{})
 }
 
 func addOpListRequestedServiceQuotaChangeHistoryByQuotaValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListRequestedServiceQuotaChangeHistoryByQuota{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListRequestedServiceQuotaChangeHistoryByQuota{})
 }
 
 func addOpListServiceQuotasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListServiceQuotas{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListServiceQuotas{})
 }
 
 func addOpPutServiceQuotaIncreaseRequestIntoTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutServiceQuotaIncreaseRequestIntoTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutServiceQuotaIncreaseRequestIntoTemplate{})
 }
 
 func addOpRequestServiceQuotaIncreaseValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRequestServiceQuotaIncrease{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRequestServiceQuotaIncrease{})
 }
 
 func validateOpDeleteServiceQuotaIncreaseRequestFromTemplateInput(v *DeleteServiceQuotaIncreaseRequestFromTemplateInput) error {

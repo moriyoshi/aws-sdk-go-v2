@@ -631,127 +631,127 @@ func (m *validateOpUpdateWebhook) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpBatchDeleteBuildsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDeleteBuilds{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDeleteBuilds{})
 }
 
 func addOpBatchGetBuildBatchesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetBuildBatches{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetBuildBatches{})
 }
 
 func addOpBatchGetBuildsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetBuilds{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetBuilds{})
 }
 
 func addOpBatchGetProjectsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetProjects{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetProjects{})
 }
 
 func addOpBatchGetReportGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetReportGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetReportGroups{})
 }
 
 func addOpBatchGetReportsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchGetReports{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchGetReports{})
 }
 
 func addOpCreateProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateProject{})
 }
 
 func addOpCreateReportGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateReportGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateReportGroup{})
 }
 
 func addOpCreateWebhookValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateWebhook{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateWebhook{})
 }
 
 func addOpDeleteBuildBatchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBuildBatch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBuildBatch{})
 }
 
 func addOpDeleteProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteProject{})
 }
 
 func addOpDeleteReportGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteReportGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteReportGroup{})
 }
 
 func addOpDeleteReportValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteReport{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteReport{})
 }
 
 func addOpDeleteResourcePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteResourcePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteResourcePolicy{})
 }
 
 func addOpDeleteSourceCredentialsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSourceCredentials{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSourceCredentials{})
 }
 
 func addOpDeleteWebhookValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteWebhook{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteWebhook{})
 }
 
 func addOpDescribeCodeCoveragesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCodeCoverages{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCodeCoverages{})
 }
 
 func addOpDescribeTestCasesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTestCases{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTestCases{})
 }
 
 func addOpGetResourcePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetResourcePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetResourcePolicy{})
 }
 
 func addOpImportSourceCredentialsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpImportSourceCredentials{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpImportSourceCredentials{})
 }
 
 func addOpInvalidateProjectCacheValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpInvalidateProjectCache{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpInvalidateProjectCache{})
 }
 
 func addOpListBuildsForProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListBuildsForProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListBuildsForProject{})
 }
 
 func addOpListReportsForReportGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListReportsForReportGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListReportsForReportGroup{})
 }
 
 func addOpPutResourcePolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutResourcePolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutResourcePolicy{})
 }
 
 func addOpStartBuildBatchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartBuildBatch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartBuildBatch{})
 }
 
 func addOpStartBuildValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartBuild{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartBuild{})
 }
 
 func addOpStopBuildBatchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopBuildBatch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopBuildBatch{})
 }
 
 func addOpStopBuildValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopBuild{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopBuild{})
 }
 
 func addOpUpdateProjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateProject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateProject{})
 }
 
 func addOpUpdateReportGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateReportGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateReportGroup{})
 }
 
 func addOpUpdateWebhookValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateWebhook{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateWebhook{})
 }
 
 func validateCloudWatchLogsConfig(v *types.CloudWatchLogsConfig) error {

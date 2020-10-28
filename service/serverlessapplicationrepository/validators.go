@@ -271,55 +271,55 @@ func (m *validateOpUpdateApplication) HandleInitialize(ctx context.Context, in m
 }
 
 func addOpCreateApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateApplication{})
 }
 
 func addOpCreateApplicationVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateApplicationVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateApplicationVersion{})
 }
 
 func addOpCreateCloudFormationChangeSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCloudFormationChangeSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCloudFormationChangeSet{})
 }
 
 func addOpCreateCloudFormationTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCloudFormationTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCloudFormationTemplate{})
 }
 
 func addOpDeleteApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApplication{})
 }
 
 func addOpGetApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetApplication{})
 }
 
 func addOpGetApplicationPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetApplicationPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetApplicationPolicy{})
 }
 
 func addOpGetCloudFormationTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCloudFormationTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCloudFormationTemplate{})
 }
 
 func addOpListApplicationDependenciesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListApplicationDependencies{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListApplicationDependencies{})
 }
 
 func addOpListApplicationVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListApplicationVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListApplicationVersions{})
 }
 
 func addOpPutApplicationPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutApplicationPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutApplicationPolicy{})
 }
 
 func addOpUnshareApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUnshareApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUnshareApplication{})
 }
 
 func addOpUpdateApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateApplication{})
 }
 
 func validate__listOfApplicationPolicyStatement(v []*types.ApplicationPolicyStatement) error {

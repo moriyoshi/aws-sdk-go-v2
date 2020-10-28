@@ -50,11 +50,11 @@ func (m *validateOpQuery) HandleInitialize(ctx context.Context, in middleware.In
 }
 
 func addOpCancelQueryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelQuery{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelQuery{})
 }
 
 func addOpQueryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpQuery{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpQuery{})
 }
 
 func validateOpCancelQueryInput(v *CancelQueryInput) error {

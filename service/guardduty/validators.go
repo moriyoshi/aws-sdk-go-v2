@@ -1091,219 +1091,219 @@ func (m *validateOpUpdateThreatIntelSet) HandleInitialize(ctx context.Context, i
 }
 
 func addOpAcceptInvitationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAcceptInvitation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAcceptInvitation{})
 }
 
 func addOpArchiveFindingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpArchiveFindings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpArchiveFindings{})
 }
 
 func addOpCreateDetectorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDetector{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDetector{})
 }
 
 func addOpCreateFilterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateFilter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateFilter{})
 }
 
 func addOpCreateIPSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateIPSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateIPSet{})
 }
 
 func addOpCreateMembersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateMembers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateMembers{})
 }
 
 func addOpCreatePublishingDestinationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePublishingDestination{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePublishingDestination{})
 }
 
 func addOpCreateSampleFindingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSampleFindings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSampleFindings{})
 }
 
 func addOpCreateThreatIntelSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateThreatIntelSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateThreatIntelSet{})
 }
 
 func addOpDeclineInvitationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeclineInvitations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeclineInvitations{})
 }
 
 func addOpDeleteDetectorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDetector{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDetector{})
 }
 
 func addOpDeleteFilterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFilter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFilter{})
 }
 
 func addOpDeleteInvitationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteInvitations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteInvitations{})
 }
 
 func addOpDeleteIPSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteIPSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteIPSet{})
 }
 
 func addOpDeleteMembersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMembers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMembers{})
 }
 
 func addOpDeletePublishingDestinationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePublishingDestination{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePublishingDestination{})
 }
 
 func addOpDeleteThreatIntelSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteThreatIntelSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteThreatIntelSet{})
 }
 
 func addOpDescribeOrganizationConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeOrganizationConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeOrganizationConfiguration{})
 }
 
 func addOpDescribePublishingDestinationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribePublishingDestination{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribePublishingDestination{})
 }
 
 func addOpDisableOrganizationAdminAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableOrganizationAdminAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableOrganizationAdminAccount{})
 }
 
 func addOpDisassociateFromMasterAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateFromMasterAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateFromMasterAccount{})
 }
 
 func addOpDisassociateMembersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateMembers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateMembers{})
 }
 
 func addOpEnableOrganizationAdminAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableOrganizationAdminAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableOrganizationAdminAccount{})
 }
 
 func addOpGetDetectorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDetector{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDetector{})
 }
 
 func addOpGetFilterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFilter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFilter{})
 }
 
 func addOpGetFindingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFindings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFindings{})
 }
 
 func addOpGetFindingsStatisticsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetFindingsStatistics{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetFindingsStatistics{})
 }
 
 func addOpGetIPSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetIPSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetIPSet{})
 }
 
 func addOpGetMasterAccountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMasterAccount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMasterAccount{})
 }
 
 func addOpGetMemberDetectorsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMemberDetectors{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMemberDetectors{})
 }
 
 func addOpGetMembersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMembers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMembers{})
 }
 
 func addOpGetThreatIntelSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetThreatIntelSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetThreatIntelSet{})
 }
 
 func addOpGetUsageStatisticsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetUsageStatistics{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetUsageStatistics{})
 }
 
 func addOpInviteMembersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpInviteMembers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpInviteMembers{})
 }
 
 func addOpListFiltersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListFilters{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListFilters{})
 }
 
 func addOpListFindingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListFindings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListFindings{})
 }
 
 func addOpListIPSetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListIPSets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListIPSets{})
 }
 
 func addOpListMembersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListMembers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListMembers{})
 }
 
 func addOpListPublishingDestinationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPublishingDestinations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPublishingDestinations{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListThreatIntelSetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListThreatIntelSets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListThreatIntelSets{})
 }
 
 func addOpStartMonitoringMembersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartMonitoringMembers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartMonitoringMembers{})
 }
 
 func addOpStopMonitoringMembersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopMonitoringMembers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopMonitoringMembers{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUnarchiveFindingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUnarchiveFindings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUnarchiveFindings{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateDetectorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDetector{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDetector{})
 }
 
 func addOpUpdateFilterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFilter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFilter{})
 }
 
 func addOpUpdateFindingsFeedbackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateFindingsFeedback{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateFindingsFeedback{})
 }
 
 func addOpUpdateIPSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateIPSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateIPSet{})
 }
 
 func addOpUpdateMemberDetectorsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateMemberDetectors{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateMemberDetectors{})
 }
 
 func addOpUpdateOrganizationConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateOrganizationConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateOrganizationConfiguration{})
 }
 
 func addOpUpdatePublishingDestinationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePublishingDestination{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePublishingDestination{})
 }
 
 func addOpUpdateThreatIntelSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateThreatIntelSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateThreatIntelSet{})
 }
 
 func validateAccountDetail(v *types.AccountDetail) error {

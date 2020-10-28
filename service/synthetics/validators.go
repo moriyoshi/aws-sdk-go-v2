@@ -211,43 +211,43 @@ func (m *validateOpUpdateCanary) HandleInitialize(ctx context.Context, in middle
 }
 
 func addOpCreateCanaryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCanary{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCanary{})
 }
 
 func addOpDeleteCanaryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCanary{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCanary{})
 }
 
 func addOpGetCanaryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCanary{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCanary{})
 }
 
 func addOpGetCanaryRunsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCanaryRuns{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCanaryRuns{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpStartCanaryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartCanary{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartCanary{})
 }
 
 func addOpStopCanaryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopCanary{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopCanary{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateCanaryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateCanary{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateCanary{})
 }
 
 func validateCanaryCodeInput(v *types.CanaryCodeInput) error {

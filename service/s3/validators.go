@@ -1731,347 +1731,347 @@ func (m *validateOpUploadPart) HandleInitialize(ctx context.Context, in middlewa
 }
 
 func addOpAbortMultipartUploadValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAbortMultipartUpload{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAbortMultipartUpload{})
 }
 
 func addOpCompleteMultipartUploadValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCompleteMultipartUpload{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCompleteMultipartUpload{})
 }
 
 func addOpCopyObjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCopyObject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCopyObject{})
 }
 
 func addOpCreateBucketValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateBucket{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateBucket{})
 }
 
 func addOpCreateMultipartUploadValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateMultipartUpload{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateMultipartUpload{})
 }
 
 func addOpDeleteBucketAnalyticsConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBucketAnalyticsConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBucketAnalyticsConfiguration{})
 }
 
 func addOpDeleteBucketCorsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBucketCors{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBucketCors{})
 }
 
 func addOpDeleteBucketEncryptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBucketEncryption{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBucketEncryption{})
 }
 
 func addOpDeleteBucketValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBucket{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBucket{})
 }
 
 func addOpDeleteBucketInventoryConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBucketInventoryConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBucketInventoryConfiguration{})
 }
 
 func addOpDeleteBucketLifecycleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBucketLifecycle{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBucketLifecycle{})
 }
 
 func addOpDeleteBucketMetricsConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBucketMetricsConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBucketMetricsConfiguration{})
 }
 
 func addOpDeleteBucketOwnershipControlsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBucketOwnershipControls{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBucketOwnershipControls{})
 }
 
 func addOpDeleteBucketPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBucketPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBucketPolicy{})
 }
 
 func addOpDeleteBucketReplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBucketReplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBucketReplication{})
 }
 
 func addOpDeleteBucketTaggingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBucketTagging{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBucketTagging{})
 }
 
 func addOpDeleteBucketWebsiteValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBucketWebsite{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBucketWebsite{})
 }
 
 func addOpDeleteObjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteObject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteObject{})
 }
 
 func addOpDeleteObjectsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteObjects{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteObjects{})
 }
 
 func addOpDeleteObjectTaggingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteObjectTagging{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteObjectTagging{})
 }
 
 func addOpDeletePublicAccessBlockValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePublicAccessBlock{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePublicAccessBlock{})
 }
 
 func addOpGetBucketAccelerateConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBucketAccelerateConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBucketAccelerateConfiguration{})
 }
 
 func addOpGetBucketAclValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBucketAcl{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBucketAcl{})
 }
 
 func addOpGetBucketAnalyticsConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBucketAnalyticsConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBucketAnalyticsConfiguration{})
 }
 
 func addOpGetBucketCorsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBucketCors{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBucketCors{})
 }
 
 func addOpGetBucketEncryptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBucketEncryption{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBucketEncryption{})
 }
 
 func addOpGetBucketInventoryConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBucketInventoryConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBucketInventoryConfiguration{})
 }
 
 func addOpGetBucketLifecycleConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBucketLifecycleConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBucketLifecycleConfiguration{})
 }
 
 func addOpGetBucketLocationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBucketLocation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBucketLocation{})
 }
 
 func addOpGetBucketLoggingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBucketLogging{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBucketLogging{})
 }
 
 func addOpGetBucketMetricsConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBucketMetricsConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBucketMetricsConfiguration{})
 }
 
 func addOpGetBucketNotificationConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBucketNotificationConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBucketNotificationConfiguration{})
 }
 
 func addOpGetBucketOwnershipControlsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBucketOwnershipControls{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBucketOwnershipControls{})
 }
 
 func addOpGetBucketPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBucketPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBucketPolicy{})
 }
 
 func addOpGetBucketPolicyStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBucketPolicyStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBucketPolicyStatus{})
 }
 
 func addOpGetBucketReplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBucketReplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBucketReplication{})
 }
 
 func addOpGetBucketRequestPaymentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBucketRequestPayment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBucketRequestPayment{})
 }
 
 func addOpGetBucketTaggingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBucketTagging{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBucketTagging{})
 }
 
 func addOpGetBucketVersioningValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBucketVersioning{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBucketVersioning{})
 }
 
 func addOpGetBucketWebsiteValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBucketWebsite{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBucketWebsite{})
 }
 
 func addOpGetObjectAclValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetObjectAcl{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetObjectAcl{})
 }
 
 func addOpGetObjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetObject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetObject{})
 }
 
 func addOpGetObjectLegalHoldValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetObjectLegalHold{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetObjectLegalHold{})
 }
 
 func addOpGetObjectLockConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetObjectLockConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetObjectLockConfiguration{})
 }
 
 func addOpGetObjectRetentionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetObjectRetention{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetObjectRetention{})
 }
 
 func addOpGetObjectTaggingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetObjectTagging{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetObjectTagging{})
 }
 
 func addOpGetObjectTorrentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetObjectTorrent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetObjectTorrent{})
 }
 
 func addOpGetPublicAccessBlockValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPublicAccessBlock{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPublicAccessBlock{})
 }
 
 func addOpHeadBucketValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpHeadBucket{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpHeadBucket{})
 }
 
 func addOpHeadObjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpHeadObject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpHeadObject{})
 }
 
 func addOpListBucketAnalyticsConfigurationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListBucketAnalyticsConfigurations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListBucketAnalyticsConfigurations{})
 }
 
 func addOpListBucketInventoryConfigurationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListBucketInventoryConfigurations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListBucketInventoryConfigurations{})
 }
 
 func addOpListBucketMetricsConfigurationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListBucketMetricsConfigurations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListBucketMetricsConfigurations{})
 }
 
 func addOpListMultipartUploadsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListMultipartUploads{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListMultipartUploads{})
 }
 
 func addOpListObjectsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListObjects{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListObjects{})
 }
 
 func addOpListObjectsV2ValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListObjectsV2{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListObjectsV2{})
 }
 
 func addOpListObjectVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListObjectVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListObjectVersions{})
 }
 
 func addOpListPartsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListParts{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListParts{})
 }
 
 func addOpPutBucketAccelerateConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBucketAccelerateConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBucketAccelerateConfiguration{})
 }
 
 func addOpPutBucketAclValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBucketAcl{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBucketAcl{})
 }
 
 func addOpPutBucketAnalyticsConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBucketAnalyticsConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBucketAnalyticsConfiguration{})
 }
 
 func addOpPutBucketCorsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBucketCors{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBucketCors{})
 }
 
 func addOpPutBucketEncryptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBucketEncryption{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBucketEncryption{})
 }
 
 func addOpPutBucketInventoryConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBucketInventoryConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBucketInventoryConfiguration{})
 }
 
 func addOpPutBucketLifecycleConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBucketLifecycleConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBucketLifecycleConfiguration{})
 }
 
 func addOpPutBucketLoggingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBucketLogging{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBucketLogging{})
 }
 
 func addOpPutBucketMetricsConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBucketMetricsConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBucketMetricsConfiguration{})
 }
 
 func addOpPutBucketNotificationConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBucketNotificationConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBucketNotificationConfiguration{})
 }
 
 func addOpPutBucketOwnershipControlsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBucketOwnershipControls{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBucketOwnershipControls{})
 }
 
 func addOpPutBucketPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBucketPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBucketPolicy{})
 }
 
 func addOpPutBucketReplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBucketReplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBucketReplication{})
 }
 
 func addOpPutBucketRequestPaymentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBucketRequestPayment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBucketRequestPayment{})
 }
 
 func addOpPutBucketTaggingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBucketTagging{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBucketTagging{})
 }
 
 func addOpPutBucketVersioningValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBucketVersioning{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBucketVersioning{})
 }
 
 func addOpPutBucketWebsiteValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBucketWebsite{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBucketWebsite{})
 }
 
 func addOpPutObjectAclValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutObjectAcl{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutObjectAcl{})
 }
 
 func addOpPutObjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutObject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutObject{})
 }
 
 func addOpPutObjectLegalHoldValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutObjectLegalHold{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutObjectLegalHold{})
 }
 
 func addOpPutObjectLockConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutObjectLockConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutObjectLockConfiguration{})
 }
 
 func addOpPutObjectRetentionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutObjectRetention{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutObjectRetention{})
 }
 
 func addOpPutObjectTaggingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutObjectTagging{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutObjectTagging{})
 }
 
 func addOpPutPublicAccessBlockValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutPublicAccessBlock{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutPublicAccessBlock{})
 }
 
 func addOpRestoreObjectValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRestoreObject{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRestoreObject{})
 }
 
 func addOpSelectObjectContentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSelectObjectContent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSelectObjectContent{})
 }
 
 func addOpUploadPartCopyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUploadPartCopy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUploadPartCopy{})
 }
 
 func addOpUploadPartValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUploadPart{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUploadPart{})
 }
 
 func validateAccessControlPolicy(v *types.AccessControlPolicy) error {

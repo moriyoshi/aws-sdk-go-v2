@@ -1031,207 +1031,207 @@ func (m *validateOpVerifyTrust) HandleInitialize(ctx context.Context, in middlew
 }
 
 func addOpAcceptSharedDirectoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAcceptSharedDirectory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAcceptSharedDirectory{})
 }
 
 func addOpAddIpRoutesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddIpRoutes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddIpRoutes{})
 }
 
 func addOpAddTagsToResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddTagsToResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddTagsToResource{})
 }
 
 func addOpCancelSchemaExtensionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelSchemaExtension{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelSchemaExtension{})
 }
 
 func addOpConnectDirectoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpConnectDirectory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpConnectDirectory{})
 }
 
 func addOpCreateAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAlias{})
 }
 
 func addOpCreateComputerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateComputer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateComputer{})
 }
 
 func addOpCreateConditionalForwarderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateConditionalForwarder{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateConditionalForwarder{})
 }
 
 func addOpCreateDirectoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDirectory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDirectory{})
 }
 
 func addOpCreateLogSubscriptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateLogSubscription{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateLogSubscription{})
 }
 
 func addOpCreateMicrosoftADValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateMicrosoftAD{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateMicrosoftAD{})
 }
 
 func addOpCreateSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSnapshot{})
 }
 
 func addOpCreateTrustValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTrust{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTrust{})
 }
 
 func addOpDeleteConditionalForwarderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteConditionalForwarder{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteConditionalForwarder{})
 }
 
 func addOpDeleteDirectoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDirectory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDirectory{})
 }
 
 func addOpDeleteLogSubscriptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLogSubscription{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLogSubscription{})
 }
 
 func addOpDeleteSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSnapshot{})
 }
 
 func addOpDeleteTrustValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTrust{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTrust{})
 }
 
 func addOpDeregisterCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterCertificate{})
 }
 
 func addOpDeregisterEventTopicValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterEventTopic{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterEventTopic{})
 }
 
 func addOpDescribeCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCertificate{})
 }
 
 func addOpDescribeConditionalForwardersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeConditionalForwarders{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeConditionalForwarders{})
 }
 
 func addOpDescribeDomainControllersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDomainControllers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDomainControllers{})
 }
 
 func addOpDescribeLDAPSSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeLDAPSSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeLDAPSSettings{})
 }
 
 func addOpDescribeSharedDirectoriesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSharedDirectories{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSharedDirectories{})
 }
 
 func addOpDisableLDAPSValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableLDAPS{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableLDAPS{})
 }
 
 func addOpDisableRadiusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableRadius{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableRadius{})
 }
 
 func addOpDisableSsoValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableSso{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableSso{})
 }
 
 func addOpEnableLDAPSValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableLDAPS{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableLDAPS{})
 }
 
 func addOpEnableRadiusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableRadius{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableRadius{})
 }
 
 func addOpEnableSsoValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableSso{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableSso{})
 }
 
 func addOpGetSnapshotLimitsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSnapshotLimits{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSnapshotLimits{})
 }
 
 func addOpListCertificatesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListCertificates{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListCertificates{})
 }
 
 func addOpListIpRoutesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListIpRoutes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListIpRoutes{})
 }
 
 func addOpListSchemaExtensionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListSchemaExtensions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListSchemaExtensions{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpRegisterCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterCertificate{})
 }
 
 func addOpRegisterEventTopicValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterEventTopic{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterEventTopic{})
 }
 
 func addOpRejectSharedDirectoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRejectSharedDirectory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRejectSharedDirectory{})
 }
 
 func addOpRemoveIpRoutesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveIpRoutes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveIpRoutes{})
 }
 
 func addOpRemoveTagsFromResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveTagsFromResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveTagsFromResource{})
 }
 
 func addOpResetUserPasswordValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResetUserPassword{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResetUserPassword{})
 }
 
 func addOpRestoreFromSnapshotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRestoreFromSnapshot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRestoreFromSnapshot{})
 }
 
 func addOpShareDirectoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpShareDirectory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpShareDirectory{})
 }
 
 func addOpStartSchemaExtensionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartSchemaExtension{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartSchemaExtension{})
 }
 
 func addOpUnshareDirectoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUnshareDirectory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUnshareDirectory{})
 }
 
 func addOpUpdateConditionalForwarderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateConditionalForwarder{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateConditionalForwarder{})
 }
 
 func addOpUpdateNumberOfDomainControllersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateNumberOfDomainControllers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateNumberOfDomainControllers{})
 }
 
 func addOpUpdateRadiusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRadius{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRadius{})
 }
 
 func addOpUpdateTrustValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTrust{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTrust{})
 }
 
 func addOpVerifyTrustValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpVerifyTrust{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpVerifyTrust{})
 }
 
 func validateDirectoryConnectSettings(v *types.DirectoryConnectSettings) error {

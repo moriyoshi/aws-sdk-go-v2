@@ -311,63 +311,63 @@ func (m *validateOpUpdateTrail) HandleInitialize(ctx context.Context, in middlew
 }
 
 func addOpAddTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddTags{})
 }
 
 func addOpCreateTrailValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTrail{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTrail{})
 }
 
 func addOpDeleteTrailValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTrail{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTrail{})
 }
 
 func addOpGetEventSelectorsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetEventSelectors{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetEventSelectors{})
 }
 
 func addOpGetInsightSelectorsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetInsightSelectors{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetInsightSelectors{})
 }
 
 func addOpGetTrailValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTrail{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTrail{})
 }
 
 func addOpGetTrailStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTrailStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTrailStatus{})
 }
 
 func addOpListTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTags{})
 }
 
 func addOpLookupEventsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpLookupEvents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpLookupEvents{})
 }
 
 func addOpPutEventSelectorsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutEventSelectors{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutEventSelectors{})
 }
 
 func addOpPutInsightSelectorsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutInsightSelectors{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutInsightSelectors{})
 }
 
 func addOpRemoveTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveTags{})
 }
 
 func addOpStartLoggingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartLogging{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartLogging{})
 }
 
 func addOpStopLoggingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopLogging{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopLogging{})
 }
 
 func addOpUpdateTrailValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateTrail{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateTrail{})
 }
 
 func validateLookupAttribute(v *types.LookupAttribute) error {

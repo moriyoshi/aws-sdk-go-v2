@@ -311,63 +311,63 @@ func (m *validateOpUpdateJobQueue) HandleInitialize(ctx context.Context, in midd
 }
 
 func addOpCancelJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelJob{})
 }
 
 func addOpCreateComputeEnvironmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateComputeEnvironment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateComputeEnvironment{})
 }
 
 func addOpCreateJobQueueValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateJobQueue{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateJobQueue{})
 }
 
 func addOpDeleteComputeEnvironmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteComputeEnvironment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteComputeEnvironment{})
 }
 
 func addOpDeleteJobQueueValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteJobQueue{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteJobQueue{})
 }
 
 func addOpDeregisterJobDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterJobDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterJobDefinition{})
 }
 
 func addOpDescribeJobsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeJobs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeJobs{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpRegisterJobDefinitionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterJobDefinition{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterJobDefinition{})
 }
 
 func addOpSubmitJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSubmitJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSubmitJob{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpTerminateJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTerminateJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTerminateJob{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateComputeEnvironmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateComputeEnvironment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateComputeEnvironment{})
 }
 
 func addOpUpdateJobQueueValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateJobQueue{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateJobQueue{})
 }
 
 func validateComputeEnvironmentOrder(v *types.ComputeEnvironmentOrder) error {

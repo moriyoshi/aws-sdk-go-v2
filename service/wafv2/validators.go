@@ -791,159 +791,159 @@ func (m *validateOpUpdateWebACL) HandleInitialize(ctx context.Context, in middle
 }
 
 func addOpAssociateWebACLValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateWebACL{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateWebACL{})
 }
 
 func addOpCheckCapacityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCheckCapacity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCheckCapacity{})
 }
 
 func addOpCreateIPSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateIPSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateIPSet{})
 }
 
 func addOpCreateRegexPatternSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRegexPatternSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRegexPatternSet{})
 }
 
 func addOpCreateRuleGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRuleGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRuleGroup{})
 }
 
 func addOpCreateWebACLValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateWebACL{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateWebACL{})
 }
 
 func addOpDeleteFirewallManagerRuleGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteFirewallManagerRuleGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteFirewallManagerRuleGroups{})
 }
 
 func addOpDeleteIPSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteIPSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteIPSet{})
 }
 
 func addOpDeleteLoggingConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteLoggingConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteLoggingConfiguration{})
 }
 
 func addOpDeletePermissionPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePermissionPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePermissionPolicy{})
 }
 
 func addOpDeleteRegexPatternSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRegexPatternSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRegexPatternSet{})
 }
 
 func addOpDeleteRuleGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRuleGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRuleGroup{})
 }
 
 func addOpDeleteWebACLValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteWebACL{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteWebACL{})
 }
 
 func addOpDescribeManagedRuleGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeManagedRuleGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeManagedRuleGroup{})
 }
 
 func addOpDisassociateWebACLValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateWebACL{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateWebACL{})
 }
 
 func addOpGetIPSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetIPSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetIPSet{})
 }
 
 func addOpGetLoggingConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetLoggingConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetLoggingConfiguration{})
 }
 
 func addOpGetPermissionPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPermissionPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPermissionPolicy{})
 }
 
 func addOpGetRateBasedStatementManagedKeysValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRateBasedStatementManagedKeys{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRateBasedStatementManagedKeys{})
 }
 
 func addOpGetRegexPatternSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRegexPatternSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRegexPatternSet{})
 }
 
 func addOpGetRuleGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRuleGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRuleGroup{})
 }
 
 func addOpGetSampledRequestsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSampledRequests{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSampledRequests{})
 }
 
 func addOpGetWebACLForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetWebACLForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetWebACLForResource{})
 }
 
 func addOpGetWebACLValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetWebACL{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetWebACL{})
 }
 
 func addOpListAvailableManagedRuleGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAvailableManagedRuleGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAvailableManagedRuleGroups{})
 }
 
 func addOpListIPSetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListIPSets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListIPSets{})
 }
 
 func addOpListRegexPatternSetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListRegexPatternSets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListRegexPatternSets{})
 }
 
 func addOpListResourcesForWebACLValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListResourcesForWebACL{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListResourcesForWebACL{})
 }
 
 func addOpListRuleGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListRuleGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListRuleGroups{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListWebACLsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListWebACLs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListWebACLs{})
 }
 
 func addOpPutLoggingConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutLoggingConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutLoggingConfiguration{})
 }
 
 func addOpPutPermissionPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutPermissionPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutPermissionPolicy{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateIPSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateIPSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateIPSet{})
 }
 
 func addOpUpdateRegexPatternSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRegexPatternSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRegexPatternSet{})
 }
 
 func addOpUpdateRuleGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRuleGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRuleGroup{})
 }
 
 func addOpUpdateWebACLValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateWebACL{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateWebACL{})
 }
 
 func validateAndStatement(v *types.AndStatement) error {

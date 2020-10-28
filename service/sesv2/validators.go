@@ -1131,227 +1131,227 @@ func (m *validateOpUpdateEmailTemplate) HandleInitialize(ctx context.Context, in
 }
 
 func addOpCreateConfigurationSetEventDestinationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateConfigurationSetEventDestination{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateConfigurationSetEventDestination{})
 }
 
 func addOpCreateConfigurationSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateConfigurationSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateConfigurationSet{})
 }
 
 func addOpCreateCustomVerificationEmailTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCustomVerificationEmailTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCustomVerificationEmailTemplate{})
 }
 
 func addOpCreateDedicatedIpPoolValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDedicatedIpPool{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDedicatedIpPool{})
 }
 
 func addOpCreateDeliverabilityTestReportValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDeliverabilityTestReport{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDeliverabilityTestReport{})
 }
 
 func addOpCreateEmailIdentityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateEmailIdentity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateEmailIdentity{})
 }
 
 func addOpCreateEmailIdentityPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateEmailIdentityPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateEmailIdentityPolicy{})
 }
 
 func addOpCreateEmailTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateEmailTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateEmailTemplate{})
 }
 
 func addOpCreateImportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateImportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateImportJob{})
 }
 
 func addOpDeleteConfigurationSetEventDestinationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteConfigurationSetEventDestination{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteConfigurationSetEventDestination{})
 }
 
 func addOpDeleteConfigurationSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteConfigurationSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteConfigurationSet{})
 }
 
 func addOpDeleteCustomVerificationEmailTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCustomVerificationEmailTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCustomVerificationEmailTemplate{})
 }
 
 func addOpDeleteDedicatedIpPoolValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDedicatedIpPool{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDedicatedIpPool{})
 }
 
 func addOpDeleteEmailIdentityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEmailIdentity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEmailIdentity{})
 }
 
 func addOpDeleteEmailIdentityPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEmailIdentityPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEmailIdentityPolicy{})
 }
 
 func addOpDeleteEmailTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEmailTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEmailTemplate{})
 }
 
 func addOpDeleteSuppressedDestinationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSuppressedDestination{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSuppressedDestination{})
 }
 
 func addOpGetBlacklistReportsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBlacklistReports{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBlacklistReports{})
 }
 
 func addOpGetConfigurationSetEventDestinationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetConfigurationSetEventDestinations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetConfigurationSetEventDestinations{})
 }
 
 func addOpGetConfigurationSetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetConfigurationSet{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetConfigurationSet{})
 }
 
 func addOpGetCustomVerificationEmailTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCustomVerificationEmailTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCustomVerificationEmailTemplate{})
 }
 
 func addOpGetDedicatedIpValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDedicatedIp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDedicatedIp{})
 }
 
 func addOpGetDeliverabilityTestReportValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDeliverabilityTestReport{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDeliverabilityTestReport{})
 }
 
 func addOpGetDomainDeliverabilityCampaignValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDomainDeliverabilityCampaign{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDomainDeliverabilityCampaign{})
 }
 
 func addOpGetDomainStatisticsReportValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDomainStatisticsReport{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDomainStatisticsReport{})
 }
 
 func addOpGetEmailIdentityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetEmailIdentity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetEmailIdentity{})
 }
 
 func addOpGetEmailIdentityPoliciesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetEmailIdentityPolicies{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetEmailIdentityPolicies{})
 }
 
 func addOpGetEmailTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetEmailTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetEmailTemplate{})
 }
 
 func addOpGetImportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetImportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetImportJob{})
 }
 
 func addOpGetSuppressedDestinationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSuppressedDestination{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSuppressedDestination{})
 }
 
 func addOpListDomainDeliverabilityCampaignsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDomainDeliverabilityCampaigns{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDomainDeliverabilityCampaigns{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPutAccountDetailsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutAccountDetails{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutAccountDetails{})
 }
 
 func addOpPutConfigurationSetDeliveryOptionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutConfigurationSetDeliveryOptions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutConfigurationSetDeliveryOptions{})
 }
 
 func addOpPutConfigurationSetReputationOptionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutConfigurationSetReputationOptions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutConfigurationSetReputationOptions{})
 }
 
 func addOpPutConfigurationSetSendingOptionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutConfigurationSetSendingOptions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutConfigurationSetSendingOptions{})
 }
 
 func addOpPutConfigurationSetSuppressionOptionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutConfigurationSetSuppressionOptions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutConfigurationSetSuppressionOptions{})
 }
 
 func addOpPutConfigurationSetTrackingOptionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutConfigurationSetTrackingOptions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutConfigurationSetTrackingOptions{})
 }
 
 func addOpPutDedicatedIpInPoolValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutDedicatedIpInPool{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutDedicatedIpInPool{})
 }
 
 func addOpPutDedicatedIpWarmupAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutDedicatedIpWarmupAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutDedicatedIpWarmupAttributes{})
 }
 
 func addOpPutDeliverabilityDashboardOptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutDeliverabilityDashboardOption{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutDeliverabilityDashboardOption{})
 }
 
 func addOpPutEmailIdentityDkimAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutEmailIdentityDkimAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutEmailIdentityDkimAttributes{})
 }
 
 func addOpPutEmailIdentityDkimSigningAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutEmailIdentityDkimSigningAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutEmailIdentityDkimSigningAttributes{})
 }
 
 func addOpPutEmailIdentityFeedbackAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutEmailIdentityFeedbackAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutEmailIdentityFeedbackAttributes{})
 }
 
 func addOpPutEmailIdentityMailFromAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutEmailIdentityMailFromAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutEmailIdentityMailFromAttributes{})
 }
 
 func addOpPutSuppressedDestinationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutSuppressedDestination{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutSuppressedDestination{})
 }
 
 func addOpSendBulkEmailValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSendBulkEmail{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSendBulkEmail{})
 }
 
 func addOpSendCustomVerificationEmailValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSendCustomVerificationEmail{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSendCustomVerificationEmail{})
 }
 
 func addOpSendEmailValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSendEmail{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSendEmail{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpTestRenderEmailTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTestRenderEmailTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTestRenderEmailTemplate{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateConfigurationSetEventDestinationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateConfigurationSetEventDestination{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateConfigurationSetEventDestination{})
 }
 
 func addOpUpdateCustomVerificationEmailTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateCustomVerificationEmailTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateCustomVerificationEmailTemplate{})
 }
 
 func addOpUpdateEmailIdentityPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateEmailIdentityPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateEmailIdentityPolicy{})
 }
 
 func addOpUpdateEmailTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateEmailTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateEmailTemplate{})
 }
 
 func validateBody(v *types.Body) error {

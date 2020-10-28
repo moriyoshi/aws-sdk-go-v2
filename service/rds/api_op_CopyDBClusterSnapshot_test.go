@@ -82,12 +82,12 @@ func TestClientCopyDBClusterSnapshot_presignURLCustomization(t *testing.T) {
 			_, err := client.CopyDBClusterSnapshot(context.Background(), c.Input,
 				func(o *Options) {
 					o.APIOptions = append(o.APIOptions, func(stack *middleware.Stack) (err error) {
-						err = stack.Initialize.Remove("OperationInputValidation")
+						_, err = stack.Initialize.Remove("OperationInputValidation")
 						if err != nil {
 							return err
 						}
 
-						return stack.Serialize.Add(middleware.SerializeMiddlewareFunc(t.Name(),
+						return stack.Serialize.Add(middleware.After, middleware.SerializeMiddlewareFunc(t.Name(),
 							func(
 								ctx context.Context, in middleware.SerializeInput, next middleware.SerializeHandler,
 							) (
@@ -137,7 +137,7 @@ func TestClientCopyDBClusterSnapshot_presignURLCustomization(t *testing.T) {
 
 								return next.HandleSerialize(ctx, in)
 							},
-						), middleware.After)
+						))
 					})
 				},
 			)

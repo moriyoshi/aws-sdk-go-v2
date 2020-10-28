@@ -431,87 +431,87 @@ func (m *validateOpUpdateIdentityPool) HandleInitialize(ctx context.Context, in 
 }
 
 func addOpCreateIdentityPoolValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateIdentityPool{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateIdentityPool{})
 }
 
 func addOpDeleteIdentitiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteIdentities{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteIdentities{})
 }
 
 func addOpDeleteIdentityPoolValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteIdentityPool{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteIdentityPool{})
 }
 
 func addOpDescribeIdentityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeIdentity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeIdentity{})
 }
 
 func addOpDescribeIdentityPoolValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeIdentityPool{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeIdentityPool{})
 }
 
 func addOpGetCredentialsForIdentityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCredentialsForIdentity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCredentialsForIdentity{})
 }
 
 func addOpGetIdentityPoolRolesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetIdentityPoolRoles{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetIdentityPoolRoles{})
 }
 
 func addOpGetIdValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetId{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetId{})
 }
 
 func addOpGetOpenIdTokenForDeveloperIdentityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetOpenIdTokenForDeveloperIdentity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetOpenIdTokenForDeveloperIdentity{})
 }
 
 func addOpGetOpenIdTokenValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetOpenIdToken{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetOpenIdToken{})
 }
 
 func addOpListIdentitiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListIdentities{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListIdentities{})
 }
 
 func addOpListIdentityPoolsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListIdentityPools{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListIdentityPools{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpLookupDeveloperIdentityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpLookupDeveloperIdentity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpLookupDeveloperIdentity{})
 }
 
 func addOpMergeDeveloperIdentitiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpMergeDeveloperIdentities{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpMergeDeveloperIdentities{})
 }
 
 func addOpSetIdentityPoolRolesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetIdentityPoolRoles{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetIdentityPoolRoles{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUnlinkDeveloperIdentityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUnlinkDeveloperIdentity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUnlinkDeveloperIdentity{})
 }
 
 func addOpUnlinkIdentityValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUnlinkIdentity{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUnlinkIdentity{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateIdentityPoolValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateIdentityPool{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateIdentityPool{})
 }
 
 func validateMappingRule(v *types.MappingRule) error {

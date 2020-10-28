@@ -331,67 +331,67 @@ func (m *validateOpUpdateOriginEndpoint) HandleInitialize(ctx context.Context, i
 }
 
 func addOpConfigureLogsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpConfigureLogs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpConfigureLogs{})
 }
 
 func addOpCreateChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateChannel{})
 }
 
 func addOpCreateHarvestJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateHarvestJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateHarvestJob{})
 }
 
 func addOpCreateOriginEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateOriginEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateOriginEndpoint{})
 }
 
 func addOpDeleteChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteChannel{})
 }
 
 func addOpDeleteOriginEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteOriginEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteOriginEndpoint{})
 }
 
 func addOpDescribeChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeChannel{})
 }
 
 func addOpDescribeHarvestJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeHarvestJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeHarvestJob{})
 }
 
 func addOpDescribeOriginEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeOriginEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeOriginEndpoint{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpRotateChannelCredentialsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRotateChannelCredentials{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRotateChannelCredentials{})
 }
 
 func addOpRotateIngestEndpointCredentialsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRotateIngestEndpointCredentials{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRotateIngestEndpointCredentials{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateChannelValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateChannel{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateChannel{})
 }
 
 func addOpUpdateOriginEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateOriginEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateOriginEndpoint{})
 }
 
 func validate__listOfHlsManifestCreateOrUpdateParameters(v []*types.HlsManifestCreateOrUpdateParameters) error {

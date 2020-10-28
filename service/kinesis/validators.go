@@ -491,99 +491,99 @@ func (m *validateOpUpdateShardCount) HandleInitialize(ctx context.Context, in mi
 }
 
 func addOpAddTagsToStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddTagsToStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddTagsToStream{})
 }
 
 func addOpCreateStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateStream{})
 }
 
 func addOpDecreaseStreamRetentionPeriodValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDecreaseStreamRetentionPeriod{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDecreaseStreamRetentionPeriod{})
 }
 
 func addOpDeleteStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteStream{})
 }
 
 func addOpDescribeStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeStream{})
 }
 
 func addOpDescribeStreamSummaryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeStreamSummary{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeStreamSummary{})
 }
 
 func addOpDisableEnhancedMonitoringValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisableEnhancedMonitoring{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisableEnhancedMonitoring{})
 }
 
 func addOpEnableEnhancedMonitoringValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpEnableEnhancedMonitoring{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpEnableEnhancedMonitoring{})
 }
 
 func addOpGetRecordsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRecords{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRecords{})
 }
 
 func addOpGetShardIteratorValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetShardIterator{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetShardIterator{})
 }
 
 func addOpIncreaseStreamRetentionPeriodValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpIncreaseStreamRetentionPeriod{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpIncreaseStreamRetentionPeriod{})
 }
 
 func addOpListShardsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListShards{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListShards{})
 }
 
 func addOpListStreamConsumersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListStreamConsumers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListStreamConsumers{})
 }
 
 func addOpListTagsForStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForStream{})
 }
 
 func addOpMergeShardsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpMergeShards{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpMergeShards{})
 }
 
 func addOpPutRecordValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutRecord{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutRecord{})
 }
 
 func addOpPutRecordsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutRecords{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutRecords{})
 }
 
 func addOpRegisterStreamConsumerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterStreamConsumer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterStreamConsumer{})
 }
 
 func addOpRemoveTagsFromStreamValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveTagsFromStream{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveTagsFromStream{})
 }
 
 func addOpSplitShardValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSplitShard{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSplitShard{})
 }
 
 func addOpStartStreamEncryptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartStreamEncryption{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartStreamEncryption{})
 }
 
 func addOpStopStreamEncryptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopStreamEncryption{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopStreamEncryption{})
 }
 
 func addOpSubscribeToShardValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSubscribeToShard{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSubscribeToShard{})
 }
 
 func addOpUpdateShardCountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateShardCount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateShardCount{})
 }
 
 func validatePutRecordsRequestEntry(v *types.PutRecordsRequestEntry) error {

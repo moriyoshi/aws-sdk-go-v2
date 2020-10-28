@@ -1991,399 +1991,399 @@ func (m *validateOpVerifyUserAttribute) HandleInitialize(ctx context.Context, in
 }
 
 func addOpAddCustomAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddCustomAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddCustomAttributes{})
 }
 
 func addOpAdminAddUserToGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminAddUserToGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminAddUserToGroup{})
 }
 
 func addOpAdminConfirmSignUpValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminConfirmSignUp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminConfirmSignUp{})
 }
 
 func addOpAdminCreateUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminCreateUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminCreateUser{})
 }
 
 func addOpAdminDeleteUserAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminDeleteUserAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminDeleteUserAttributes{})
 }
 
 func addOpAdminDeleteUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminDeleteUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminDeleteUser{})
 }
 
 func addOpAdminDisableProviderForUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminDisableProviderForUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminDisableProviderForUser{})
 }
 
 func addOpAdminDisableUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminDisableUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminDisableUser{})
 }
 
 func addOpAdminEnableUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminEnableUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminEnableUser{})
 }
 
 func addOpAdminForgetDeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminForgetDevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminForgetDevice{})
 }
 
 func addOpAdminGetDeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminGetDevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminGetDevice{})
 }
 
 func addOpAdminGetUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminGetUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminGetUser{})
 }
 
 func addOpAdminInitiateAuthValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminInitiateAuth{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminInitiateAuth{})
 }
 
 func addOpAdminLinkProviderForUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminLinkProviderForUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminLinkProviderForUser{})
 }
 
 func addOpAdminListDevicesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminListDevices{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminListDevices{})
 }
 
 func addOpAdminListGroupsForUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminListGroupsForUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminListGroupsForUser{})
 }
 
 func addOpAdminListUserAuthEventsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminListUserAuthEvents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminListUserAuthEvents{})
 }
 
 func addOpAdminRemoveUserFromGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminRemoveUserFromGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminRemoveUserFromGroup{})
 }
 
 func addOpAdminResetUserPasswordValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminResetUserPassword{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminResetUserPassword{})
 }
 
 func addOpAdminRespondToAuthChallengeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminRespondToAuthChallenge{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminRespondToAuthChallenge{})
 }
 
 func addOpAdminSetUserMFAPreferenceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminSetUserMFAPreference{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminSetUserMFAPreference{})
 }
 
 func addOpAdminSetUserPasswordValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminSetUserPassword{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminSetUserPassword{})
 }
 
 func addOpAdminSetUserSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminSetUserSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminSetUserSettings{})
 }
 
 func addOpAdminUpdateAuthEventFeedbackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminUpdateAuthEventFeedback{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminUpdateAuthEventFeedback{})
 }
 
 func addOpAdminUpdateDeviceStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminUpdateDeviceStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminUpdateDeviceStatus{})
 }
 
 func addOpAdminUpdateUserAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminUpdateUserAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminUpdateUserAttributes{})
 }
 
 func addOpAdminUserGlobalSignOutValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAdminUserGlobalSignOut{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAdminUserGlobalSignOut{})
 }
 
 func addOpChangePasswordValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpChangePassword{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpChangePassword{})
 }
 
 func addOpConfirmDeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpConfirmDevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpConfirmDevice{})
 }
 
 func addOpConfirmForgotPasswordValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpConfirmForgotPassword{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpConfirmForgotPassword{})
 }
 
 func addOpConfirmSignUpValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpConfirmSignUp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpConfirmSignUp{})
 }
 
 func addOpCreateGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateGroup{})
 }
 
 func addOpCreateIdentityProviderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateIdentityProvider{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateIdentityProvider{})
 }
 
 func addOpCreateResourceServerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateResourceServer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateResourceServer{})
 }
 
 func addOpCreateUserImportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateUserImportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateUserImportJob{})
 }
 
 func addOpCreateUserPoolClientValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateUserPoolClient{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateUserPoolClient{})
 }
 
 func addOpCreateUserPoolDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateUserPoolDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateUserPoolDomain{})
 }
 
 func addOpCreateUserPoolValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateUserPool{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateUserPool{})
 }
 
 func addOpDeleteGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteGroup{})
 }
 
 func addOpDeleteIdentityProviderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteIdentityProvider{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteIdentityProvider{})
 }
 
 func addOpDeleteResourceServerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteResourceServer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteResourceServer{})
 }
 
 func addOpDeleteUserAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUserAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUserAttributes{})
 }
 
 func addOpDeleteUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUser{})
 }
 
 func addOpDeleteUserPoolClientValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUserPoolClient{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUserPoolClient{})
 }
 
 func addOpDeleteUserPoolDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUserPoolDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUserPoolDomain{})
 }
 
 func addOpDeleteUserPoolValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUserPool{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUserPool{})
 }
 
 func addOpDescribeIdentityProviderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeIdentityProvider{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeIdentityProvider{})
 }
 
 func addOpDescribeResourceServerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeResourceServer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeResourceServer{})
 }
 
 func addOpDescribeRiskConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeRiskConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeRiskConfiguration{})
 }
 
 func addOpDescribeUserImportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeUserImportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeUserImportJob{})
 }
 
 func addOpDescribeUserPoolClientValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeUserPoolClient{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeUserPoolClient{})
 }
 
 func addOpDescribeUserPoolDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeUserPoolDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeUserPoolDomain{})
 }
 
 func addOpDescribeUserPoolValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeUserPool{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeUserPool{})
 }
 
 func addOpForgetDeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpForgetDevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpForgetDevice{})
 }
 
 func addOpForgotPasswordValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpForgotPassword{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpForgotPassword{})
 }
 
 func addOpGetCSVHeaderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCSVHeader{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCSVHeader{})
 }
 
 func addOpGetDeviceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDevice{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDevice{})
 }
 
 func addOpGetGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetGroup{})
 }
 
 func addOpGetIdentityProviderByIdentifierValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetIdentityProviderByIdentifier{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetIdentityProviderByIdentifier{})
 }
 
 func addOpGetSigningCertificateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSigningCertificate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSigningCertificate{})
 }
 
 func addOpGetUICustomizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetUICustomization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetUICustomization{})
 }
 
 func addOpGetUserAttributeVerificationCodeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetUserAttributeVerificationCode{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetUserAttributeVerificationCode{})
 }
 
 func addOpGetUserValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetUser{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetUser{})
 }
 
 func addOpGetUserPoolMfaConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetUserPoolMfaConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetUserPoolMfaConfig{})
 }
 
 func addOpGlobalSignOutValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGlobalSignOut{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGlobalSignOut{})
 }
 
 func addOpInitiateAuthValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpInitiateAuth{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpInitiateAuth{})
 }
 
 func addOpListDevicesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDevices{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDevices{})
 }
 
 func addOpListGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListGroups{})
 }
 
 func addOpListIdentityProvidersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListIdentityProviders{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListIdentityProviders{})
 }
 
 func addOpListResourceServersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListResourceServers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListResourceServers{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListUserImportJobsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListUserImportJobs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListUserImportJobs{})
 }
 
 func addOpListUserPoolClientsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListUserPoolClients{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListUserPoolClients{})
 }
 
 func addOpListUserPoolsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListUserPools{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListUserPools{})
 }
 
 func addOpListUsersInGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListUsersInGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListUsersInGroup{})
 }
 
 func addOpListUsersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListUsers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListUsers{})
 }
 
 func addOpResendConfirmationCodeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResendConfirmationCode{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResendConfirmationCode{})
 }
 
 func addOpRespondToAuthChallengeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRespondToAuthChallenge{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRespondToAuthChallenge{})
 }
 
 func addOpSetRiskConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetRiskConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetRiskConfiguration{})
 }
 
 func addOpSetUICustomizationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetUICustomization{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetUICustomization{})
 }
 
 func addOpSetUserMFAPreferenceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetUserMFAPreference{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetUserMFAPreference{})
 }
 
 func addOpSetUserPoolMfaConfigValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetUserPoolMfaConfig{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetUserPoolMfaConfig{})
 }
 
 func addOpSetUserSettingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetUserSettings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetUserSettings{})
 }
 
 func addOpSignUpValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSignUp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSignUp{})
 }
 
 func addOpStartUserImportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartUserImportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartUserImportJob{})
 }
 
 func addOpStopUserImportJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopUserImportJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopUserImportJob{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateAuthEventFeedbackValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAuthEventFeedback{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAuthEventFeedback{})
 }
 
 func addOpUpdateDeviceStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDeviceStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDeviceStatus{})
 }
 
 func addOpUpdateGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateGroup{})
 }
 
 func addOpUpdateIdentityProviderValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateIdentityProvider{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateIdentityProvider{})
 }
 
 func addOpUpdateResourceServerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateResourceServer{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateResourceServer{})
 }
 
 func addOpUpdateUserAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateUserAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateUserAttributes{})
 }
 
 func addOpUpdateUserPoolClientValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateUserPoolClient{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateUserPoolClient{})
 }
 
 func addOpUpdateUserPoolDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateUserPoolDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateUserPoolDomain{})
 }
 
 func addOpUpdateUserPoolValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateUserPool{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateUserPool{})
 }
 
 func addOpVerifySoftwareTokenValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpVerifySoftwareToken{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpVerifySoftwareToken{})
 }
 
 func addOpVerifyUserAttributeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpVerifyUserAttribute{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpVerifyUserAttribute{})
 }
 
 func validateAccountRecoverySettingType(v *types.AccountRecoverySettingType) error {

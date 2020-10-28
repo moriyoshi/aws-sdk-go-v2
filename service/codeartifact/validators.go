@@ -591,119 +591,119 @@ func (m *validateOpUpdateRepository) HandleInitialize(ctx context.Context, in mi
 }
 
 func addOpAssociateExternalConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateExternalConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateExternalConnection{})
 }
 
 func addOpCopyPackageVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCopyPackageVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCopyPackageVersions{})
 }
 
 func addOpCreateDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDomain{})
 }
 
 func addOpCreateRepositoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateRepository{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateRepository{})
 }
 
 func addOpDeleteDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDomain{})
 }
 
 func addOpDeleteDomainPermissionsPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDomainPermissionsPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDomainPermissionsPolicy{})
 }
 
 func addOpDeletePackageVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePackageVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePackageVersions{})
 }
 
 func addOpDeleteRepositoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRepository{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRepository{})
 }
 
 func addOpDeleteRepositoryPermissionsPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteRepositoryPermissionsPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteRepositoryPermissionsPolicy{})
 }
 
 func addOpDescribeDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDomain{})
 }
 
 func addOpDescribePackageVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribePackageVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribePackageVersion{})
 }
 
 func addOpDescribeRepositoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeRepository{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeRepository{})
 }
 
 func addOpDisassociateExternalConnectionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateExternalConnection{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateExternalConnection{})
 }
 
 func addOpDisposePackageVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisposePackageVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisposePackageVersions{})
 }
 
 func addOpGetAuthorizationTokenValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAuthorizationToken{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAuthorizationToken{})
 }
 
 func addOpGetDomainPermissionsPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDomainPermissionsPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDomainPermissionsPolicy{})
 }
 
 func addOpGetPackageVersionAssetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPackageVersionAsset{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPackageVersionAsset{})
 }
 
 func addOpGetPackageVersionReadmeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPackageVersionReadme{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPackageVersionReadme{})
 }
 
 func addOpGetRepositoryEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRepositoryEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRepositoryEndpoint{})
 }
 
 func addOpGetRepositoryPermissionsPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetRepositoryPermissionsPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetRepositoryPermissionsPolicy{})
 }
 
 func addOpListPackagesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPackages{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPackages{})
 }
 
 func addOpListPackageVersionAssetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPackageVersionAssets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPackageVersionAssets{})
 }
 
 func addOpListPackageVersionDependenciesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPackageVersionDependencies{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPackageVersionDependencies{})
 }
 
 func addOpListPackageVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListPackageVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListPackageVersions{})
 }
 
 func addOpListRepositoriesInDomainValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListRepositoriesInDomain{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListRepositoriesInDomain{})
 }
 
 func addOpPutDomainPermissionsPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutDomainPermissionsPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutDomainPermissionsPolicy{})
 }
 
 func addOpPutRepositoryPermissionsPolicyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutRepositoryPermissionsPolicy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutRepositoryPermissionsPolicy{})
 }
 
 func addOpUpdatePackageVersionsStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePackageVersionsStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePackageVersionsStatus{})
 }
 
 func addOpUpdateRepositoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateRepository{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateRepository{})
 }
 
 func validateUpstreamRepository(v *types.UpstreamRepository) error {

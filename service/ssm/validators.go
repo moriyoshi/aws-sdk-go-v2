@@ -2151,431 +2151,431 @@ func (m *validateOpUpdateServiceSetting) HandleInitialize(ctx context.Context, i
 }
 
 func addOpAddTagsToResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddTagsToResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddTagsToResource{})
 }
 
 func addOpCancelCommandValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelCommand{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelCommand{})
 }
 
 func addOpCancelMaintenanceWindowExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCancelMaintenanceWindowExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCancelMaintenanceWindowExecution{})
 }
 
 func addOpCreateActivationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateActivation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateActivation{})
 }
 
 func addOpCreateAssociationBatchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAssociationBatch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAssociationBatch{})
 }
 
 func addOpCreateAssociationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAssociation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAssociation{})
 }
 
 func addOpCreateDocumentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDocument{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDocument{})
 }
 
 func addOpCreateMaintenanceWindowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateMaintenanceWindow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateMaintenanceWindow{})
 }
 
 func addOpCreateOpsItemValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateOpsItem{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateOpsItem{})
 }
 
 func addOpCreatePatchBaselineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePatchBaseline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePatchBaseline{})
 }
 
 func addOpCreateResourceDataSyncValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateResourceDataSync{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateResourceDataSync{})
 }
 
 func addOpDeleteActivationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteActivation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteActivation{})
 }
 
 func addOpDeleteDocumentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDocument{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDocument{})
 }
 
 func addOpDeleteInventoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteInventory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteInventory{})
 }
 
 func addOpDeleteMaintenanceWindowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteMaintenanceWindow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteMaintenanceWindow{})
 }
 
 func addOpDeleteParameterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteParameter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteParameter{})
 }
 
 func addOpDeleteParametersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteParameters{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteParameters{})
 }
 
 func addOpDeletePatchBaselineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePatchBaseline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePatchBaseline{})
 }
 
 func addOpDeleteResourceDataSyncValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteResourceDataSync{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteResourceDataSync{})
 }
 
 func addOpDeregisterManagedInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterManagedInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterManagedInstance{})
 }
 
 func addOpDeregisterPatchBaselineForPatchGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterPatchBaselineForPatchGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterPatchBaselineForPatchGroup{})
 }
 
 func addOpDeregisterTargetFromMaintenanceWindowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterTargetFromMaintenanceWindow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterTargetFromMaintenanceWindow{})
 }
 
 func addOpDeregisterTaskFromMaintenanceWindowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeregisterTaskFromMaintenanceWindow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeregisterTaskFromMaintenanceWindow{})
 }
 
 func addOpDescribeAssociationExecutionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAssociationExecutions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAssociationExecutions{})
 }
 
 func addOpDescribeAssociationExecutionTargetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAssociationExecutionTargets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAssociationExecutionTargets{})
 }
 
 func addOpDescribeAutomationExecutionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAutomationExecutions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAutomationExecutions{})
 }
 
 func addOpDescribeAutomationStepExecutionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAutomationStepExecutions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAutomationStepExecutions{})
 }
 
 func addOpDescribeDocumentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDocument{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDocument{})
 }
 
 func addOpDescribeDocumentPermissionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeDocumentPermission{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeDocumentPermission{})
 }
 
 func addOpDescribeEffectiveInstanceAssociationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEffectiveInstanceAssociations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEffectiveInstanceAssociations{})
 }
 
 func addOpDescribeEffectivePatchesForPatchBaselineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEffectivePatchesForPatchBaseline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEffectivePatchesForPatchBaseline{})
 }
 
 func addOpDescribeInstanceAssociationsStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeInstanceAssociationsStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeInstanceAssociationsStatus{})
 }
 
 func addOpDescribeInstanceInformationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeInstanceInformation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeInstanceInformation{})
 }
 
 func addOpDescribeInstancePatchesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeInstancePatches{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeInstancePatches{})
 }
 
 func addOpDescribeInstancePatchStatesForPatchGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeInstancePatchStatesForPatchGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeInstancePatchStatesForPatchGroup{})
 }
 
 func addOpDescribeInstancePatchStatesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeInstancePatchStates{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeInstancePatchStates{})
 }
 
 func addOpDescribeMaintenanceWindowExecutionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeMaintenanceWindowExecutions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeMaintenanceWindowExecutions{})
 }
 
 func addOpDescribeMaintenanceWindowExecutionTaskInvocationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeMaintenanceWindowExecutionTaskInvocations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeMaintenanceWindowExecutionTaskInvocations{})
 }
 
 func addOpDescribeMaintenanceWindowExecutionTasksValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeMaintenanceWindowExecutionTasks{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeMaintenanceWindowExecutionTasks{})
 }
 
 func addOpDescribeMaintenanceWindowsForTargetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeMaintenanceWindowsForTarget{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeMaintenanceWindowsForTarget{})
 }
 
 func addOpDescribeMaintenanceWindowTargetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeMaintenanceWindowTargets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeMaintenanceWindowTargets{})
 }
 
 func addOpDescribeMaintenanceWindowTasksValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeMaintenanceWindowTasks{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeMaintenanceWindowTasks{})
 }
 
 func addOpDescribeOpsItemsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeOpsItems{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeOpsItems{})
 }
 
 func addOpDescribeParametersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeParameters{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeParameters{})
 }
 
 func addOpDescribePatchGroupStateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribePatchGroupState{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribePatchGroupState{})
 }
 
 func addOpDescribePatchPropertiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribePatchProperties{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribePatchProperties{})
 }
 
 func addOpDescribeSessionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeSessions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeSessions{})
 }
 
 func addOpGetAutomationExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAutomationExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAutomationExecution{})
 }
 
 func addOpGetCalendarStateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCalendarState{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCalendarState{})
 }
 
 func addOpGetCommandInvocationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetCommandInvocation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetCommandInvocation{})
 }
 
 func addOpGetConnectionStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetConnectionStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetConnectionStatus{})
 }
 
 func addOpGetDeployablePatchSnapshotForInstanceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDeployablePatchSnapshotForInstance{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDeployablePatchSnapshotForInstance{})
 }
 
 func addOpGetDocumentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDocument{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDocument{})
 }
 
 func addOpGetInventoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetInventory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetInventory{})
 }
 
 func addOpGetMaintenanceWindowExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMaintenanceWindowExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMaintenanceWindowExecution{})
 }
 
 func addOpGetMaintenanceWindowExecutionTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMaintenanceWindowExecutionTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMaintenanceWindowExecutionTask{})
 }
 
 func addOpGetMaintenanceWindowExecutionTaskInvocationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMaintenanceWindowExecutionTaskInvocation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMaintenanceWindowExecutionTaskInvocation{})
 }
 
 func addOpGetMaintenanceWindowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMaintenanceWindow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMaintenanceWindow{})
 }
 
 func addOpGetMaintenanceWindowTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetMaintenanceWindowTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetMaintenanceWindowTask{})
 }
 
 func addOpGetOpsItemValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetOpsItem{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetOpsItem{})
 }
 
 func addOpGetOpsSummaryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetOpsSummary{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetOpsSummary{})
 }
 
 func addOpGetParameterHistoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetParameterHistory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetParameterHistory{})
 }
 
 func addOpGetParameterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetParameter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetParameter{})
 }
 
 func addOpGetParametersByPathValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetParametersByPath{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetParametersByPath{})
 }
 
 func addOpGetParametersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetParameters{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetParameters{})
 }
 
 func addOpGetPatchBaselineForPatchGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPatchBaselineForPatchGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPatchBaselineForPatchGroup{})
 }
 
 func addOpGetPatchBaselineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPatchBaseline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPatchBaseline{})
 }
 
 func addOpGetServiceSettingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetServiceSetting{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetServiceSetting{})
 }
 
 func addOpLabelParameterVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpLabelParameterVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpLabelParameterVersion{})
 }
 
 func addOpListAssociationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAssociations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAssociations{})
 }
 
 func addOpListAssociationVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAssociationVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAssociationVersions{})
 }
 
 func addOpListCommandInvocationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListCommandInvocations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListCommandInvocations{})
 }
 
 func addOpListCommandsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListCommands{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListCommands{})
 }
 
 func addOpListDocumentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDocuments{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDocuments{})
 }
 
 func addOpListDocumentVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDocumentVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDocumentVersions{})
 }
 
 func addOpListInventoryEntriesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListInventoryEntries{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListInventoryEntries{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpModifyDocumentPermissionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpModifyDocumentPermission{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpModifyDocumentPermission{})
 }
 
 func addOpPutComplianceItemsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutComplianceItems{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutComplianceItems{})
 }
 
 func addOpPutInventoryValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutInventory{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutInventory{})
 }
 
 func addOpPutParameterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutParameter{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutParameter{})
 }
 
 func addOpRegisterDefaultPatchBaselineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterDefaultPatchBaseline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterDefaultPatchBaseline{})
 }
 
 func addOpRegisterPatchBaselineForPatchGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterPatchBaselineForPatchGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterPatchBaselineForPatchGroup{})
 }
 
 func addOpRegisterTargetWithMaintenanceWindowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterTargetWithMaintenanceWindow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterTargetWithMaintenanceWindow{})
 }
 
 func addOpRegisterTaskWithMaintenanceWindowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterTaskWithMaintenanceWindow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterTaskWithMaintenanceWindow{})
 }
 
 func addOpRemoveTagsFromResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveTagsFromResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveTagsFromResource{})
 }
 
 func addOpResetServiceSettingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResetServiceSetting{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResetServiceSetting{})
 }
 
 func addOpResumeSessionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpResumeSession{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpResumeSession{})
 }
 
 func addOpSendAutomationSignalValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSendAutomationSignal{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSendAutomationSignal{})
 }
 
 func addOpSendCommandValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSendCommand{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSendCommand{})
 }
 
 func addOpStartAssociationsOnceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartAssociationsOnce{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartAssociationsOnce{})
 }
 
 func addOpStartAutomationExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartAutomationExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartAutomationExecution{})
 }
 
 func addOpStartSessionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartSession{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartSession{})
 }
 
 func addOpStopAutomationExecutionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopAutomationExecution{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopAutomationExecution{})
 }
 
 func addOpTerminateSessionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTerminateSession{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTerminateSession{})
 }
 
 func addOpUpdateAssociationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAssociation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAssociation{})
 }
 
 func addOpUpdateAssociationStatusValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAssociationStatus{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAssociationStatus{})
 }
 
 func addOpUpdateDocumentDefaultVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDocumentDefaultVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDocumentDefaultVersion{})
 }
 
 func addOpUpdateDocumentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDocument{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDocument{})
 }
 
 func addOpUpdateMaintenanceWindowValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateMaintenanceWindow{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateMaintenanceWindow{})
 }
 
 func addOpUpdateMaintenanceWindowTargetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateMaintenanceWindowTarget{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateMaintenanceWindowTarget{})
 }
 
 func addOpUpdateMaintenanceWindowTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateMaintenanceWindowTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateMaintenanceWindowTask{})
 }
 
 func addOpUpdateManagedInstanceRoleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateManagedInstanceRole{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateManagedInstanceRole{})
 }
 
 func addOpUpdateOpsItemValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateOpsItem{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateOpsItem{})
 }
 
 func addOpUpdatePatchBaselineValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdatePatchBaseline{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdatePatchBaseline{})
 }
 
 func addOpUpdateResourceDataSyncValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateResourceDataSync{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateResourceDataSync{})
 }
 
 func addOpUpdateServiceSettingValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateServiceSetting{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateServiceSetting{})
 }
 
 func validateAssociationExecutionFilter(v *types.AssociationExecutionFilter) error {

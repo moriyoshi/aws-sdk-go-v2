@@ -731,147 +731,147 @@ func (m *validateOpUpdateWebhook) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpCreateAppValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateApp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateApp{})
 }
 
 func addOpCreateBackendEnvironmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateBackendEnvironment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateBackendEnvironment{})
 }
 
 func addOpCreateBranchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateBranch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateBranch{})
 }
 
 func addOpCreateDeploymentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDeployment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDeployment{})
 }
 
 func addOpCreateDomainAssociationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDomainAssociation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDomainAssociation{})
 }
 
 func addOpCreateWebhookValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateWebhook{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateWebhook{})
 }
 
 func addOpDeleteAppValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApp{})
 }
 
 func addOpDeleteBackendEnvironmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBackendEnvironment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBackendEnvironment{})
 }
 
 func addOpDeleteBranchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBranch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBranch{})
 }
 
 func addOpDeleteDomainAssociationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDomainAssociation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDomainAssociation{})
 }
 
 func addOpDeleteJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteJob{})
 }
 
 func addOpDeleteWebhookValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteWebhook{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteWebhook{})
 }
 
 func addOpGenerateAccessLogsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGenerateAccessLogs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGenerateAccessLogs{})
 }
 
 func addOpGetAppValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetApp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetApp{})
 }
 
 func addOpGetArtifactUrlValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetArtifactUrl{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetArtifactUrl{})
 }
 
 func addOpGetBackendEnvironmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBackendEnvironment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBackendEnvironment{})
 }
 
 func addOpGetBranchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBranch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBranch{})
 }
 
 func addOpGetDomainAssociationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDomainAssociation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDomainAssociation{})
 }
 
 func addOpGetJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetJob{})
 }
 
 func addOpGetWebhookValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetWebhook{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetWebhook{})
 }
 
 func addOpListArtifactsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListArtifacts{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListArtifacts{})
 }
 
 func addOpListBackendEnvironmentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListBackendEnvironments{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListBackendEnvironments{})
 }
 
 func addOpListBranchesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListBranches{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListBranches{})
 }
 
 func addOpListDomainAssociationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDomainAssociations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDomainAssociations{})
 }
 
 func addOpListJobsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListJobs{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListJobs{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpListWebhooksValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListWebhooks{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListWebhooks{})
 }
 
 func addOpStartDeploymentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartDeployment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartDeployment{})
 }
 
 func addOpStartJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartJob{})
 }
 
 func addOpStopJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopJob{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateAppValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateApp{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateApp{})
 }
 
 func addOpUpdateBranchValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateBranch{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateBranch{})
 }
 
 func addOpUpdateDomainAssociationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDomainAssociation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDomainAssociation{})
 }
 
 func addOpUpdateWebhookValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateWebhook{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateWebhook{})
 }
 
 func validateCustomRule(v *types.CustomRule) error {

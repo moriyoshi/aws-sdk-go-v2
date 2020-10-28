@@ -571,115 +571,115 @@ func (m *validateOpUntagResource) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpAddPermissionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddPermission{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddPermission{})
 }
 
 func addOpCheckIfPhoneNumberIsOptedOutValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCheckIfPhoneNumberIsOptedOut{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCheckIfPhoneNumberIsOptedOut{})
 }
 
 func addOpConfirmSubscriptionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpConfirmSubscription{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpConfirmSubscription{})
 }
 
 func addOpCreatePlatformApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePlatformApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePlatformApplication{})
 }
 
 func addOpCreatePlatformEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreatePlatformEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreatePlatformEndpoint{})
 }
 
 func addOpCreateTopicValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTopic{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTopic{})
 }
 
 func addOpDeleteEndpointValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEndpoint{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEndpoint{})
 }
 
 func addOpDeletePlatformApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeletePlatformApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeletePlatformApplication{})
 }
 
 func addOpDeleteTopicValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTopic{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTopic{})
 }
 
 func addOpGetEndpointAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetEndpointAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetEndpointAttributes{})
 }
 
 func addOpGetPlatformApplicationAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetPlatformApplicationAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetPlatformApplicationAttributes{})
 }
 
 func addOpGetSubscriptionAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSubscriptionAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSubscriptionAttributes{})
 }
 
 func addOpGetTopicAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTopicAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTopicAttributes{})
 }
 
 func addOpListEndpointsByPlatformApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListEndpointsByPlatformApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListEndpointsByPlatformApplication{})
 }
 
 func addOpListSubscriptionsByTopicValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListSubscriptionsByTopic{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListSubscriptionsByTopic{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpOptInPhoneNumberValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpOptInPhoneNumber{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpOptInPhoneNumber{})
 }
 
 func addOpPublishValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPublish{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPublish{})
 }
 
 func addOpRemovePermissionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemovePermission{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemovePermission{})
 }
 
 func addOpSetEndpointAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetEndpointAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetEndpointAttributes{})
 }
 
 func addOpSetPlatformApplicationAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetPlatformApplicationAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetPlatformApplicationAttributes{})
 }
 
 func addOpSetSMSAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetSMSAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetSMSAttributes{})
 }
 
 func addOpSetSubscriptionAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetSubscriptionAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetSubscriptionAttributes{})
 }
 
 func addOpSetTopicAttributesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetTopicAttributes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetTopicAttributes{})
 }
 
 func addOpSubscribeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSubscribe{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSubscribe{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUnsubscribeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUnsubscribe{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUnsubscribe{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func validateMessageAttributeMap(v map[string]*types.MessageAttributeValue) error {

@@ -631,127 +631,127 @@ func (m *validateOpValidateConfiguration) HandleInitialize(ctx context.Context, 
 }
 
 func addOpCreateApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateApplication{})
 }
 
 func addOpCreateConfigurationProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateConfigurationProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateConfigurationProfile{})
 }
 
 func addOpCreateDeploymentStrategyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateDeploymentStrategy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateDeploymentStrategy{})
 }
 
 func addOpCreateEnvironmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateEnvironment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateEnvironment{})
 }
 
 func addOpCreateHostedConfigurationVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateHostedConfigurationVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateHostedConfigurationVersion{})
 }
 
 func addOpDeleteApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApplication{})
 }
 
 func addOpDeleteConfigurationProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteConfigurationProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteConfigurationProfile{})
 }
 
 func addOpDeleteDeploymentStrategyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteDeploymentStrategy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteDeploymentStrategy{})
 }
 
 func addOpDeleteEnvironmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteEnvironment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteEnvironment{})
 }
 
 func addOpDeleteHostedConfigurationVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteHostedConfigurationVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteHostedConfigurationVersion{})
 }
 
 func addOpGetApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetApplication{})
 }
 
 func addOpGetConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetConfiguration{})
 }
 
 func addOpGetConfigurationProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetConfigurationProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetConfigurationProfile{})
 }
 
 func addOpGetDeploymentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDeployment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDeployment{})
 }
 
 func addOpGetDeploymentStrategyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetDeploymentStrategy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetDeploymentStrategy{})
 }
 
 func addOpGetEnvironmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetEnvironment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetEnvironment{})
 }
 
 func addOpGetHostedConfigurationVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetHostedConfigurationVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetHostedConfigurationVersion{})
 }
 
 func addOpListConfigurationProfilesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListConfigurationProfiles{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListConfigurationProfiles{})
 }
 
 func addOpListDeploymentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListDeployments{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListDeployments{})
 }
 
 func addOpListEnvironmentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListEnvironments{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListEnvironments{})
 }
 
 func addOpListHostedConfigurationVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListHostedConfigurationVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListHostedConfigurationVersions{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpStartDeploymentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartDeployment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartDeployment{})
 }
 
 func addOpStopDeploymentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopDeployment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopDeployment{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateApplication{})
 }
 
 func addOpUpdateConfigurationProfileValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateConfigurationProfile{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateConfigurationProfile{})
 }
 
 func addOpUpdateDeploymentStrategyValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateDeploymentStrategy{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateDeploymentStrategy{})
 }
 
 func addOpUpdateEnvironmentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateEnvironment{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateEnvironment{})
 }
 
 func addOpValidateConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpValidateConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpValidateConfiguration{})
 }
 
 func validateValidator(v *types.Validator) error {

@@ -631,127 +631,127 @@ func (m *validateOpUpdateAssessmentTarget) HandleInitialize(ctx context.Context,
 }
 
 func addOpAddAttributesToFindingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAddAttributesToFindings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAddAttributesToFindings{})
 }
 
 func addOpCreateAssessmentTargetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAssessmentTarget{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAssessmentTarget{})
 }
 
 func addOpCreateAssessmentTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateAssessmentTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateAssessmentTemplate{})
 }
 
 func addOpCreateExclusionsPreviewValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateExclusionsPreview{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateExclusionsPreview{})
 }
 
 func addOpCreateResourceGroupValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateResourceGroup{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateResourceGroup{})
 }
 
 func addOpDeleteAssessmentRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAssessmentRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAssessmentRun{})
 }
 
 func addOpDeleteAssessmentTargetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAssessmentTarget{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAssessmentTarget{})
 }
 
 func addOpDeleteAssessmentTemplateValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteAssessmentTemplate{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteAssessmentTemplate{})
 }
 
 func addOpDescribeAssessmentRunsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAssessmentRuns{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAssessmentRuns{})
 }
 
 func addOpDescribeAssessmentTargetsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAssessmentTargets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAssessmentTargets{})
 }
 
 func addOpDescribeAssessmentTemplatesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAssessmentTemplates{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAssessmentTemplates{})
 }
 
 func addOpDescribeExclusionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeExclusions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeExclusions{})
 }
 
 func addOpDescribeFindingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeFindings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeFindings{})
 }
 
 func addOpDescribeResourceGroupsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeResourceGroups{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeResourceGroups{})
 }
 
 func addOpDescribeRulesPackagesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeRulesPackages{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeRulesPackages{})
 }
 
 func addOpGetAssessmentReportValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetAssessmentReport{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetAssessmentReport{})
 }
 
 func addOpGetExclusionsPreviewValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetExclusionsPreview{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetExclusionsPreview{})
 }
 
 func addOpGetTelemetryMetadataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetTelemetryMetadata{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetTelemetryMetadata{})
 }
 
 func addOpListAssessmentRunAgentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListAssessmentRunAgents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListAssessmentRunAgents{})
 }
 
 func addOpListExclusionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListExclusions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListExclusions{})
 }
 
 func addOpListFindingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListFindings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListFindings{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPreviewAgentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPreviewAgents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPreviewAgents{})
 }
 
 func addOpRegisterCrossAccountAccessRoleValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRegisterCrossAccountAccessRole{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRegisterCrossAccountAccessRole{})
 }
 
 func addOpRemoveAttributesFromFindingsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRemoveAttributesFromFindings{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRemoveAttributesFromFindings{})
 }
 
 func addOpSetTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSetTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSetTagsForResource{})
 }
 
 func addOpStartAssessmentRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartAssessmentRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartAssessmentRun{})
 }
 
 func addOpStopAssessmentRunValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopAssessmentRun{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopAssessmentRun{})
 }
 
 func addOpSubscribeToEventValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpSubscribeToEvent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpSubscribeToEvent{})
 }
 
 func addOpUnsubscribeFromEventValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUnsubscribeFromEvent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUnsubscribeFromEvent{})
 }
 
 func addOpUpdateAssessmentTargetValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateAssessmentTarget{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateAssessmentTarget{})
 }
 
 func validateAgentFilter(v *types.AgentFilter) error {

@@ -511,103 +511,103 @@ func (m *validateOpUpdateMonitoring) HandleInitialize(ctx context.Context, in mi
 }
 
 func addOpBatchAssociateScramSecretValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchAssociateScramSecret{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchAssociateScramSecret{})
 }
 
 func addOpBatchDisassociateScramSecretValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDisassociateScramSecret{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDisassociateScramSecret{})
 }
 
 func addOpCreateClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateCluster{})
 }
 
 func addOpCreateConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateConfiguration{})
 }
 
 func addOpDeleteClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteCluster{})
 }
 
 func addOpDeleteConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteConfiguration{})
 }
 
 func addOpDescribeClusterValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeCluster{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeCluster{})
 }
 
 func addOpDescribeClusterOperationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeClusterOperation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeClusterOperation{})
 }
 
 func addOpDescribeConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeConfiguration{})
 }
 
 func addOpDescribeConfigurationRevisionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeConfigurationRevision{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeConfigurationRevision{})
 }
 
 func addOpGetBootstrapBrokersValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBootstrapBrokers{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBootstrapBrokers{})
 }
 
 func addOpListClusterOperationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListClusterOperations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListClusterOperations{})
 }
 
 func addOpListConfigurationRevisionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListConfigurationRevisions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListConfigurationRevisions{})
 }
 
 func addOpListNodesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListNodes{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListNodes{})
 }
 
 func addOpListScramSecretsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListScramSecrets{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListScramSecrets{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpRebootBrokerValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpRebootBroker{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpRebootBroker{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func addOpUpdateBrokerCountValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateBrokerCount{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateBrokerCount{})
 }
 
 func addOpUpdateBrokerStorageValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateBrokerStorage{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateBrokerStorage{})
 }
 
 func addOpUpdateClusterConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateClusterConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateClusterConfiguration{})
 }
 
 func addOpUpdateClusterKafkaVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateClusterKafkaVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateClusterKafkaVersion{})
 }
 
 func addOpUpdateConfigurationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateConfiguration{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateConfiguration{})
 }
 
 func addOpUpdateMonitoringValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateMonitoring{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateMonitoring{})
 }
 
 func validate__listOfBrokerEBSVolumeInfo(v []*types.BrokerEBSVolumeInfo) error {

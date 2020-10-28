@@ -391,79 +391,79 @@ func (m *validateOpUpdateApplication) HandleInitialize(ctx context.Context, in m
 }
 
 func addOpAssociateConfigurationItemsToApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpAssociateConfigurationItemsToApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpAssociateConfigurationItemsToApplication{})
 }
 
 func addOpBatchDeleteImportDataValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpBatchDeleteImportData{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpBatchDeleteImportData{})
 }
 
 func addOpCreateApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateApplication{})
 }
 
 func addOpCreateTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateTags{})
 }
 
 func addOpDeleteApplicationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteApplications{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteApplications{})
 }
 
 func addOpDeleteTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteTags{})
 }
 
 func addOpDescribeAgentsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeAgents{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeAgents{})
 }
 
 func addOpDescribeConfigurationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeConfigurations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeConfigurations{})
 }
 
 func addOpDescribeExportTasksValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeExportTasks{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeExportTasks{})
 }
 
 func addOpDescribeTagsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeTags{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeTags{})
 }
 
 func addOpDisassociateConfigurationItemsFromApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDisassociateConfigurationItemsFromApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDisassociateConfigurationItemsFromApplication{})
 }
 
 func addOpListConfigurationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListConfigurations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListConfigurations{})
 }
 
 func addOpListServerNeighborsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListServerNeighbors{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListServerNeighbors{})
 }
 
 func addOpStartDataCollectionByAgentIdsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartDataCollectionByAgentIds{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartDataCollectionByAgentIds{})
 }
 
 func addOpStartExportTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartExportTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartExportTask{})
 }
 
 func addOpStartImportTaskValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartImportTask{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartImportTask{})
 }
 
 func addOpStopContinuousExportValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopContinuousExport{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopContinuousExport{})
 }
 
 func addOpStopDataCollectionByAgentIdsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopDataCollectionByAgentIds{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopDataCollectionByAgentIds{})
 }
 
 func addOpUpdateApplicationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUpdateApplication{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUpdateApplication{})
 }
 
 func validateExportFilter(v *types.ExportFilter) error {

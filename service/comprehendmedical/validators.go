@@ -351,71 +351,71 @@ func (m *validateOpStopRxNormInferenceJob) HandleInitialize(ctx context.Context,
 }
 
 func addOpDescribeEntitiesDetectionV2JobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeEntitiesDetectionV2Job{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeEntitiesDetectionV2Job{})
 }
 
 func addOpDescribeICD10CMInferenceJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeICD10CMInferenceJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeICD10CMInferenceJob{})
 }
 
 func addOpDescribePHIDetectionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribePHIDetectionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribePHIDetectionJob{})
 }
 
 func addOpDescribeRxNormInferenceJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDescribeRxNormInferenceJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDescribeRxNormInferenceJob{})
 }
 
 func addOpDetectEntitiesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetectEntities{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetectEntities{})
 }
 
 func addOpDetectEntitiesV2ValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetectEntitiesV2{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetectEntitiesV2{})
 }
 
 func addOpDetectPHIValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDetectPHI{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDetectPHI{})
 }
 
 func addOpInferICD10CMValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpInferICD10CM{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpInferICD10CM{})
 }
 
 func addOpInferRxNormValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpInferRxNorm{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpInferRxNorm{})
 }
 
 func addOpStartEntitiesDetectionV2JobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartEntitiesDetectionV2Job{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartEntitiesDetectionV2Job{})
 }
 
 func addOpStartICD10CMInferenceJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartICD10CMInferenceJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartICD10CMInferenceJob{})
 }
 
 func addOpStartPHIDetectionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartPHIDetectionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartPHIDetectionJob{})
 }
 
 func addOpStartRxNormInferenceJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartRxNormInferenceJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartRxNormInferenceJob{})
 }
 
 func addOpStopEntitiesDetectionV2JobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopEntitiesDetectionV2Job{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopEntitiesDetectionV2Job{})
 }
 
 func addOpStopICD10CMInferenceJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopICD10CMInferenceJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopICD10CMInferenceJob{})
 }
 
 func addOpStopPHIDetectionJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopPHIDetectionJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopPHIDetectionJob{})
 }
 
 func addOpStopRxNormInferenceJobValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStopRxNormInferenceJob{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStopRxNormInferenceJob{})
 }
 
 func validateInputDataConfig(v *types.InputDataConfig) error {

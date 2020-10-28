@@ -691,139 +691,139 @@ func (m *validateOpUntagResource) HandleInitialize(ctx context.Context, in middl
 }
 
 func addOpCreateBotVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateBotVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateBotVersion{})
 }
 
 func addOpCreateIntentVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateIntentVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateIntentVersion{})
 }
 
 func addOpCreateSlotTypeVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpCreateSlotTypeVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpCreateSlotTypeVersion{})
 }
 
 func addOpDeleteBotAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBotAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBotAlias{})
 }
 
 func addOpDeleteBotChannelAssociationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBotChannelAssociation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBotChannelAssociation{})
 }
 
 func addOpDeleteBotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBot{})
 }
 
 func addOpDeleteBotVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteBotVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteBotVersion{})
 }
 
 func addOpDeleteIntentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteIntent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteIntent{})
 }
 
 func addOpDeleteIntentVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteIntentVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteIntentVersion{})
 }
 
 func addOpDeleteSlotTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSlotType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSlotType{})
 }
 
 func addOpDeleteSlotTypeVersionValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteSlotTypeVersion{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteSlotTypeVersion{})
 }
 
 func addOpDeleteUtterancesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpDeleteUtterances{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpDeleteUtterances{})
 }
 
 func addOpGetBotAliasesValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBotAliases{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBotAliases{})
 }
 
 func addOpGetBotAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBotAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBotAlias{})
 }
 
 func addOpGetBotChannelAssociationValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBotChannelAssociation{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBotChannelAssociation{})
 }
 
 func addOpGetBotChannelAssociationsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBotChannelAssociations{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBotChannelAssociations{})
 }
 
 func addOpGetBotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBot{})
 }
 
 func addOpGetBotVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBotVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBotVersions{})
 }
 
 func addOpGetBuiltinIntentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetBuiltinIntent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetBuiltinIntent{})
 }
 
 func addOpGetExportValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetExport{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetExport{})
 }
 
 func addOpGetImportValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetImport{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetImport{})
 }
 
 func addOpGetIntentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetIntent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetIntent{})
 }
 
 func addOpGetIntentVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetIntentVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetIntentVersions{})
 }
 
 func addOpGetSlotTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSlotType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSlotType{})
 }
 
 func addOpGetSlotTypeVersionsValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetSlotTypeVersions{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetSlotTypeVersions{})
 }
 
 func addOpGetUtterancesViewValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpGetUtterancesView{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpGetUtterancesView{})
 }
 
 func addOpListTagsForResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpListTagsForResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpListTagsForResource{})
 }
 
 func addOpPutBotAliasValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBotAlias{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBotAlias{})
 }
 
 func addOpPutBotValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutBot{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutBot{})
 }
 
 func addOpPutIntentValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutIntent{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutIntent{})
 }
 
 func addOpPutSlotTypeValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpPutSlotType{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpPutSlotType{})
 }
 
 func addOpStartImportValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpStartImport{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpStartImport{})
 }
 
 func addOpTagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpTagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpTagResource{})
 }
 
 func addOpUntagResourceValidationMiddleware(stack *middleware.Stack) error {
-	return stack.Initialize.Add(&validateOpUntagResource{}, middleware.After)
+	return stack.Initialize.Add(middleware.After, &validateOpUntagResource{})
 }
 
 func validateCodeHook(v *types.CodeHook) error {
