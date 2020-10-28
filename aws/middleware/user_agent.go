@@ -64,7 +64,7 @@ func getOrAddRequestUserAgent(stack *middleware.Stack) (*requestUserAgent, error
 	bm, ok := stack.Build.Get(id)
 	if !ok {
 		bm = newRequestUserAgent()
-		err := stack.Build.Add(bm, middleware.After)
+		err := stack.Build.Add(middleware.After, bm)
 		if err != nil {
 			return nil, err
 		}
@@ -90,7 +90,7 @@ func (u *requestUserAgent) AddKeyValue(key, value string) {
 
 // ID the name of the middleware.
 func (u *requestUserAgent) ID() string {
-	return "requestUserAgent"
+	return "UserAgent"
 }
 
 // HandleBuild adds or appends the constructed user agent to the request.

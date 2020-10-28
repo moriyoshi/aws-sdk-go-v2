@@ -4,16 +4,15 @@ import (
 	"context"
 
 	awsmiddleware "github.com/aws/aws-sdk-go-v2/aws/middleware"
-
 	"github.com/awslabs/smithy-go/middleware"
 	smithyhttp "github.com/awslabs/smithy-go/transport/http"
 )
 
 // AddResponseErrorMiddleware adds response error wrapper middleware
-func AddResponseErrorMiddleware(stack *middleware.Stack) {
+func AddResponseErrorMiddleware(stack *middleware.Stack) error {
 	// add error wrapper middleware before request id retriever middleware so that it can wrap the error response
 	// returned by operation deserializers
-	stack.Deserialize.Insert(&errorWrapperMiddleware{}, "AWSRequestIDRetrieverMiddleware", middleware.Before)
+	return stack.Deserialize.Insert("RequestIDRetriever", middleware.Before, &errorWrapperMiddleware{})
 }
 
 type errorWrapperMiddleware struct {
@@ -21,7 +20,7 @@ type errorWrapperMiddleware struct {
 
 // ID returns the middleware identifier
 func (m *errorWrapperMiddleware) ID() string {
-	return "AWSResponseErrorWrapperMiddleware"
+	return "ResponseErrorWrapper"
 }
 
 func (m *errorWrapperMiddleware) HandleDeserialize(ctx context.Context, in middleware.DeserializeInput, next middleware.DeserializeHandler) (

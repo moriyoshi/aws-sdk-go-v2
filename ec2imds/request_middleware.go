@@ -25,14 +25,12 @@ func addAPIRequestMiddleware(stack *middleware.Stack,
 
 	// Token Serializer build and state management.
 	if !options.disableAPIToken {
-		err = stack.Finalize.Insert(options.tokenProvider,
-			retry.AttemptMiddleware{}.ID(), middleware.After)
+		err = stack.Finalize.Insert((&retry.Attempt{}).ID(), middleware.After, options.tokenProvider)
 		if err != nil {
 			return err
 		}
 
-		err = stack.Deserialize.Insert(options.tokenProvider,
-			"OperationDeserializer", middleware.Before)
+		err = stack.Deserialize.Insert("OperationDeserializer", middleware.Before, options.tokenProvider)
 		if err != nil {
 			return err
 		}
@@ -53,42 +51,41 @@ func addRequestMiddleware(stack *middleware.Stack,
 	}
 
 	// Operation timeout
-	err = stack.Initialize.Add(&operationTimeoutMiddleware{
+	err = stack.Initialize.Add(middleware.Before, &operationTimeoutMiddleware{
 		Timeout: defaultOperationTimeout,
-	}, middleware.Before)
+	})
 	if err != nil {
 		return err
 	}
 
 	// Operation Serializer
-	err = stack.Serialize.Add(&serializeRequest{
+	err = stack.Serialize.Add(middleware.After, &serializeRequest{
 		GetPath: getPath,
 		Method:  method,
-	}, middleware.After)
+	})
 	if err != nil {
 		return err
 	}
 
 	// Operation endpoint resolver
-	err = stack.Serialize.Insert(&resolveEndpoint{
-		Endpoint: options.Endpoint,
-	}, "OperationSerializer", middleware.Before)
+	err = stack.Serialize.Insert("OperationSerializer", middleware.Before,
+		&resolveEndpoint{
+			Endpoint: options.Endpoint,
+		})
 	if err != nil {
 		return err
 	}
 
 	// Operation Deserializer
-	err = stack.Deserialize.Add(&deserializeResponse{
+	err = stack.Deserialize.Add(middleware.After, &deserializeResponse{
 		GetOutput: getOutput,
-	}, middleware.After)
+	})
 	if err != nil {
 		return err
 	}
 
 	// Retry support
-	retry.AddRetryMiddlewares(stack, retry.AddRetryMiddlewaresOptions{Retryer: options.Retryer})
-
-	return nil
+	return retry.AddRetryMiddlewares(stack, retry.AddRetryMiddlewaresOptions{Retryer: options.Retryer})
 }
 
 type serializeRequest struct {
@@ -170,7 +167,7 @@ type resolveEndpoint struct {
 }
 
 func (*resolveEndpoint) ID() string {
-	return "EndpointResolver"
+	return "ResolveEndpoint"
 }
 
 func (m *resolveEndpoint) HandleSerialize(

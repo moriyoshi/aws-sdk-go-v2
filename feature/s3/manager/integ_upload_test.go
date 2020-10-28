@@ -52,7 +52,7 @@ func (b *invalidateHash) ID() string {
 }
 
 func (b *invalidateHash) RegisterMiddleware(stack *middleware.Stack) error {
-	return stack.Serialize.Add(b, middleware.After)
+	return stack.Serialize.Add(middleware.After, b)
 }
 
 func (b *invalidateHash) HandleSerialize(ctx context.Context, in middleware.SerializeInput, next middleware.SerializeHandler) (

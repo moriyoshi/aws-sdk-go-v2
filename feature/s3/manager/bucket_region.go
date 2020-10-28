@@ -90,7 +90,7 @@ type deserializeBucketRegion struct {
 }
 
 func (d *deserializeBucketRegion) RegisterMiddleware(stack *middleware.Stack) error {
-	return stack.Deserialize.Add(d, middleware.After)
+	return stack.Deserialize.Add(middleware.After, d)
 }
 
 func (d *deserializeBucketRegion) ID() string {

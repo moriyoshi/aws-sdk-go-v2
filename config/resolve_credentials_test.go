@@ -204,7 +204,7 @@ func TestSharedConfigCredentialSource(t *testing.T) {
 			configSources := []Config{
 				WithEndpointResolver(endpointResolver),
 				WithAPIOptions(append([]func(*middleware.Stack) error{}, func(stack *middleware.Stack) error {
-					return stack.Initialize.Add(middleware.InitializeMiddlewareFunc("GetRoleArns", func(ctx context.Context, in middleware.InitializeInput, next middleware.InitializeHandler,
+					return stack.Initialize.Add(middleware.After, middleware.InitializeMiddlewareFunc("GetRoleArns", func(ctx context.Context, in middleware.InitializeInput, next middleware.InitializeHandler,
 					) (
 						out middleware.InitializeOutput, metadata middleware.Metadata, err error,
 					) {
@@ -214,7 +214,7 @@ func TestSharedConfigCredentialSource(t *testing.T) {
 						}
 
 						return next.HandleInitialize(ctx, in)
-					}), middleware.After)
+					}))
 				})),
 			}
 

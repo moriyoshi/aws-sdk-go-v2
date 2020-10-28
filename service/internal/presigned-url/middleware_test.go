@@ -57,14 +57,13 @@ func TestPresignMiddleware(t *testing.T) {
 		t.Run(name, func(t *testing.T) {
 			stack := middleware.NewStack(name, smithyhttp.NewStackRequest)
 
-			stack.Initialize.Add(awsmiddleware.RegisterServiceMetadata{
+			stack.Initialize.Add(middleware.After, &awsmiddleware.RegisterServiceMetadata{
 				Region: "mock-region",
-			}, middleware.After)
+			})
 
-			stack.Initialize.Add(&presignMiddleware{options: getURLPresignMiddlewareOptions()},
-				middleware.After)
+			stack.Initialize.Add(middleware.After, &presign{options: getURLPresignMiddlewareOptions()})
 
-			stack.Initialize.Add(middleware.InitializeMiddlewareFunc(name+"_verifyParams",
+			stack.Initialize.Add(middleware.After, middleware.InitializeMiddlewareFunc(name+"_verifyParams",
 				func(ctx context.Context, in middleware.InitializeInput, next middleware.InitializeHandler) (
 					out middleware.InitializeOutput, metadata middleware.Metadata, err error,
 				) {
@@ -75,7 +74,7 @@ func TestPresignMiddleware(t *testing.T) {
 
 					return next.HandleInitialize(ctx, in)
 				},
-			), middleware.After)
+			))
 
 			handler := middleware.DecorateHandler(smithyhttp.NewClientHandler(smithyhttp.NopClient{}), stack)
 			_, _, err := handler.Handle(context.Background(), c.Input)

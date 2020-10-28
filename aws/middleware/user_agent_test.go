@@ -130,7 +130,7 @@ func TestAddUserAgentKey(t *testing.T) {
 
 	b := newRequestUserAgent()
 	stack := middleware.NewStack("testStack", smithyhttp.NewStackRequest)
-	err := stack.Build.Add(b, middleware.After)
+	err := stack.Build.Add(middleware.After, b)
 	if err != nil {
 		t.Fatalf("expect no error, got %v", err)
 	}
@@ -162,7 +162,7 @@ func TestAddUserAgentKeyValue(t *testing.T) {
 
 	b := newRequestUserAgent()
 	stack := middleware.NewStack("testStack", smithyhttp.NewStackRequest)
-	err := stack.Build.Add(b, middleware.After)
+	err := stack.Build.Add(middleware.After, b)
 	if err != nil {
 		t.Fatalf("expect no error, got %v", err)
 	}
@@ -194,9 +194,9 @@ func TestAddUserAgentKey_AddToStack(t *testing.T) {
 
 	stack := middleware.NewStack("testStack", smithyhttp.NewStackRequest)
 	bi := middleware.BuildInput{Request: &smithyhttp.Request{Request: &http.Request{Header: map[string][]string{}}}}
-	stack.Build.Add(middleware.BuildMiddlewareFunc("testInit", func(ctx context.Context, input middleware.BuildInput, handler middleware.BuildHandler) (o middleware.BuildOutput, m middleware.Metadata, err error) {
+	stack.Build.Add(middleware.After, middleware.BuildMiddlewareFunc("testInit", func(ctx context.Context, input middleware.BuildInput, handler middleware.BuildHandler) (o middleware.BuildOutput, m middleware.Metadata, err error) {
 		return handler.HandleBuild(ctx, bi)
-	}), middleware.After)
+	}))
 	err := AddUserAgentKey("foo")(stack)
 	if err != nil {
 		t.Fatalf("expect no error, got %v", err)
@@ -223,9 +223,9 @@ func TestAddUserAgentKeyValue_AddToStack(t *testing.T) {
 
 	stack := middleware.NewStack("testStack", smithyhttp.NewStackRequest)
 	bi := middleware.BuildInput{Request: &smithyhttp.Request{Request: &http.Request{Header: map[string][]string{}}}}
-	stack.Build.Add(middleware.BuildMiddlewareFunc("testInit", func(ctx context.Context, input middleware.BuildInput, handler middleware.BuildHandler) (o middleware.BuildOutput, m middleware.Metadata, err error) {
+	stack.Build.Add(middleware.After, middleware.BuildMiddlewareFunc("testInit", func(ctx context.Context, input middleware.BuildInput, handler middleware.BuildHandler) (o middleware.BuildOutput, m middleware.Metadata, err error) {
 		return handler.HandleBuild(ctx, bi)
-	}), middleware.After)
+	}))
 	err := AddUserAgentKeyValue("foo", "bar")(stack)
 	if err != nil {
 		t.Fatalf("expect no error, got %v", err)

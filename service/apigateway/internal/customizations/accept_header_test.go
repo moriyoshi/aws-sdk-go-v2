@@ -57,7 +57,7 @@ func TestAddAcceptHeader(t *testing.T) {
 		Title: ptr.String("mock_title"),
 	}, func(options *apigateway.Options) {
 		options.APIOptions = append(options.APIOptions, func(stack *middleware.Stack) error {
-			stack.Build.Add(&fm, middleware.After)
+			stack.Build.Add(middleware.After, &fm)
 			return nil
 		})
 	})

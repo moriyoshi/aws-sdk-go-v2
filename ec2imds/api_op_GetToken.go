@@ -55,7 +55,7 @@ func addGetTokenMiddleware(stack *middleware.Stack, options Options) error {
 		return err
 	}
 
-	err = stack.Serialize.Add(&tokenTTLRequestHeader{}, middleware.After)
+	err = stack.Serialize.Add(middleware.After, &tokenTTLRequestHeader{})
 	if err != nil {
 		return err
 	}

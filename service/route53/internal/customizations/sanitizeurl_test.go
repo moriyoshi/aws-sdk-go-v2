@@ -47,7 +47,7 @@ func TestSanitizeURLMiddleware(t *testing.T) {
 				Id: &c.Given,
 			}, func(options *route53.Options) {
 				options.APIOptions = append(options.APIOptions, func(stack *middleware.Stack) error {
-					stack.Serialize.Insert(&fm, "OperationSerializer", middleware.After)
+					stack.Serialize.Insert("OperationSerializer", middleware.After, &fm)
 					return nil
 				})
 			})

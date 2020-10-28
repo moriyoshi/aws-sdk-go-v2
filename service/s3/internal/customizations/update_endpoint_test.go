@@ -198,8 +198,7 @@ func TestUpdateEndpointBuild(t *testing.T) {
 								func(options *s3.Options) {
 									options.APIOptions = append(options.APIOptions,
 										func(stack *middleware.Stack) error {
-											stack.Serialize.Insert(&fm,
-												"OperationSerializer", middleware.Before)
+											stack.Serialize.Insert("OperationSerializer", middleware.Before, &fm)
 											return nil
 										})
 								},
